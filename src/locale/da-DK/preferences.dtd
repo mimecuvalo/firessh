@@ -1,0 +1,72 @@
+<!ENTITY title "Indstillinger">
+<!ENTITY asciiTitle "ASCII filtyper">
+<!ENTITY general.label "Generelt">
+<!ENTITY messages.label "Beskeder">
+<!ENTITY welcome.label "Vis velkomstbesked">
+<!ENTITY error.label "Vis fejlmeddelelser">
+<!ENTITY sessions.label "Sessioner">
+<!ENTITY rememberp.label "Husk adgangskoder">
+<!ENTITY rememberd.label "Husk indhold af mapper">
+<!ENTITY fileview.label "Visning af filer">
+<!ENTITY autorefresh.label "Opdater automatisk">
+<!ENTITY refresh.tip "Efter serverindhold er ændret (ved upload, omdøbning eller lign.), opdater da mappeindhold">
+<!ENTITY hidden.label "Vis skjulte filer">
+<!ENTITY bytesmode.label "Vis antal bytes under filstørrelse">
+<!ENTITY interface.label "Brugerflade">
+<!ENTITY startup.label "Start FireFTP:">
+<!ENTITY windowopen.label "I et nyt vindue">
+<!ENTITY tabopen.label "I et nyt faneblad">
+<!ENTITY integrateftplnk.label "FTP links skal automatisk åbnes i FireFTP">
+<!ENTITY temppasvmode.label "Anvend passiv tilstand for disse forbindelser">
+<!ENTITY open.label "Dobbeltklik/tryk enter:">
+<!ENTITY download.label "Overfører en fil">
+<!ENTITY exec.label "Åbner en fil">
+<!ENTITY both.tip "Viser både lokale filer og serverfiler">
+<!ENTITY local.tip "Viser kun lokale filer">
+<!ENTITY remote.tip "Viser kun serverfiler">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Vis log i hovedvindue">
+<!ENTITY logerrormode.label "Vis kun fejl i log">
+<!ENTITY debug.label "Vis debug-informationer">
+<!ENTITY connect.label "Forbindelser">
+<!ENTITY proxy.label "Proxy indstillinger">
+<!ENTITY none.label "Ingen">
+<!ENTITY direct.label "Direkte">
+<!ENTITY host.label "Vært:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Aktiv tilstand">
+<!ENTITY limitPorts.label "Begræns porte">
+<!ENTITY from.label "Fra:">
+<!ENTITY to.label "Til:">
+<!ENTITY concurrent.label "Samtidige overførsler">
+<!ENTITY simtransfers.label "Max. samtidige overførsler (1-10)">
+<!ENTITY recovery.label "Oprethold forbindelse">
+<!ENTITY network.label "Timeout for netværk (i sekunder, mellem 1 og 600)">
+<!ENTITY network.tip "Bestemmer hvor længe klienten skal vente på svar fra serveren">
+<!ENTITY keepalivemode.label "Oprethold forbindelse selv om du ikke er aktiv">
+<!ENTITY timeout.label "Forsøg at genoprette forbindelsen hvis den afbrydes">
+<!ENTITY retryd.label "Udsættelse efter afbrydelse (i sekunder mellem 1 og 600)">
+<!ENTITY retryd.tip "Antal sekunder imellem hvert forbindelsesforsøg">
+<!ENTITY retrya.label "Antal forsøg">
+<!ENTITY retrya.tip "Antal forbindelsesforsøg">
+<!ENTITY downup.label "Downloads/Uploads">
+<!ENTITY transfercaption.label "Ved filoverførsel anvend:">
+<!ENTITY automatic.label "Automatisk tilstand">
+<!ENTITY automatic.tip "Vælger automatisk mellem &apos;Binær&apos; og &apos;ASCII&apos; tilstand">
+<!ENTITY binary.label "Binær tilstand">
+<!ENTITY ascii.label "ASCII tilstand">
+<!ENTITY asciifiles.label "ASCII filer:">
+<!ENTITY asciifiles.tip "Kommasepareret liste med filendelser der skal genkendes som ASCII filer">
+<!ENTITY add.label "Tilføj">
+<!ENTITY remove.label "Fjern">
+<!ENTITY extras.label "Ekstra (hvis aktiveret på server)">
+<!ENTITY usecompression.label "Anvend kompression">
+<!ENTITY synctimestamps.label "Bevar tidsstempler synkroniseret (hvis aktiveret på server)">
+<!ENTITY integritymode.label "Check filoverførslernes integritet(XMD5, XSHA1)">
+<!ENTITY duplicates.label "Eksisterende filer">
+<!ENTITY timer.label "Slå timer fra ved overskriv dialog">
+<!ENTITY nopromptmode.label "Overskriv uden at vise overskriv dialog">
+<!ENTITY credits.label "Tak til">
+<!ENTITY thanks.label "Tak til:">
+<!ENTITY allothers.label "Alle andre der indrapporterede fejl og hjalp">
+<!ENTITY special.label "En speciel tak til alle der donerer!">

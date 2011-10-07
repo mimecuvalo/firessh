@@ -1,0 +1,60 @@
+<!ENTITY uploaddir.label  "อัพโหลด">
+<!ENTITY upload.label    "อัพโหลด                      Enter">
+<!ENTITY open.label      "เปิด">
+<!ENTITY cut.label      "ตัด                           Ctrl+X">
+<!ENTITY copy.label      "คัดลอก                        Ctrl+C">
+<!ENTITY paste.label    "วาง                      Ctrl+V">
+<!ENTITY delete.label    "ลบ                       Del">
+<!ENTITY rename.label    "เปลี่ยนชื่อ                    F2">
+<!ENTITY makedir.label    "สร้างแฟ้มเพิ่ม         Ctrl+M">
+<!ENTITY properties.label  "คุณสมบัติ                 Ctrl+P">
+<!ENTITY downloaddir.label  "ดาวน์โหลด">
+<!ENTITY download.label    "ดาวน์โหลด                Enter">
+
+<!ENTITY maintab.label    "หน้าหลัก">
+<!ENTITY queuetab.label    "ลำดับ">
+<!ENTITY logtab.label    "เหตุการณ์">
+<!ENTITY preferencestab.label "ปรับแต่งการใช้งาน">
+
+<!ENTITY host.label      "ที่อยู่ของ Host">
+<!ENTITY login.label    "ชื่อผู้ใช้">
+<!ENTITY password.label    "รหัสผ่าน">
+
+<!ENTITY host.access    "H">
+<!ENTITY login.access    "L">
+<!ENTITY pass.access    "P">
+<!ENTITY abort.access    "A">
+
+<!ENTITY abort.label    "เลิกทำ">
+
+<!ENTITY browse.label    "เลือกที่อยู่">
+<!ENTITY change.label    "เปลี่ยน">
+
+<!ENTITY name.label      "ชื่อ">
+<!ENTITY size.label      "ขนาด">
+<!ENTITY date.label      "เวลา">
+<!ENTITY attr.label      "ลักษณะ">
+
+<!ENTITY parentdir.tip    "เรียกตำแหน่งที่อยู่แฟ้มหลัก">
+<!ENTITY refresh.tip    "เรียกตำแหน่งนี้อีกครั้ง">
+<!ENTITY localpath.tip    "ตำแหน่งในระบบของเรา">
+<!ENTITY remotepath.tip    "ตำแหน่งนอกระบบของเรา">
+
+<!ENTITY bytes.tip      "จำนวนที่ดาวน์โหลดไป / รวมทั้งสิ้น">
+<!ENTITY timeela.tip    "เวลาผ่านไป">
+<!ENTITY timerem.tip    "เหลือเวลา">
+<!ENTITY download.tip    "ความเร็วดาวน์โหลด">
+<!ENTITY percent.tip    "เสร็จไปแล้ว">
+
+<!ENTITY type.tip      "เปลี่ยนวิธีของการรับส่งข้อมูล (แนะนำโดยอัตโนมัติ)">
+
+<!ENTITY logbutton.access  "g">
+<!ENTITY prefbutton.access  "r">
+<!ENTITY browsebutton.access  "B">
+<!ENTITY changebutton.access  "e">
+
+<!ENTITY copylog.label      "คัดลอก">
+<!ENTITY copylog.access     "C">
+
+<!ENTITY mozilla.quote  "And, <html:em style='font-size:1.3em;line-height:0;'>lo</html:em>, from the <html:em style='font-size:1.3em;line-height:0;'>darkness</html:em> they emerged: a host of the faithful to <html:em style='font-size:1.3em;line-height:0;'>aide</html:em> the reborn beast in its quest to <html:em style='font-size:1.3em;line-height:0;'>reclaim</html:em> the land.  Together they <html:em style='font-size:1.3em;line-height:0;'>extended</html:em> the power of the beast and <html:em style='font-size:1.3em;line-height:0;'>spread</html:em> the good news of its return.  One by one the followers of <html:em style='font-size:1.3em;line-height:0;'>Mammon</html:em> were converted and their hearts were set <html:em style='font-size:1.3em;line-height:0;'>aflame</html:em>.">
+<!ENTITY mozilla.from  "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

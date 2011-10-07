@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Deschide în FireFTP">
+<!ENTITY viewFireFTP "Vezi pagina în FireFTP">
+<!ENTITY accountlist.label "(Alege un cont)">
+<!ENTITY edit.label "Editează...">
+<!ENTITY abort.label "Anulează">
+<!ENTITY logtab.label "Log">
+<!ENTITY ltab.label "Jurnal">
+<!ENTITY qtab.label "Coadă">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "Avansat">
+<!ENTITY search.label "Cauta">
+<!ENTITY diff.label "Compară directoare">
+<!ENTITY recdiff.label "Compara Directoare &amp; Subdirectoare">
+<!ENTITY custom.label "Personalizat">
+<!ENTITY import.label "Importă...">
+<!ENTITY export.label "Exportă...">
+<!ENTITY preferencestab.label "Preferințe">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "C">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "r">
+<!ENTITY help.label "Ajutor">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Mergi la directorul părinte">
+<!ENTITY refresh.tip "Relistează directorul">
+<!ENTITY localpath.tip "Cale locală">
+<!ENTITY remotepath.tip "Cale ftp">
+<!ENTITY browse.label "Parcurge">
+<!ENTITY change.label "Schimbă">
+<!ENTITY name.label "Nume">
+<!ENTITY size.label "Mărime">
+<!ENTITY date.label "Dată">
+<!ENTITY type.label "Tip">
+<!ENTITY attr.label "Atribute">
+<!ENTITY source.label "Sursă">
+<!ENTITY dest.label "Destinaţie">
+<!ENTITY bytes.label "Octeţi">
+<!ENTITY status.label "Stare">
+<!ENTITY retry.label "Reîncearcă">
+<!ENTITY cancel.label "Anulează">
+<!ENTITY cancelAll.label "Anulează toate">
+<!ENTITY type.tip "Schimbă modul de transfer (Auto e recomandat)">
+<!ENTITY bytes.tip "Octeți descărcați / Total octeți">
+<!ENTITY timeela.tip "Timp scurs">
+<!ENTITY timerem.tip "Timp rămas">
+<!ENTITY download.tip "Rată descărcare">
+<!ENTITY percent.tip "Procente complete">
+<!ENTITY openContaining.label "Deschide directorul parinte">
+<!ENTITY upload.label "Încărcare">
+<!ENTITY download.label "Descărcare">
+<!ENTITY open.label "Deschide">
+<!ENTITY openwith.label "Deschide cu">
+<!ENTITY extractHere.label "Extrage aici">
+<!ENTITY extractTo.label "Extrage in directorul">
+<!ENTITY viewweb.label "Vezi pe web">
+<!ENTITY copyUrl.label "Copiaza URL">
+<!ENTITY copyUrlLogin.label "FTP cu logare">
+<!ENTITY cut.label "Taie">
+<!ENTITY copy.label "Copiază">
+<!ENTITY paste.label "Lipește">
+<!ENTITY makedir.label "Creează director">
+<!ENTITY makefile.label "Creează fișier">
+<!ENTITY delete.label "Șterge">
+<!ENTITY rename.label "Redenumește">
+<!ENTITY properties.label "Proprietăți">
+<!ENTITY rproperties.label "Proprietăți recursive">
+<!ENTITY searchButton.label "Cauta">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "La distanta">
+<!ENTITY searchOptions.label "Opţiuni">
+<!ENTITY searchFrom.label "De la:">
+<!ENTITY searchTo.label "Pentru:">
+<!ENTITY searchSubdir.label "Cauta in subdirectoare">
+<!ENTITY searchMatch.label "Potrivire A/a">
+<!ENTITY searchRegexp.label "Expresie regulara">
+<!ENTITY searchDates.label "Specifică datele">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "E">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "v">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "e">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "Şi <html:em>lo</html:em>, din <html:em>întuneric</html:em> au ieşit: o mulţime de credincioşi să <html:em>ajute</html:em> bestia renăscută în căutarea ei de <html:em>recuperare</html:em> a pământului. Împreună au <html:em>extins</html:em> puterea bestiei şi au <html:em>răspândit</html:em> buna veste a reîntoarcerii acesteia. Unul câte unul, adepţii lui <html:em>Mammon</html:em> au fost convertiţi, iar inimile li s-au <html:em>aprins</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Automat">
+<!ENTITY binary.label         "Binar">
+<!ENTITY ascii.label          "ASCII">
+

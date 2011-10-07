@@ -1,0 +1,72 @@
+<!ENTITY title "FireFTP - Einstellungen">
+<!ENTITY asciiTitle "ASCII-Dateitypen">
+<!ENTITY general.label "Allgemein">
+<!ENTITY messages.label "Meldungen">
+<!ENTITY welcome.label "Willkommensmeldung anzeigen">
+<!ENTITY error.label "Fehlermeldungen anzeigen">
+<!ENTITY sessions.label "Sitzungen">
+<!ENTITY rememberp.label "Passwörter speichern">
+<!ENTITY rememberd.label "Gewählte Ordnerlisten speichern">
+<!ENTITY fileview.label "Dateiansicht">
+<!ENTITY autorefresh.label "Automatisch aktualisieren">
+<!ENTITY refresh.tip "Nachdem sich die entfernte Ansicht geändert hat (durch Upload, Umbenennen usw.), bitte auch die Anschicht der Ordnerliste aktualisieren.">
+<!ENTITY hidden.label "Versteckte Dateien anzeigen">
+<!ENTITY bytesmode.label "Dateigröße in Bytes anzeigen">
+<!ENTITY interface.label "Aussehen">
+<!ENTITY startup.label "FireFTP starten">
+<!ENTITY windowopen.label "In neuem Fenster öffnen">
+<!ENTITY tabopen.label "In neuem Tab öffnen">
+<!ENTITY integrateftplnk.label "Für FTP-Links in Firefox automatisch FireFTP verwenden">
+<!ENTITY temppasvmode.label "Passiven Modus für folgende Verbindungen verwenden">
+<!ENTITY open.label "Aktion für Doppelklick/Eingabetaste:">
+<!ENTITY download.label "Datei übertragen">
+<!ENTITY exec.label "Datei öffnen">
+<!ENTITY both.tip "Zeigt entfernte und lokale Dateien gleichzeitig an">
+<!ENTITY local.tip "Zeigt nur lokale Dateien an">
+<!ENTITY remote.tip "Zeigt nur entfernte Dateien an">
+<!ENTITY logwindow.label "Protokoll">
+<!ENTITY logmode.label "Protokoll im Hauptfenster anzeigen">
+<!ENTITY logerrormode.label "Nur Fehlermeldungen im Protokoll anzeigen">
+<!ENTITY debug.label "Debug-Informationen anzeigen">
+<!ENTITY connect.label "Verbindungen">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Keiner">
+<!ENTITY direct.label "Direkt">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Aktiver Modus">
+<!ENTITY limitPorts.label "Ports beschränken">
+<!ENTITY from.label "Von:">
+<!ENTITY to.label "Bis:">
+<!ENTITY concurrent.label "Gleichzeitige Übertragungen">
+<!ENTITY simtransfers.label "Maximale Anzahl gleichzeitiger Übertragungen (1-10)">
+<!ENTITY recovery.label "Verbindungswiederherstellung">
+<!ENTITY network.label "Zeitüberschreitung (in Sekunden, zwischen 1 und 600)">
+<!ENTITY network.tip "Gibt an, wie lange auf eine Antwort des Servers gewartet werden soll">
+<!ENTITY keepalivemode.label "Verbindung bei Inaktivität aufrecht erhalten">
+<!ENTITY timeout.label "Nach Trennung automatisch neu verbinden">
+<!ENTITY retryd.label "Wiederholungsverzögerung (in Sekunden, zwischen 1 und 600)">
+<!ENTITY retryd.tip "Gibt an, wie viele Sekunden zwischen den Wiederverbindungsversuchen liegen sollen">
+<!ENTITY retrya.label "Wiederholungsversuche">
+<!ENTITY retrya.tip "Gibt an, wie oft ein Verbindungsaufbau versucht werden soll">
+<!ENTITY downup.label "Datenübertragung">
+<!ENTITY transfercaption.label "Übertragungsmodus:">
+<!ENTITY automatic.label "Automatisch auswählen">
+<!ENTITY automatic.tip "Wählt automatisch zwischen Binär- und ASCII-Modus">
+<!ENTITY binary.label "Binär-Modus verwenden">
+<!ENTITY ascii.label "ASCII-Modus verwenden">
+<!ENTITY asciifiles.label "ASCII-Dateien:">
+<!ENTITY asciifiles.tip "Liste von Dateiendungen, die als ASCII-Dateien erkannt werden sollen">
+<!ENTITY add.label "Hinzufügen">
+<!ENTITY remove.label "Entfernen">
+<!ENTITY extras.label "Extras (falls vom Server unterstützt)">
+<!ENTITY usecompression.label "Kompression aktivieren">
+<!ENTITY synctimestamps.label "Zeitstempel synchron halten">
+<!ENTITY integritymode.label "Integrität der übertragenen Dateien prüfen (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Dateien überschreiben">
+<!ENTITY timer.label "Timer im Überschreiben-Dialog deaktivieren">
+<!ENTITY nopromptmode.label "Dateien ohne Bestätigung überschreiben">
+<!ENTITY credits.label "Danksagungen">
+<!ENTITY thanks.label "Dank an:">
+<!ENTITY allothers.label "Alle anderen, die Fehler gemeldet und geholfen haben.">
+<!ENTITY special.label "Besonderer Dank gilt all denen, die gespendet haben!">

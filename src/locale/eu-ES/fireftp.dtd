@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Ireki Lotura FireFTPn">
+<!ENTITY viewFireFTP "Ikusi Orri Hau FireFTPn">
+<!ENTITY accounts.label "Kontuak Kudeatu">
+<!ENTITY accountlist.label "(Aukeratu kontu bat)">
+<!ENTITY new.label "Berria...">
+<!ENTITY edit.label "Editatu...">
+<!ENTITY save.label "Gorde Aldi Baterako Kontua">
+<!ENTITY quick.label "Koneksio Bizkorra">
+<!ENTITY import.label "Inportatu...">
+<!ENTITY export.label "Esportatu...">
+<!ENTITY new.access "B">
+<!ENTITY edit.access "E">
+<!ENTITY delete.access "z">
+<!ENTITY save.access "G">
+<!ENTITY quick.access "K">
+<!ENTITY import.access "I">
+<!ENTITY export.access "s">
+<!ENTITY abort.label "Utzi">
+<!ENTITY search.label "Search">
+<!ENTITY logtab.label "Loga">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "Aurreratua">
+<!ENTITY diff.label "Direktorioen Ezberdintasunak">
+<!ENTITY recdiff.label "Compare Directories &amp; Subdirectories">
+<!ENTITY custom.label "Aurrezehaztua">
+<!ENTITY preferencestab.label "Hobespenak">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "A">
+<!ENTITY prefbutton.access "b">
+<!ENTITY help.label "Laguntza">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Mailaz Igo">
+<!ENTITY refresh.tip "Eguneratu">
+<!ENTITY localpath.tip "Bide Lokala">
+<!ENTITY remotepath.tip "Urruneko Bidea">
+<!ENTITY browse.label "Arakatu">
+<!ENTITY change.label "Aldatu">
+<!ENTITY name.label "Izena">
+<!ENTITY size.label "Tamaina">
+<!ENTITY date.label "Data">
+<!ENTITY type.label "Mota">
+<!ENTITY attr.label "Atributuak">
+<!ENTITY type.tip "Igorpen metodoa aldatu (auto gomendatua)">
+<!ENTITY bytes.tip "Jaitsitako Byteak / Byteak Guztira">
+<!ENTITY timeela.tip "Igarotako Denbora">
+<!ENTITY timerem.tip "Gelditzen den Denbora">
+<!ENTITY download.tip "Jaitsiera Abiadura">
+<!ENTITY percent.tip "Burututako Ehunekoa">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Igo                      Sartu">
+<!ENTITY download.label "Jaitsi                 Sartu">
+<!ENTITY open.label "Ireki">
+<!ENTITY openwith.label "Ireki Honekin">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Ikusi Webean">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Ebaki                           Ktrl+X">
+<!ENTITY copy.label "Kopiatu                        Ktrl+C">
+<!ENTITY paste.label "Itsatsi                       Ktrl+V">
+<!ENTITY makedir.label "Direktorioa Sortu         Ktrl+M">
+<!ENTITY makefile.label "Fitxategia Sortu">
+<!ENTITY delete.label "Ezabatu                       Ezab">
+<!ENTITY rename.label "Berrizendatu                    F2">
+<!ENTITY properties.label "Ezaugarriak                 Ktrl+P">
+<!ENTITY rproperties.label "Ezaugarri Errekurtsiboak">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY accounts.access "K">
+<!ENTITY abort.access "U">
+<!ENTITY advanced.access "u">
+<!ENTITY helpbutton.access "L">
+<!ENTITY browsebutton.access "A">
+<!ENTITY changebutton.access "l">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchSubdir.access "k">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY mozilla.quote "Eta, honela, <html:em style=';;font-size:1.3em;line-height:0;';;>iluntasunetik</html:em> etorri ziren: zintzoen ostatze gune bat piztia jaioberria <html:em style=';;font-size:1.3em;line-height:0;';;>laguntzeko</html:em> bere lurra <html:em style=';;font-size:1.3em;line-height:0;';;>esijitzeko</html:em> bidaian zehar.  Eta batera <html:em style=';;font-size:1.3em;line-height:0;';;>hedatu zuten</html:em> piztiaren boterea eta <html:em style=';;font-size:1.3em;line-height:0;';;>barreiatu</html:em> bere itzuleraren berri pozgarria.  Banan-banan, <html:em style=';;font-size:1.3em;line-height:0;';;>Mammon</html:em>en jarraitzaileak piztiarengana bihurtu eta haien bihotzetako garrak ziren <html:em style=';;font-size:1.3em;line-height:0;';;>itzali</html:em>.">
+<!ENTITY mozilla.from "<html:strong>Mozillaren Liburutik</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Bitarra">
+<!ENTITY ascii.label          "ASCII">
+

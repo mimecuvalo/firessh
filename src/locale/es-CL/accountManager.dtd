@@ -1,0 +1,52 @@
+<!ENTITY title "Account Manager">
+<!ENTITY main "Main">
+<!ENTITY connections "Connection">
+<!ENTITY advanced "Advanced">
+<!ENTITY maindetails "Main Details">
+<!ENTITY id "ID">
+<!ENTITY account.label "Account Name:">
+<!ENTITY account.tip "Example: My FTP Site">
+<!ENTITY host.label "Host:">
+<!ENTITY host.tip "Example: ftp.debian.org">
+<!ENTITY login.label "Login:">
+<!ENTITY password.label "Password:">
+<!ENTITY anonymous.label "Anonymous">
+<!ENTITY connection "Connection Type">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Passive Mode">
+<!ENTITY security.label "Security">
+<!ENTITY none.label "None">
+<!ENTITY authtls.label "Auth TLS (Best)">
+<!ENTITY authssl.label "Auth SSL (Better)">
+<!ENTITY implicit.label "Implicit SSL (Good)">
+<!ENTITY initialdir "Initial Directories">
+<!ENTITY download "Download Options">
+<!ENTITY upload "Upload Options">
+<!ENTITY localdir.label "Local:">
+<!ENTITY remotedir.label "Remote:">
+<!ENTITY current.label "Use Current">
+<!ENTITY treesync.label "Keep directories in sync while navigating">
+<!ENTITY webhost "Web host (used with &apos;View on the Web&apos; feature)">
+<!ENTITY webhost.tip "Example: http://www.example.com">
+<!ENTITY prefix.label "Prefix:">
+<!ENTITY prefix.tip "Prefix to remove of the FTP part of the url, e.g. /public_html">
+<!ENTITY caseleave.label "Leave case alone">
+<!ENTITY caselower.label "Convert to lower case">
+<!ENTITY caseupper.label "Convert to upper case">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "A">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

@@ -1,0 +1,69 @@
+<!ENTITY title "Options">
+<!ENTITY asciiTitle "ASCII File Types">
+<!ENTITY general.label "General">
+<!ENTITY messages.label "Messages">
+<!ENTITY welcome.label "Show Welcome Message">
+<!ENTITY error.label "Show Error Messages">
+<!ENTITY sessions.label "Sessions">
+<!ENTITY rememberp.label "Remember Passwords">
+<!ENTITY rememberd.label "Remember Directory Listings">
+<!ENTITY fileview.label "File View">
+<!ENTITY autorefresh.label "Auto-Refresh">
+<!ENTITY refresh.tip "After the remote view is changed (by uploading, renaming, etc.), refresh the directory listing">
+<!ENTITY hidden.label "Show Hidden Files">
+<!ENTITY bytesmode.label "Display number of bytes for file sizes">
+<!ENTITY interface.label "Interface">
+<!ENTITY startup.label "Start FireFTP:">
+<!ENTITY windowopen.label "in a new window">
+<!ENTITY tabopen.label "in a new tab">
+<!ENTITY integrateftplnk.label "Configure FTP links in Firefox to automatically use FireFTP">
+<!ENTITY temppasvmode.label "Use Passive Mode for these connections">
+<!ENTITY ui.label "Layout">
+<!ENTITY normal.label "Normal Mode">
+<!ENTITY local.label "Local Mode">
+<!ENTITY remote.label "Remote Mode">
+<!ENTITY both.tip "Shows both local and remote files">
+<!ENTITY local.tip "Shows only local files">
+<!ENTITY remote.tip "Shows only remote files">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Show log in main window">
+<!ENTITY logerrormode.label "Show only errors in log">
+<!ENTITY debug.label "Show debug information">
+<!ENTITY connect.label "Connections">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "None">
+<!ENTITY direct.label "Direct">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Active Mode">
+<!ENTITY limitPorts.label "Limit Ports">
+<!ENTITY from.label "From:">
+<!ENTITY to.label "To:">
+<!ENTITY recovery.label "Connection Recovery">
+<!ENTITY network.label "Network Timeout (in seconds, between 1 and 600)">
+<!ENTITY network.tip "Controls how long to wait for a response from the server">
+<!ENTITY keepalivemode.label "Keep connection alive even if you&apos;re idle">
+<!ENTITY timeout.label "If disconnected, try to reconnect">
+<!ENTITY retryd.label "Retry Delay (in seconds, between 1 and 600)">
+<!ENTITY retryd.tip "Seconds between reconnection attempts">
+<!ENTITY retrya.label "Retry Attempts">
+<!ENTITY retrya.tip "Number of attempts to be made">
+<!ENTITY downup.label "Downloads/Uploads">
+<!ENTITY transfercaption.label "When transferring files use:">
+<!ENTITY automatic.label "Automatic Mode">
+<!ENTITY automatic.tip "Automatically choose between &apos;Binary&apos; and &apos;ASCII&apos; mode">
+<!ENTITY binary.label "Binary Mode">
+<!ENTITY ascii.label "ASCII Mode">
+<!ENTITY asciifiles.label "ASCII files: ">
+<!ENTITY asciifiles.tip "List of file extensions that should be recognized as ASCII files">
+<!ENTITY add.label "Add">
+<!ENTITY remove.label "Remove">
+<!ENTITY timestamps.label "Timestamps">
+<!ENTITY synctimestamps.label "Keep timestamps in sync (if enabled on server)">
+<!ENTITY duplicates.label "File Duplicates">
+<!ENTITY timer.label "Disable timer in overwrite dialog">
+<!ENTITY nopromptmode.label "Don&apos;t display overwrite dialog, simply overwrite">
+<!ENTITY credits.label "Credits">
+<!ENTITY thanks.label "Thank You:">
+<!ENTITY allothers.label "All others who submitted bugs and helped">
+<!ENTITY special.label "Special Thanks to all who donate!">

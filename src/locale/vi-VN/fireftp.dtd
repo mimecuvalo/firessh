@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Mở Liên Kết trong FireFTP">
+<!ENTITY viewFireFTP "Xem Trang Này trong FireFTP">
+<!ENTITY accountlist.label "(Chọn một tài khoản)">
+<!ENTITY edit.label "Chỉnh sửa...">
+<!ENTITY abort.label "Bỏ">
+<!ENTITY logtab.label "Lưu kí/Xếp hàng">
+<!ENTITY ltab.label "Lưu kí">
+<!ENTITY qtab.label "Xếp hàng">
+<!ENTITY search.access "T">
+<!ENTITY logbutton.access "X">
+<!ENTITY advanced.label "Công cụ">
+<!ENTITY search.label "Tìm kiếm/Bộ lọc">
+<!ENTITY diff.label "Đồng bộ Thư mục...">
+<!ENTITY recdiff.label "Đồng bộ Thư mục &amp; Thư mục con...">
+<!ENTITY custom.label "Lệnh tùy biến...">
+<!ENTITY import.label "Nhập...">
+<!ENTITY export.label "Xuất...">
+<!ENTITY preferencestab.label "Tùy chọn...">
+<!ENTITY diff.access "m">
+<!ENTITY recdiff.access "o">
+<!ENTITY custom.access "L">
+<!ENTITY import.access "N">
+<!ENTITY export.access "X">
+<!ENTITY prefbutton.access "y">
+<!ENTITY help.label "Trợ giúp">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Chuyển tới thư mục mẹ">
+<!ENTITY refresh.tip "Làm tươi Thư mục">
+<!ENTITY localpath.tip "Đường dẫn Trong máy">
+<!ENTITY remotepath.tip "Đường dẫn Từ xa">
+<!ENTITY browse.label "Duyệt">
+<!ENTITY change.label "Chuyển">
+<!ENTITY name.label "Tên">
+<!ENTITY size.label "Dung lượng">
+<!ENTITY date.label "Ngày">
+<!ENTITY type.label "Kiểu">
+<!ENTITY attr.label "Thuộc tính">
+<!ENTITY source.label "Nguồn">
+<!ENTITY dest.label "Đích">
+<!ENTITY bytes.label "Byte">
+<!ENTITY status.label "Trạng thái">
+<!ENTITY retry.label "Thử lại">
+<!ENTITY cancel.label "Hủy bỏ">
+<!ENTITY cancelAll.label "Hủy bỏ Tất cả">
+<!ENTITY type.tip "Thay đổi phương thức truyền tải (tự động khuyến nghị)">
+<!ENTITY bytes.tip "Byte đã tải / Tổng số byte">
+<!ENTITY timeela.tip "Thời gian Tổng cộng">
+<!ENTITY timerem.tip "Thời gian Còn lại">
+<!ENTITY download.tip "Tốc độ Truyền tải">
+<!ENTITY percent.tip "Tiến trình">
+<!ENTITY openContaining.label "Mở thư mục chứa">
+<!ENTITY upload.label "Tải lên">
+<!ENTITY download.label "Tải xuống">
+<!ENTITY open.label "Mở">
+<!ENTITY openwith.label "Mở bằng">
+<!ENTITY extractHere.label "Giải nén Tại đây">
+<!ENTITY extractTo.label "Giải nén vào Thư mục">
+<!ENTITY viewweb.label "Xem trên Web">
+<!ENTITY copyUrl.label "Chép URL">
+<!ENTITY copyUrlLogin.label "FTP với tài khoản">
+<!ENTITY cut.label "Cắt">
+<!ENTITY copy.label "Chép">
+<!ENTITY paste.label "Dán">
+<!ENTITY makedir.label "Tạo thư mục">
+<!ENTITY makefile.label "Tạo tập tin">
+<!ENTITY delete.label "Xóa">
+<!ENTITY rename.label "Đổi tên">
+<!ENTITY properties.label "Thuộc tính">
+<!ENTITY rproperties.label "Thuộc tính (bao gồm nội dung)">
+<!ENTITY searchButton.label "Tìm kiếm">
+<!ENTITY searchLocal.label "Trong máy">
+<!ENTITY searchRemote.label "Từ xa">
+<!ENTITY searchOptions.label "Tùy chọn">
+<!ENTITY searchFrom.label "Từ:">
+<!ENTITY searchTo.label "Tới:">
+<!ENTITY searchSubdir.label "Tìm trong thư mục con">
+<!ENTITY searchMatch.label "Phân biệt HOA-thường">
+<!ENTITY searchRegexp.label "Biểu thức Quy tắc">
+<!ENTITY searchDates.label "Chọn ngày">
+<!ENTITY searchSubdir.access "T">
+<!ENTITY searchMatch.access "P">
+<!ENTITY searchRegexp.access "B">
+<!ENTITY searchDates.access "C">
+<!ENTITY edit.access "S">
+<!ENTITY abort.access "B">
+<!ENTITY advanced.access "n">
+<!ENTITY helpbutton.access "r">
+<!ENTITY browsebutton.access "D">
+<!ENTITY changebutton.access "u">
+<!ENTITY searchButton.access "m">
+<!ENTITY searchLocal.access "o">
+<!ENTITY searchRemote.access "a">
+<!ENTITY searchOptions.access "y">
+<!ENTITY mozilla.quote "Và, <html:em>ha</html:em>, từ trong <html:em>bóng tối</html:em> chúng xuất hiện: một nơi trú ẩn của những kẻ tận trung sẵn sàng <html:em>yểm trợ</html:em> cho con quái thú được tái sinh trong mục tiêu <html:em>tái chiếm</html:em> vùng đất của nó.  Cùng nhau, chúng <html:em>mở rộng</html:em> sức mạnh của quái thú và <html:em>phát tán</html:em> tin tốt trên đường nó quay về.  Lần lượt từng tín đồ của <html:em>Mammon</html:em> đã được chuyển đổi và trái tim của họ đều <html:em>cháy đỏ rực</html:em>.">
+<!ENTITY mozilla.from "từ <html:strong>Quyển Sách của Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Tự động">
+<!ENTITY binary.label         "Nhị phân">
+<!ENTITY ascii.label          "ASCII">
+

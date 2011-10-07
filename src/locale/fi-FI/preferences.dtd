@@ -1,0 +1,69 @@
+<!ENTITY title "Asetukset">
+<!ENTITY asciiTitle "ASCII tiedostotyyppi">
+<!ENTITY general.label "Yleiset">
+<!ENTITY messages.label "Viestit">
+<!ENTITY welcome.label "Näytä Tervetuloa -viesti">
+<!ENTITY error.label "Näytä virheilmoitukset">
+<!ENTITY sessions.label "Istunnot">
+<!ENTITY rememberp.label "Muista salasanat">
+<!ENTITY rememberd.label "Muista hakemistolistaukset">
+<!ENTITY fileview.label "Tiedostonäkymä">
+<!ENTITY autorefresh.label "Automaattinen päivitys">
+<!ENTITY refresh.tip "Päivitä hakemistolistaus, kun etänäkymän on muuttunut(tiedoston lähetys, uudelleennimeäminen jne)">
+<!ENTITY hidden.label "Näytä piilotetut tiedostot">
+<!ENTITY bytesmode.label "Näytä tiedostojen koko tavuina">
+<!ENTITY interface.label "Käyttöliittymä">
+<!ENTITY startup.label "Käynnistä FireFTP:">
+<!ENTITY windowopen.label "Uuteen ikkunaan">
+<!ENTITY tabopen.label "Uuteen välilehteen">
+<!ENTITY integrateftplnk.label "Aseta Firefoxin FTP-linkit avautumaan automaattisesti FireFTP-laajennuksella.">
+<!ENTITY temppasvmode.label "Käytä passiivi tilaa näihin yhteyksiin">
+<!ENTITY ui.label "Asettelu">
+<!ENTITY normal.label "Normaali asetus">
+<!ENTITY local.label "Paikallinen asetus">
+<!ENTITY remote.label "Etäasetus">
+<!ENTITY both.tip "Näytä paikallisille ja etätiedostoille.">
+<!ENTITY local.tip "Näytä vain paikallisille tiedostoille">
+<!ENTITY remote.tip "Näytä vain etätiedostoille">
+<!ENTITY logwindow.label "Loki">
+<!ENTITY logmode.label "Näytä loki pääikkunassa">
+<!ENTITY logerrormode.label "Näytä lokissa vain virheet">
+<!ENTITY debug.label "Näytä vianetsintätiedot">
+<!ENTITY connect.label "Yhteydet">
+<!ENTITY proxy.label "Välimuistipalvelin">
+<!ENTITY none.label "Tyhjä">
+<!ENTITY direct.label "Suora">
+<!ENTITY host.label "Isäntä:">
+<!ENTITY port.label "Portti:">
+<!ENTITY active.label "Aktiivitila">
+<!ENTITY limitPorts.label "Rajoita portit">
+<!ENTITY from.label "Portista:">
+<!ENTITY to.label "Porttiin:">
+<!ENTITY recovery.label "Yhteyden korjaus">
+<!ENTITY network.label "Verkkoyhteyden aikakatkaisu (1-600 sekuntia)">
+<!ENTITY network.tip "Määrittää kuinka kauan odotetaan vastausta palvelimelta">
+<!ENTITY keepalivemode.label "Pidä käyttämätön yhteys aktiivisena">
+<!ENTITY timeout.label "Yhteyden katketessa, yhdistä uudelleen">
+<!ENTITY retryd.label "Yritysten viive ( 1-600 sekuntia)">
+<!ENTITY retryd.tip "Sekuntia uudelleenyhdistämisyritysten välillä">
+<!ENTITY retrya.label "Yritysten määrä">
+<!ENTITY retrya.tip "Yritysten määrä">
+<!ENTITY downup.label "Lataukset/Lähetykset">
+<!ENTITY transfercaption.label "Käytä tiedostojen siirrossa:">
+<!ENTITY automatic.label "Automaattinen asetus">
+<!ENTITY automatic.tip "Valitse automaattisesti binaari ja ASCII asetus">
+<!ENTITY binary.label "Binääri-asetus">
+<!ENTITY ascii.label "ASCII-asetus">
+<!ENTITY asciifiles.label "ASCII tiedostot:">
+<!ENTITY asciifiles.tip "Tiedostopäätteet, jotka tulkitaan ASCII tiedostoiksi">
+<!ENTITY add.label "Lisää">
+<!ENTITY remove.label "Poista">
+<!ENTITY timestamps.label "Aikaleimat">
+<!ENTITY synctimestamps.label "Pidä aikaleimat tahdistettuina">
+<!ENTITY duplicates.label "Tiedostojen kaksoiskappaleet">
+<!ENTITY timer.label "Kytke ajastin pois päältä ylikirjoitusikkunassa">
+<!ENTITY nopromptmode.label "Ylikirjoita aina, älä näytä ylikirjoitusikkunaa,">
+<!ENTITY credits.label "Tiedot">
+<!ENTITY thanks.label "Kiitokset:">
+<!ENTITY allothers.label "Kaikki jotka ovat lähettäneet vikaraportteja ja auttaneet">
+<!ENTITY special.label "Erityiskiitokset kaikille lahjoittaneille!">

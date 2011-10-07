@@ -1,0 +1,37 @@
+<!ENTITY title "Indstillinger">
+<!ENTITY general.label "Generelt">
+<!ENTITY startup.label "Start FireSSH:">
+<!ENTITY windowopen.label "I et nyt vindue">
+<!ENTITY tabopen.label "I et nyt faneblad">
+<!ENTITY groupopen.label "Samlet i et vindue">
+<!ENTITY sessions.label "Sessioner">
+<!ENTITY rememberp.label "Husk adgangskoder">
+<!ENTITY logwindow.label "Log">
+<!ENTITY debug.label "Vis debug-information">
+<!ENTITY interface.label "Brugerflade">
+<!ENTITY appearance.label "Udseende">
+<!ENTITY font.label "Skrifttype">
+<!ENTITY size.label "Størrelse">
+<!ENTITY fg.label "Tekst">
+<!ENTITY bg.label "Baggrund">
+<!ENTITY bell.label "Klokke">
+<!ENTITY audible.label "Hørbar klokke">
+<!ENTITY connect.label "Forbindelser">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Ingen">
+<!ENTITY direct.label "Direkte">
+<!ENTITY host.label "Vært:">
+<!ENTITY port.label "Port:">
+<!ENTITY recovery.label "Oprethold forbindelse">
+<!ENTITY network.label "Timeout for netværk (i sekunder, mellem 1 og 600)">
+<!ENTITY network.tip "Bestemmer hvor længe klienten skal vente på svar fra serveren">
+<!ENTITY keepalivemode.label "Oprethold forbindelse selv om du ikke er aktiv">
+<!ENTITY timeout.label "Forsøg at genoprette forbindelsen hvis den afbrydes">
+<!ENTITY retryd.label "Udsættelse efter afbrydelse (i sekunder mellem 1 og 600)">
+<!ENTITY retryd.tip "Antal sekunder imellem hvert forbindelsesforsøg">
+<!ENTITY retrya.label "Antal forsøg">
+<!ENTITY retrya.tip "Antal forbindelsesforsøg">
+<!ENTITY credits.label "Tak til">
+<!ENTITY thanks.label "Tak til:">
+<!ENTITY allothers.label "Alle andre der indrapporterede fejl og hjalp">
+<!ENTITY special.label "En speciel tak til alle der donerer!">

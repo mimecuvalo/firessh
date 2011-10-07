@@ -1,0 +1,65 @@
+<!ENTITY title "Hesap Yöneticisi">
+<!ENTITY main "Temel">
+<!ENTITY connections "Bağlantı">
+<!ENTITY advanced "Gelişmiş">
+<!ENTITY maindetails "Ana Ayrıntılar">
+<!ENTITY id "Kimlik">
+<!ENTITY account.label "Hesap İsmi:">
+<!ENTITY account.tip "Örnek: Benim FTP Sitem">
+<!ENTITY folder.label "Kategori:">
+<!ENTITY host.label "Host:">
+<!ENTITY host.tip "Örnek: ftp.debian.org">
+<!ENTITY login.label "Kullanıcı:">
+<!ENTITY password.label "Parola:">
+<!ENTITY anonymous.label "Anonim">
+<!ENTITY connection "Bağlantı Türü">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Pasif Kip">
+<!ENTITY security.label "Güvenlik:">
+<!ENTITY none.label "Yok">
+<!ENTITY authtls.label "TLS Yetkilendir (En İyisi)">
+<!ENTITY authssl.label "SSL Yetkilendir (Daha iyi)">
+<!ENTITY implicit.label "Üstü Kapalı SSL (İyi)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Kişisel Anahtar:">
+<!ENTITY pkbrowse.label "Gözat...">
+<!ENTITY pkconvert.label "Dönüştür...">
+<!ENTITY initialdir "Başlangıç Dizinleri">
+<!ENTITY download "İndirme Ayarları">
+<!ENTITY upload "Karşıya Yükleme Ayarları">
+<!ENTITY localdir.label "Yerel:">
+<!ENTITY remotedir.label "Uzak:">
+<!ENTITY current.label "Şu Ankini Kullan">
+<!ENTITY treesync.label "Gezinirken dizinleri senkronize tut">
+<!ENTITY webhost "Web host(&apos;Web&apos;de görüntüle&apos; özelliğiyle kullanılır)">
+<!ENTITY webhost.tip "Örnek: http://www.example.com">
+<!ENTITY prefix.label "Önek:">
+<!ENTITY prefix.tip "URL&apos;nin FTP kısmından çıkarılacak önek, örn. /public_html">
+<!ENTITY caseleave.label "Büyük-küçük harfi olduğu gibi bırak">
+<!ENTITY caselower.label "Küçük harfe dönüştür">
+<!ENTITY caseupper.label "Büyük harfe dönüştür">
+<!ENTITY timezone.label "Zaman Dilimi Farkı">
+<!ENTITY hours.label "Saat:">
+<!ENTITY minutes.label "Dakika:">
+<!ENTITY notes.label "Notlar">
+<!ENTITY encoding.label "Sunucu Kodlaması">
+<!ENTITY charset.label "Karakter Kümesi:">
+<!ENTITY account.access "H">
+<!ENTITY folder.access "k">
+<!ENTITY host.access "H">
+<!ENTITY login.access "K">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "a">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "G">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "G">
+<!ENTITY pkconvert.access "D">
+<!ENTITY localdir.access "y">
+<!ENTITY remotedir.access "u">
+<!ENTITY currentl.access "l">
+<!ENTITY currentr.access "a">
+<!ENTITY treesync.access "e">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "ö">

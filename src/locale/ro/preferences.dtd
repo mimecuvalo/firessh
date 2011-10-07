@@ -1,0 +1,72 @@
+<!ENTITY title "Preferințe">
+<!ENTITY asciiTitle "Fișiere ASCII">
+<!ENTITY general.label "Generale">
+<!ENTITY messages.label "Mesaje">
+<!ENTITY welcome.label "Arată mesajul de întâmpinare">
+<!ENTITY error.label "Arată mesajele de eroare">
+<!ENTITY sessions.label "Sesiuni">
+<!ENTITY rememberp.label "Reține parolele">
+<!ENTITY rememberd.label "Reține listele directoarelor">
+<!ENTITY fileview.label "Vedere fișiere">
+<!ENTITY autorefresh.label "Auto-relistare">
+<!ENTITY refresh.tip "Relistează directorul după ce conținutul ftp se modifică (prin încărcare, redenumire etc.)">
+<!ENTITY hidden.label "Arată fișierele ascunse">
+<!ENTITY bytesmode.label "Afișează marimea fișierelor în octeți">
+<!ENTITY interface.label "Interfață">
+<!ENTITY startup.label "Pornește FireFTP:">
+<!ENTITY windowopen.label "în fereastră nouă">
+<!ENTITY tabopen.label "în tab nou">
+<!ENTITY integrateftplnk.label "FireFTP va deschide automat legăturile ftp din Firefox">
+<!ENTITY temppasvmode.label "Folosește modul pasiv pentru aceste conexiuni">
+<!ENTITY open.label "Double-clicking/pressing enter:">
+<!ENTITY download.label "transfers a file">
+<!ENTITY exec.label "opens a file">
+<!ENTITY both.tip "Arată și fișierele locale și cele ftp">
+<!ENTITY local.tip "Arată doar fișierele locale">
+<!ENTITY remote.tip "Arată doar fișierele ftp">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Arată log-ul în fereastra principală">
+<!ENTITY logerrormode.label "Arată doar erorile din log">
+<!ENTITY debug.label "Arată informații pentru depanare">
+<!ENTITY connect.label "Conexiuni">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Niciunul">
+<!ENTITY direct.label "Direct">
+<!ENTITY host.label "Ftp:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Mod activ">
+<!ENTITY limitPorts.label "Limitare porturi">
+<!ENTITY from.label "De la:">
+<!ENTITY to.label "La:">
+<!ENTITY concurrent.label "Concurrent Transfers">
+<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY recovery.label "Recuperare conexiune">
+<!ENTITY network.label "Pauză rețea (între 1 și 600 secunde)">
+<!ENTITY network.tip "Controlează timpul de așteptare pentru un răspuns de la server">
+<!ENTITY keepalivemode.label "Menține conexiunile deschise chiar dacă ești inactiv">
+<!ENTITY timeout.label "Încearcă reconectarea în cazul deconectării">
+<!ENTITY retryd.label "Reîncearcă peste (între 1 și 600 secunde)">
+<!ENTITY retryd.tip "Numărul de secunde de așteptare între două încercări de conectare">
+<!ENTITY retrya.label "Reîncercări">
+<!ENTITY retrya.tip "Numărul de încercări de făcut">
+<!ENTITY downup.label "Descărcări/Încărcări">
+<!ENTITY transfercaption.label "Transferul fișierelor se face:">
+<!ENTITY automatic.label "În mod automat">
+<!ENTITY automatic.tip "Prin alegere automată între modurile &quot;Binar&quot; și &quot;ASCII&quot;">
+<!ENTITY binary.label "Binar">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY asciifiles.label "Fișiere ASCII:">
+<!ENTITY asciifiles.tip "Lista extensiilor care ar trebui recunoscute ca fișiere ASCII">
+<!ENTITY add.label "Adaugă">
+<!ENTITY remove.label "Șterge">
+<!ENTITY extras.label "Extras (if enabled on server)">
+<!ENTITY usecompression.label "Use compression">
+<!ENTITY synctimestamps.label "Sincronizează orele (dacă serverul permite)">
+<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY duplicates.label "Dubluri">
+<!ENTITY timer.label "Anulează cronometrul în dialogul de suprascriere">
+<!ENTITY nopromptmode.label "Suprascrie fără confirmare">
+<!ENTITY credits.label "Credit">
+<!ENTITY thanks.label "Mulțumiri:">
+<!ENTITY allothers.label "Tuturor celor care au ajutat și au semnalat defecțiuni">
+<!ENTITY special.label "Mulțumiri speciale tuturor celor care au donat!">

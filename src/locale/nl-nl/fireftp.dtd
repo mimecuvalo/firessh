@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Verwijzing in FireFTP openen">
+<!ENTITY viewFireFTP "Deze pagina in FireFTP bekijken">
+<!ENTITY accounts.label "Accounts beheren">
+<!ENTITY accountlist.label "(Een account kiezen)">
+<!ENTITY new.label "Nieuw...">
+<!ENTITY edit.label "Bewerken...">
+<!ENTITY save.label "Save Temporary Account">
+<!ENTITY quick.label "Snel verbinding maken">
+<!ENTITY import.label "Importeren...">
+<!ENTITY export.label "Exporteren...">
+<!ENTITY new.access "N">
+<!ENTITY edit.access "E">
+<!ENTITY delete.access "D">
+<!ENTITY save.access "S">
+<!ENTITY quick.access "S">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY abort.label "Annuleren">
+<!ENTITY search.label "Zoeken">
+<!ENTITY logtab.label "Log">
+<!ENTITY search.access "Z">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "Geavanceerd">
+<!ENTITY diff.label "Mappen vergelijken">
+<!ENTITY recdiff.label "Mappen &amp; submappen vergelijken">
+<!ENTITY custom.label "Aangepast">
+<!ENTITY preferencestab.label "Voorkeuren">
+<!ENTITY diff.access "v">
+<!ENTITY recdiff.access "M">
+<!ENTITY custom.access "a">
+<!ENTITY prefbutton.access "r">
+<!ENTITY help.label "Help">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Map omhoog">
+<!ENTITY refresh.tip "Map vernieuwen">
+<!ENTITY localpath.tip "Lokaal pad">
+<!ENTITY remotepath.tip "Pad op server">
+<!ENTITY browse.label "Bladeren">
+<!ENTITY change.label "Veranderen">
+<!ENTITY name.label "Naam">
+<!ENTITY size.label "Grootte">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Type">
+<!ENTITY attr.label "Attributen">
+<!ENTITY type.tip "Transfermethode veranderen (auto aangeraden)">
+<!ENTITY bytes.tip "Gedownloade bytes / Totaal aantal bytes">
+<!ENTITY timeela.tip "Verstreken tijd">
+<!ENTITY timerem.tip "Resterende tijd">
+<!ENTITY download.tip "Downloadsnelheid">
+<!ENTITY percent.tip "Percentage voltooid">
+<!ENTITY openContaining.label "Bovenliggende map openen">
+<!ENTITY upload.label "Uploaden">
+<!ENTITY download.label "Downloaden">
+<!ENTITY open.label "Openen">
+<!ENTITY openwith.label "Openen met">
+<!ENTITY extractHere.label "Hier uitpakken">
+<!ENTITY extractTo.label "Uitpakken naar map">
+<!ENTITY viewweb.label "Online bekijken">
+<!ENTITY copyUrl.label "URL kopieren">
+<!ENTITY copyUrlLogin.label "FTP met login">
+<!ENTITY cut.label "Knippen">
+<!ENTITY copy.label "Kopiëren">
+<!ENTITY paste.label "Plakken">
+<!ENTITY makedir.label "Map aanmaken">
+<!ENTITY makefile.label "Bestand aanmaken">
+<!ENTITY delete.label "Verwijderen">
+<!ENTITY rename.label "Hernoemen">
+<!ENTITY properties.label "Eigenschappen">
+<!ENTITY rproperties.label "Recursieve eigenschappen">
+<!ENTITY searchButton.label "Zoeken">
+<!ENTITY searchLocal.label "Lokaal">
+<!ENTITY searchRemote.label "Op server">
+<!ENTITY searchSubdir.label "Ook in submappen">
+<!ENTITY searchMatch.label "Hoofdlettergevoelig">
+<!ENTITY searchRegexp.label "Reguliere expressie">
+<!ENTITY accounts.access "b">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "v">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "e">
+<!ENTITY searchButton.access "Z">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "S">
+<!ENTITY searchSubdir.access "O">
+<!ENTITY searchMatch.access "H">
+<!ENTITY searchRegexp.access "R">
+<!ENTITY mozilla.quote "And, <html:em style=';font-size:1.3em;line-height:0;';>lo</html:em>, from the <html:em style=';font-size:1.3em;line-height:0;';>darkness</html:em> they emerged: a host of the faithful to <html:em style=';font-size:1.3em;line-height:0;';>aide</html:em> the reborn beast in its quest to <html:em style=';font-size:1.3em;line-height:0;';>reclaim</html:em> the land.  Together they <html:em style=';font-size:1.3em;line-height:0;';>extended</html:em> the power of the beast and <html:em style=';font-size:1.3em;line-height:0;';>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';font-size:1.3em;line-height:0;';>Mammon</html:em> were converted and their hearts were set <html:em style=';font-size:1.3em;line-height:0;';>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Binary">
+<!ENTITY ascii.label          "ASCII">
+

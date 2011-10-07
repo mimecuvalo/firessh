@@ -1,0 +1,69 @@
+<!ENTITY title "העדפות">
+<!ENTITY asciiTitle "סוגי קובץ ASCII">
+<!ENTITY general.label "כללי">
+<!ENTITY messages.label "הודעות">
+<!ENTITY welcome.label "הצג הודעת פתיחה">
+<!ENTITY error.label "הצג הודעות שגיאה">
+<!ENTITY sessions.label "התקשרויות">
+<!ENTITY rememberp.label "זכור סיסמאות">
+<!ENTITY rememberd.label "זכור רישומי תיקיות">
+<!ENTITY fileview.label "הצגת קובץ">
+<!ENTITY autorefresh.label "ריענון אוטומטי">
+<!ENTITY refresh.tip "לאחר שהתצוגה המרוחקת השתנתה (על ידי העלאה, שינוי שם וכו&apos;), רענן את רישום התיקיה">
+<!ENTITY hidden.label "הצג קבצים מוסתרים">
+<!ENTITY bytesmode.label "הצג את מספר הבתים עבור גדלי הקבצים">
+<!ENTITY interface.label "ממשק">
+<!ENTITY startup.label "הפעל את FireFTP:">
+<!ENTITY windowopen.label "בחלון חדש">
+<!ENTITY tabopen.label "בלשונית חדשה">
+<!ENTITY integrateftplnk.label "הגדר קישורי FTP בפיירפוקס כך שיעשה שימוש אוטומטי ב-FireFTP">
+<!ENTITY temppasvmode.label "השתמש במצב פאסיבי עבור חיבורים אלה">
+<!ENTITY ui.label "יישור">
+<!ENTITY normal.label "מצב רגיל">
+<!ENTITY local.label "מצב מקומי">
+<!ENTITY remote.label "מצב מרוחק">
+<!ENTITY both.tip "מציג את הקבצים המקומיים והמרוחקים">
+<!ENTITY local.tip "מציג קבצים מקומיים בלבד">
+<!ENTITY remote.tip "מציג רק קבצים מרוחקים">
+<!ENTITY logwindow.label "דוח">
+<!ENTITY logmode.label "הצג את הדוח בחלון הראשי">
+<!ENTITY logerrormode.label "הצג רק שגיאות בדוח">
+<!ENTITY debug.label "הצג מידע תיקון שגיאות">
+<!ENTITY connect.label "חיבורים">
+<!ENTITY proxy.label "פרוקסי">
+<!ENTITY none.label "ללא">
+<!ENTITY direct.label "ישיר">
+<!ENTITY host.label "מארח:">
+<!ENTITY port.label "פורט:">
+<!ENTITY active.label "מצב פעיל">
+<!ENTITY limitPorts.label "הגבל פורטים">
+<!ENTITY from.label "מאת:">
+<!ENTITY to.label "אל:">
+<!ENTITY recovery.label "שיחזור החיבור">
+<!ENTITY network.label "זמן תפוגה של הרשת (במילישניות, בין 1 ל-600)">
+<!ENTITY network.tip "מאפשר שליטה בזמן ההמתנה לתגובה מהשרת">
+<!ENTITY keepalivemode.label "השאר את החיבור חי אפילו אם אינך פעיל">
+<!ENTITY timeout.label "אם נותקת, נסה להתחבר שנית">
+<!ENTITY retryd.label "הפרש נסיונות חוזרים (בשניות, בין 1 ל-600)">
+<!ENTITY retryd.tip "שניות בין נסיונות החיבור החוזרים">
+<!ENTITY retrya.label "נסיונות חוזרים">
+<!ENTITY retrya.tip "מספר נסיונות לביצוע">
+<!ENTITY downup.label "הורדות/העלאות">
+<!ENTITY transfercaption.label "כאשר מועברים קבצים השתמש ב:">
+<!ENTITY automatic.label "מצב אוטומטי">
+<!ENTITY automatic.tip "בחר אוטומטית בין המצבים &apos;בינארי&apos; ו-&apos;ASCII&apos;">
+<!ENTITY binary.label "מצב בינארי">
+<!ENTITY ascii.label "מצב ASCII">
+<!ENTITY asciifiles.label "קבצי ASCII:">
+<!ENTITY asciifiles.tip "רשימת סיומות הקבצים שיזוהו בתור קבצי ASCII">
+<!ENTITY add.label "הוסף">
+<!ENTITY remove.label "הסר">
+<!ENTITY timestamps.label "תוויות זמן">
+<!ENTITY synctimestamps.label "השאר את תוויות הזמן מעודכנות (אם אפשרי מצד השרת)">
+<!ENTITY duplicates.label "כפילויות קובץ">
+<!ENTITY timer.label "בטל את המתזמן בתיבת דו-שיח השכתוב">
+<!ENTITY nopromptmode.label "אל תציג תיבת דו-שיח שכתוב, פשוט שכתב">
+<!ENTITY credits.label "תודות">
+<!ENTITY thanks.label "תודה לך:">
+<!ENTITY allothers.label "כל האחרים ששלחו שגיאות ועזרו">
+<!ENTITY special.label "תודות מיוחדות לכל התורמים!">

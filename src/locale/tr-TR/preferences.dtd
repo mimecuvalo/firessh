@@ -1,0 +1,72 @@
+<!ENTITY title "Seçenekler">
+<!ENTITY asciiTitle "ASCII Dosya Türleri">
+<!ENTITY general.label "Genel">
+<!ENTITY messages.label "İletiler">
+<!ENTITY welcome.label "Karşılama iletisi göster">
+<!ENTITY error.label "Hata iletilerini göster">
+<!ENTITY sessions.label "Oturumlar">
+<!ENTITY rememberp.label "Parolaları anımsa">
+<!ENTITY rememberd.label "Dizin listelerini önbellekle">
+<!ENTITY fileview.label "Dosya Görünümü">
+<!ENTITY autorefresh.label "Oto-yenile">
+<!ENTITY refresh.tip "Uzak görünüm değiştiğinde (aktarım esnasında), dizini yenile">
+<!ENTITY hidden.label "Gizli dosyaları göster">
+<!ENTITY bytesmode.label "Dosya boyutları için bayt sayısını göster">
+<!ENTITY interface.label "Arayüz">
+<!ENTITY startup.label "FireFTP&apos;yi şöyle başlat:">
+<!ENTITY windowopen.label "yeni pencerede">
+<!ENTITY tabopen.label "yeni sekmede">
+<!ENTITY integrateftplnk.label "Firofox&apos;taki FTP linklerini FireFTP&apos;de otomatik açılacak şekilde yapılandır">
+<!ENTITY temppasvmode.label "Bu bağlantılar için Pasif Kip kullan">
+<!ENTITY open.label "Çift tıklama/enter&apos;a basma:">
+<!ENTITY download.label "dosyayı aktarır">
+<!ENTITY exec.label "dosyayı açar">
+<!ENTITY both.tip "Hem yereldeki hem uzaktaki dosyaları gösterir">
+<!ENTITY local.tip "Yalnız yerel dosyaları gösterir">
+<!ENTITY remote.tip "Yalnız uzak dosyaları gösterir">
+<!ENTITY logwindow.label "Günlük">
+<!ENTITY logmode.label "Ana pencerede günlük göster">
+<!ENTITY logerrormode.label "Günlükte yalnız hataları göster">
+<!ENTITY debug.label "Hata ayıklama bilgilerini göster">
+<!ENTITY connect.label "Bağlantılar">
+<!ENTITY proxy.label "Vekil Sunucu">
+<!ENTITY none.label "Yok">
+<!ENTITY direct.label "Doğrudan">
+<!ENTITY host.label "Host">
+<!ENTITY port.label "Port">
+<!ENTITY active.label "Aktif Kip">
+<!ENTITY limitPorts.label "Portları sınırlandır">
+<!ENTITY from.label "Buradan:">
+<!ENTITY to.label "Buraya:">
+<!ENTITY concurrent.label "Eşzamanlı Aktarımlar">
+<!ENTITY simtransfers.label "Maks. eşzamanlı aktarım (1-10)">
+<!ENTITY recovery.label "Bağlantı Kurtarma">
+<!ENTITY network.label "Network zaman aşımı (saniye olarak, 1 ile 600 arası)">
+<!ENTITY network.tip "Sunucudan gelecek yanıtı bekleme süresini denetler">
+<!ENTITY keepalivemode.label "Boştayken bağlantıyı ayakta tutmaya çalış">
+<!ENTITY timeout.label "Bağlantı koparsa yeniden bağlanmaya çalış">
+<!ENTITY retryd.label "Yeniden deneme gecikmesi (saniye olarak, 1-600 arası)">
+<!ENTITY retryd.tip "Yeniden bağlanma girişimleri arasındaki saniye">
+<!ENTITY retrya.label "Yeniden deneme girişimi">
+<!ENTITY retrya.tip "Yapılacak deneme sayısı">
+<!ENTITY downup.label "İndirme/Karşıya Yükleme">
+<!ENTITY transfercaption.label "Dosyalar aktarılırken">
+<!ENTITY automatic.label "Otomatik Kip&apos;i kullan">
+<!ENTITY automatic.tip "&apos;İkilik&apos; ve &apos;ASCII&apos; kiplerinden birini otomatik seç">
+<!ENTITY binary.label "İkilik Kip&apos;i kullan">
+<!ENTITY ascii.label "ASCII Kip">
+<!ENTITY asciifiles.label "ASCII dosyaları:">
+<!ENTITY asciifiles.tip "ASCII dosyası olarak tanınacak olan dosya uzantılarının listesi">
+<!ENTITY add.label "Ekle">
+<!ENTITY remove.label "Kaldır">
+<!ENTITY extras.label "Ekler (eğer sunucuda olanaklıysa)">
+<!ENTITY usecompression.label "Sıkıştırma kullan">
+<!ENTITY synctimestamps.label "Zaman damgalarını senkronize tut">
+<!ENTITY integritymode.label "Dosya transferlerinin bütünlüğünü (XMD5, XSHA1) denetle">
+<!ENTITY duplicates.label "Dosya Suretleri">
+<!ENTITY timer.label "Üstüne yazma penceresindeki zamanlayıcıyı etkisizleştir">
+<!ENTITY nopromptmode.label "Üzerine yazma penceresini gösterme, doğrudan üzerine yaz">
+<!ENTITY credits.label "Künye">
+<!ENTITY thanks.label "Teşekkürlerimizle:">
+<!ENTITY allothers.label "Hata bildirimi ve yardımda bulunan diğer herkes">
+<!ENTITY special.label "Bağışta bulununlara Özel Teşekürler!">

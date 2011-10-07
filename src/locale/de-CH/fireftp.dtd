@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Link in FireFTP öffnen">
+<!ENTITY viewFireFTP "Öffnet diese Seite in FireFTP">
+<!ENTITY accountlist.label "(Profil auswählen)">
+<!ENTITY edit.label "Bearbeiten...">
+<!ENTITY abort.label "Abbrechen">
+<!ENTITY logtab.label "Log">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Schlaufe">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Werkzeuge">
+<!ENTITY search.label "Suchen">
+<!ENTITY diff.label "Ordner synchronisieren">
+<!ENTITY recdiff.label "Ordner und Unterordner synchronisieren">
+<!ENTITY custom.label "Eigenes Kommando...">
+<!ENTITY import.label "Importieren...">
+<!ENTITY export.label "Exportieren...">
+<!ENTITY preferencestab.label "Optionen...">
+<!ENTITY diff.access "S">
+<!ENTITY recdiff.access "u">
+<!ENTITY custom.access "E">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Hilfe">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Zum Homeverzeichnis wechseln">
+<!ENTITY refresh.tip "Ordner neu laden">
+<!ENTITY localpath.tip "Lokaler Pfad">
+<!ENTITY remotepath.tip "Server Pfad">
+<!ENTITY browse.label "Durchsuchen">
+<!ENTITY change.label "Ändern">
+<!ENTITY name.label "Name">
+<!ENTITY size.label "Grösse">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Typ">
+<!ENTITY attr.label "Attribute">
+<!ENTITY source.label "Quelle">
+<!ENTITY dest.label "Ziel">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "neu versuchen">
+<!ENTITY cancel.label "Abbrechen">
+<!ENTITY cancelAll.label "Alle abbrechen">
+<!ENTITY type.tip "Methode zur Übertragung ändern (auto empfohlen)">
+<!ENTITY bytes.tip "Bytes Heruntergeladen / Total Bytes">
+<!ENTITY timeela.tip "Zeit vergangen">
+<!ENTITY timerem.tip "Zeit verbleibend">
+<!ENTITY download.tip "Übertragunsgeschwindigkeit">
+<!ENTITY percent.tip "Prozent beendet">
+<!ENTITY openContaining.label "Beinhaltenden Ordner öffnen">
+<!ENTITY upload.label "Hochladen">
+<!ENTITY download.label "Herunterladen">
+<!ENTITY open.label "Öffnen">
+<!ENTITY openwith.label "Öffnen mit">
+<!ENTITY extractHere.label "Hier entpacken">
+<!ENTITY extractTo.label "In Ordner entpacken">
+<!ENTITY viewweb.label "Zeige im Web">
+<!ENTITY copyUrl.label "URL kopieren">
+<!ENTITY copyUrlLogin.label "FTP mit Login">
+<!ENTITY cut.label "Ausschneiden">
+<!ENTITY copy.label "Kopieren">
+<!ENTITY paste.label "Einfügen">
+<!ENTITY makedir.label "Neuer Ordner">
+<!ENTITY makefile.label "Neue Datei">
+<!ENTITY delete.label "Löschen">
+<!ENTITY rename.label "Umbenennen">
+<!ENTITY properties.label "Eigenschaften">
+<!ENTITY rproperties.label "Eigenschaften (mit Inhalt)">
+<!ENTITY searchButton.label "Suchen">
+<!ENTITY searchLocal.label "Lokal">
+<!ENTITY searchRemote.label "Server">
+<!ENTITY searchOptions.label "Optionen">
+<!ENTITY searchFrom.label "Von:">
+<!ENTITY searchTo.label "Nach:">
+<!ENTITY searchSubdir.label "Unterordner durchsuchen">
+<!ENTITY searchMatch.label "Übereinstimmung">
+<!ENTITY searchRegexp.label "Normaler Ausdruck">
+<!ENTITY searchDates.label "Datum">
+<!ENTITY searchSubdir.access "U">
+<!ENTITY searchMatch.access "Ü">
+<!ENTITY searchRegexp.access "N">
+<!ENTITY searchDates.access "D">
+<!ENTITY edit.access "B">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "E">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "D">
+<!ENTITY changebutton.access "Ä">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "e">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land. Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return. One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Binär">
+<!ENTITY ascii.label          "ASCII">
+

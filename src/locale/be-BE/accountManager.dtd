@@ -1,0 +1,50 @@
+﻿<!ENTITY title "Мэнэджэр  запісу">
+<!ENTITY main "Агульныя">
+<!ENTITY connections "Злучэнне">
+<!ENTITY advanced "Дадаткова">
+<!ENTITY maindetails "Асноўная інфармацыя">
+<!ENTITY id "Уліковыя дадзеныя">
+<!ENTITY account.label "Імя  запісу:">
+<!ENTITY account.tip "Прыклад: My FTP Site">
+<!ENTITY host.label "Сервер:">
+<!ENTITY host.tip "Прыклад: ftp.debian.org">
+<!ENTITY login.label "Імя:">
+<!ENTITY password.label "Пароль:">
+<!ENTITY anonymous.label "Ананімна">
+<!ENTITY connection "Тып злучэння">
+<!ENTITY port.label "Порт:">
+<!ENTITY pasv.label "Пасіўны рэжым">
+<!ENTITY security.label "Бяспека">
+<!ENTITY none.label "Не">
+<!ENTITY authtls.label "Auth TLS (Best)">
+<!ENTITY authssl.label "Auth SSL (Better)">
+<!ENTITY implicit.label "Implicit SSL (Good)">
+<!ENTITY initialdir "Пачатковая пазіцыя">
+<!ENTITY download "Параметры загрузкі">
+<!ENTITY upload "Параметры перадачы">
+<!ENTITY localdir.label "Лакальна:">
+<!ENTITY remotedir.label "Выдалена:">
+<!ENTITY current.label "Выкарыстаць бягучую">
+<!ENTITY treesync.label "Keep directories in sync">
+<!ENTITY webhost "Web сервер (выкарыстоўваецца з &apos;&apos;Глядзець у Web&apos;&apos;)">
+<!ENTITY webhost.tip "Прыклад: http://www.example.com">
+<!ENTITY prefix.label "Прыстаўка:">
+<!ENTITY prefix.tip "Прыстаўка, для выдалення часткі адрасу FTP, напрыклад /publuc_html">
+<!ENTITY caseleave.label "Захоўваць рэгістр">
+<!ENTITY caselower.label "Ператвараць у ніжні">
+<!ENTITY caseupper.label "Ператвараць у верхні">
+<!ENTITY account.access "І">
+<!ENTITY host.access "З">
+<!ENTITY login.access "м">
+<!ENTITY password.access "П">
+<!ENTITY anonymous.access "А">
+<!ENTITY pasv.access "у">
+<!ENTITY port.access "аб">
+<!ENTITY security.access "Бы">
+<!ENTITY webhost.access "р">
+<!ENTITY prefix.access "п">
+<!ENTITY localdir.access "Л">
+<!ENTITY remotedir.access "У">
+<!ENTITY currentl.access "щ">
+<!ENTITY currentr.access "е">
+<!ENTITY treesync.access "y">

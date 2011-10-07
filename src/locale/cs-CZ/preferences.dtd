@@ -1,0 +1,72 @@
+<!ENTITY title "Nastavení">
+<!ENTITY asciiTitle "ASCII typy souborů">
+<!ENTITY general.label "Základní">
+<!ENTITY messages.label "Zprávy">
+<!ENTITY welcome.label "Zobrazit uvítací zprávu">
+<!ENTITY error.label "Zobrazit chybové hlášení">
+<!ENTITY sessions.label "Sezení">
+<!ENTITY rememberp.label "Pamatovat hesla">
+<!ENTITY rememberd.label "Pamatovat výpis adresáře">
+<!ENTITY fileview.label "Zobrazení souboru">
+<!ENTITY autorefresh.label "Automatické obnovení">
+<!ENTITY refresh.tip "Po změně (odeslání,přejmenování, apod.) obnovit výpis vzdáleného adresáře">
+<!ENTITY hidden.label "Zobrazit skryté soubory">
+<!ENTITY bytesmode.label "Zobrazit velikosti souborů v bajtech">
+<!ENTITY interface.label "Uživatelské rozhraní">
+<!ENTITY startup.label "Spustit FireFTP:">
+<!ENTITY windowopen.label "v novém okně">
+<!ENTITY tabopen.label "v novém panelu">
+<!ENTITY integrateftplnk.label "Nastavit otevírání FTP odkazů ve FireFTP">
+<!ENTITY temppasvmode.label "Použít pro tato spojení pasivní režim">
+<!ENTITY open.label "Dvojklik / klávesa enter:">
+<!ENTITY download.label "přenese soubor">
+<!ENTITY exec.label "otevře soubor">
+<!ENTITY both.tip "Zobrazit vzdálené i lokální soubory">
+<!ENTITY local.tip "Zobrazit pouze lokální soubory">
+<!ENTITY remote.tip "Zobrazit pouze vzdálené soubory">
+<!ENTITY logwindow.label "Záznam">
+<!ENTITY logmode.label "Zobrazit záznam v hlavním okně">
+<!ENTITY logerrormode.label "Zobrazit v záznamu pouze chyby">
+<!ENTITY debug.label "Zobrazit v záznamu ladící informace">
+<!ENTITY connect.label "Spojení">
+<!ENTITY proxy.label "Nastavení proxy">
+<!ENTITY none.label "Není">
+<!ENTITY direct.label "Přímý">
+<!ENTITY host.label "Server:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Aktivní mód">
+<!ENTITY limitPorts.label "Omezení portů">
+<!ENTITY from.label "Od:">
+<!ENTITY to.label "Do:">
+<!ENTITY concurrent.label "Současné přenosy">
+<!ENTITY simtransfers.label "Maximální počet přenosů (1-10)">
+<!ENTITY recovery.label "Obnovení spojení">
+<!ENTITY network.label "Síťový timeout (v sekundách, 1-600)">
+<!ENTITY network.tip "Doba čekání na odezvu serveru">
+<!ENTITY keepalivemode.label "Udržovat spojení i při nečinnosti">
+<!ENTITY timeout.label "Při přerušení znovu připojit">
+<!ENTITY retryd.label "Zpoždění opakování (v sekundách, 1-600)">
+<!ENTITY retryd.tip "Čas na další pokus (v sekundách)">
+<!ENTITY retrya.label "Počet pokusů o opakování">
+<!ENTITY retrya.tip "Počet opakování">
+<!ENTITY downup.label "Download/Upload">
+<!ENTITY transfercaption.label "Pro přenos souborů použít:">
+<!ENTITY automatic.label "Automatický mód">
+<!ENTITY automatic.tip "Automaticky rozhodne mezi &apos;Binarním&apos; a &apos;ASCII&apos; módem">
+<!ENTITY binary.label "Binarní mód">
+<!ENTITY ascii.label "ASCII mód">
+<!ENTITY asciifiles.label "ASCII soubory:">
+<!ENTITY asciifiles.tip "Soubory s touto příponou budou považovány za ASCII soubory">
+<!ENTITY add.label "Přidat">
+<!ENTITY remove.label "Odebrat">
+<!ENTITY extras.label "Rozšíření (pokud podporuje server)">
+<!ENTITY usecompression.label "Použít kompresi">
+<!ENTITY synctimestamps.label "Udržovat časy synchronní">
+<!ENTITY integritymode.label "Kontrolovat integritu přenosů (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Duplicitní soubory">
+<!ENTITY timer.label "Vypnout odpočet v dialogu o přepsání">
+<!ENTITY nopromptmode.label "Nezobrazovat dialog, rovnou přepsat">
+<!ENTITY credits.label "Kredity">
+<!ENTITY thanks.label "Poděkování:">
+<!ENTITY allothers.label "Všem ostatním, kteří nahlásili chyby a pomáhali">
+<!ENTITY special.label "Speciální dík všem, kteří poskytli dar!">

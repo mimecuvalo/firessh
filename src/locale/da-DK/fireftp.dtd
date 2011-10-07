@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Åbn link i FireFTP">
+<!ENTITY viewFireFTP "Se denne side i FireFTP">
+<!ENTITY accountlist.label "(Vælg en konto)">
+<!ENTITY edit.label "Rediger">
+<!ENTITY abort.label "Afbryd">
+<!ENTITY logtab.label "Log/Kø">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Kø">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "o">
+<!ENTITY advanced.label "Avanceret">
+<!ENTITY search.label "Søg">
+<!ENTITY diff.label "Sammenlign mapper">
+<!ENTITY recdiff.label "Sammenlign mapper &amp; undermapper...">
+<!ENTITY custom.label "Tilpas kommando...">
+<!ENTITY import.label "Importer...">
+<!ENTITY export.label "Eksporter...">
+<!ENTITY preferencestab.label "Indstillinger...">
+<!ENTITY diff.access "m">
+<!ENTITY recdiff.access "u">
+<!ENTITY custom.access "p">
+<!ENTITY import.access "I">
+<!ENTITY export.access "E">
+<!ENTITY prefbutton.access "I">
+<!ENTITY help.label "Hjælp">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Et niveau op">
+<!ENTITY refresh.tip "Genindlæs mappe">
+<!ENTITY localpath.tip "Lokal sti">
+<!ENTITY remotepath.tip "Sti på vært">
+<!ENTITY browse.label "Gennemse">
+<!ENTITY change.label "Gå til">
+<!ENTITY name.label "Navn">
+<!ENTITY size.label "Størrelse">
+<!ENTITY date.label "Dato">
+<!ENTITY type.label "Type">
+<!ENTITY attr.label "Attributter">
+<!ENTITY source.label "Kilde">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Prøv igen">
+<!ENTITY cancel.label "Annuller">
+<!ENTITY cancelAll.label "Annuller alle">
+<!ENTITY type.tip "Skift overførselsmetode (auto anbefales)">
+<!ENTITY bytes.tip "Bytes downloadet / Totalt antal Bytes">
+<!ENTITY timeela.tip "Tid forløbet">
+<!ENTITY timerem.tip "Tid tilbage">
+<!ENTITY download.tip "Download-hastighed">
+<!ENTITY percent.tip "Procent færdig">
+<!ENTITY openContaining.label "Åbn indeholdende mappe">
+<!ENTITY upload.label "Upload">
+<!ENTITY download.label "Download">
+<!ENTITY open.label "Åbn">
+<!ENTITY openwith.label "Åbn med">
+<!ENTITY extractHere.label "Udpak her">
+<!ENTITY extractTo.label "Udpak til mappe">
+<!ENTITY viewweb.label "Se på nettet">
+<!ENTITY copyUrl.label "Kopier URL">
+<!ENTITY copyUrlLogin.label "FTP med login">
+<!ENTITY cut.label "Klip">
+<!ENTITY copy.label "Kopier">
+<!ENTITY paste.label "Sæt ind">
+<!ENTITY makedir.label "Opret mappe">
+<!ENTITY makefile.label "Opret fil">
+<!ENTITY delete.label "Slet">
+<!ENTITY rename.label "Omdøb">
+<!ENTITY properties.label "Egenskaber">
+<!ENTITY rproperties.label "Rekursive egenskaber">
+<!ENTITY searchButton.label "Søg">
+<!ENTITY searchLocal.label "Lokal">
+<!ENTITY searchRemote.label "Vært">
+<!ENTITY searchOptions.label "Indstillinger">
+<!ENTITY searchFrom.label "Fra:">
+<!ENTITY searchTo.label "Til:">
+<!ENTITY searchSubdir.label "Se i undermapper">
+<!ENTITY searchMatch.label "Forskel på store og små bogstaver">
+<!ENTITY searchRegexp.label "Regulært udtryk">
+<!ENTITY searchDates.label "Angiv datoer">
+<!ENTITY searchSubdir.access "U">
+<!ENTITY searchMatch.access "b">
+<!ENTITY searchRegexp.access "R">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "R">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "c">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "G">
+<!ENTITY changebutton.access "å">
+<!ENTITY searchButton.access "ø">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "V">
+<!ENTITY searchOptions.access "i">
+<!ENTITY mozilla.quote "Og  <html:em>se</html:em>, fra <html:em>mørket</html:em> opstod de: en skare af de trofaste for at <html:em>bistå</html:em> det genfødte udyr i dets søgen efter at <html:em>indvinde</html:em> landet. Sammen <html:em>udvidede</html:em> de udyrets magt og <html:em>spredte</html:em> den gode nyhed om dets genkomst. En efter en blev tilhængerne af <html:em>Mammon</html:em> omvendte og deres hjerter blev <html:em>tændte</html:em>.">
+<!ENTITY mozilla.from "fra <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Binær">
+<!ENTITY ascii.label          "ASCII">
+

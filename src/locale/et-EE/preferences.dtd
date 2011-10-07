@@ -1,0 +1,69 @@
+<!ENTITY title "Eelistused">
+<!ENTITY asciiTitle "ASCII failitüübid">
+<!ENTITY general.label "Tavaline">
+<!ENTITY messages.label "Sõnumid">
+<!ENTITY welcome.label "Näita Tervitussõnumit">
+<!ENTITY error.label "Näita Veateateid">
+<!ENTITY sessions.label "Sessioonid">
+<!ENTITY rememberp.label "Jäta Salasõnad Meelde">
+<!ENTITY rememberd.label "Jäta Kaustade Nimekirjad Meelde">
+<!ENTITY fileview.label "Faili Vaade">
+<!ENTITY autorefresh.label "Automaatne Värskendus">
+<!ENTITY refresh.tip "Pärast seda, kui kauge vaade on muutunud (üles laadides, nime muutes jne) uuenda kausta nimekirja">
+<!ENTITY hidden.label "Näita Peidus Olevaid Faile">
+<!ENTITY bytesmode.label "Näita faili suurust baitides">
+<!ENTITY interface.label "Kasutajaliides">
+<!ENTITY startup.label "Käivita FireFTP:">
+<!ENTITY windowopen.label "uues aknas">
+<!ENTITY tabopen.label "uues tabis">
+<!ENTITY integrateftplnk.label "Konfigureeri FTP linke Firefoxis et automaatselt kasutada FireFTP-d">
+<!ENTITY temppasvmode.label "Kasuta Passiivset Modi nende ühenduste jaoks">
+<!ENTITY ui.label "Kujundus">
+<!ENTITY normal.label "Normaalne Mod">
+<!ENTITY local.label "Lokaalne Mod">
+<!ENTITY remote.label "Remote Mod">
+<!ENTITY both.tip "Näitab lokaalse ja remote faile">
+<!ENTITY local.tip "Näitab ainult lokaalseid faile">
+<!ENTITY remote.tip "Näitab ainult remote faile">
+<!ENTITY logwindow.label "Logifail">
+<!ENTITY logmode.label "Näita logifaili peaaknas">
+<!ENTITY logerrormode.label "Näitab ainult vigu logifailis">
+<!ENTITY debug.label "Näitab vea kõrvaldamise informatsiooni">
+<!ENTITY connect.label "Ühendused">
+<!ENTITY proxy.label "Proksi">
+<!ENTITY none.label "Pole ühtegi">
+<!ENTITY direct.label "Otsene">
+<!ENTITY host.label "Hostija:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Aktiivne Mod">
+<!ENTITY limitPorts.label "Portide Limiit">
+<!ENTITY from.label "Kust:">
+<!ENTITY to.label "Kuhu:">
+<!ENTITY recovery.label "Ühenduse Taastamine">
+<!ENTITY network.label "Interneti Timeout (sekundites, 1 ja 600 vahepeal)">
+<!ENTITY network.tip "Kontrollib kui kaua oodata serverilt vastust">
+<!ENTITY keepalivemode.label "Hoiab ühenduse elavana isegi kui oled eemal">
+<!ENTITY timeout.label "Kui ühendus kadunud, siis proovi uuesti ühendada">
+<!ENTITY retryd.label "Korduse Viivitus (sekundites, 1 ja 600 vahel)">
+<!ENTITY retryd.tip "Sekundeid uuesti ühendamise üritustes">
+<!ENTITY retrya.label "Korduskatseid">
+<!ENTITY retrya.tip "Korduskatset on tehtud">
+<!ENTITY downup.label "Allalaadimised/Üleslaadimised">
+<!ENTITY transfercaption.label "Kui tõmbad faile, kasuta:">
+<!ENTITY automatic.label "Automaatne Mod">
+<!ENTITY automatic.tip "Automaatselt vali &apos;Binary&apos; ja &apos; ASCII&apos; modi vahel">
+<!ENTITY binary.label "Binaar mod">
+<!ENTITY ascii.label "ASCII mod">
+<!ENTITY asciifiles.label "ASCII failid:">
+<!ENTITY asciifiles.tip "Nimekiri faililaiendustest mis peaks olema teada ASCII failidena">
+<!ENTITY add.label "Lisa">
+<!ENTITY remove.label "Eemalda">
+<!ENTITY timestamps.label "Ajatemplid">
+<!ENTITY synctimestamps.label "Hoia ajatempleid sünkroonis">
+<!ENTITY duplicates.label "Faili Koopiad">
+<!ENTITY timer.label "Pane taimer kinni ülekirjutamise dialoogis">
+<!ENTITY nopromptmode.label "Ära näita ülekirjutamise dialoogi, lihtsalt kirjuta üle">
+<!ENTITY credits.label "Tiitrid">
+<!ENTITY thanks.label "Tänan Teid:">
+<!ENTITY allothers.label "Kõik teised kes saatsid vigade reporte ja kaasa aitasid">
+<!ENTITY special.label "Erilised tänud kõigile kes annetasid!">

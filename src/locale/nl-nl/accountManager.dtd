@@ -1,0 +1,52 @@
+<!ENTITY title "Beheren van accounts">
+<!ENTITY main "Algemeen">
+<!ENTITY connections "Verbinding">
+<!ENTITY advanced "Geavanceerd">
+<!ENTITY maindetails "Algemene instellingen">
+<!ENTITY id "ID">
+<!ENTITY account.label "Naam account:">
+<!ENTITY account.tip "Voorbeeld: Mijn FTP-site">
+<!ENTITY host.label "Server:">
+<!ENTITY host.tip "Voorbeeld: ftp.debian.org">
+<!ENTITY login.label "Gebruikersnaam:">
+<!ENTITY password.label "Wachtwoord:">
+<!ENTITY anonymous.label "Anoniem">
+<!ENTITY connection "Soort verbinding">
+<!ENTITY port.label "Poort:">
+<!ENTITY pasv.label "Passief">
+<!ENTITY security.label "Beveiliging">
+<!ENTITY none.label "Geen">
+<!ENTITY authtls.label "Auth TLS (Beste)">
+<!ENTITY authssl.label "Auth SSL (Beter)">
+<!ENTITY implicit.label "Impliciete SSL (Goed)">
+<!ENTITY initialdir "Begin-directory">
+<!ENTITY download "Instellingen voor downloaden">
+<!ENTITY upload "Instellingen voor uploaden">
+<!ENTITY localdir.label "Lokaal:">
+<!ENTITY remotedir.label "Op server:">
+<!ENTITY current.label "Huidige gebruiken">
+<!ENTITY treesync.label "Mappen gesynchroniseerd houden">
+<!ENTITY webhost "Webserver (gebruikt door de &apos;Online bekijken&apos;-mogelijkheid)">
+<!ENTITY webhost.tip "Example: http://www.example.com">
+<!ENTITY prefix.label "Prefix:">
+<!ENTITY prefix.tip "Prefix to remove of the FTP part of the url, e.g. /public_html">
+<!ENTITY caseleave.label "Zo laten">
+<!ENTITY caselower.label "Omzetten naar kleine letters">
+<!ENTITY caseupper.label "Omzetten naar HOOFDLETTERS">
+<!ENTITY encoding.label "Codering van server">
+<!ENTITY charset.label "Karakterset">
+<!ENTITY account.access "A">
+<!ENTITY host.access "S">
+<!ENTITY login.access "G">
+<!ENTITY password.access "W">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "P">
+<!ENTITY port.access "o">
+<!ENTITY security.access "B">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "e">
+<!ENTITY currentl.access "H">
+<!ENTITY currentr.access "g">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "S">
+<!ENTITY prefix.access "x">

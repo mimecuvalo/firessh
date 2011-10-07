@@ -1,0 +1,52 @@
+<!ENTITY title "Διαχειριστής λογαριασμών">
+<!ENTITY main "Βασικό">
+<!ENTITY connections "Σύνδεση">
+<!ENTITY advanced "Για προχωρημένους">
+<!ENTITY maindetails "Βασικές λεπτομέρειες">
+<!ENTITY id "Αναγνωριστικό">
+<!ENTITY account.label "Όνομα λογαριασμού:">
+<!ENTITY account.tip "Παράδειγμα: Ο FTP ιστότοπος μου">
+<!ENTITY host.label "Κεντρικός υπολογιστής:">
+<!ENTITY host.tip "Παράδειγμα: ftp.debian.org">
+<!ENTITY login.label "Όνομα χρήστη:">
+<!ENTITY password.label "Κωδικός πρόσβασης:">
+<!ENTITY anonymous.label "Ανώνυμη σύνδεση">
+<!ENTITY connection "Τύπος σύνδεσης">
+<!ENTITY port.label "Θύρα">
+<!ENTITY pasv.label "Παθητική κατάσταση λειτουργίας">
+<!ENTITY security.label "Ασφάλεια">
+<!ENTITY none.label "Καμία">
+<!ENTITY authtls.label "Πιστοποίηση TLS (άριστη)">
+<!ENTITY authssl.label "Πιστοποίηση SSL (καλύτερη)">
+<!ENTITY implicit.label "Έμμεση SSL (καλή)">
+<!ENTITY initialdir "Αρχικοί κατάλογοι">
+<!ENTITY download "Επιλογές λήψης">
+<!ENTITY upload "Επιλογές αποστολής">
+<!ENTITY localdir.label "Τοπικός:">
+<!ENTITY remotedir.label "Απομακρυσμένος:">
+<!ENTITY current.label "Χρήση τρέχοντος">
+<!ENTITY treesync.label "Συγχρονισμός καταλόγων">
+<!ENTITY webhost "Κεντρικός υπολογιστής Ιστού (χρησιμοποιείται από τη λειτουργία &quot;Εμφάνιση στον Ιστό&quot;)">
+<!ENTITY webhost.tip "Παράδειγμα: http://www.example.com">
+<!ENTITY prefix.label "Πρόθεμα:">
+<!ENTITY prefix.tip "Πρόθεμα που θα αφαιρεθεί από το τμήμα FTP του URL π.χ. /public_html">
+<!ENTITY caseleave.label "Χωρίς μετατροπή πεζών-κεφαλαίων χαρακτήρων">
+<!ENTITY caselower.label "Μετατροπή σε πεζούς χαρακτήρες">
+<!ENTITY caseupper.label "Μετατροπή σε κεφαλαίους χαρακτήρες">
+<!ENTITY encoding.label "Κωδικοποίηση κεντρικού υπολογιστή">
+<!ENTITY charset.label "Κωδικοποίηση χαρακτήρων">
+<!ENTITY account.access "Λ">
+<!ENTITY host.access "Υ">
+<!ENTITY login.access "ν">
+<!ENTITY password.access "Κ">
+<!ENTITY anonymous.access "α">
+<!ENTITY pasv.access "π">
+<!ENTITY port.access "θ">
+<!ENTITY security.access "φ">
+<!ENTITY localdir.access "τ">
+<!ENTITY remotedir.access "μ">
+<!ENTITY currentl.access "ρ">
+<!ENTITY currentr.access "χ">
+<!ENTITY treesync.access "γ">
+<!ENTITY webhost.access "υ">
+<!ENTITY prefix.access "π">

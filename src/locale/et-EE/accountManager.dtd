@@ -1,0 +1,52 @@
+<!ENTITY title "Konto Manager">
+<!ENTITY main "Peamine">
+<!ENTITY connections "Ühendus">
+<!ENTITY advanced "Edasijõudnud">
+<!ENTITY maindetails "Peamised Detailid">
+<!ENTITY id "ID">
+<!ENTITY account.label "Konto Nimi:">
+<!ENTITY account.tip "Näiteks: Minu FTP Leht">
+<!ENTITY host.label "Hostija:">
+<!ENTITY host.tip "Näiteks: ftp.debian.org">
+<!ENTITY login.label "Logi sisse:">
+<!ENTITY password.label "Salasõna:">
+<!ENTITY anonymous.label "Anonüümne">
+<!ENTITY connection "Ühenduse Tüüp">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Passiivne Viis">
+<!ENTITY security.label "Turvalisus">
+<!ENTITY none.label "Ei ole">
+<!ENTITY authtls.label "Auth TLS (Parim)">
+<!ENTITY authssl.label "Auth SSL (Parem)">
+<!ENTITY implicit.label "Implicit SSL (Hea)">
+<!ENTITY initialdir "Esialgsed Kaustad">
+<!ENTITY download "Allalaadimise Seaded">
+<!ENTITY upload "Üleslaadimise Seaded">
+<!ENTITY localdir.label "Lokaalne:">
+<!ENTITY remotedir.label "Kauge:">
+<!ENTITY current.label "Kasuta Praegust">
+<!ENTITY treesync.label "Jäta kaustad navigeerides sünkrooni">
+<!ENTITY webhost "Veebi hostija (kasutatud koos &apos;Vaata Veebis&apos;)">
+<!ENTITY webhost.tip "Näiteks: http://www.example.com">
+<!ENTITY prefix.label "Prefiks:">
+<!ENTITY prefix.tip "Prefiksi et eemaldada FTP osa URList.">
+<!ENTITY caseleave.label "Jäta lahter tühjaks">
+<!ENTITY caselower.label "Konverdi väikesteks tähtedeks">
+<!ENTITY caseupper.label "Konverdi suurteks tähtedeks">
+<!ENTITY encoding.label "Serveri Kodeering">
+<!ENTITY charset.label "Märkide">
+<!ENTITY account.access "t">
+<!ENTITY host.access "H">
+<!ENTITY login.access "g">
+<!ENTITY password.access "a">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "V">
+<!ENTITY port.access "o">
+<!ENTITY security.access "s">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "e">
+<!ENTITY currentl.access "r">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "n">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "f">

@@ -1,0 +1,37 @@
+<!ENTITY title "Options">
+<!ENTITY general.label "General">
+<!ENTITY startup.label "Démarrer FireFTP :">
+<!ENTITY windowopen.label "dans une nouvelle fenêtre">
+<!ENTITY tabopen.label "dans un nouvel onglet">
+<!ENTITY groupopen.label "in a window grouping">
+<!ENTITY sessions.label "Sessions">
+<!ENTITY rememberp.label "Mémoriser les mots de passe">
+<!ENTITY logwindow.label "Journal">
+<!ENTITY debug.label "Afficher les informations de débogage">
+<!ENTITY interface.label "Interface">
+<!ENTITY appearance.label "Appearance">
+<!ENTITY font.label "Font">
+<!ENTITY size.label "Size">
+<!ENTITY fg.label "Text">
+<!ENTITY bg.label "Background">
+<!ENTITY bell.label "Bell">
+<!ENTITY audible.label "Audible Bell">
+<!ENTITY connect.label "Connexions">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Aucun">
+<!ENTITY direct.label "Direct">
+<!ENTITY host.label "Hôte :">
+<!ENTITY port.label "Port :">
+<!ENTITY recovery.label "Connection Recovery">
+<!ENTITY network.label "Network timeout (in seconds, between 1 and 600)">
+<!ENTITY network.tip "Controls how long to wait for a response from the server">
+<!ENTITY keepalivemode.label "Keep connection alive while idle">
+<!ENTITY timeout.label "Tenter de rétablir la connexion en cas de déconnexion">
+<!ENTITY retryd.label "Retry delay (in seconds, between 1 and 600)">
+<!ENTITY retryd.tip "Secondes entre les tentatives de reconnexion">
+<!ENTITY retrya.label "Retry attempts">
+<!ENTITY retrya.tip "Nombre de tentatives à effectuer">
+<!ENTITY credits.label "Crédits">
+<!ENTITY thanks.label "Merci :">
+<!ENTITY allothers.label "Toutes les personnes ayant signalé des bugs et ayant apporté leur aide">
+<!ENTITY special.label "Un merci tout particulier aux généreux donateurs !">

@@ -1,0 +1,69 @@
+<!ENTITY title "Επιλογές">
+<!ENTITY asciiTitle "Τύποι αρχείων ASCII">
+<!ENTITY general.label "Γενικά">
+<!ENTITY messages.label "Μηνύματα">
+<!ENTITY welcome.label "Προβολή μηνύματος καλωσορίσματος">
+<!ENTITY error.label "Προβολή μηνυμάτων σφάλματος">
+<!ENTITY sessions.label "Συνεδρίες">
+<!ENTITY rememberp.label "Διατήρηση κωδικών πρόσβασης">
+<!ENTITY rememberd.label "Διατήρηση της λίστας του καταλόγου">
+<!ENTITY fileview.label "Προβολή αρχείων">
+<!ENTITY autorefresh.label "Αυτόματη ανανέωση">
+<!ENTITY refresh.tip "Όταν αλλάζει το περιεχόμενο στον απομακρυσμένο υπολογιστή (λόγω αποστολής αρχείου, μετονομασίας, κλπ) να γίνεται ανανέωση της λίστας περιεχομένων του καταλόγου.">
+<!ENTITY hidden.label "Εμφάνιση κρυφών αρχείων">
+<!ENTITY bytesmode.label "Εμφάνιση του μεγέθους αρχείων σε bytes">
+<!ENTITY interface.label "Διασύνδεση χρήστη">
+<!ENTITY startup.label "Εκκίνηση FireFTP:">
+<!ENTITY windowopen.label "σε νέο παράθυρο">
+<!ENTITY tabopen.label "σε νέα καρτέλα">
+<!ENTITY integrateftplnk.label "Αυτόματη χρήση του FireFTP για δεσμούς FTP στον FireFox">
+<!ENTITY temppasvmode.label "Χρήση παθητικής κατάστασης λειτουργίας για αυτές τις συνδέσεις">
+<!ENTITY ui.label "Διάταξη">
+<!ENTITY normal.label "Κανονική κατάσταση λειτουργίας">
+<!ENTITY local.label "Τοπική κατάσταση λειτουργίας">
+<!ENTITY remote.label "Απομακρυσμένη κατάσταση λειτουργίας">
+<!ENTITY both.tip "Προβολή τοπικών και απομακρυσμένων αρχείων">
+<!ENTITY local.tip "Προβολή μόνο τοπικών αρχείων">
+<!ENTITY remote.tip "Προβολή μόνο απομακρυσμένων αρχείων">
+<!ENTITY logwindow.label "Ιστορικό">
+<!ENTITY logmode.label "Προβολή του ιστορικού στο βασικό παράθυρο">
+<!ENTITY logerrormode.label "Προβολή μόνο των σφαλμάτων στο ιστορικό">
+<!ENTITY debug.label "Προβολή πληροφοριών αποσφαλμάτωσης">
+<!ENTITY connect.label "Συνδέσεις">
+<!ENTITY proxy.label "Διαμεσολαβητής">
+<!ENTITY none.label "Χωρίς">
+<!ENTITY direct.label "Άμεση">
+<!ENTITY host.label "Κεντρικός υπολογιστής:">
+<!ENTITY port.label "Θύρα:">
+<!ENTITY active.label "Ενεργή κατάσταση">
+<!ENTITY limitPorts.label "Όριο θυρών">
+<!ENTITY from.label "Από:">
+<!ENTITY to.label "ως:">
+<!ENTITY recovery.label "Αποκατάσταση σύνδεσης">
+<!ENTITY network.label "Λήξη χρόνου αναμονής δικτύου (σε δευτερόλεπτα, μεταξύ 1 και 600)">
+<!ENTITY network.tip "Ελέγχει τον χρόνο αναμονής ανταπόκρισης από τον διακομιστή">
+<!ENTITY keepalivemode.label "Διατήρηση σύνδεσης ακόμα και αν δεν είναι ενεργή">
+<!ENTITY timeout.label "Σε περίπτωση αποσύνδεσης να γίνει προσπάθεια για επανασύνδεση">
+<!ENTITY retryd.label "Μεσοδιάστημα μεταξύ προσπαθειών (σε δευτερόλεπτα, μεταξύ 1 και 600)">
+<!ENTITY retryd.tip "Δευτερόλεπτα μεταξύ των προσπαθειών επανασύνδεσης">
+<!ENTITY retrya.label "Προσπάθειες επανασύνδεσης">
+<!ENTITY retrya.tip "Αριθμός των προσπαθειών που θα γίνουν">
+<!ENTITY downup.label "Λήψη/Αποστολή">
+<!ENTITY transfercaption.label "Όταν μεταφέρονται αρχεία να γίνεται χρήση:">
+<!ENTITY automatic.label "Αυτόματη κατάσταση λειτουργίας">
+<!ENTITY automatic.tip "Αυτόματη επιλογή μεταξύ «Δυαδικής» και «ASCII» κατάστασης λειτουργίας">
+<!ENTITY binary.label "Δυαδική κατάσταση λειτουργίας">
+<!ENTITY ascii.label "Κατάσταση λειτουργίας ASCII">
+<!ENTITY asciifiles.label "Αρχεία ASCII:">
+<!ENTITY asciifiles.tip "Λίστα με επεκτάσεις αρχείων που θα αναγνωρίζονται σαν ASCII">
+<!ENTITY add.label "Προσθήκη">
+<!ENTITY remove.label "Αφαίρεση">
+<!ENTITY timestamps.label "Χρονοσήμανση">
+<!ENTITY synctimestamps.label "Συγχρονισμός χρονοσήμανσης">
+<!ENTITY duplicates.label "Διπλότυπα αρχεία">
+<!ENTITY timer.label "Απενεργοποίηση χρονομετρητή για το διάλογο αντικατάστασης">
+<!ENTITY nopromptmode.label "Να γίνεται αντικατάσταση χωρίς να εμφανίζεται ο διάλογος αντικατάστασης">
+<!ENTITY credits.label "Μνεία">
+<!ENTITY thanks.label "Ευχαριστούμε:">
+<!ENTITY allothers.label "Όλους όσους μας βοήθησαν και επισήμαναν σφάλματα">
+<!ENTITY special.label "Ειδικές ευχαριστίες σε όλους όσους κατέβαλαν δωρεές!">

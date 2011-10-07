@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Link in FireFTP öffnen">
+<!ENTITY viewFireFTP "Diese Seite in FireFTP anzeigen">
+<!ENTITY accountlist.label "(Zugang auswählen)">
+<!ENTITY edit.label "Bearbeiten...">
+<!ENTITY abort.label "Abbrechen">
+<!ENTITY logtab.label "Protokoll">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Warteschlange">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "P">
+<!ENTITY advanced.label "Erweitert">
+<!ENTITY search.label "Suchen">
+<!ENTITY diff.label "Ordnerlisten vergleichen">
+<!ENTITY recdiff.label "Ordnerlisten rekursiv vergleichen">
+<!ENTITY custom.label "Benutzerdefinierter Befehl">
+<!ENTITY import.label "Importieren...">
+<!ENTITY export.label "Exportieren...">
+<!ENTITY preferencestab.label "Einstellungen">
+<!ENTITY diff.access "O">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "B">
+<!ENTITY import.access "I">
+<!ENTITY export.access "E">
+<!ENTITY prefbutton.access "E">
+<!ENTITY help.label "Hilfe (engl.)">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Eine Ebene nach oben wechseln">
+<!ENTITY refresh.tip "Ordnerliste aktualisieren">
+<!ENTITY localpath.tip "Lokaler Pfad">
+<!ENTITY remotepath.tip "Entfernter Pfad">
+<!ENTITY browse.label "Durchsuchen...">
+<!ENTITY change.label "Wechseln zu">
+<!ENTITY name.label "Name">
+<!ENTITY size.label "Größe">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Typ">
+<!ENTITY attr.label "Attribute">
+<!ENTITY source.label "Quelle">
+<!ENTITY dest.label "Ziel">
+<!ENTITY bytes.label "Byte">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Wiederholung">
+<!ENTITY cancel.label "Abbrechen">
+<!ENTITY cancelAll.label "Alle abbrechen">
+<!ENTITY type.tip "Ändert die Übertragungsmethode (empfohlen: automatisch)">
+<!ENTITY bytes.tip "Bytes heruntergeladen/Bytes gesamt">
+<!ENTITY timeela.tip "Abgelaufene Zeit">
+<!ENTITY timerem.tip "Verbleibende Zeit">
+<!ENTITY download.tip "Übertragungsrate">
+<!ENTITY percent.tip "Fertiggestellt in Prozent">
+<!ENTITY openContaining.label "Inhalt dieses Ordners anzeigen">
+<!ENTITY upload.label "Hochladen">
+<!ENTITY download.label "Herunterladen">
+<!ENTITY open.label "Öffnen">
+<!ENTITY openwith.label "Öffnen mit">
+<!ENTITY extractHere.label "In diesen Ordner entpacken">
+<!ENTITY extractTo.label "In neuen Ordner entpacken">
+<!ENTITY viewweb.label "Im Web anzeigen">
+<!ENTITY copyUrl.label "URL kopieren">
+<!ENTITY copyUrlLogin.label "FTP-Adresse (einschl. Zugangsdaten)">
+<!ENTITY cut.label "Ausschneiden">
+<!ENTITY copy.label "Kopieren">
+<!ENTITY paste.label "Einfügen">
+<!ENTITY makedir.label "Ordner erstellen">
+<!ENTITY makefile.label "Datei anlegen">
+<!ENTITY delete.label "Löschen">
+<!ENTITY rename.label "Umbenennen">
+<!ENTITY properties.label "Eigenschaften">
+<!ENTITY rproperties.label "Rekursive Eigenschaften">
+<!ENTITY searchButton.label "Suchen">
+<!ENTITY searchLocal.label "Lokaler Datenträger">
+<!ENTITY searchRemote.label "Entfernter Datenträger">
+<!ENTITY searchOptions.label "Optionen">
+<!ENTITY searchFrom.label "Vom:">
+<!ENTITY searchTo.label "Bis zum:">
+<!ENTITY searchSubdir.label "einschl. Unterverzeichnisse">
+<!ENTITY searchMatch.label "Groß-/Kleinschreibung beachten">
+<!ENTITY searchRegexp.label "Regulärer Ausdruck">
+<!ENTITY searchDates.label "Zeitraum">
+<!ENTITY searchSubdir.access "U">
+<!ENTITY searchMatch.access "G">
+<!ENTITY searchRegexp.access "r">
+<!ENTITY searchDates.access "t">
+<!ENTITY edit.access "B">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "r">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "D">
+<!ENTITY changebutton.access "W">
+<!ENTITY searchButton.access "n">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "E">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land. Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return. One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Automatisch">
+<!ENTITY binary.label         "Binär">
+<!ENTITY ascii.label          "ASCII">
+

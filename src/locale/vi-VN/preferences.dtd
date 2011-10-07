@@ -1,0 +1,72 @@
+<!ENTITY title "Tùy chọn">
+<!ENTITY asciiTitle "Kiểu tập tin ASCII">
+<!ENTITY general.label "Tổng quát">
+<!ENTITY messages.label "Thông điệp">
+<!ENTITY welcome.label "Hiện lời chào mừng">
+<!ENTITY error.label "Hiện thông báo lỗi">
+<!ENTITY sessions.label "Phiên">
+<!ENTITY rememberp.label "Nhớ mật khẩu">
+<!ENTITY rememberd.label "Nhớ danh sách thư mục">
+<!ENTITY fileview.label "Xem tập tin">
+<!ENTITY autorefresh.label "Tự động làm tươi">
+<!ENTITY refresh.tip "Sau khi nội dung thư mục từ xa thay đổi, hãy làm tươi thư mục đó">
+<!ENTITY hidden.label "Hiện tập tin ẩn">
+<!ENTITY bytesmode.label "Hiện số byte của dung lượng tập tin">
+<!ENTITY interface.label "Giao diện">
+<!ENTITY startup.label "Khởi động FireFTP:">
+<!ENTITY windowopen.label "trong một cửa sổ mới">
+<!ENTITY tabopen.label "trong một thẻ mới">
+<!ENTITY integrateftplnk.label "Cấu hình để các liên kết FTP trong Firefox tự động dùng FireFTP">
+<!ENTITY temppasvmode.label "Dùng Chế độ Bị động cho các kết nối này">
+<!ENTITY open.label "Nhấp đôi/nhấn Enter:">
+<!ENTITY download.label "truyền tải một tập tin">
+<!ENTITY exec.label "mở một tập tin">
+<!ENTITY both.tip "Hiện cả tập tin trong máy và ở xa">
+<!ENTITY local.tip "Chỉ hiện tập tin trong máy">
+<!ENTITY remote.tip "Chỉ hiện tập tin ở xa">
+<!ENTITY logwindow.label "Lưu kí">
+<!ENTITY logmode.label "Hiện bảng lưu kí trong cửa sổ chính">
+<!ENTITY logerrormode.label "Chỉ hiện lỗi trong bảng lưu kí">
+<!ENTITY debug.label "Hiện thông tin gỡ lỗi">
+<!ENTITY connect.label "Kết nối">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Không">
+<!ENTITY direct.label "Trực tiếp">
+<!ENTITY host.label "Máy:">
+<!ENTITY port.label "Cổng:">
+<!ENTITY active.label "Chế độ Chủ động">
+<!ENTITY limitPorts.label "Giới hạn số cổng">
+<!ENTITY from.label "Từ:">
+<!ENTITY to.label "Đến:">
+<!ENTITY concurrent.label "Truyền tải Đồng thời">
+<!ENTITY simtransfers.label "Số lượng truyền tải cùng lúc tối đa (1-10)">
+<!ENTITY recovery.label "Khôi phục Kết nối">
+<!ENTITY network.label "Thời gian quá hạn của mạng (tính theo giây, từ 1 tới 600)">
+<!ENTITY network.tip "Điều khiển thời gian đợi phản hồi từ máy chủ">
+<!ENTITY keepalivemode.label "Giữ kết nối ngay cả khi đang nghỉ">
+<!ENTITY timeout.label "Nếu bị ngắt, tự động kết nối lại">
+<!ENTITY retryd.label "Độ trễ kết nối lại (tính theo giây, từ 1 đến 600)">
+<!ENTITY retryd.tip "Số giây giữa các lần thử kết nối lại">
+<!ENTITY retrya.label "Số lần thử kết nối lại">
+<!ENTITY retrya.tip "Số lần thử kết nối lại">
+<!ENTITY downup.label "Tải xuống/Tải lên">
+<!ENTITY transfercaption.label "Khi truyền tải tập tin, dùng:">
+<!ENTITY automatic.label "Chế độ Tự động">
+<!ENTITY automatic.tip "Tự động chọn giữa hai chế độ &apos;Nhị phân&apos; và &apos;ASCII&apos;">
+<!ENTITY binary.label "Chế độ Nhị phân">
+<!ENTITY ascii.label "Chế độ ASCII">
+<!ENTITY asciifiles.label "Tập tin ASCII:">
+<!ENTITY asciifiles.tip "Danh sách đuôi tập tin ASCII">
+<!ENTITY add.label "Thêm">
+<!ENTITY remove.label "Xóa">
+<!ENTITY extras.label "Phần phụ (nếu được hỗ trợ trên máy chủ)">
+<!ENTITY usecompression.label "Dùng bộ nén">
+<!ENTITY synctimestamps.label "Giữ cho nhãn thời gian đồng bộ">
+<!ENTITY integritymode.label "Kiểm tra sự tương thích của việc truyền tải tập tin (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Trùng lặp Tập tin">
+<!ENTITY timer.label "Tắt bộ đo kiểm thời gian trong hộp thoại ghi đè">
+<!ENTITY nopromptmode.label "Không hiện hộp thoại hỏi, cứ việc ghi đè">
+<!ENTITY credits.label "Công trạng">
+<!ENTITY thanks.label "Cảm Ơn:">
+<!ENTITY allothers.label "Tất cả những ai đã thông báo lỗi và gửi trợ giúp">
+<!ENTITY special.label "Đặc biệt Cảm ơn tất cả những người đã hỗ trợ tài chính!">

@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Otevřít odkaz ve FireFTP">
+<!ENTITY viewFireFTP "Zobrazit tuto stránku ve FireFTP">
+<!ENTITY accountlist.label "(Vyberte účet)">
+<!ENTITY edit.label "Upravit...">
+<!ENTITY abort.label "Přerušit">
+<!ENTITY logtab.label "Záznam/Fronta">
+<!ENTITY ltab.label "Záznam">
+<!ENTITY qtab.label "Fronta">
+<!ENTITY search.access "H">
+<!ENTITY logbutton.access "z">
+<!ENTITY advanced.label "Pomůcky">
+<!ENTITY search.label "Hledání">
+<!ENTITY diff.label "Porovnat adresáře">
+<!ENTITY recdiff.label "Porovnat adresáře a podadresáře">
+<!ENTITY custom.label "Vlastní příkaz...">
+<!ENTITY import.label "Import...">
+<!ENTITY export.label "Export...">
+<!ENTITY preferencestab.label "Předvolby">
+<!ENTITY diff.access "P">
+<!ENTITY recdiff.access "o">
+<!ENTITY custom.access "l">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "P">
+<!ENTITY help.label "Nápověda">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "O adresář výš">
+<!ENTITY refresh.tip "Znovu načti adresář">
+<!ENTITY localpath.tip "Lokální cesta">
+<!ENTITY remotepath.tip "Vzdálená cesta">
+<!ENTITY browse.label "Prohlížet">
+<!ENTITY change.label "Změnit">
+<!ENTITY name.label "Název">
+<!ENTITY size.label "Velikost">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Type">
+<!ENTITY attr.label "Atributy">
+<!ENTITY source.label "Zdroj">
+<!ENTITY dest.label "Cíl">
+<!ENTITY bytes.label "Bajtů">
+<!ENTITY status.label "Stav">
+<!ENTITY retry.label "Opakovat">
+<!ENTITY cancel.label "Zrušit">
+<!ENTITY cancelAll.label "Zrušit vše">
+<!ENTITY type.tip "Změnit způsob přenosu (doporučeno auto)">
+<!ENTITY bytes.tip "Bajtů staženo / Celkem Bajtů">
+<!ENTITY timeela.tip "Uplynulo">
+<!ENTITY timerem.tip "Zbývá">
+<!ENTITY download.tip "Rychlost">
+<!ENTITY percent.tip "Hotovo">
+<!ENTITY openContaining.label "Otevřít obsahující složku">
+<!ENTITY upload.label "Odeslat">
+<!ENTITY download.label "Stáhnout">
+<!ENTITY open.label "Otevřít">
+<!ENTITY openwith.label "Otevřít v">
+<!ENTITY extractHere.label "Rozbalit zde">
+<!ENTITY extractTo.label "Rozbalit do složky">
+<!ENTITY viewweb.label "Zobrazit na webu">
+<!ENTITY copyUrl.label "Kopírovat URL">
+<!ENTITY copyUrlLogin.label "FTP s přihlášením">
+<!ENTITY cut.label "Vyjmout">
+<!ENTITY copy.label "Kopírovat">
+<!ENTITY paste.label "Vložit">
+<!ENTITY makedir.label "Vytvořit adresář">
+<!ENTITY makefile.label "Vytvořit soubor">
+<!ENTITY delete.label "Smazat">
+<!ENTITY rename.label "Přejmenovat">
+<!ENTITY properties.label "Vlastnosti">
+<!ENTITY rproperties.label "Vlastnosti (včetně obsahu)">
+<!ENTITY searchButton.label "Hledat">
+<!ENTITY searchLocal.label "Místní">
+<!ENTITY searchRemote.label "Vzdálené">
+<!ENTITY searchOptions.label "Možnosti">
+<!ENTITY searchFrom.label "Z:">
+<!ENTITY searchTo.label "Do:">
+<!ENTITY searchSubdir.label "Včetně podadresářů">
+<!ENTITY searchMatch.label "Porovnávat VELKÁ/malá písmena">
+<!ENTITY searchRegexp.label "Regulární výraz">
+<!ENTITY searchDates.label "Určit data">
+<!ENTITY searchSubdir.access "d">
+<!ENTITY searchMatch.access "h">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "U">
+<!ENTITY abort.access "e">
+<!ENTITY advanced.access "M">
+<!ENTITY helpbutton.access "N">
+<!ENTITY browsebutton.access "P">
+<!ENTITY changebutton.access "Z">
+<!ENTITY searchButton.access "H">
+<!ENTITY searchLocal.access "M">
+<!ENTITY searchRemote.access "V">
+<!ENTITY searchOptions.access "ž">
+<!ENTITY mozilla.quote "And, <html:em style=';;font-size:1.3em;line-height:0;';;>lo</html:em>, from the <html:em style=';;font-size:1.3em;line-height:0;';;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;font-size:1.3em;line-height:0;';;>aide</html:em> the reborn beast in its quest to <html:em style=';;font-size:1.3em;line-height:0;';;>reclaim</html:em> the land.  Together they <html:em style=';;font-size:1.3em;line-height:0;';;>extended</html:em> the power of the beast and <html:em style=';;font-size:1.3em;line-height:0;';;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';;font-size:1.3em;line-height:0;';;>Mammon</html:em> were converted and their hearts were set <html:em style=';;font-size:1.3em;line-height:0;';;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Automatický">
+<!ENTITY binary.label         "Binární">
+<!ENTITY ascii.label          "ASCII">
+

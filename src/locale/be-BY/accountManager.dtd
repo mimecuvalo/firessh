@@ -1,0 +1,52 @@
+<!ENTITY title "Мэнэджэр рахункаў">
+<!ENTITY main "Агульныя">
+<!ENTITY connections "Далучэньне">
+<!ENTITY advanced "Дадаткова">
+<!ENTITY maindetails "Асноўная інфармацыя">
+<!ENTITY id "Уліковыя дадзеныя">
+<!ENTITY account.label "Імя рахунку:">
+<!ENTITY account.tip "Прыклад: My FTP Site">
+<!ENTITY host.label "Сэрвэр:">
+<!ENTITY host.tip "Прыклад: ftp.debian.org">
+<!ENTITY login.label "Імя:">
+<!ENTITY password.label "Пароль:">
+<!ENTITY anonymous.label "Ананімна">
+<!ENTITY connection "Тып далучэньня">
+<!ENTITY port.label "Порт:">
+<!ENTITY pasv.label "Пасыўны рэжым">
+<!ENTITY security.label "Бясьпека">
+<!ENTITY none.label "Няма">
+<!ENTITY authtls.label "Auth TLS (Найлепшая)">
+<!ENTITY authssl.label "Auth SSL (Яшчэ лепш)">
+<!ENTITY implicit.label "Implicit SSL (Добрая)">
+<!ENTITY initialdir "Пачатковая пазыцыя">
+<!ENTITY download "Парамэтры загрузкі">
+<!ENTITY upload "Парамэтры перадачы">
+<!ENTITY localdir.label "Лякальна:">
+<!ENTITY remotedir.label "Аддалена:">
+<!ENTITY current.label "Выкарыстаць гэтую">
+<!ENTITY treesync.label "Сынхранізаваць каталёгі пры навігацыі">
+<!ENTITY webhost "Web-сэрвэр (выкарыстоўваецца з &apos;&apos;Глядзець у Web&apos;&apos;)">
+<!ENTITY webhost.tip "Прыклад: http://www.example.com">
+<!ENTITY prefix.label "Прыстаўка:">
+<!ENTITY prefix.tip "Прыстаўка, для выдаленьня часткі адрасу FTP, напрыклад /publuc_html">
+<!ENTITY caseleave.label "Захоўваць рэгістр">
+<!ENTITY caselower.label "Ператвараць у ніжні">
+<!ENTITY caseupper.label "Ператвараць у верхні">
+<!ENTITY encoding.label "Кадыроўка сэрвэру">
+<!ENTITY charset.label "Кадыроўка:">
+<!ENTITY account.access "Р">
+<!ENTITY host.access "С">
+<!ENTITY login.access "м">
+<!ENTITY password.access "П">
+<!ENTITY anonymous.access "А">
+<!ENTITY pasv.access "ў">
+<!ENTITY port.access "о">
+<!ENTITY security.access "Б">
+<!ENTITY localdir.access "Л">
+<!ENTITY remotedir.access "д">
+<!ENTITY currentl.access "э">
+<!ENTITY currentr.access "е">
+<!ENTITY treesync.access "т">
+<!ENTITY webhost.access "в">
+<!ENTITY prefix.access "ы">

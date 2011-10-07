@@ -1,0 +1,69 @@
+<!ENTITY title "Preferències">
+<!ENTITY asciiTitle "Fitxer de tipus ASCII">
+<!ENTITY general.label "General">
+<!ENTITY messages.label "Missatges">
+<!ENTITY welcome.label "Mostrar missatge de benvinguda">
+<!ENTITY error.label "Mostrar missatges d&apos;error">
+<!ENTITY sessions.label "Sessions">
+<!ENTITY rememberp.label "Recorda contrasenyes">
+<!ENTITY rememberd.label "Recorda llistats de directori">
+<!ENTITY fileview.label "Veure fitxer">
+<!ENTITY autorefresh.label "Auto-actualitza">
+<!ENTITY refresh.tip "Després de que la vista remota sigui canviada (carregant, reanomenant, etc.), actualitza el llistat de fitxers de la carpeta">
+<!ENTITY hidden.label "Mostra fitxers ocults">
+<!ENTITY bytesmode.label "Mostra el nombre d&apos;octets per a la mida de fitxers">
+<!ENTITY interface.label "Interfície">
+<!ENTITY startup.label "Executa el FireFTP:">
+<!ENTITY windowopen.label "en una nova finestra">
+<!ENTITY tabopen.label "en una nova pestanya">
+<!ENTITY integrateftplnk.label "Configura els enllaços FTP al Firefox per que utilitzin automàticament el FireFTP">
+<!ENTITY temppasvmode.label "Fes servir el Mode Passiu per a aquestes connexions">
+<!ENTITY ui.label "Aspecte">
+<!ENTITY normal.label "Mode normal">
+<!ENTITY local.label "Mode local">
+<!ENTITY remote.label "Mode remot">
+<!ENTITY both.tip "Mostra els fitxers remots i locals">
+<!ENTITY local.tip "Mostra només els fitxers locals">
+<!ENTITY remote.tip "Mostra només els fitxers remots">
+<!ENTITY logwindow.label "Registre">
+<!ENTITY logmode.label "Mostra el registre a la finestra principal">
+<!ENTITY logerrormode.label "Mostra els errors només al registre">
+<!ENTITY debug.label "Mostra la informació de l&apos;executor pas a pas">
+<!ENTITY connect.label "Connexions">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Cap">
+<!ENTITY direct.label "Directe">
+<!ENTITY host.label "Ordinador principal:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Mode Actiu">
+<!ENTITY limitPorts.label "Límit de Ports">
+<!ENTITY from.label "De:">
+<!ENTITY to.label "A:">
+<!ENTITY recovery.label "Recuperar la connexió">
+<!ENTITY network.label "Temps d&apos;espera esgotat a la xarxa (en segons, entre 1 i 600)">
+<!ENTITY network.tip "Controla quan de temps s&apos;ha d&apos;esperar a rebre una resposta del servidor">
+<!ENTITY keepalivemode.label "Manté la connexió oberta encara que estigueu inactiu">
+<!ENTITY timeout.label "Si es desconnecta, prova de reconnectar">
+<!ENTITY retryd.label "Temps d&apos;espera entre reintents (en segons, entre 1 i 600)">
+<!ENTITY retryd.tip "Segons entre intents de reconnexió">
+<!ENTITY retrya.label "Intents de reconnexió">
+<!ENTITY retrya.tip "Nombre d&apos;intents que es faran">
+<!ENTITY downup.label "Descàrregues/Càrregues">
+<!ENTITY transfercaption.label "Quan transfereixis fitxers fes servir:">
+<!ENTITY automatic.label "Mode automàtic">
+<!ENTITY automatic.tip "Tria automàticament entre mode &apos;binari&apos; i mode &apos;ASCII&apos;">
+<!ENTITY binary.label "Mode binari">
+<!ENTITY ascii.label "Mode ASCII">
+<!ENTITY asciifiles.label "Fitxers ASCII:">
+<!ENTITY asciifiles.tip "Llista de les extensions de fitxer que han de ser reconegudes com fitxers ASCII">
+<!ENTITY add.label "Afegeix">
+<!ENTITY remove.label "Esborra">
+<!ENTITY timestamps.label "Marques de temps">
+<!ENTITY synctimestamps.label "Mantingues sincronitzades les marques de temps (si l&apos;opció és activada al servidor)">
+<!ENTITY duplicates.label "Fitxers duplicats">
+<!ENTITY timer.label "Desactiva el comptador de temps al diàleg de sobreescriure fitxers">
+<!ENTITY nopromptmode.label "No mostris el diàleg de sobreescriure fitxers, simplement sobreescriu-los">
+<!ENTITY credits.label "Crèdits">
+<!ENTITY thanks.label "Gràcies:">
+<!ENTITY allothers.label "A tota la resta de persones que han enviat errors i han ajudat">
+<!ENTITY special.label "Un agraïment especial a tots aquells que han fet donacions!">

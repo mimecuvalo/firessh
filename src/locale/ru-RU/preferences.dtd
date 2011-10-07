@@ -1,0 +1,69 @@
+<!ENTITY title "Настройки">
+<!ENTITY asciiTitle "ASCII файлы">
+<!ENTITY general.label "Общие">
+<!ENTITY messages.label "Сообщения">
+<!ENTITY welcome.label "Окно приветствия">
+<!ENTITY error.label "Сообщения об ошибках">
+<!ENTITY sessions.label "Сессии">
+<!ENTITY rememberp.label "Запоминать пароли">
+<!ENTITY rememberd.label "Запоминать позицию">
+<!ENTITY fileview.label "Менеджер файлов">
+<!ENTITY autorefresh.label "Авто обновление">
+<!ENTITY refresh.tip "После изменения (заливки, переименования и др.) обновлять содержание каталога">
+<!ENTITY hidden.label "Показывать скрытые файлы">
+<!ENTITY bytesmode.label "Размер файлов в байтах">
+<!ENTITY interface.label "Интерфейс">
+<!ENTITY startup.label "Открывать FireFTP:">
+<!ENTITY windowopen.label "в новом окне">
+<!ENTITY tabopen.label "в новой вкладке">
+<!ENTITY integrateftplnk.label "Использовать FireFTP для всех ftp://ссылок">
+<!ENTITY temppasvmode.label "Использовать пассивный метод для этих соединений">
+<!ENTITY ui.label "Отображение">
+<!ENTITY normal.label "Нормальный режим">
+<!ENTITY local.label "Локальный режим">
+<!ENTITY remote.label "Удаленный режим">
+<!ENTITY both.tip "Показывать локальные и файлы на сервере">
+<!ENTITY local.tip "Только локальные файлы">
+<!ENTITY remote.tip "Только файлы на сервере">
+<!ENTITY logwindow.label "Журнал">
+<!ENTITY logmode.label "Журнал в главном окне">
+<!ENTITY logerrormode.label "Только сообщения об ошибках">
+<!ENTITY debug.label "Отладочная информация">
+<!ENTITY connect.label "Соединения">
+<!ENTITY proxy.label "Прокси">
+<!ENTITY none.label "Нет">
+<!ENTITY direct.label "Прямое">
+<!ENTITY host.label "Сервер:">
+<!ENTITY port.label "Порт:">
+<!ENTITY active.label "Активный режим">
+<!ENTITY limitPorts.label "Лимит портов">
+<!ENTITY from.label "От:">
+<!ENTITY to.label "Куда:">
+<!ENTITY recovery.label "Восстановление подключений">
+<!ENTITY network.label "Время ожидания сети (секунды, от 1 до 600)">
+<!ENTITY network.tip "Ожидать ответа сервера">
+<!ENTITY keepalivemode.label "Сохранять подключение при неактивности">
+<!ENTITY timeout.label "Автоподключение при разъединении">
+<!ENTITY retryd.label "Повторно (секунд, от 1 до 600)">
+<!ENTITY retryd.tip "Секунд между попытками соединения">
+<!ENTITY retrya.label "Количество попыток">
+<!ENTITY retrya.tip "Попыток повторного соединения">
+<!ENTITY downup.label "Загрузка/Отправка">
+<!ENTITY transfercaption.label "Использовать для передачи файлов:">
+<!ENTITY automatic.label "Автоматический режим">
+<!ENTITY automatic.tip "Автоматическое переключение между &apos;Бинарным&apos; и &apos;ASCII&apos; режимами">
+<!ENTITY binary.label "Бинарный">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY asciifiles.label "ASCII файлы:">
+<!ENTITY asciifiles.tip "Список расширений файлов, которые будут распознаны как ASCII текст">
+<!ENTITY add.label "Добавить">
+<!ENTITY remove.label "Удалить">
+<!ENTITY timestamps.label "Синхронизация">
+<!ENTITY synctimestamps.label "Синхронизировать содержимое">
+<!ENTITY duplicates.label "Дубликаты файлов">
+<!ENTITY timer.label "Не показывать таймер в диалоге перезаписи">
+<!ENTITY nopromptmode.label "Перезаписывать без подтверждения">
+<!ENTITY credits.label "Список участников">
+<!ENTITY thanks.label "Благодарности:">
+<!ENTITY allothers.label "Всем кто помогал находить и исправлять ошибки">
+<!ENTITY special.label "Особая благодарность всем сделавшим пожертвования!">

@@ -1,0 +1,52 @@
+<!ENTITY title "Tilien hallinta">
+<!ENTITY main "Yleiset">
+<!ENTITY connections "Yhteys">
+<!ENTITY advanced "Lisäasetukset">
+<!ENTITY maindetails "Yleistiedot">
+<!ENTITY id "Tunnisteet">
+<!ENTITY account.label "Tilin nimi:">
+<!ENTITY account.tip "Esimerkki: FTP palvelimeni">
+<!ENTITY host.label "Isäntä:">
+<!ENTITY host.tip "Esimerkki: ftp.debian.org">
+<!ENTITY login.label "Käyttäjätunnus:">
+<!ENTITY password.label "Salasana:">
+<!ENTITY anonymous.label "Nimetön">
+<!ENTITY connection "Yhteystyyppi">
+<!ENTITY port.label "Portti:">
+<!ENTITY pasv.label "Passiivi tila">
+<!ENTITY security.label "Turvallisuus">
+<!ENTITY none.label "Tyhjä">
+<!ENTITY authtls.label "Varmennettu TLS(paras)">
+<!ENTITY authssl.label "Varmennettu SSL(parempi)">
+<!ENTITY implicit.label "Implisiittinen SSL(hyvä)">
+<!ENTITY initialdir "Aloitushakemisto">
+<!ENTITY download "Lataus asetukset">
+<!ENTITY upload "Lähetys asetukset">
+<!ENTITY localdir.label "Paikallinen:">
+<!ENTITY remotedir.label "Etä:">
+<!ENTITY current.label "Käytä nykyistä">
+<!ENTITY treesync.label "Pidä hakemistot tahdistettuina">
+<!ENTITY webhost "Verkkoisäntä(Käytetään &apos;Näytä verkossa&apos; ominaisuudessa)">
+<!ENTITY webhost.tip "Esimerkki: http://www.example.com">
+<!ENTITY prefix.label "Etuliite:">
+<!ENTITY prefix.tip "Poistettava etuliite FTP-osoitteista, esim. /public_html">
+<!ENTITY caseleave.label "Älä huomioi kirjainkokoja">
+<!ENTITY caselower.label "Muunna pieniksi kirjaimiksi">
+<!ENTITY caseupper.label "Muunna isoiksi kirjaimiksi">
+<!ENTITY encoding.label "Palvelimen koodaus">
+<!ENTITY charset.label "Merkisto:">
+<!ENTITY account.access "T">
+<!ENTITY host.access "I">
+<!ENTITY login.access "K">
+<!ENTITY password.access "S">
+<!ENTITY anonymous.access "N">
+<!ENTITY pasv.access "a">
+<!ENTITY port.access "P">
+<!ENTITY security.access "T">
+<!ENTITY localdir.access "i">
+<!ENTITY remotedir.access "E">
+<!ENTITY currentl.access "y">
+<!ENTITY currentr.access "k">
+<!ENTITY treesync.access "t">
+<!ENTITY webhost.access "ä">
+<!ENTITY prefix.access "E">

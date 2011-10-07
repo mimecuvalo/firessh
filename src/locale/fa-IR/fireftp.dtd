@@ -1,0 +1,109 @@
+<!ENTITY openFireFTP "FireFTP باز کردن لینک در">
+<!ENTITY viewFireFTP "FireFTP نمایش این صفحه در">
+<!ENTITY accounts.label "مدیریت حساب ها">
+<!ENTITY accountlist.label "(یک حساب را انتخاب کنید)">
+<!ENTITY new.label "...جدید">
+<!ENTITY edit.label "...ویرایش">
+<!ENTITY save.label "ذخیره حساب های موقت">
+<!ENTITY quick.label "اتصال سریع">
+<!ENTITY import.label "...ایمپورت">
+<!ENTITY export.label "...اکسپورت">
+<!ENTITY new.access "N">
+<!ENTITY edit.access "E">
+<!ENTITY delete.access "D">
+<!ENTITY save.access "S">
+<!ENTITY quick.access "Q">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY abort.label "انصراف">
+<!ENTITY logtab.label "گزارش">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "پیشرفته">
+<!ENTITY search.label "Search">
+<!ENTITY diff.label "Directory Diff">
+<!ENTITY recdiff.label "Compare Directories &amp; Subdirectories">
+<!ENTITY custom.label "سفارشی">
+<!ENTITY preferencestab.label "تنظیمات">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "C">
+<!ENTITY prefbutton.access "r">
+<!ENTITY help.label "راهنما">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "رفتن به دایرکتوری بالاتر">
+<!ENTITY refresh.tip "بارکذاری مجدد دایرکتوری">
+<!ENTITY localpath.tip "آدرس روی کامپیوتر">
+<!ENTITY remotepath.tip "آدرس روی هاست">
+<!ENTITY browse.label "جستجو">
+<!ENTITY change.label "تغییر">
+<!ENTITY name.label "نام">
+<!ENTITY size.label "اندازه">
+<!ENTITY date.label "تاریخ">
+<!ENTITY type.label "نوع">
+<!ENTITY attr.label "ویژگی ها">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "تغییر متدهای انتقال اطلاعات">
+<!ENTITY bytes.tip "بایت های دانلود شده / کل بایت ها">
+<!ENTITY timeela.tip "زمان صرف شده">
+<!ENTITY timerem.tip "زمان باقیمانده">
+<!ENTITY download.tip "سرعت دانلود">
+<!ENTITY percent.tip "درصد تکمیل کار">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "آپلود">
+<!ENTITY download.label "دانلود">
+<!ENTITY open.label "باز کردن">
+<!ENTITY openwith.label "...باز کردن با">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "نمایش در وب">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "بریدن">
+<!ENTITY copy.label "کپی کردن">
+<!ENTITY paste.label "چسباندن">
+<!ENTITY makedir.label "ایجاد دایرکتوری">
+<!ENTITY makefile.label "ایجاد فایل">
+<!ENTITY delete.label "پاک کردن">
+<!ENTITY rename.label "تغییر نام">
+<!ENTITY properties.label "مشخصات">
+<!ENTITY rproperties.label "مشخصات بازگشتی">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "k">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY searchDates.access "d">
+<!ENTITY accounts.access "M">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "v">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "e">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em style=';;;font-size:1.3em;line-height:0;';;;>lo</html:em>, from the <html:em style=';;;font-size:1.3em;line-height:0;';;;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;;font-size:1.3em;line-height:0;';;;>aide</html:em> the reborn beast in its quest to <html:em style=';;;font-size:1.3em;line-height:0;';;;>reclaim</html:em> the land.  Together they <html:em style=';;;font-size:1.3em;line-height:0;';;;>extended</html:em> the power of the beast and <html:em style=';;;font-size:1.3em;line-height:0;';;;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';;;font-size:1.3em;line-height:0;';;;>Mammon</html:em> were converted and their hearts were set <html:em style=';;;font-size:1.3em;line-height:0;';;;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "اتوماتیک">
+<!ENTITY binary.label         "باینری">
+<!ENTITY ascii.label          "اسکی">
+

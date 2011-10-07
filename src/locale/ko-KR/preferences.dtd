@@ -1,0 +1,69 @@
+<!ENTITY title "FireFTP 설정">
+<!ENTITY asciiTitle "아스키 파일 형식">
+<!ENTITY general.label "일반">
+<!ENTITY messages.label "메시지">
+<!ENTITY welcome.label "환영 메시지 보이기">
+<!ENTITY error.label "에러 메시지 보이기">
+<!ENTITY sessions.label "세션">
+<!ENTITY rememberp.label "암호 저장">
+<!ENTITY rememberd.label "디렉토리 목록 저장">
+<!ENTITY fileview.label "파일 보기">
+<!ENTITY autorefresh.label "자동 새로 고침">
+<!ENTITY refresh.tip "리모트 보기가 변경되면 디렉토리 목록 새로 고침">
+<!ENTITY hidden.label "숨긴 파일 보기">
+<!ENTITY bytesmode.label "파일 크기 바이트로 나타내기">
+<!ENTITY interface.label "인터페이스">
+<!ENTITY startup.label "FireFTP 시작">
+<!ENTITY windowopen.label "새 창으로">
+<!ENTITY tabopen.label "새 탭으로">
+<!ENTITY integrateftplnk.label "Firefox에서 자동으로 FireFTP를 사용하기 위한 FTP 링크 설정">
+<!ENTITY temppasvmode.label "수동 모드 연결 사용">
+<!ENTITY ui.label "레이아웃">
+<!ENTITY normal.label "일반 모드">
+<!ENTITY local.label "로컬 모드">
+<!ENTITY remote.label "리모트 모드">
+<!ENTITY both.tip "로컬 및 리모트 파일 모두 보이기">
+<!ENTITY local.tip "로컬 파일만 보이기">
+<!ENTITY remote.tip "리모트 파일만 보이기">
+<!ENTITY logwindow.label "로그">
+<!ENTITY logmode.label "메인창에 로그 보이기">
+<!ENTITY logerrormode.label "로그에 에러만 보이기">
+<!ENTITY debug.label "디버그 정보 보이기">
+<!ENTITY connect.label "연결">
+<!ENTITY proxy.label "프록시">
+<!ENTITY none.label "없음">
+<!ENTITY direct.label "직접 연결">
+<!ENTITY host.label "호스트:">
+<!ENTITY port.label "포트:">
+<!ENTITY active.label "활성화 모드">
+<!ENTITY limitPorts.label "포트 제한">
+<!ENTITY from.label "원위치:">
+<!ENTITY to.label "목적지:">
+<!ENTITY recovery.label "연결 복구">
+<!ENTITY network.label "네트워크 연결 시간 초과 (초, 1에서 600사이)">
+<!ENTITY network.tip "서버로부터 응답 대기 사간 제어">
+<!ENTITY keepalivemode.label "유휴 시간에도 연결 유지">
+<!ENTITY timeout.label "접속 해제 시 재연결 시도">
+<!ENTITY retryd.label "재시도 간격 (초, 1에서 600사이)">
+<!ENTITY retryd.tip "재시도 간격 (초)">
+<!ENTITY retrya.label "재시도 횟수">
+<!ENTITY retrya.tip "재시도 횟수">
+<!ENTITY downup.label "다운로드/업로드">
+<!ENTITY transfercaption.label "파일 전송 모드">
+<!ENTITY automatic.label "자동 모드">
+<!ENTITY automatic.tip "바이너리와 아스키 중 자동 선택">
+<!ENTITY binary.label "바이너리 모드">
+<!ENTITY ascii.label "아스키 모드">
+<!ENTITY asciifiles.label "아스키 파일:">
+<!ENTITY asciifiles.tip "아스키 파일로 인식할 파일의 확장자 목록">
+<!ENTITY add.label "추가">
+<!ENTITY remove.label "제거">
+<!ENTITY timestamps.label "타임스탬프">
+<!ENTITY synctimestamps.label "(서버가 이 기능을 활성화했을 경우) 타임스탬프를 동기화해 둡니다">
+<!ENTITY duplicates.label "파일 중복">
+<!ENTITY timer.label "덮어쓰기 대화상자 타이머 사용 안 함">
+<!ENTITY nopromptmode.label "덮어쓰기 대화상자 표시하지 않음, 무조건 덮어쓰기">
+<!ENTITY credits.label "공헌">
+<!ENTITY thanks.label "감사할 분:">
+<!ENTITY allothers.label "버그 신고 및 도움 주신 모든 분들">
+<!ENTITY special.label "그리고 기부해 주신 분들께 특별히 감사드립니다!">

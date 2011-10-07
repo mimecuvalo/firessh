@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Åpne kobling i FireFTP">
+<!ENTITY viewFireFTP "Vis siden i FireFTP">
+<!ENTITY accounts.label "Rediger profiler">
+<!ENTITY accountlist.label "(Velg Profil)">
+<!ENTITY new.label "Ny...">
+<!ENTITY edit.label "Rediger...">
+<!ENTITY save.label "Lagre midlertidig profil">
+<!ENTITY quick.label "HurtigTilkoble">
+<!ENTITY import.label "Importer...">
+<!ENTITY export.label "Eksporter...">
+<!ENTITY new.access "N">
+<!ENTITY edit.access "R">
+<!ENTITY delete.access "S">
+<!ENTITY save.access "L">
+<!ENTITY quick.access "H">
+<!ENTITY import.access "I">
+<!ENTITY export.access "E">
+<!ENTITY abort.label "Avbryt">
+<!ENTITY search.label "Search">
+<!ENTITY logtab.label "Logg">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Avansert">
+<!ENTITY diff.label "Mappesammenligning">
+<!ENTITY recdiff.label "Compare Directories &amp; Subdirectories">
+<!ENTITY custom.label "Egendefinert">
+<!ENTITY preferencestab.label "Innstillinger">
+<!ENTITY diff.access "M">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "D">
+<!ENTITY prefbutton.access "I">
+<!ENTITY help.label "Hjelp">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Gå til mappen over">
+<!ENTITY refresh.tip "Oppfrisk mappe">
+<!ENTITY localpath.tip "Lokal bane">
+<!ENTITY remotepath.tip "Ekstern bane">
+<!ENTITY browse.label "Bla gjennom...">
+<!ENTITY change.label "Endre">
+<!ENTITY name.label "Navn">
+<!ENTITY size.label "Størrelse">
+<!ENTITY date.label "Dato">
+<!ENTITY type.label "Type">
+<!ENTITY attr.label "Atribbutter">
+<!ENTITY type.tip "Endre måten overøring skjer (anbefal automatisk)">
+<!ENTITY bytes.tip "Bytes nedlastet / Totalt bytes">
+<!ENTITY timeela.tip "Tid brukt">
+<!ENTITY timerem.tip "Tid igjen">
+<!ENTITY download.tip "Nedlastningsrate">
+<!ENTITY percent.tip "Prosent ferdig">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Opplastet">
+<!ENTITY download.label "Nedlastet">
+<!ENTITY open.label "Åpne">
+<!ENTITY openwith.label "Åpne med">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Se på Web">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Klipp ut">
+<!ENTITY copy.label "Kopier">
+<!ENTITY paste.label "Lim inn">
+<!ENTITY makedir.label "Opprett mappe">
+<!ENTITY makefile.label "Opprett fil">
+<!ENTITY delete.label "Slett">
+<!ENTITY rename.label "Omdøp">
+<!ENTITY properties.label "Egenskaper">
+<!ENTITY rproperties.label "Rekursive egenskaper">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY accounts.access "R">
+<!ENTITY abort.access "b">
+<!ENTITY advanced.access "A">
+<!ENTITY helpbutton.access "j">
+<!ENTITY browsebutton.access "a">
+<!ENTITY changebutton.access "o">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchSubdir.access "k">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY mozilla.quote "Og, <html:em style=';;font-size:1.3em;line-height:0;';;>lo</html:em>, fra <html:em style=';;font-size:1.3em;line-height:0;';;>mørket</html:em> oppstod de: trofaste tjenere som <html:em style=';;font-size:1.3em;line-height:0;';;>støttet</html:em> det gjenfødde monsteret i sitt oppdrag for å <html:em style=';;font-size:1.3em;line-height:0;';;>ta tilbake</html:em> landet. Sammen <html:em style=';;font-size:1.3em;line-height:0;';;>utvidet</html:em> kraften til monsteret og de<html:em style=';;font-size:1.3em;line-height:0;';;>spredde</html:em> de gode nyhetene om dets gjenkomst. En etter en av <html:em style=';;font-size:1.3em;line-height:0;';;>Mammons</html:em> etterfølgere ble gjenfødt og deres hjerter <html:em style=';;font-size:1.3em;line-height:0;';;>brant</html:em>.">
+<!ENTITY mozilla.from "Fra <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Binært">
+<!ENTITY ascii.label          "ASCII">
+

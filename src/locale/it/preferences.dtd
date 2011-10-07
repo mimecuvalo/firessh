@@ -1,0 +1,37 @@
+<!ENTITY title "Optzioni">
+<!ENTITY general.label "Generali">
+<!ENTITY startup.label "Apri FireSSH:">
+<!ENTITY windowopen.label "In una nuova finestra">
+<!ENTITY tabopen.label "in una nuova scheda">
+<!ENTITY groupopen.label "in un raggruppamento finestre">
+<!ENTITY sessions.label "Sessioni">
+<!ENTITY rememberp.label "Ricorda passwords">
+<!ENTITY logwindow.label "Log">
+<!ENTITY debug.label "Mostra le informazioni di debug">
+<!ENTITY interface.label "Interfaccia">
+<!ENTITY appearance.label "Aspetto">
+<!ENTITY font.label "Carattere">
+<!ENTITY size.label "Dimensione">
+<!ENTITY fg.label "Testo">
+<!ENTITY bg.label "Sfondo">
+<!ENTITY bell.label "Allarme">
+<!ENTITY audible.label "Allarme udibile">
+<!ENTITY connect.label "Connessioni">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Nessuna">
+<!ENTITY direct.label "Diretta">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Porta:">
+<!ENTITY recovery.label "Ripristino Connessione">
+<!ENTITY network.label "Timeout connessione (in secondi, tra 1 e 600)">
+<!ENTITY network.tip "Controlla il tempo di attesa per una risposta dal server">
+<!ENTITY keepalivemode.label "Collegamento attivo, quando si e' in pausa">
+<!ENTITY timeout.label "Se disconnessi, tenta la riconnessione">
+<!ENTITY retryd.label "intervallo tentativi connessione (in secondi, tra 1 e 600)">
+<!ENTITY retryd.tip "Intervallo in secondi tra i tentativi di riconnessione">
+<!ENTITY retrya.label "Tentativi riconnessione">
+<!ENTITY retrya.tip "Numero tentativi da eseguire">
+<!ENTITY credits.label "Informazioni">
+<!ENTITY thanks.label "Grazie:">
+<!ENTITY allothers.label "Tutti quelli che hanno contribuito a">
+<!ENTITY special.label "Un sentito ringraziamento a tutti quelli che faranno una donazione!">

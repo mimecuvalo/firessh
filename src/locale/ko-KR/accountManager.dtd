@@ -1,0 +1,52 @@
+<!ENTITY title "계정 관리자">
+<!ENTITY main "메인">
+<!ENTITY connections "연결">
+<!ENTITY advanced "고급">
+<!ENTITY maindetails "메인 상세">
+<!ENTITY id "ID">
+<!ENTITY account.label "계정 이름:">
+<!ENTITY account.tip "예: 내 FTP 사이트">
+<!ENTITY host.label "호스트:">
+<!ENTITY host.tip "예: ftp.debian.org">
+<!ENTITY login.label "로그인:">
+<!ENTITY password.label "암호:">
+<!ENTITY anonymous.label "익명">
+<!ENTITY connection "연결 형식">
+<!ENTITY port.label "포트:">
+<!ENTITY pasv.label "수동 모드">
+<!ENTITY security.label "보안">
+<!ENTITY none.label "없음">
+<!ENTITY authtls.label "TLS 인증(가장 좋음)">
+<!ENTITY authssl.label "SSL 인증(더 좋음)">
+<!ENTITY implicit.label "암시적 SSL(좋음)">
+<!ENTITY initialdir "디렉토리 초기화">
+<!ENTITY download "다운로드 설정">
+<!ENTITY upload "업로드 설정">
+<!ENTITY localdir.label "로컬:">
+<!ENTITY remotedir.label "리모트:">
+<!ENTITY current.label "현재값 사용">
+<!ENTITY treesync.label "디렉토리 동기 유지">
+<!ENTITY webhost "웹 호스트 (&apos;웹으로 보기&apos; 기능과 함께 사용)">
+<!ENTITY webhost.tip "예: http://www.example.com">
+<!ENTITY prefix.label "프리픽스:">
+<!ENTITY prefix.tip "URL의 FTP 부분을 제거하기 위한 프리픽스입니다.">
+<!ENTITY caseleave.label "대/소문자 그대로 두기">
+<!ENTITY caselower.label "소문자로 변환">
+<!ENTITY caseupper.label "대문자로 변환">
+<!ENTITY encoding.label "서버의 인코딩">
+<!ENTITY charset.label "문자셋">
+<!ENTITY account.access "A">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

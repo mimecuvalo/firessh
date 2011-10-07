@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <RDF:Description about="urn:mozilla:extension:firessh@nightlight.ws">
+    <em:updates>
+      <RDF:Seq>
+        <RDF:li resource="urn:mozilla:extension:firessh@nightlight.ws:__VERSION__"/>
+      </RDF:Seq>
+    </em:updates>
+  </RDF:Description>
+
+  <RDF:Description about="urn:mozilla:extension:firessh@nightlight.ws:__VERSION__">
+    <em:version>__VERSION__</em:version>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>__MINVERSION__</em:minVersion>
+        <em:maxVersion>__MAXVERSION__</em:maxVersion>
+        <em:updateLink>http://downloads.mozdev.org/fireftp/fireftp___l10n__.xpi</em:updateLink>
+        <em:updateHash>
+          md5:__MD5__
+        </em:updateHash>
+      </Description>
+    </em:targetApplication>
+  </RDF:Description>  
+
+</RDF:RDF>

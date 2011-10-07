@@ -1,0 +1,72 @@
+<!ENTITY title "Optionen">
+<!ENTITY asciiTitle "ASCII Dateitypen">
+<!ENTITY general.label "Allgemein">
+<!ENTITY messages.label "Nachrichten">
+<!ENTITY welcome.label "Zeige Willkommensnachricht">
+<!ENTITY error.label "Zeige Fehler">
+<!ENTITY sessions.label "Sitzungen">
+<!ENTITY rememberp.label "Passwörter speichern">
+<!ENTITY rememberd.label "Ordnerlisten speichern">
+<!ENTITY fileview.label "Zeige Datei">
+<!ENTITY autorefresh.label "Automatisch neu laden">
+<!ENTITY refresh.tip "Nachdem die Serveranzeige geändert wurde (nach der Übertragung), den Ordner neu laden">
+<!ENTITY hidden.label "Zeige versteckte Dateien">
+<!ENTITY bytesmode.label "Zeige die Anzahl Bytes als Dateigrösse">
+<!ENTITY interface.label "Oberfläche">
+<!ENTITY startup.label "FireFTP öffnen:">
+<!ENTITY windowopen.label "in einem neuen Fenster">
+<!ENTITY tabopen.label "in einem neuen Tab">
+<!ENTITY integrateftplnk.label "FTP Links konfigurieren, so dass Firefox sie in FireFTP öffnet.">
+<!ENTITY temppasvmode.label "Passiver Modus für diese Verbindungen benutzen">
+<!ENTITY open.label "Doppelklick/Enter drücken:">
+<!ENTITY download.label "Datei übertragen">
+<!ENTITY exec.label "Datei öffnen">
+<!ENTITY both.tip "Zeige Lokale und Server Datei">
+<!ENTITY local.tip "Zeige nur lokale Dateien">
+<!ENTITY remote.tip "Zeige nur Dateien auf Server">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Zeige Log im Hauptfenster">
+<!ENTITY logerrormode.label "Zeige nur Fehler im Log">
+<!ENTITY debug.label "Zeige Debuginformationen">
+<!ENTITY connect.label "Verbindungen">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Keiner">
+<!ENTITY direct.label "Direkt">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Aktiver Modus">
+<!ENTITY limitPorts.label "Ports limitieren">
+<!ENTITY from.label "Von:">
+<!ENTITY to.label "Bis:">
+<!ENTITY concurrent.label "Aktuelle Übertragungen">
+<!ENTITY simtransfers.label "Max. gleichzeitige Übertragungen (1-10)">
+<!ENTITY recovery.label "Verbindungswiederherstellung">
+<!ENTITY network.label "Netzwerk timeout (in Sekunden, zwischen 1 und 600)">
+<!ENTITY network.tip "Kontrolliert wie lange eine Antwort vom Server erwartet werden soll.">
+<!ENTITY keepalivemode.label "Verbindung behalten wenn ohne Aktion">
+<!ENTITY timeout.label "Wenn Verbindung getrennt wurde, versuchen wieder zu verbinden">
+<!ENTITY retryd.label "Versuchs Abstand (in Sekunden, zwischen 1 und 600)">
+<!ENTITY retryd.tip "Sekunden zwischen Wiederverbindungsversuchen">
+<!ENTITY retrya.label "Wiederverbindungsversuche">
+<!ENTITY retrya.tip "Anzahl Versuche">
+<!ENTITY downup.label "Herunterladen/Hochladen">
+<!ENTITY transfercaption.label "Zur Dateiübertragung benützen:">
+<!ENTITY automatic.label "Automatischer Modus">
+<!ENTITY automatic.tip "Automatisch zwischen &apos;binär&apos; und &apos;ASCII&apos; Modus wählen">
+<!ENTITY binary.label "Binärer Modus">
+<!ENTITY ascii.label "ASCII Modus">
+<!ENTITY asciifiles.label "ASCII Dateien:">
+<!ENTITY asciifiles.tip "Dateierweiterungen angeben, die als ASCII Datei erkannt werden sollen">
+<!ENTITY add.label "Hinzufügen">
+<!ENTITY remove.label "Entfernen">
+<!ENTITY extras.label "Extras (wenn auf dem Server aktiviert)">
+<!ENTITY usecompression.label "Komprimierung benutzen">
+<!ENTITY synctimestamps.label "Zeitstempel synchronisiert halten">
+<!ENTITY integritymode.label "Integrität von Dateiübertragungen überprüfen (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Dateiduplikate">
+<!ENTITY timer.label "Timer im Dateiüberschreibungsdialog deaktivieren">
+<!ENTITY nopromptmode.label "Kein Überschreibungsdialog anzeigen, einfach überschrieben">
+<!ENTITY credits.label "Credits">
+<!ENTITY thanks.label "Dankeschön:">
+<!ENTITY allothers.label "Alle die Bugs hinzufügten und geholfen haben">
+<!ENTITY special.label "Spezielles Dankeschön an alle Spender!">

@@ -1,0 +1,101 @@
+<!ENTITY openFireFTP "Bağlantıyı FireFTP&apos;de aç">
+<!ENTITY viewFireFTP "Bu Sayfayı FireFTP&apos;de Göster">
+<!ENTITY accountlist.label "(Hesap seç)">
+<!ENTITY edit.label "Düzenle...">
+<!ENTITY abort.label "İptal">
+<!ENTITY logtab.label "Günlük">
+<!ENTITY ltab.label "Günlük">
+<!ENTITY qtab.label "Sıra">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "G">
+<!ENTITY advanced.label "Araçlar">
+<!ENTITY search.label "Arama/Süzme">
+<!ENTITY diff.label "Dizinleri Eşitle...">
+<!ENTITY recdiff.label "Dizin ve Altdizinleri Eşitle">
+<!ENTITY custom.label "Özel Komut...">
+<!ENTITY import.label "İçeri Al...">
+<!ENTITY export.label "Dışarı Ver...">
+<!ENTITY preferencestab.label "Seçenekler...">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "A">
+<!ENTITY custom.access "Ö">
+<!ENTITY import.access "A">
+<!ENTITY export.access "V">
+<!ENTITY prefbutton.access "S">
+<!ENTITY help.label "Yardım">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Üst dizine geç">
+<!ENTITY refresh.tip "Dizini yenile">
+<!ENTITY localpath.tip "Yerel Konum">
+<!ENTITY remotepath.tip "Uzaktaki Konum">
+<!ENTITY browse.label "Gözat">
+<!ENTITY change.label "Değiştir">
+<!ENTITY name.label "İsim">
+<!ENTITY size.label "Boyut">
+<!ENTITY date.label "Tarih">
+<!ENTITY type.label "Tür">
+<!ENTITY attr.label "Nitelikler">
+<!ENTITY source.label "Kaynak">
+<!ENTITY dest.label "Hedef">
+<!ENTITY bytes.label "Bayt">
+<!ENTITY status.label "Durum">
+<!ENTITY retry.label "Yeniden Dene">
+<!ENTITY cancel.label "İptal">
+<!ENTITY cancelAll.label "Hepsini İptal Et">
+<!ENTITY type.tip "Aktarım yöntemini değiştir (otomatik önerilir)">
+<!ENTITY bytes.tip "İndirilen Bayt / Toplam bayt">
+<!ENTITY timeela.tip "Geçen Süre">
+<!ENTITY timerem.tip "Kalan Süre">
+<!ENTITY download.tip "İndirme Hızı">
+<!ENTITY percent.tip "İlerleme">
+<!ENTITY openContaining.label "İçeren Klasörü Aç">
+<!ENTITY upload.label "Karşıya Yükle">
+<!ENTITY download.label "İndir">
+<!ENTITY open.label "Aç">
+<!ENTITY openwith.label "Birlikte Aç">
+<!ENTITY extractHere.label "İçeriği Buraya Aç">
+<!ENTITY extractTo.label "İçeriği Klasöre Aç">
+<!ENTITY viewweb.label "Web&apos;de görüntüle">
+<!ENTITY copyUrl.label "URL&apos;yi Kopyala">
+<!ENTITY copyUrlLogin.label "Giriş bilgisiyle FTP&apos;yi kopyala">
+<!ENTITY cut.label "Kes">
+<!ENTITY copy.label "Kopyala">
+<!ENTITY paste.label "Yapıştır">
+<!ENTITY makedir.label "Dizin Oluştur">
+<!ENTITY makefile.label "Dosya Oluştur">
+<!ENTITY delete.label "Sil">
+<!ENTITY rename.label "Ad Değiştir">
+<!ENTITY properties.label "Özellikler">
+<!ENTITY rproperties.label "Özellikler (içerikle birlikte)">
+<!ENTITY searchButton.label "Ara">
+<!ENTITY searchLocal.label "Yerelde">
+<!ENTITY searchRemote.label "Uzakta">
+<!ENTITY searchOptions.label "Seçenekler">
+<!ENTITY searchFrom.label "Buradan:">
+<!ENTITY searchTo.label "Buraya:">
+<!ENTITY searchSubdir.label "Altdizinlere bak">
+<!ENTITY searchMatch.label "Büyük-küçük harf eşleştir">
+<!ENTITY searchRegexp.label "RegEx ifadesi">
+<!ENTITY searchDates.label "Tarihleri belirle">
+<!ENTITY searchSubdir.access "a">
+<!ENTITY searchMatch.access "b">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "t">
+<!ENTITY edit.access "D">
+<!ENTITY abort.access "i">
+<!ENTITY advanced.access "G">
+<!ENTITY helpbutton.access "Y">
+<!ENTITY browsebutton.access "T">
+<!ENTITY changebutton.access "D">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "Y">
+<!ENTITY searchRemote.access "U">
+<!ENTITY searchOptions.access "D">
+<!ENTITY mozilla.quote "And, <html:em style=';;;font-size:1.3em;line-height:0;';;;>lo</html:em>, from the <html:em style=';;;font-size:1.3em;line-height:0;';;;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;;font-size:1.3em;line-height:0;';;;>aide</html:em> the reborn beast in its quest to <html:em style=';;;font-size:1.3em;line-height:0;';;;>reclaim</html:em> the land.  Together they <html:em style=';;;font-size:1.3em;line-height:0;';;;>extended</html:em> the power of the beast and <html:em style=';;;font-size:1.3em;line-height:0;';;;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';;;font-size:1.3em;line-height:0;';;;>Mammon</html:em> were converted and their hearts were set <html:em style=';;;font-size:1.3em;line-height:0;';;;>aflame</html:em>.">
+<!ENTITY mozilla.from "<html:strong>The Book of Mozilla</html:strong>&apos;dan 8:2">
+
+
+<!ENTITY auto.label           "Otomatik">
+<!ENTITY binary.label         "İkilik">
+<!ENTITY ascii.label          "ASCII">
+

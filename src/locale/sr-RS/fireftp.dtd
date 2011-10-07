@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Отвори везу с ФиреФТП">
+<!ENTITY viewFireFTP "Погледај ову страницу с ФиреФТП">
+<!ENTITY accountlist.label "(Изабери рачун)">
+<!ENTITY edit.label "Уреди...">
+<!ENTITY abort.label "Прекини">
+<!ENTITY logtab.label "Запис">
+<!ENTITY ltab.label "Лог">
+<!ENTITY qtab.label "Qуеуе">
+<!ENTITY search.access "С">
+<!ENTITY logbutton.access "г">
+<!ENTITY advanced.label "Напредно">
+<!ENTITY search.label "Сеарцх">
+<!ENTITY diff.label "Успоредба директорија">
+<!ENTITY recdiff.label "Цомпаре Дирецториес &амп; Субдирецториес">
+<!ENTITY custom.label "Прилагођено">
+<!ENTITY import.label "Увези...">
+<!ENTITY export.label "Извези...">
+<!ENTITY preferencestab.label "Поставке">
+<!ENTITY diff.access "Д">
+<!ENTITY recdiff.access "Р">
+<!ENTITY custom.access "Ц">
+<!ENTITY import.access "И">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "р">
+<!ENTITY help.label "Помоћ">
+<!ENTITY help.url "хттп://фирефтп.моздев.орг/хелп.хтмл">
+<!ENTITY parentdir.tip "Врати у исходишни директориј">
+<!ENTITY refresh.tip "Освјежи директориј">
+<!ENTITY localpath.tip "Локална путања">
+<!ENTITY remotepath.tip "Удаљена путања">
+<!ENTITY browse.label "Отвори">
+<!ENTITY change.label "Промијени">
+<!ENTITY name.label "Назив">
+<!ENTITY size.label "Величина">
+<!ENTITY date.label "Датум">
+<!ENTITY type.label "Тип">
+<!ENTITY attr.label "Атрибути">
+<!ENTITY source.label "Соурце">
+<!ENTITY dest.label "Дестинатион">
+<!ENTITY bytes.label "Бyтес">
+<!ENTITY status.label "Статус">
+<!ENTITY retry.label "Ретрy">
+<!ENTITY cancel.label "Цанцел">
+<!ENTITY cancelAll.label "Цанцел Алл">
+<!ENTITY type.tip "Промијену начин пријеноса (препоручено аутоматски)">
+<!ENTITY bytes.tip "Бyте-а Преузето / Укупно бyте-а">
+<!ENTITY timeela.tip "Протекло вријеме">
+<!ENTITY timerem.tip "Преостало вријеме">
+<!ENTITY download.tip "Брзина преузимања">
+<!ENTITY percent.tip "Завршено посто">
+<!ENTITY openContaining.label "Опен Цонтаининг Фолдер">
+<!ENTITY upload.label "Отпрема">
+<!ENTITY download.label "Преузимање">
+<!ENTITY open.label "Отвори">
+<!ENTITY openwith.label "Отвори са">
+<!ENTITY extractHere.label "Еxтрацт Хере">
+<!ENTITY extractTo.label "Еxтрацт То Фолдер">
+<!ENTITY viewweb.label "Погледај на wебу">
+<!ENTITY copyUrl.label "Цопy УРЛ">
+<!ENTITY copyUrlLogin.label "ФТП wитх логин">
+<!ENTITY cut.label "Изрежи">
+<!ENTITY copy.label "Копирај">
+<!ENTITY paste.label "Залијепи">
+<!ENTITY makedir.label "Направи директориј">
+<!ENTITY makefile.label "Направи датотеку">
+<!ENTITY delete.label "Обриши">
+<!ENTITY rename.label "Преименуј">
+<!ENTITY properties.label "Својства">
+<!ENTITY rproperties.label "Супротна својства">
+<!ENTITY searchButton.label "Сеарцх">
+<!ENTITY searchLocal.label "Лоцал">
+<!ENTITY searchRemote.label "Ремоте">
+<!ENTITY searchOptions.label "Оптионс">
+<!ENTITY searchFrom.label "Фром:">
+<!ENTITY searchTo.label "То:">
+<!ENTITY searchSubdir.label "Лоок ин субдирецториес">
+<!ENTITY searchMatch.label "Матцх цасе">
+<!ENTITY searchRegexp.label "Регулар еxпрессион">
+<!ENTITY searchDates.label "Специфy датес">
+<!ENTITY searchSubdir.access "к">
+<!ENTITY searchMatch.access "е">
+<!ENTITY searchRegexp.access "г">
+<!ENTITY searchDates.access "д">
+<!ENTITY edit.access "Е">
+<!ENTITY abort.access "А">
+<!ENTITY advanced.access "в">
+<!ENTITY helpbutton.access "Х">
+<!ENTITY browsebutton.access "Б">
+<!ENTITY changebutton.access "е">
+<!ENTITY searchButton.access "С">
+<!ENTITY searchLocal.access "Л">
+<!ENTITY searchRemote.access "Р">
+<!ENTITY searchOptions.access "О">
+<!ENTITY mozilla.quote "I, <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>lo</html:em>, из <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>мрака</html:em> су изронили: војска верника да <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>помогне</html:em> поново рођеној звери у њеном настојању <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>поновног</html:em> преузимања Земље.  Заједно су <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>повећали</html:em> снагу звијери и <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>проширили</html:em> добре вијести о њезином повратку.  Један по један сљедбеници <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>Мамона</html:em> су обраћени и њихова срца су у <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>пламену</html:em>.">
+<!ENTITY mozilla.from "из <html:strong>Књиге о Мозили</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Аутоматски">
+<!ENTITY binary.label         "Бинарно">
+<!ENTITY ascii.label          "АСЦИИ">
+

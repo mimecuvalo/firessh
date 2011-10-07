@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Ava Link FireFTPs">
+<!ENTITY viewFireFTP "Vaata See Leht FireFTPs">
+<!ENTITY accounts.label "Muuda Kontosid">
+<!ENTITY accountlist.label "(Vali Konto)">
+<!ENTITY new.label "Uus...">
+<!ENTITY edit.label "Muuda...">
+<!ENTITY save.label "Salvesta Ajutine Konto">
+<!ENTITY quick.label "KiirestiÜhendav">
+<!ENTITY import.label "Impordi...">
+<!ENTITY export.label "Ekspordi...">
+<!ENTITY new.access "U">
+<!ENTITY edit.access "M">
+<!ENTITY delete.access "K">
+<!ENTITY save.access "S">
+<!ENTITY quick.access "i">
+<!ENTITY import.access "m">
+<!ENTITY export.access "p">
+<!ENTITY abort.label "Katkesta">
+<!ENTITY search.label "Otsi">
+<!ENTITY logtab.label "Logifail">
+<!ENTITY search.access "O">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "Arenenud">
+<!ENTITY diff.label "Kausta Diff">
+<!ENTITY recdiff.label "Rekursiivne Kausta Diff">
+<!ENTITY custom.label "Kohanda">
+<!ENTITY preferencestab.label "Muudatused">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "K">
+<!ENTITY prefbutton.access "d">
+<!ENTITY help.label "Abi">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Saada peakausta">
+<!ENTITY refresh.tip "Uuenda Kausta">
+<!ENTITY localpath.tip "Lokaalne Rada">
+<!ENTITY remotepath.tip "Lokaalne Rada">
+<!ENTITY browse.label "Brausi">
+<!ENTITY change.label "Muuda">
+<!ENTITY name.label "Nimi">
+<!ENTITY size.label "Suurus">
+<!ENTITY date.label "Kuupäev">
+<!ENTITY type.label "Tüüp">
+<!ENTITY attr.label "Atribuudid">
+<!ENTITY type.tip "Muuda ülekannete meetodit (automaatne soovitatav)">
+<!ENTITY bytes.tip "Baite Alla Laetud / Baite Kokku">
+<!ENTITY timeela.tip "Aega Kulunud">
+<!ENTITY timerem.tip "Aega Jääb">
+<!ENTITY download.tip "Allalaadimise Kiirus">
+<!ENTITY percent.tip "Protsenti Lõpetatud">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Lae Üles">
+<!ENTITY download.label "Lae Alla">
+<!ENTITY open.label "Ava">
+<!ENTITY openwith.label "Ava...">
+<!ENTITY extractHere.label "Paki Siia Lahti">
+<!ENTITY extractTo.label "Paki Lahti Kausta...">
+<!ENTITY viewweb.label "Vaata Veebis">
+<!ENTITY copyUrl.label "Kopeeri URL">
+<!ENTITY copyUrlLogin.label "FTP sisse logimisega">
+<!ENTITY cut.label "Lõika">
+<!ENTITY copy.label "Kopeeri">
+<!ENTITY paste.label "Kleebi">
+<!ENTITY makedir.label "Tee Uus Kaust">
+<!ENTITY makefile.label "Tee Uus Fail">
+<!ENTITY delete.label "Kustuta">
+<!ENTITY rename.label "Nimeta Ümber">
+<!ENTITY properties.label "Atrribuudid">
+<!ENTITY rproperties.label "Rekursiivsed Attribuudid">
+<!ENTITY searchButton.label "Otsi">
+<!ENTITY searchLocal.label "Lokaalne">
+<!ENTITY searchRemote.label "Kauge">
+<!ENTITY searchSubdir.label "Vaata alamkaustadest">
+<!ENTITY searchMatch.label "Sobita juhtum">
+<!ENTITY searchRegexp.label "Regulaarne väljendus">
+<!ENTITY accounts.access "M">
+<!ENTITY abort.access "a">
+<!ENTITY advanced.access "r">
+<!ENTITY helpbutton.access "i">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "u">
+<!ENTITY searchButton.access "O">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "t">
+<!ENTITY searchSubdir.access "a">
+<!ENTITY searchMatch.access "h">
+<!ENTITY searchRegexp.access "ä">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land. Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return. One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Automaatne">
+<!ENTITY binary.label         "Binaar">
+<!ENTITY ascii.label          "ASCII">
+

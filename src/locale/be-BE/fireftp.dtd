@@ -1,0 +1,74 @@
+﻿<!ENTITY openFireFTP "Адкрыць спасылку ў FireFTP">
+<!ENTITY viewFireFTP "Глядзець старонку ў FireFTP">
+<!ENTITY accounts.label "Уліковы запіс">
+<!ENTITY accountlist.label "(Вылучыць учетн.запіс)">
+<!ENTITY new.label "Новы...">
+<!ENTITY edit.label "Змяніць...">
+<!ENTITY save.label "Захоўваць часовы ўліковы запіс">
+<!ENTITY quick.label "Хуткае злучэнне">
+<!ENTITY import.label "Імпарт...">
+<!ENTITY export.label "Экспарт">
+<!ENTITY new.access "Н">
+<!ENTITY edit.access "І">
+<!ENTITY delete.access "л">
+<!ENTITY save.access "х">
+<!ENTITY quick.access "Бы">
+<!ENTITY import.access "м">
+<!ENTITY export.access "Э">
+<!ENTITY abort.label "Стоп">
+<!ENTITY logtab.label "Часопіс">
+<!ENTITY preferencestab.label "Налады">
+<!ENTITY advanced.label "Дадаткова">
+<!ENTITY custom.label "Карыстацкая каманда">
+<!ENTITY diff.label "Параўнаць каталогі">
+<!ENTITY diff.access "да">
+<!ENTITY custom.access "я">
+<!ENTITY help.label "Дапамога">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "На ўзровень вышэй">
+<!ENTITY refresh.tip "Абнавіць">
+<!ENTITY localpath.tip "Лакальны адрас">
+<!ENTITY remotepath.tip "Выдалены адрас">
+<!ENTITY browse.label "Агляд">
+<!ENTITY change.label "Перайсці">
+<!ENTITY name.label "Імя">
+<!ENTITY size.label "Памер">
+<!ENTITY date.label "Дата">
+<!ENTITY type.label "Тып">
+<!ENTITY attr.label "Атрыбуты">
+<!ENTITY type.tip "Змяніць метад перадачы (рэкамендуецца &apos;&apos;auto&apos;&apos;)">
+<!ENTITY bytes.tip "Байт Загружана / Усяго Байт">
+<!ENTITY timeela.tip "Прайшло">
+<!ENTITY timerem.tip "Засталося">
+<!ENTITY download.tip "Хуткасць загрузкі">
+<!ENTITY percent.tip "Адсоткаў выканана">
+<!ENTITY upload.label "Перадаць">
+<!ENTITY download.label "Загрузіць">
+<!ENTITY open.label "Адкрыць">
+<!ENTITY openwith.label "Адкрыць з дапамогаю">
+<!ENTITY viewweb.label "Глядзець у Web">
+<!ENTITY cut.label "Выразаць">
+<!ENTITY copy.label "Капіяваць">
+<!ENTITY paste.label "Уставіць">
+<!ENTITY makedir.label "Стварыць тэчку">
+<!ENTITY makefile.label "Стварыць файл">
+<!ENTITY delete.label "Выдаліць">
+<!ENTITY rename.label "Пераназваць">
+<!ENTITY properties.label "Уласцівасці">
+<!ENTITY rproperties.label "Рэкурсіўныя Ўласцівасці">
+<!ENTITY accounts.access "З">
+<!ENTITY abort.access "т">
+<!ENTITY pause.access "у">
+<!ENTITY logbutton.access "Ж">
+<!ENTITY prefbutton.access "Н">
+<!ENTITY advanced.access "п">
+<!ENTITY helpbutton.access "щ">
+<!ENTITY browsebutton.access "Аб">
+<!ENTITY changebutton.access "й">
+<!ENTITY mozilla.quote "And, <html:em style=';font-size:1.3em;line-height:0;';>lo</html:em>, from the <html:em style=';font-size:1.3em;line-height:0;';>darkness</html:em> they emerged: a host of the faithful to <html:em style=';font-size:1.3em;line-height:0;';>aide</html:em> the reborn beast in its quest to <html:em style=';font-size:1.3em;line-height:0;';>reclaim</html:em> the land. Together they <html:em style=';font-size:1.3em;line-height:0;';>extended</html:em> the power of the beast and <html:em style=';font-size:1.3em;line-height:0;';>spread</html:em> the good news of its return. One by one the followers of <html:em style=';font-size:1.3em;line-height:0;';>Mammon</html:em> were converted and their hearts were set <html:em style=';font-size:1.3em;line-height:0;';>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Аўта">
+<!ENTITY binary.label         "Бінарны">
+<!ENTITY ascii.label          "ASCII">
+

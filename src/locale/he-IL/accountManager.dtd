@@ -1,0 +1,52 @@
+<!ENTITY title "מנהל חשבונות">
+<!ENTITY main "ראשי">
+<!ENTITY connections "חיבור">
+<!ENTITY advanced "מתקדם">
+<!ENTITY maindetails "פרטים ראשיים">
+<!ENTITY id "מזהה">
+<!ENTITY account.label "שם חשבון:">
+<!ENTITY account.tip "דוגמא: אתר ה-FTP שלי">
+<!ENTITY host.label "מארח:">
+<!ENTITY host.tip "דוגמא: ftp.debian.org">
+<!ENTITY login.label "שם משתמש:">
+<!ENTITY password.label "סיסמא:">
+<!ENTITY anonymous.label "אנונימי">
+<!ENTITY connection "סוג חיבור">
+<!ENTITY port.label "פורט:">
+<!ENTITY pasv.label "מצב פאסיבי">
+<!ENTITY security.label "אבטחה">
+<!ENTITY none.label "ללא">
+<!ENTITY authtls.label "אבטחת TLS (הטובה ביותר)">
+<!ENTITY authssl.label "אבטחת SSL (טובה מאוד)">
+<!ENTITY implicit.label "SSL עקיף (טוב)">
+<!ENTITY initialdir "תיקיות ראשוניות">
+<!ENTITY download "אפשרויות הורדה">
+<!ENTITY upload "אפשרויות העלאה">
+<!ENTITY localdir.label "מקומי:">
+<!ENTITY remotedir.label "מרוחק:">
+<!ENTITY current.label "השתמש בנוכחי">
+<!ENTITY treesync.label "השאר את התיקיות מסונכרנות">
+<!ENTITY webhost "מארח רשת (נעשה שימוש עם תכונת &apos;הצגה ברשת&apos;)">
+<!ENTITY webhost.tip "דוגמא: http://www.example.com">
+<!ENTITY prefix.label "קידומת">
+<!ENTITY prefix.tip "קידומת להסרת החלק של ה-FTP מהקישור, לדוגמא /public_html">
+<!ENTITY caseleave.label "הנח למצב לנפשו">
+<!ENTITY caselower.label "המר לאותיות קטנות">
+<!ENTITY caseupper.label "המר לאותיות גדולות">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "A">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "U">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

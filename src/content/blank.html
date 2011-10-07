@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title></title>
+    <link rel="stylesheet" href="chrome://global/skin/global.css" type="text/css" media="screen" >
+    <style type="text/css">
+      body {
+        margin : 8px;
+      }
+      body,
+      #input {
+        background-color: black;
+        font: 12px Andale Mono, Courier New;
+        color: #33ff33;
+      }
+      #history-outer {
+        position: relative;
+        overflow: hidden;
+      }
+      #history {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #history div,
+      #terminal div {
+        /*height: 14px;*/
+        white-space: nowrap;
+      }
+      #cursor,
+      #test {
+        /*height: 14px;*/
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -moz-appearance: none;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        width: 50px;
+      }
+      #test {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body><div id="history-outer"><div id="history"></div></div><div id="terminal"></div><div id="cursor">&nbsp;</div><div id="test">&nbsp;</div><input id="input" type="text"/></body>
+</html>

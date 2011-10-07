@@ -1,0 +1,45 @@
+<!ENTITY title                 "Options">
+
+<!ENTITY general.label         "General">
+
+<!ENTITY startup.label         "Start FireSSH:">
+<!ENTITY windowopen.label      "in a new window">
+<!ENTITY tabopen.label         "in a new tab">
+<!ENTITY groupopen.label       "in a window grouping">
+
+<!ENTITY sessions.label        "Sessions">
+<!ENTITY rememberp.label       "Remember passwords">
+
+<!ENTITY logwindow.label       "Log">
+<!ENTITY debug.label           "Show debug information">
+
+<!ENTITY interface.label       "Interface">
+<!ENTITY appearance.label      "Appearance">
+<!ENTITY font.label            "Font">
+<!ENTITY size.label            "Size">
+<!ENTITY fg.label              "Text">
+<!ENTITY bg.label              "Background">
+<!ENTITY bell.label            "Bell">
+<!ENTITY audible.label         "Audible Bell">
+
+<!ENTITY connect.label         "Connections">
+<!ENTITY proxy.label           "Proxy">
+<!ENTITY none.label            "None">
+<!ENTITY direct.label          "Direct">
+<!ENTITY host.label            "Host:">
+<!ENTITY port.label            "Port:">
+
+<!ENTITY recovery.label        "Connection Recovery">
+<!ENTITY network.label         "Network timeout (in seconds, between 1 and 600)">
+<!ENTITY network.tip           "Controls how long to wait for a response from the server">
+<!ENTITY keepalivemode.label   "Keep connection alive while idle">
+<!ENTITY timeout.label         "If disconnected, try to reconnect">
+<!ENTITY retryd.label          "Retry delay (in seconds, between 1 and 600)">
+<!ENTITY retryd.tip            "Seconds between reconnection attempts">
+<!ENTITY retrya.label          "Retry attempts">
+<!ENTITY retrya.tip            "Number of attempts to be made">
+
+<!ENTITY credits.label         "Credits">
+<!ENTITY thanks.label          "Thank You:">
+<!ENTITY allothers.label       "All others who submitted bugs and helped">
+<!ENTITY special.label         "Special Thanks to all who donate!">

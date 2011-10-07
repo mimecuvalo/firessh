@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Avaa linkki FireFTP:ssä">
+<!ENTITY viewFireFTP "Näytä tämä sivu FireFTP:ssä">
+<!ENTITY accounts.label "Hallitse tilejä">
+<!ENTITY accountlist.label "(Valitse tili)">
+<!ENTITY new.label "Uusi...">
+<!ENTITY edit.label "Muokkaa...">
+<!ENTITY save.label "Tallenna väliaikainen tili">
+<!ENTITY quick.label "Pikayhteys">
+<!ENTITY import.label "Tuo...">
+<!ENTITY export.label "Vie...">
+<!ENTITY new.access "U">
+<!ENTITY edit.access "M">
+<!ENTITY delete.access "P">
+<!ENTITY save.access "T">
+<!ENTITY quick.access "i">
+<!ENTITY import.access "T">
+<!ENTITY export.access "V">
+<!ENTITY abort.label "Keskeytä">
+<!ENTITY search.label "Haku">
+<!ENTITY logtab.label "Loki">
+<!ENTITY search.access "H">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Lisäasetukset">
+<!ENTITY diff.label "Hakemiston vertailu">
+<!ENTITY recdiff.label "Toistuvat hakemiston vertailut">
+<!ENTITY custom.label "Omat">
+<!ENTITY preferencestab.label "Asetukset">
+<!ENTITY diff.access "e">
+<!ENTITY recdiff.access "T">
+<!ENTITY custom.access "O">
+<!ENTITY prefbutton.access "A">
+<!ENTITY help.label "Ohje">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Näytä ylähakemisto">
+<!ENTITY refresh.tip "Päivitä hakemisto">
+<!ENTITY localpath.tip "Paikallinen polku">
+<!ENTITY remotepath.tip "Etäpolku">
+<!ENTITY browse.label "Selaa">
+<!ENTITY change.label "Vaihda">
+<!ENTITY name.label "Nimi">
+<!ENTITY size.label "Koko">
+<!ENTITY date.label "Päivämäärä">
+<!ENTITY type.label "Tyyppi">
+<!ENTITY attr.label "Ominaisuudet">
+<!ENTITY type.tip "Vaihda tiedonsiirtotapaa (automaattinen suositeltu)">
+<!ENTITY bytes.tip "Tavuja ladattu / Tavuja yhteensä">
+<!ENTITY timeela.tip "Aikaa kulunut">
+<!ENTITY timerem.tip "Aikaa jäljellä">
+<!ENTITY download.tip "Latausnopeus">
+<!ENTITY percent.tip "Prosenttia valmiina">
+<!ENTITY openContaining.label "Avaa tiedoston sisältävä kansio">
+<!ENTITY upload.label "Lähetys">
+<!ENTITY download.label "Lataus">
+<!ENTITY open.label "Avaa">
+<!ENTITY openwith.label "Avaa ohjelmalla">
+<!ENTITY extractHere.label "Pura tänne">
+<!ENTITY extractTo.label "Pura kansioon">
+<!ENTITY viewweb.label "Näytä WWW:ssä">
+<!ENTITY copyUrl.label "Kopioi osoite">
+<!ENTITY copyUrlLogin.label "FTP osoite kirjautumistiedoilla">
+<!ENTITY cut.label "Leikkaa">
+<!ENTITY copy.label "Kopioi">
+<!ENTITY paste.label "Liitä">
+<!ENTITY makedir.label "Luo hakemisto">
+<!ENTITY makefile.label "Luo tiedosto">
+<!ENTITY delete.label "Poista">
+<!ENTITY rename.label "Nimeä uudelleen">
+<!ENTITY properties.label "Ominaisuudet">
+<!ENTITY rproperties.label "Toistuvat ominaisuudet">
+<!ENTITY searchButton.label "Hae">
+<!ENTITY searchLocal.label "Paikallinen">
+<!ENTITY searchRemote.label "Etä">
+<!ENTITY searchSubdir.label "Hae alihakemistoista">
+<!ENTITY searchMatch.label "Huomoi kirjainkoko">
+<!ENTITY searchRegexp.label "Säännöllinen lauseke">
+<!ENTITY accounts.access "t">
+<!ENTITY abort.access "K">
+<!ENTITY advanced.access "i">
+<!ENTITY helpbutton.access "O">
+<!ENTITY browsebutton.access "S">
+<!ENTITY changebutton.access "V">
+<!ENTITY searchButton.access "H">
+<!ENTITY searchLocal.access "P">
+<!ENTITY searchRemote.access "E">
+<!ENTITY searchSubdir.access "a">
+<!ENTITY searchMatch.access "k">
+<!ENTITY searchRegexp.access "ä">
+<!ENTITY mozilla.quote "Ja, <html:em style=';;;font-size:1.3em;line-height:0;';;;>lo</html:em>, loputtomasta <html:em style=';;;font-size:1.3em;line-height:0;';;;>piemydestä</html:em> he ilmestyivät: uudelleensyntyneelle pedolle uskollisen <html:em style=';;;font-size:1.3em;line-height:0;';;;>aide</html:em> isäntä päämääränään <html:em style=';;;font-size:1.3em;line-height:0;';;;>palauttaa haltuunsa</html:em> maa. Yhdessä he <html:em style=';;;font-size:1.3em;line-height:0;';;;>laajensivat</html:em> pedon voimia ja <html:em style=';;;font-size:1.3em;line-height:0;';;;>levittivät</html:em> hyvää uutista sen paluusta. Yksi kerrallaan mammonan <html:em style=';;;font-size:1.3em;line-height:0;';;;>seuraajat</html:em> käännytettiin ja heidän sydämmensä <html:em style=';;;font-size:1.3em;line-height:0;';;;>sytytettiin</html:em>.">
+<!ENTITY mozilla.from "<html:strong>Mozillan kirjasta</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Automaattinen">
+<!ENTITY binary.label         "Binääri">
+<!ENTITY ascii.label          "ASCII">
+

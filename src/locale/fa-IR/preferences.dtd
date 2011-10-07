@@ -1,0 +1,72 @@
+<!ENTITY title "تنظیمات">
+<!ENTITY asciiTitle "فایل های اسکی">
+<!ENTITY general.label "عمومی">
+<!ENTITY messages.label "پیغام ها">
+<!ENTITY welcome.label "نمایش پیام خوش آمد">
+<!ENTITY error.label "نمایش پیغام خطا">
+<!ENTITY sessions.label "نشست ها">
+<!ENTITY rememberp.label "به خاطر سپردن کلمات عبور">
+<!ENTITY rememberd.label "به خاطر سپردن مسیر">
+<!ENTITY fileview.label "نمایش فایل ها">
+<!ENTITY autorefresh.label "بارگذاری مجدد خودکار">
+<!ENTITY refresh.tip "(...بارگذاری مجدد دایرکتوری پس از ایجاد تغییرات(تغییر نام و حذف فایل ها و">
+<!ENTITY hidden.label "نمایش فایل های مخفی">
+<!ENTITY bytesmode.label "نمایش تعداد بایت ها برای اندازه فایل">
+<!ENTITY interface.label "رابط کاربری">
+<!ENTITY startup.label "باز کردن برنامه در">
+<!ENTITY windowopen.label "پنجره جدید">
+<!ENTITY tabopen.label "تب جدید">
+<!ENTITY integrateftplnk.label "برای باز شدن در فایرفاکس FTP تنظیم لینک های">
+<!ENTITY temppasvmode.label "Use Passive Mode for these connections">
+<!ENTITY open.label "Double-clicking/pressing enter:">
+<!ENTITY download.label "transfers a file">
+<!ENTITY exec.label "opens a file">
+<!ENTITY both.tip "نمایش مرورگر کامپیوتر و سرور">
+<!ENTITY local.tip ".فقط فایل های کامپیوتر را نمایش می دهد">
+<!ENTITY remote.tip ".فقط فایل های سرور را نمایش می دهد">
+<!ENTITY logwindow.label "گزارش">
+<!ENTITY logmode.label "نمایش گزارش ها در صفحه اصلی">
+<!ENTITY logerrormode.label "فقط خطاها را در گزارش نمایش بده">
+<!ENTITY debug.label "نمایش اطلاعات اشکال گیری">
+<!ENTITY connect.label "Connections">
+<!ENTITY proxy.label "پروکسی">
+<!ENTITY none.label "هیچکدام">
+<!ENTITY direct.label "مستقیم">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Active Mode">
+<!ENTITY limitPorts.label "Limit Ports">
+<!ENTITY from.label "From:">
+<!ENTITY to.label "To:">
+<!ENTITY concurrent.label "Concurrent Transfers">
+<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY recovery.label "بازیابی ارتباط">
+<!ENTITY network.label "(زمان مجاز برای برقراری ارتباط(بین 1 تا 600 ثانیه">
+<!ENTITY network.tip ".زمانی که برنامه منتظر پاسخ از سوی سرور می ماند">
+<!ENTITY keepalivemode.label ".برقرار بودن ارتباط حتی وقتی که برنامه بیکار است">
+<!ENTITY timeout.label "تلاش مجدد برای برقراری ارتباط در صورت قطعی">
+<!ENTITY retryd.label "(فاصله زمانی بین تلا های مجدد(بین 1 تا 600">
+<!ENTITY retryd.tip "فاصله زمانی میان برقراری مجدد ارتباط">
+<!ENTITY retrya.label "تلاش مجدد">
+<!ENTITY retrya.tip "تعداد تلاش های مجدد برای برقراری ارتباط">
+<!ENTITY downup.label "دانلود/آپلود">
+<!ENTITY transfercaption.label ":هنگام انتقال اطلاعات از مد زیر استفاده کن">
+<!ENTITY automatic.label "مد خودکار">
+<!ENTITY automatic.tip ".بین دو حالت باینری و اسکی یکی را به صورت خودکار انتخاب می کند">
+<!ENTITY binary.label "مد باینری">
+<!ENTITY ascii.label "مد اسکی">
+<!ENTITY asciifiles.label "فایل های اسکی:">
+<!ENTITY asciifiles.tip ".لیست پسوند فایل هایی که باید به عنوان فایل اسکی شناخته شوند">
+<!ENTITY add.label "اقزودن">
+<!ENTITY remove.label "پاک کردن">
+<!ENTITY extras.label "Extras (if enabled on server)">
+<!ENTITY usecompression.label "Use compression">
+<!ENTITY synctimestamps.label "Keep timestamps in sync (if enabled on server)">
+<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY duplicates.label "بازنویسی">
+<!ENTITY timer.label "از کار انداختن تایمر در پنجره بازنویسی">
+<!ENTITY nopromptmode.label "بازنویسی بدون پرسیدن سوال">
+<!ENTITY credits.label "درباره برنامه">
+<!ENTITY thanks.label ":با تشکر از">
+<!ENTITY allothers.label ".تمام کسانی که به ما کمک کردند">
+<!ENTITY special.label "!و تمام کسانی که به برنامه کمک مالی کردند">

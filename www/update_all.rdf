@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAKRQSZP2UL04ofuoPj3yXYkpMlupTpE21fXlKhg5xBYcYK59w/XKT6JJmmwVCbomHVBlFisp3dZCh9fpvlMVhbTtZZfgzKoQmQHfAIw5AqhWV0SaZwRzKC0b+uNdiEDW73me7QhXT2yQOyGdX0CE1KvRRIZfyRSAqUCy4WAGenL+">
+    <em:updates RDF:resource="rdf:#$5SVTV2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.88.1"
+                   em:version="0.88.1"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAA6VbXvi1cmUp6zaAMjJbo6aaHE2K18gulv7kNz3reQiNdFGNq9DXaxzPV8ixw+3Uy7iroUabbxsxonsTEKfIkVcLk8MxaTFu6DoEbVjJk4GnTsKp8p3MaTo1YpCrvLM3XH7grXLwvTq0p2TVL5m/okn9z7rsbrV7RBB6055Dv8O">
+    <em:targetApplication RDF:resource="rdf:#$8SVTV2"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$5SVTV2">
+    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.88.1"/>
+  </RDF:Seq>
+  <Description RDF:about="rdf:#$8SVTV2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="4.0b1"
+                   em:maxVersion="8.*"
+                   em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
+                   em:updateHash="md5:9efd429b6fb639371415518a62dab435" />
+</RDF:RDF>

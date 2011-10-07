@@ -1,0 +1,109 @@
+<!ENTITY openFireFTP "在 FireFTP 中開啟連結">
+<!ENTITY viewFireFTP "在 FireFTP 檢視此頁">
+<!ENTITY accounts.label "管理賬號">
+<!ENTITY accountlist.label "(選擇賬號)">
+<!ENTITY new.label "新增...">
+<!ENTITY edit.label "編輯...">
+<!ENTITY save.label "Save Temporary Account">
+<!ENTITY quick.label "快速連接">
+<!ENTITY import.label "Import...">
+<!ENTITY export.label "Export...">
+<!ENTITY new.access "N">
+<!ENTITY edit.access "E">
+<!ENTITY delete.access "D">
+<!ENTITY save.access "S">
+<!ENTITY quick.access "Q">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY abort.label "中止">
+<!ENTITY logtab.label "記錄檔">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "進階">
+<!ENTITY search.label "Search">
+<!ENTITY diff.label "資料夾比較">
+<!ENTITY recdiff.label "Compare Directories &amp; Subdirectories">
+<!ENTITY custom.label "自訂">
+<!ENTITY preferencestab.label "偏好設定">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "C">
+<!ENTITY prefbutton.access "P">
+<!ENTITY help.label "說明">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "上一層資料夾">
+<!ENTITY refresh.tip "重新整理">
+<!ENTITY localpath.tip "本機路徑">
+<!ENTITY remotepath.tip "遠端路徑">
+<!ENTITY browse.label "瀏覽">
+<!ENTITY change.label "變更">
+<!ENTITY name.label "名稱">
+<!ENTITY size.label "大小">
+<!ENTITY date.label "日期">
+<!ENTITY type.label "類別">
+<!ENTITY attr.label "類型">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "變更傳送模式 (建議選擇自動)">
+<!ENTITY bytes.tip "已下載位元組 / 總位元組">
+<!ENTITY timeela.tip "已用時間">
+<!ENTITY timerem.tip "剩餘時間">
+<!ENTITY download.tip "下載比率">
+<!ENTITY percent.tip "完成百分比">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "上載                         Enter">
+<!ENTITY download.label "下載                         Enter">
+<!ENTITY open.label "開啟">
+<!ENTITY openwith.label "選擇開啟">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "在網站檢視">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "剪下                         Ctrl-X">
+<!ENTITY copy.label "複製                         Ctrl-C">
+<!ENTITY paste.label "貼上                         Ctrl-V">
+<!ENTITY makedir.label "建立資料夾                Ctrl-M">
+<!ENTITY makefile.label "Create File">
+<!ENTITY delete.label "刪除                         Del">
+<!ENTITY rename.label "重新                         F2">
+<!ENTITY properties.label "屬性                         Ctrl-P">
+<!ENTITY rproperties.label "Recursive Properties">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "k">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY searchDates.access "d">
+<!ENTITY accounts.access "M">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "v">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "C">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em style=';;font-size:1.3em;line-height:0;';;>lo</html:em>, from the <html:em style=';;font-size:1.3em;line-height:0;';;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;font-size:1.3em;line-height:0;';;>aide</html:em> the reborn beast in its quest to <html:em style=';;font-size:1.3em;line-height:0;';;>reclaim</html:em> the land.  Together they <html:em style=';;font-size:1.3em;line-height:0;';;>extended</html:em> the power of the beast and <html:em style=';;font-size:1.3em;line-height:0;';;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';;font-size:1.3em;line-height:0;';;>Mammon</html:em> were converted and their hearts were set <html:em style=';;font-size:1.3em;line-height:0;';;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Binary">
+<!ENTITY ascii.label          "ASCII">
+

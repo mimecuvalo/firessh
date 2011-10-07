@@ -1,0 +1,52 @@
+<!ENTITY title "Менеджер учетной записи">
+<!ENTITY main "Общие">
+<!ENTITY connections "Соединение">
+<!ENTITY advanced "Дополнительно">
+<!ENTITY maindetails "Основная информация">
+<!ENTITY id "Учётные данные">
+<!ENTITY account.label "Имя учётной записи:">
+<!ENTITY account.tip "Пример: My FTP Site">
+<!ENTITY host.label "Сервер:">
+<!ENTITY host.tip "Пример: ftp.debian.org">
+<!ENTITY login.label "Имя:">
+<!ENTITY password.label "Пароль:">
+<!ENTITY anonymous.label "Анонимно">
+<!ENTITY connection "Тип соединения">
+<!ENTITY port.label "Порт:">
+<!ENTITY pasv.label "Пассивный режим">
+<!ENTITY security.label "Безопасность">
+<!ENTITY none.label "Нет">
+<!ENTITY authtls.label "Auth TLS (Best)">
+<!ENTITY authssl.label "Auth SSL (Better)">
+<!ENTITY implicit.label "Implicit SSL (Good)">
+<!ENTITY initialdir "Начальная позиция">
+<!ENTITY download "Параметры загрузки">
+<!ENTITY upload "Параметры передачи">
+<!ENTITY localdir.label "Локально:">
+<!ENTITY remotedir.label "Удаленно:">
+<!ENTITY current.label "Использовать текущую">
+<!ENTITY treesync.label "Синхронизировать каталоги при навигации">
+<!ENTITY webhost "Web сервер (используется с &apos;&apos;Смотреть в Web&apos;&apos;)">
+<!ENTITY webhost.tip "Пример: http://www.example.com">
+<!ENTITY prefix.label "Приставка:">
+<!ENTITY prefix.tip "Приставка, для удаления части адреса FTP, например /publuc_html">
+<!ENTITY caseleave.label "Сохранять регистр">
+<!ENTITY caselower.label "Преобразовывать в нижний">
+<!ENTITY caseupper.label "Преобразовывать в верхний">
+<!ENTITY encoding.label "Шифрование сервера">
+<!ENTITY charset.label "Кодировка:">
+<!ENTITY account.access "И">
+<!ENTITY host.access "С">
+<!ENTITY login.access "м">
+<!ENTITY password.access "П">
+<!ENTITY anonymous.access "А">
+<!ENTITY pasv.access "в">
+<!ENTITY port.access "о">
+<!ENTITY security.access "Б">
+<!ENTITY localdir.access "Л">
+<!ENTITY remotedir.access "У">
+<!ENTITY currentl.access "щ">
+<!ENTITY currentr.access "е">
+<!ENTITY treesync.access "ц">
+<!ENTITY webhost.access "р">
+<!ENTITY prefix.access "п">

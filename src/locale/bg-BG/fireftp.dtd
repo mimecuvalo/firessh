@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Отвори връзката с FireFTP">
+<!ENTITY viewFireFTP "Отвори страницата с FireFTP">
+<!ENTITY accounts.label "Управление на връзките">
+<!ENTITY accountlist.label "(Изберете връзка)">
+<!ENTITY new.label "Нова...">
+<!ENTITY edit.label "Редактиране...">
+<!ENTITY save.label "Запиши временна връзка">
+<!ENTITY quick.label "Бързо свързване">
+<!ENTITY import.label "Внеси...">
+<!ENTITY export.label "Изнеси...">
+<!ENTITY new.access "Н">
+<!ENTITY edit.access "Р">
+<!ENTITY delete.access "И">
+<!ENTITY save.access "З">
+<!ENTITY quick.access "Б">
+<!ENTITY import.access "е">
+<!ENTITY export.access "с">
+<!ENTITY abort.label "Прекъсни">
+<!ENTITY search.label "Търси">
+<!ENTITY logtab.label "Журнал">
+<!ENTITY search.access "Т">
+<!ENTITY logbutton.access "Ж">
+<!ENTITY advanced.label "За напреднали">
+<!ENTITY diff.label "Сравни директориите">
+<!ENTITY recdiff.label "Рекурсивно сравни директориите">
+<!ENTITY custom.label "Потребителска">
+<!ENTITY preferencestab.label "Настройки">
+<!ENTITY diff.access "С">
+<!ENTITY recdiff.access "Р">
+<!ENTITY custom.access "П">
+<!ENTITY prefbutton.access "т">
+<!ENTITY help.label "Помощ">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html?locale=bg-BG">
+<!ENTITY parentdir.tip "Смени с горната директория">
+<!ENTITY refresh.tip "Презареди съдържанието на директорията">
+<!ENTITY localpath.tip "Път локално">
+<!ENTITY remotepath.tip "Път отсреща">
+<!ENTITY browse.label "Прелисти">
+<!ENTITY change.label "Смени">
+<!ENTITY name.label "Име">
+<!ENTITY size.label "Размер">
+<!ENTITY date.label "Дата">
+<!ENTITY type.label "Тип">
+<!ENTITY attr.label "Свойства">
+<!ENTITY type.tip "Смени типа на трансфера (препоръчително автоматичен)">
+<!ENTITY bytes.tip "Свалени Байтове/Общо Байтове">
+<!ENTITY timeela.tip "Изминало време">
+<!ENTITY timerem.tip "Оставащо време">
+<!ENTITY download.tip "Скорост на сваляне">
+<!ENTITY percent.tip "Завършен процент">
+<!ENTITY openContaining.label "Отвори съдържащата папка">
+<!ENTITY upload.label "Качи">
+<!ENTITY download.label "Свали">
+<!ENTITY open.label "Отвори">
+<!ENTITY openwith.label "Отвори с...">
+<!ENTITY extractHere.label "Разархивирай тук">
+<!ENTITY extractTo.label "Разархивирай в папка">
+<!ENTITY viewweb.label "Преглед в Web">
+<!ENTITY copyUrl.label "Копирай URL">
+<!ENTITY copyUrlLogin.label "FTP с идентификация">
+<!ENTITY cut.label "Изрежи">
+<!ENTITY copy.label "Копирай">
+<!ENTITY paste.label "Постави">
+<!ENTITY makedir.label "Създай директория">
+<!ENTITY makefile.label "Създай файл">
+<!ENTITY delete.label "Изтрий">
+<!ENTITY rename.label "Преименувай">
+<!ENTITY properties.label "Свойства">
+<!ENTITY rproperties.label "Свойства навътре">
+<!ENTITY searchButton.label "Търси">
+<!ENTITY searchLocal.label "Локално">
+<!ENTITY searchRemote.label "Отдалечено">
+<!ENTITY searchSubdir.label "Търси в поддиректориите">
+<!ENTITY searchMatch.label "Спазвай регистъра">
+<!ENTITY searchRegexp.label "Регулярен израз">
+<!ENTITY accounts.access "У">
+<!ENTITY abort.access "р">
+<!ENTITY advanced.access "З">
+<!ENTITY helpbutton.access "щ">
+<!ENTITY browsebutton.access "л">
+<!ENTITY changebutton.access "е">
+<!ENTITY searchButton.access "Т">
+<!ENTITY searchLocal.access "Л">
+<!ENTITY searchRemote.access "О">
+<!ENTITY searchSubdir.access "д">
+<!ENTITY searchMatch.access "р">
+<!ENTITY searchRegexp.access "и">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Автоматично">
+<!ENTITY binary.label         "Двоичен">
+<!ENTITY ascii.label          "Текстов">
+

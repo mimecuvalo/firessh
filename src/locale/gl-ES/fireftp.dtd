@@ -1,0 +1,98 @@
+<!ENTITY openFireFTP "Abrir ligazón FireFTP">
+<!ENTITY viewFireFTP "Ver esta páxina en FireFTP">
+<!ENTITY accountlist.label "(Escoller conta)">
+<!ENTITY edit.label "Modificar">
+<!ENTITY abort.label "Abortar">
+<!ENTITY logtab.label "Rexistro">
+<!ENTITY ltab.label "Rexistro">
+<!ENTITY qtab.label "Cola">
+<!ENTITY search.access "p">
+<!ENTITY logbutton.access "o">
+<!ENTITY advanced.label "Ferramentas">
+<!ENTITY search.label "Procurar">
+<!ENTITY diff.label "Comparar directorios">
+<!ENTITY recdiff.label "Comparar directorios e subdirectorios">
+<!ENTITY custom.label "Personalizar">
+<!ENTITY import.label "Importar...">
+<!ENTITY export.label "Exportar...">
+<!ENTITY preferencestab.label "Preferencias">
+<!ENTITY diff.access "o">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "i">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "f">
+<!ENTITY help.label "Axuda">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Ir ao directorio superior">
+<!ENTITY refresh.tip "Anovar directorio">
+<!ENTITY localpath.tip "Local">
+<!ENTITY remotepath.tip "Remoto">
+<!ENTITY browse.label "Examinar">
+<!ENTITY change.label "Cambiar">
+<!ENTITY name.label "Nome">
+<!ENTITY size.label "Tamaño">
+<!ENTITY date.label "Data">
+<!ENTITY type.label "Tipo">
+<!ENTITY attr.label "Atributos">
+<!ENTITY source.label "Fonte">
+<!ENTITY dest.label "Destino">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Estado">
+<!ENTITY retry.label "Reintentar">
+<!ENTITY cancel.label "Cancelar">
+<!ENTITY cancelAll.label "Cancelar todo">
+<!ENTITY type.tip "Cambiar modo transferencias (recomendase modo auto)">
+<!ENTITY bytes.tip "Bytes descargados / Total de bytes">
+<!ENTITY timeela.tip "Tempo transcorrido">
+<!ENTITY timerem.tip "Tempo restante">
+<!ENTITY download.tip "Velocidade de descarga">
+<!ENTITY percent.tip "Porcentaxe completado">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binario">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Subir">
+<!ENTITY download.label "Descargar">
+<!ENTITY open.label "Abrir">
+<!ENTITY openwith.label "Abrir con">
+<!ENTITY extractHere.label "Extraer aquí">
+<!ENTITY extractTo.label "Extraer no directorio">
+<!ENTITY viewweb.label "Ver na web">
+<!ENTITY copyUrl.label "Copiar URL">
+<!ENTITY copyUrlLogin.label "FTP con rexistro">
+<!ENTITY cut.label "Cortar">
+<!ENTITY copy.label "Copiar">
+<!ENTITY paste.label "Pegar">
+<!ENTITY makedir.label "Crear directorio">
+<!ENTITY makefile.label "Crear ficheiro">
+<!ENTITY delete.label "Borrar">
+<!ENTITY rename.label "Renomear">
+<!ENTITY properties.label "Propiedades">
+<!ENTITY rproperties.label "Propiedades (incl. contidos)">
+<!ENTITY searchButton.label "Procurar">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remoto">
+<!ENTITY searchOptions.label "Opcións">
+<!ENTITY searchFrom.label "De:">
+<!ENTITY searchTo.label "Para:">
+<!ENTITY searchSubdir.label "Procurar en subdirectorios">
+<!ENTITY searchMatch.label "Coincidir maiúsculas e minúsculas">
+<!ENTITY searchRegexp.label "Expresión regular">
+<!ENTITY searchDates.label "Especificar datas">
+<!ENTITY searchSubdir.access "k">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "m">
+<!ENTITY abort.access "a">
+<!ENTITY advanced.access "F">
+<!ENTITY helpbutton.access "u">
+<!ENTITY browsebutton.access "E">
+<!ENTITY changebutton.access "i">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "E, <html:em>así</html:em>, sairon da <html:em>escuridade</html:em>: unha multitude de fieis para <html:em>axudar</html:em> á besta renacida na sua pretensión de <html:em >reclamar</html:em> a terra.  Todos xuntos <html:em>aumentaron</html:em> o poder da besta e <html:em >esparceron</html:em> a boa nova da sua volta. Un a un foronse convertindo os seguidores de <html:em>Mammon</html:em> e seus corazóns arderon en <html:em>chamas</html:em>.">
+<!ENTITY mozilla.from "de <html:strong>O libro de Mozilla</html:strong>, 8:2">

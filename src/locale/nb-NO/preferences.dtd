@@ -1,0 +1,69 @@
+<!ENTITY title "Innstillinger">
+<!ENTITY asciiTitle "ASCII filtype">
+<!ENTITY general.label "Generelt">
+<!ENTITY messages.label "Meldinger">
+<!ENTITY welcome.label "Vis velkomstmelding">
+<!ENTITY error.label "Vis feilmeldinger">
+<!ENTITY sessions.label "Sesjon">
+<!ENTITY rememberp.label "Husk passord">
+<!ENTITY rememberd.label "Husk mappebaner">
+<!ENTITY fileview.label "Filvisning">
+<!ENTITY autorefresh.label "Automatisk oppfrisk">
+<!ENTITY refresh.tip "Oppdater ekstern liste ved endring (opplastning, omdøping av navn, osv).">
+<!ENTITY hidden.label "Vis skjulte filer">
+<!ENTITY bytesmode.label "Vis størrelse i bytes for filer">
+<!ENTITY interface.label "Grensesnitt">
+<!ENTITY startup.label "Start FireFTP:">
+<!ENTITY windowopen.label "i et nytt vindu">
+<!ENTITY tabopen.label "i en ny fane">
+<!ENTITY integrateftplnk.label "La FTP-linker i Firefox automatisk åpnes i FireFTP">
+<!ENTITY temppasvmode.label "Bruk Passiv modus for tilkoblinger">
+<!ENTITY ui.label "Utseende">
+<!ENTITY normal.label "Normal modus">
+<!ENTITY local.label "Lokal modus">
+<!ENTITY remote.label "Ekstern modus">
+<!ENTITY both.tip "Vis både lokale og eksterne filer">
+<!ENTITY local.tip "Vis kun lokale filer">
+<!ENTITY remote.tip "Vis kun eksterne filer">
+<!ENTITY logwindow.label "Logg">
+<!ENTITY logmode.label "Vis logg i hovedvindu">
+<!ENTITY logerrormode.label "Vis kun feil i loggen">
+<!ENTITY debug.label "Vis feilsøkingsinformasjon">
+<!ENTITY connect.label "Tilkoblinger">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Ingen">
+<!ENTITY direct.label "Direkte">
+<!ENTITY host.label "Tjener:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Active Mode">
+<!ENTITY limitPorts.label "Limit Ports">
+<!ENTITY from.label "From:">
+<!ENTITY to.label "To:">
+<!ENTITY recovery.label "Tilkoblingsgjenoppretting">
+<!ENTITY network.label "Tidsavbrudd i nettverk (sekunder, mellom 1 og 600)">
+<!ENTITY network.tip "Hvor lenge skal man vente på svar fra tjener">
+<!ENTITY keepalivemode.label "Hold forbindelsen åpen selv om du er inaktiv">
+<!ENTITY timeout.label "Hvis frakoblet, forsøk på koble til pånytt">
+<!ENTITY retryd.label "Ventetid (sekunder, mellom 1 og 600)">
+<!ENTITY retryd.tip "Sekunder mellom forsøk på gjentatt tilkobling">
+<!ENTITY retrya.label "Antall forsøk">
+<!ENTITY retrya.tip "Antall forsøk som skal utføres">
+<!ENTITY downup.label "Nedlastning/Opplastning">
+<!ENTITY transfercaption.label "Ved overføring av filer bruk:">
+<!ENTITY automatic.label "Automatisk modus">
+<!ENTITY automatic.tip "Velg automatisk mellom &apos;binær&apos; og &apos;ASCII&apos;.">
+<!ENTITY binary.label "Binær modus">
+<!ENTITY ascii.label "ASCII modus">
+<!ENTITY asciifiles.label "ASCII filer:">
+<!ENTITY asciifiles.tip "List filtyper som skal gjenkjennes som ASCII filer">
+<!ENTITY add.label "Legg til">
+<!ENTITY remove.label "Fjern">
+<!ENTITY timestamps.label "Timestamps">
+<!ENTITY synctimestamps.label "Keep timestamps in sync (if enabled on server)">
+<!ENTITY duplicates.label "Filduplikater">
+<!ENTITY timer.label "Fjern nedteller i Erstattdialogen.">
+<!ENTITY nopromptmode.label "Ikke vil Erstattdialogoen, utfør erstatning">
+<!ENTITY credits.label "Kilde">
+<!ENTITY thanks.label "Takk til:">
+<!ENTITY allothers.label "Alle som har raportert feil og hjulpet til">
+<!ENTITY special.label "Spesiell takk til alle som har donert!">

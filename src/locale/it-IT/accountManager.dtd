@@ -1,0 +1,50 @@
+<!ENTITY title "Gestione Profili">
+<!ENTITY accountlist.label "(Seleziona un Profilo)">
+<!ENTITY advanced.label "Strumenti">
+<!ENTITY import.label "Importa...">
+<!ENTITY export.label "Esporta...">
+<!ENTITY preferencestab.label "Opzioni...">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Aiuto">
+<!ENTITY help.url "http://firessh.mozdev.org/help.html">
+<!ENTITY advanced.access "T">
+<!ENTITY helpbutton.access "H">
+<!ENTITY main "Principale">
+<!ENTITY advanced "Avanzato">
+<!ENTITY maindetails "Dettagli Principali">
+<!ENTITY id "ID">
+<!ENTITY account.label "Nome Profilo:">
+<!ENTITY account.tip "Esempio: Sito SSH">
+<!ENTITY folder.label "Categoria:">
+<!ENTITY optional.label "(opzionale)">
+<!ENTITY host.label "Host:">
+<!ENTITY host.tip "Esempio: mysite.com">
+<!ENTITY login.label "Profilo:">
+<!ENTITY password.label "Password:">
+<!ENTITY anonymous.label "Anonimo">
+<!ENTITY port.label "Porta:">
+<!ENTITY privatekey.label "Chiave Privata:">
+<!ENTITY pkbrowse.label "Sfoglia...">
+<!ENTITY tunnels.label "Tunnels">
+<!ENTITY add.label "Add">
+<!ENTITY remove.label "Remove">
+<!ENTITY source.label "Source port">
+<!ENTITY dest.label "Destination">
+<!ENTITY notes.label "Notes">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY port.access "o">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY source.access "S">
+<!ENTITY dest.access "t">
+<!ENTITY add.access "d">
+<!ENTITY remove.access "r">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

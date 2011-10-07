@@ -1,0 +1,69 @@
+<!ENTITY title "Наладкі">
+<!ENTITY asciiTitle "ASCII-файлы">
+<!ENTITY general.label "Агульныя">
+<!ENTITY messages.label "Паведамленьні">
+<!ENTITY welcome.label "Акно прывітаньня">
+<!ENTITY error.label "Паказваць паведамленьні пра памылкі">
+<!ENTITY sessions.label "Сэсіі">
+<!ENTITY rememberp.label "Запамінаць паролі">
+<!ENTITY rememberd.label "Запамінаць пазіцыю">
+<!ENTITY fileview.label "Мэнэджэр файлаў">
+<!ENTITY autorefresh.label "Аўтаабнаўленьне">
+<!ENTITY refresh.tip "Пасьля зьмены (запампоўкі, перайменаваньня і інш.) абнаўляць каталёг">
+<!ENTITY hidden.label "Паказваць схаваныя файлы">
+<!ENTITY bytesmode.label "Памер файлаў у байтах">
+<!ENTITY interface.label "Інтэрфэйс">
+<!ENTITY startup.label "Паказваць FireFTP:">
+<!ENTITY windowopen.label "у новым акне">
+<!ENTITY tabopen.label "у новай укладцы">
+<!ENTITY integrateftplnk.label "Выкарыстоўваць FireFTP для ўсіх ftp-спасылак">
+<!ENTITY temppasvmode.label "Выкарыстоўваць пасіўны мэтад для гэтых далучэньняў">
+<!ENTITY ui.label "Выгляд">
+<!ENTITY normal.label "Нармалёвы рэжым">
+<!ENTITY local.label "Лякальны рэжым">
+<!ENTITY remote.label "Аддалены рэжым">
+<!ENTITY both.tip "Паказваць файлы і на сэрвэры, і лякальныя">
+<!ENTITY local.tip "Паказваць толькі лякальныя файлы">
+<!ENTITY remote.tip "Паказваць толькі файлы на сэрвэры">
+<!ENTITY logwindow.label "Рапарт">
+<!ENTITY logmode.label "Паказваць рапарт у галоўным акне">
+<!ENTITY logerrormode.label "Толькі паведамленьні пра памылкі">
+<!ENTITY debug.label "Адладкавая інфармацыя">
+<!ENTITY connect.label "Далучэньні">
+<!ENTITY proxy.label "Проксі">
+<!ENTITY none.label "Няма">
+<!ENTITY direct.label "Простае далучэньне">
+<!ENTITY host.label "Сэрвэр:">
+<!ENTITY port.label "Порт:">
+<!ENTITY active.label "Актыўны рэжым">
+<!ENTITY limitPorts.label "Ліміт партоў">
+<!ENTITY from.label "Ад:">
+<!ENTITY to.label "Да:">
+<!ENTITY recovery.label "Аднаўленьне далучэньняў">
+<!ENTITY network.label "Таймаўт сеткі (сэкундаў, ад 1 да 600)">
+<!ENTITY network.tip "Чакаць адказу сэрвэра">
+<!ENTITY keepalivemode.label "Захоўваць далучэньне пры неактыўнасьці">
+<!ENTITY timeout.label "Аўтадалучэньне">
+<!ENTITY retryd.label "Паўза паміж паўторамі (сэкундаў, ад 1 да 600)">
+<!ENTITY retryd.tip "Сэкундаў паміж спробамі далучэньня">
+<!ENTITY retrya.label "Колькасьць спробаў">
+<!ENTITY retrya.tip "Спробаў паўторнага далучэньня">
+<!ENTITY downup.label "Загрузка/Адпраўка">
+<!ENTITY transfercaption.label "Выкарыстаць для перадачы файлаў:">
+<!ENTITY automatic.label "Аўтаматычны рэжым">
+<!ENTITY automatic.tip "Аўтаматычнае пераключэньне паміж &apos;Бінарным&apos; і &apos;ASCII&apos; рэжымамі">
+<!ENTITY binary.label "Бінарны">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY asciifiles.label "ASCII-файлы:">
+<!ENTITY asciifiles.tip "Сьпіс пашырэньняў файлаў, якія будуць распазнаныя як ASCII-тэкст">
+<!ENTITY add.label "Дадаць">
+<!ENTITY remove.label "Выдаліць">
+<!ENTITY timestamps.label "Сынхранізацыя">
+<!ENTITY synctimestamps.label "Сынхранізаваць паводле часу">
+<!ENTITY duplicates.label "Дублікаты файлаў">
+<!ENTITY timer.label "Адключыць таймер у дыялёгу перазапісу">
+<!ENTITY nopromptmode.label "Перазапісваць без пацьверджаньня">
+<!ENTITY credits.label "Сьпіс удзельнікаў">
+<!ENTITY thanks.label "Падзякі:">
+<!ENTITY allothers.label "Усім, хто дапамагаў знаходзіць і выпраўляць памылкі">
+<!ENTITY special.label "Адмысловыя падзякі ўсім, хто зрабіў ахвяраваньні!">

@@ -1,0 +1,69 @@
+<!ENTITY title "Voorkeuren">
+<!ENTITY asciiTitle "ASCII bestandstypen">
+<!ENTITY general.label "Algemeen">
+<!ENTITY messages.label "Berichten">
+<!ENTITY welcome.label "Welkomstbericht tonen">
+<!ENTITY error.label "Foutmeldingen tonen">
+<!ENTITY sessions.label "Sessies">
+<!ENTITY rememberp.label "Wachtwoorden onthouden">
+<!ENTITY rememberd.label "Inhoud van mappen onthouden">
+<!ENTITY fileview.label "Bestanden weergeven">
+<!ENTITY autorefresh.label "Automatisch verversen">
+<!ENTITY refresh.tip "Het overzicht vernieuwen nadat de bestanden op de server zijn gewijzigd (door uploaden, hernoemen, enz.)">
+<!ENTITY hidden.label "Toon verborgen bestanden">
+<!ENTITY bytesmode.label "Het aantal bytes als bestandsgrootte tonen">
+<!ENTITY interface.label "Werking">
+<!ENTITY startup.label "Start FireFTP:">
+<!ENTITY windowopen.label "in een nieuw venster">
+<!ENTITY tabopen.label "in een nieuw tabblad">
+<!ENTITY integrateftplnk.label "FTP-verwijzingen in Firefox automatisch FireFTP laten gebruiken">
+<!ENTITY temppasvmode.label "Gebruik passieve modus voor deze verbindingen">
+<!ENTITY ui.label "Uiterlijk">
+<!ENTITY normal.label "Normaal">
+<!ENTITY local.label "Lokaal">
+<!ENTITY remote.label "Server">
+<!ENTITY both.tip "Zowel lokale bestanden als bestanden op de server tonen">
+<!ENTITY local.tip "Alleen lokale bestanden tonen">
+<!ENTITY remote.tip "Alleen bestanden op de server tonen">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Log tonen in hoofdvenster">
+<!ENTITY logerrormode.label "Toon alleen fouten in de log">
+<!ENTITY debug.label "Debug-informatie in log laten zien">
+<!ENTITY connect.label "Verbindingen">
+<!ENTITY proxy.label "Proxy:">
+<!ENTITY none.label "Geen">
+<!ENTITY direct.label "Direct">
+<!ENTITY host.label "Server:">
+<!ENTITY port.label "Poort:">
+<!ENTITY active.label "Actieve modus">
+<!ENTITY limitPorts.label "Poorten beperken">
+<!ENTITY from.label "Van:">
+<!ENTITY to.label "Naar:">
+<!ENTITY recovery.label "Herstellen van de verbinding">
+<!ENTITY network.label "Netwerk timeout (sec):">
+<!ENTITY network.tip "Bepaalt hoe lang gewacht moet worden op een antwoord van de server">
+<!ENTITY keepalivemode.label "Houdt de verbinding open; ook als die niet actief gebruikt wordt">
+<!ENTITY timeout.label "Bij verbroken verbinding, automatisch opnieuw proberen">
+<!ENTITY retryd.label "Opnieuw proberen na x seconden">
+<!ENTITY retryd.tip "Aantal seconden tussen pogingen opnieuw te verbinden">
+<!ENTITY retrya.label "Aantal maal opnieuw proberen">
+<!ENTITY retrya.tip "Aantal pogingen die gemaakt moeten worden">
+<!ENTITY downup.label "Downloads/Uploads">
+<!ENTITY transfercaption.label "Gebruik dit bij het verzenden van bestanden:">
+<!ENTITY automatic.label "Automatische modus">
+<!ENTITY automatic.tip "Automatisch tussen &apos;Binaire&apos; en &apos;ASCII&apos; modus kiezen">
+<!ENTITY binary.label "Binaire modus">
+<!ENTITY ascii.label "ASCII modus">
+<!ENTITY asciifiles.label "ASCII-bestanden:">
+<!ENTITY asciifiles.tip "Door komma&apos;s gescheiden lijst van als ASCII herkende bestanden">
+<!ENTITY add.label "Toevoegen">
+<!ENTITY remove.label "Verwijderen">
+<!ENTITY timestamps.label "Tijdstempels">
+<!ENTITY synctimestamps.label "Tijdstempels synchroniseren (indien mogelijk op de server)">
+<!ENTITY duplicates.label "Dubbele bestanden">
+<!ENTITY timer.label "Timer uitschakelen in overschrijfdialoog">
+<!ENTITY nopromptmode.label "Verberg het &apos;Overschrijven bevestigen&apos;-venster, altijd overschrijven">
+<!ENTITY credits.label "Met dank aan">
+<!ENTITY thanks.label "Bedankt:">
+<!ENTITY allothers.label "Alle anderen die fouten hebben gemeld of op een andere manier hebben geholpen">
+<!ENTITY special.label "Een speciaal bedankje voor iedereen die een donatie heeft gedaan!">

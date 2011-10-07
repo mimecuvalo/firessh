@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://firessh/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://firessh/locale/firessh.dtd">
+<overlay id    = "firesshOverlay"
+         xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/firesshOverlay.js"/>
+
+  <!-- Firefox Tools menu -->
+  <menupopup       id="menu_ToolsPopup">
+    <menuitem      id="firesshtoolsmenu"   label="FireSSH"       oncommand="loadFireSSH()"
+                   accesskey="F"           position="8"          class="menuitem-iconic"/>
+  </menupopup>
+
+  <!-- Firefox Tools -> WebDeveloper menu -->
+  <menupopup id="menuWebDeveloperPopup">
+    <menuitem      id="menu_webDeveloper_firessh"   label="FireSSH"       oncommand="loadFireSSH()"
+                   accesskey="F"           insertbefore="webConsole"         class="menuitem-iconic"/>
+  </menupopup>
+
+  <!-- Firefox 4 Web Developer menu -->
+  <menupopup id="appmenu_webDeveloper_popup">
+    <menuitem      id="appmenu_firessh"   label="FireSSH"       oncommand="loadFireSSH()"
+                   accesskey="F"           insertbefore="appmenu_webConsole"  class="menuitem-iconic" iconic="true" />
+    <menuseparator insertbefore="appmenu_webConsole" />
+  </menupopup>
+
+  <toolbarpalette  id="BrowserToolbarPalette">
+    <toolbarbutton id="firessh-button"     label="FireSSH"       oncommand="loadFireSSH()" onclick="if (event.button == 1) loadFireSSH()"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional" tooltiptext="FireSSH"/>
+  </toolbarpalette>
+
+</overlay>

@@ -1,0 +1,49 @@
+<!ENTITY title  "ปรับแต่งตัวเลือก">
+
+<!ENTITY general.label    "ทั่วไป">
+<!ENTITY welcome.label    "แสดงข้อความเมื่อเข้าถึงเครื่องแม่ข่าย">
+<!ENTITY error.label    "แสดงข้อความเมื่อเกิดข้อผิดพลาด">
+<!ENTITY autorefresh.label  "รีเฟรชอัตโนมัติ">
+<!ENTITY rememberp.label  "จำรหัสผ่าน">
+<!ENTITY rememberd.label  "จำรายการในตำแหน่งที่อยู่">
+<!ENTITY hidden.label    "แสดงไฟล์ที่ซ่อนเอาไว้">
+<!ENTITY interface.label  "ลักษณะโปรแกรม">
+<!ENTITY normal.label    "โหมดธรรมดา">
+<!ENTITY local.label    "โหมดแสดงภายใน">
+<!ENTITY remote.label    "โหมดแสดงภายนอก">
+<!ENTITY logmode.label    "แสดงส่วนของเหตุการณ์ในหน้าต่างหลัก">
+<!ENTITY connect.label    "การเชื่อมต่อ">
+<!ENTITY port.label      "พอร์ต">
+<!ENTITY usessl.label    "ใช้ SSL">
+<!ENTITY pasv.label      "โหมดธรรมดา">
+<!ENTITY network.label    "เวลานอกเครือข่าย">
+<!ENTITY timeout.label    "ถ้ามันไม่สามารถเชื่อมต่อได้,ให้ลองเชื่อมต่อไปเรื่อยๆ">
+<!ENTITY retryd.label    "ลองทุกๆ">
+<!ENTITY retrya.label    "จำนวนในการลอง">
+<!ENTITY downup.label    "ดาวน์โหลด/อัพโหลด">
+<!ENTITY timer.label    "ไม่ใช้หน้าต่างยืนยันการเขียนทับ">
+<!ENTITY refresh.tip    "หลังจากระบบภายนอกมีการเปลี่ยนแปลง,ให้ทำการรีเฟรชตำแหน่งที่อยู่">
+<!ENTITY both.tip      "แสดงผลเป็นสองส่วน ทั้งระบบภายในและภายนอก">
+<!ENTITY local.tip      "แสดงไฟล์ในส่วนของระบบภายในเท่านั้น">
+<!ENTITY remote.tip      "แสดงไฟล์ในส่วนของระบบภายนอกเท่านั้น">
+<!ENTITY secure.tip      "ใช้ระบบความปลอดภัยในการเชื่อมต่อ">
+<!ENTITY network.tip    "ควบคุมระยะเวลาในการรอคอยเพื่อที่จะให้เครื่องแม่ข่ายตอบสนอง">
+<!ENTITY retryd.tip      "ระยะเวลาในระหว่างการพยายามเชื่อมต่ออีกครั้ง">
+<!ENTITY retrya.tip      "จำนวนครั้งที่จะพยายามทำการเชื่อมต่อ">
+<!ENTITY automatic.label  "โหมดธรรมดา">
+<!ENTITY automatic.tip    "ให้มันทำการเลือกเอง ระหว่างโหมดแบบ 'Binary' และ 'ASCII'">
+<!ENTITY binary.label    "โหมด Binary">
+<!ENTITY ascii.label    "โหมด ASCII">
+<!ENTITY asciifiles.label  "แฟ้มของ ASCII: ">
+<!ENTITY asciifiles.tip    "แยกรายชื่อของนามสกุลเหล่านั้น มันจะทำให้ถูกรับรองเช่นเดียวกับแฟ้มของ ASCII">
+<!ENTITY tabopen.label    "เปิดในแท็บใหม่">
+<!ENTITY windowopen.label  "เปิดในหน้าต่างใหม่">
+<!ENTITY proxy.label    "ตั้งค่า proxy">
+<!ENTITY proxy.tip      "เมื่อมีหน้าต่างปรากฏขึ้นมา, ให้คลิกที่ 'Connection Settings' และเปลี่ยน 'FTP Proxy'">
+<!ENTITY add.label      "เพิ่ม">
+<!ENTITY remove.label    "ลบ">
+<!ENTITY credits.label    "เครดิต">
+<!ENTITY debug.label    "แสดงรายละเอียดการแก้ไขจุดบกพร่องในเหตุการณ์">
+<!ENTITY useproxy.label    "ใช้ proxy">
+<!ENTITY uploadmode.label  "ใช้วิธีการอัพโหลดแบบเก่า (ไม่แนะนำ)">
+<!ENTITY uploadmode.tip    "ทำเครื่องหมายที่นี่ ถ้าคุณมีประสบการณ์ในการแก้ไขปัญหาระหว่างการอัพโหลด">

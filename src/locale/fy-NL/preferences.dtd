@@ -1,0 +1,72 @@
+<!ENTITY title "Foarkarren">
+<!ENTITY asciiTitle "ASCII bestânstypen">
+<!ENTITY general.label "Algemien">
+<!ENTITY messages.label "Berjochten">
+<!ENTITY welcome.label "Wolkomstberjocht toane">
+<!ENTITY error.label "Flatermeldings toane">
+<!ENTITY sessions.label "Sittings">
+<!ENTITY rememberp.label "Wachtwurden ûnthâlde">
+<!ENTITY rememberd.label "Ynhâld fan mappen ûnthâlde">
+<!ENTITY fileview.label "Bestannen wêrjaan">
+<!ENTITY autorefresh.label "Automatysk ferferse">
+<!ENTITY refresh.tip "Ferfers it oersicht neidat de bestannen op de tsjinner wizige binne (troch opladen, werneame, ensfh.)">
+<!ENTITY hidden.label "Toan ferstoppe bestannen">
+<!ENTITY bytesmode.label "It oantal bytes as bestânsgrutte toane">
+<!ENTITY interface.label "Wurking">
+<!ENTITY startup.label "FireFTP opstarte:">
+<!ENTITY windowopen.label "yn in nij finster">
+<!ENTITY tabopen.label "yn in nij ljebblêd">
+<!ENTITY integrateftplnk.label "FTP-ferwizings yn Firefox automatysk FireFTP brûke litte">
+<!ENTITY temppasvmode.label "Brûk Passieve FTP foar dizze ferbinings">
+<!ENTITY open.label "Dûbelklik/toets enter:">
+<!ENTITY download.label "Oerdracht fan in bestân">
+<!ENTITY exec.label "Iepen in bestân">
+<!ENTITY both.tip "Sawol lokale bestannen as bestannen op de tsjinner toane">
+<!ENTITY local.tip "Allinnich lokale bestannen toane">
+<!ENTITY remote.tip "Allinnich bestannen op de tsjinner toane">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Log toane yn haadfinster">
+<!ENTITY logerrormode.label "Toan allinnich flaters yn de log">
+<!ENTITY debug.label "Debug-ynformaasje yn log sjen litte">
+<!ENTITY connect.label "Ferbinings">
+<!ENTITY proxy.label "Proxy:">
+<!ENTITY none.label "Gjin">
+<!ENTITY direct.label "Direkt">
+<!ENTITY host.label "Tsjinner:">
+<!ENTITY port.label "Poarte:">
+<!ENTITY active.label "Aktive moadus">
+<!ENTITY limitPorts.label "Poarten beheine">
+<!ENTITY from.label "Fan:">
+<!ENTITY to.label "Nei:">
+<!ENTITY concurrent.label "Lyktiidige Transfers">
+<!ENTITY simtransfers.label "Maksimale lyktidige oerdrachten (1-10)">
+<!ENTITY recovery.label "Werstellen fan de ferbining">
+<!ENTITY network.label "Netwurk timeout (sek):">
+<!ENTITY network.tip "Bepaalt hoe lang wachten wurde mei op in antwurd fan de tsjinner">
+<!ENTITY keepalivemode.label "Hâldt de ferbining iepen; ek as die net aktief brûkt wurdt">
+<!ENTITY timeout.label "By ferbrutsen ferbining, automatysk op &apos;e nij probearje">
+<!ENTITY retryd.label "Op &apos;e nij probearje nei x sekonden">
+<!ENTITY retryd.tip "Oantal sekonden tusken pogings op &apos;e nij te ferbinen">
+<!ENTITY retrya.label "Oantal kear op &apos;e nij probearje">
+<!ENTITY retrya.tip "Oantal pogings dy&apos;t makke wurde moatte">
+<!ENTITY downup.label "Ynladen bestannen/Opladen bestannen">
+<!ENTITY transfercaption.label "Brûk dit by it ferstjoeren fan bestannen:">
+<!ENTITY automatic.label "Automatyske modus">
+<!ENTITY automatic.tip "Automatyske tusken &apos;Binaire&apos; en &apos;ASCII&apos; modus kieze">
+<!ENTITY binary.label "Binaire modus">
+<!ENTITY ascii.label "ASCII modus">
+<!ENTITY asciifiles.label "ASCII-bestannen:">
+<!ENTITY asciifiles.tip "Troch komma&apos;s skieden list fan as ASCII werkende bestannen">
+<!ENTITY add.label "Tafoegje">
+<!ENTITY remove.label "Fuortsmite">
+<!ENTITY extras.label "Ekstra&apos;s (as ynskeakele op tsjinner)">
+<!ENTITY usecompression.label "Brûk kompresje">
+<!ENTITY synctimestamps.label "Tiidstempels syngronisearje (as mooglik op de tsjinner)">
+<!ENTITY integritymode.label "Kontrolearje de yntegriteit fan bestannen (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Dûbele bestannen">
+<!ENTITY timer.label "Timer útskeakelje yn oerskriuwdialooch">
+<!ENTITY nopromptmode.label "Ferstopje it &apos;Oerskriuwen befestigje&apos;-finster, altiid oerskriuwe">
+<!ENTITY credits.label "Mei tank oan">
+<!ENTITY thanks.label "Tanke wol:">
+<!ENTITY allothers.label "Alle oaren dy&apos;t op flaters wezen en holpen hawwe">
+<!ENTITY special.label "Spesjale tank foar elkenien dy&apos;t in donaasje dien hat!">

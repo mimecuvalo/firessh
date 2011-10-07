@@ -1,0 +1,37 @@
+<!ENTITY title "Inställningar">
+<!ENTITY general.label "Allmänt">
+<!ENTITY startup.label "Starta FireFTP:">
+<!ENTITY windowopen.label "i ett nytt fönster">
+<!ENTITY tabopen.label "i en ny flik">
+<!ENTITY groupopen.label "i en fönstergrupp">
+<!ENTITY sessions.label "Sessioner">
+<!ENTITY rememberp.label "Kom ihåg lösenord">
+<!ENTITY logwindow.label "Logg">
+<!ENTITY debug.label "Visa felsökningsinformation">
+<!ENTITY interface.label "Gränssnitt">
+<!ENTITY appearance.label "Utseende">
+<!ENTITY font.label "Typsnitt">
+<!ENTITY size.label "Storlek">
+<!ENTITY fg.label "Text">
+<!ENTITY bg.label "Bakgrund">
+<!ENTITY bell.label "Klocka">
+<!ENTITY audible.label "Hörbar klocka">
+<!ENTITY connect.label "Anslutningar">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Ingen">
+<!ENTITY direct.label "Direkt">
+<!ENTITY host.label "Värd:">
+<!ENTITY port.label "Port:">
+<!ENTITY recovery.label "Anslutningsåterställning">
+<!ENTITY network.label "Tidsgräns för nätverk (i sekunder, mellan 1 och 600)">
+<!ENTITY network.tip "Bestämmer hur länge du skall vänta på ett svar från servern">
+<!ENTITY keepalivemode.label "Upprätthåll anslutningen vid inaktivitet">
+<!ENTITY timeout.label "Vid frånkoppling, försök att återansluta">
+<!ENTITY retryd.label "Fördröj förnyat försök (i sekunder, mellan 1 och 600)">
+<!ENTITY retryd.tip "Sekunder mellan återanslutningsförsök">
+<!ENTITY retrya.label "Återanslutningsförsök">
+<!ENTITY retrya.tip "Antal nya försök som skall göras">
+<!ENTITY credits.label "Tack till">
+<!ENTITY thanks.label "Tack:">
+<!ENTITY allothers.label "Alla andra som har skickad in buggar och hjälpt till">
+<!ENTITY special.label "Ett särskilt tack till alla som har donerat pengar!">

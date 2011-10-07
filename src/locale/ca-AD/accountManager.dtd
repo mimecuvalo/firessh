@@ -1,0 +1,52 @@
+<!ENTITY title "Gestor de comptes">
+<!ENTITY main "Principal">
+<!ENTITY connections "Connexió">
+<!ENTITY advanced "Avançat">
+<!ENTITY maindetails "Detalls principals">
+<!ENTITY id "ID">
+<!ENTITY account.label "Nom de compte:">
+<!ENTITY account.tip "Exemple: El meu lloc FTP">
+<!ENTITY host.label "Ordinador principal:">
+<!ENTITY host.tip "Exemple: ftp.debian.org">
+<!ENTITY login.label "Usuari:">
+<!ENTITY password.label "Contrasenya:">
+<!ENTITY anonymous.label "Anònim">
+<!ENTITY connection "Tipus de connexió">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Mode passiu">
+<!ENTITY security.label "Seguretat">
+<!ENTITY none.label "Cap">
+<!ENTITY authtls.label "Auth TLS (El millor)">
+<!ENTITY authssl.label "Auth SSL (El millor)">
+<!ENTITY implicit.label "SSL Implicit (Millor)">
+<!ENTITY initialdir "Carpetes inicials">
+<!ENTITY download "Opcions de descàrrega">
+<!ENTITY upload "Opcions de càrrega">
+<!ENTITY localdir.label "Local:">
+<!ENTITY remotedir.label "Remot:">
+<!ENTITY current.label "Fes servir l&apos;actual">
+<!ENTITY treesync.label "Keep directories in sync">
+<!ENTITY webhost "Ordinador principal Web (fet servir amb la funcionalitat &apos;Veure a la Web&apos;)">
+<!ENTITY webhost.tip "Exemple: http://www.exemple.cat">
+<!ENTITY prefix.label "Prefix:">
+<!ENTITY prefix.tip "Prefix a esborrar de la part FTP de l&apos;adreça URL, per exemple /public_html">
+<!ENTITY caseleave.label "No converteixis res">
+<!ENTITY caselower.label "Converteix a minúscules">
+<!ENTITY caseupper.label "Converteix a majúscules">
+<!ENTITY encoding.label "Codificació del servidor">
+<!ENTITY charset.label "Joc de caràcters:">
+<!ENTITY account.access "A">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

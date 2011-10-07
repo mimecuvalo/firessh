@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Відкрити посилання у FireFTP">
+<!ENTITY viewFireFTP "Переглянути цю сторінку у FireFTP">
+<!ENTITY accounts.label "Менеджер облікових записів">
+<!ENTITY accountlist.label "(Виберіть запис)">
+<!ENTITY new.label "Новий...">
+<!ENTITY edit.label "Редагувати...">
+<!ENTITY save.label "Зберегти тимчасовий запис">
+<!ENTITY quick.label "Швидке з&apos;єднання">
+<!ENTITY import.label "Імпортувати...">
+<!ENTITY export.label "Експортувати...">
+<!ENTITY new.access "N">
+<!ENTITY edit.access "E">
+<!ENTITY delete.access "D">
+<!ENTITY save.access "S">
+<!ENTITY quick.access "Q">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY abort.label "Перервати">
+<!ENTITY search.label "Пошук">
+<!ENTITY logtab.label "Звіт">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Налаштування">
+<!ENTITY diff.label "Порівняти теки">
+<!ENTITY recdiff.label "Порівняти теки і підтеки">
+<!ENTITY custom.label "Руками">
+<!ENTITY preferencestab.label "Налаштування...">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "C">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Довідка">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Змінити батьківську теку">
+<!ENTITY refresh.tip "Оновити теку">
+<!ENTITY localpath.tip "Локальна адреса">
+<!ENTITY remotepath.tip "Мережева адреса">
+<!ENTITY browse.label "Шукати">
+<!ENTITY change.label "Змінити">
+<!ENTITY name.label "Назва">
+<!ENTITY size.label "Hjpvsh">
+<!ENTITY date.label "Дата">
+<!ENTITY type.label "Тип">
+<!ENTITY attr.label "Властивості">
+<!ENTITY type.tip "Змінити метод передачі (радимо автоматичний)">
+<!ENTITY bytes.tip "Скопійовано байт / Всього байт">
+<!ENTITY timeela.tip "Пройшло">
+<!ENTITY timerem.tip "Залишилось">
+<!ENTITY download.tip "Швидкість завантаження">
+<!ENTITY percent.tip "Завершено (&#37;)">
+<!ENTITY openContaining.label "Відкрити теку з файлом">
+<!ENTITY upload.label "Передати">
+<!ENTITY download.label "Завантажити">
+<!ENTITY open.label "Відкрити">
+<!ENTITY openwith.label "Відкрити за допомогою...">
+<!ENTITY extractHere.label "Розпакувати тут">
+<!ENTITY extractTo.label "Розпакувати у теку">
+<!ENTITY viewweb.label "Переглянути у Веб">
+<!ENTITY copyUrl.label "Скопіювати адресу">
+<!ENTITY copyUrlLogin.label "Сеанс FTP із логіном">
+<!ENTITY cut.label "Вирізати">
+<!ENTITY copy.label "Скопіювати">
+<!ENTITY paste.label "Вставити">
+<!ENTITY makedir.label "Створити теку">
+<!ENTITY makefile.label "Створити файл">
+<!ENTITY delete.label "Видалити">
+<!ENTITY rename.label "Перейменувати">
+<!ENTITY properties.label "Властивості">
+<!ENTITY rproperties.label "Властивості (разом із змістом)">
+<!ENTITY searchButton.label "Пошук">
+<!ENTITY searchLocal.label "Локально">
+<!ENTITY searchRemote.label "В мережі">
+<!ENTITY searchSubdir.label "Шукати також у підтеках">
+<!ENTITY searchMatch.label "Чутливо до регістру">
+<!ENTITY searchRegexp.label "Регулярний вираз">
+<!ENTITY accounts.access "M">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "T">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "C">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchSubdir.access "k">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY mozilla.quote "І <html:em>ось</html:em> із <html:em>темряви</html:em> вони появились: володар вірних аби допомогти відродженому <html:em>звіру</html:em> повернути собі землю. Разом вони були <html:em>могутні</html:em> і повідомили благу <html:em>вість</html:em> про його повернення. Один за одним невірні навертались і серця їх <html:em>палали</html:em>.">
+<!ENTITY mozilla.from "Із <html:strong>книги Мозілли</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Автоматично">
+<!ENTITY binary.label         "Двійковий">
+<!ENTITY ascii.label          "ASCII">
+

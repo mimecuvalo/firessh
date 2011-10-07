@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Odpri povezavo v FireFTP">
+<!ENTITY viewFireFTP "Pokaži to stran v FireFTP">
+<!ENTITY accountlist.label "(izberite račun)">
+<!ENTITY edit.label "Uredi ...">
+<!ENTITY abort.label "Prekini">
+<!ENTITY logtab.label "Dnevnik">
+<!ENTITY ltab.label "Dnevnik">
+<!ENTITY qtab.label "Vrsta">
+<!ENTITY search.access "N">
+<!ENTITY logbutton.access "D">
+<!ENTITY advanced.label "Napredno">
+<!ENTITY search.label "Najdi">
+<!ENTITY diff.label "Razlika v mapah">
+<!ENTITY recdiff.label "Rekurzivna razlika map">
+<!ENTITY custom.label "Po meri ...">
+<!ENTITY import.label "Uvozi ...">
+<!ENTITY export.label "Izvozi ...">
+<!ENTITY preferencestab.label "Nastavitve">
+<!ENTITY diff.access "R">
+<!ENTITY recdiff.access "R">
+<!ENTITY custom.access "m">
+<!ENTITY import.access "U">
+<!ENTITY export.access "I">
+<!ENTITY prefbutton.access "N">
+<!ENTITY help.label "P">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Spremeni v vrhnjo mapo">
+<!ENTITY refresh.tip "Osveži mapo">
+<!ENTITY localpath.tip "Krajevna pot">
+<!ENTITY remotepath.tip "Oddaljena pot">
+<!ENTITY browse.label "Prebrskaj">
+<!ENTITY change.label "Spremeni">
+<!ENTITY name.label "Ime">
+<!ENTITY size.label "Velikost">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Vrsta">
+<!ENTITY attr.label "Atributi">
+<!ENTITY source.label "Vir">
+<!ENTITY dest.label "Cilj">
+<!ENTITY bytes.label "bajtov">
+<!ENTITY status.label "Stanje">
+<!ENTITY retry.label "Poskusi znova">
+<!ENTITY cancel.label "Prekliči">
+<!ENTITY cancelAll.label "Prekliči vse">
+<!ENTITY type.tip "Spremeni metodo prenosa (priporočena samodejna)">
+<!ENTITY bytes.tip "prenešenih bajtov / vseh bajtov">
+<!ENTITY timeela.tip "Pretekli čas">
+<!ENTITY timerem.tip "Preostali čas">
+<!ENTITY download.tip "Hitrost prenosa">
+<!ENTITY percent.tip "Odstotki končanega prenosa">
+<!ENTITY openContaining.label "Odpri vsebovano mapo">
+<!ENTITY upload.label "Prenesi na strežnik           Enter">
+<!ENTITY download.label "Prenesi s strežnika      Enter">
+<!ENTITY open.label "Odpri">
+<!ENTITY openwith.label "Odpri z ...">
+<!ENTITY extractHere.label "Razširi sem">
+<!ENTITY extractTo.label "Razširi v mapo">
+<!ENTITY viewweb.label "Prikaži na spletu">
+<!ENTITY copyUrl.label "Kopiraj URL">
+<!ENTITY copyUrlLogin.label "FTP s prijavo">
+<!ENTITY cut.label "Izreži                           Ctrl+X">
+<!ENTITY copy.label "Kopiraj                        Ctrl+C">
+<!ENTITY paste.label "Prilepi                       Ctrl+V">
+<!ENTITY makedir.label "Ustvari imenik         Ctrl+M">
+<!ENTITY makefile.label "Ustvari datoteko">
+<!ENTITY delete.label "Izbriši                       Del">
+<!ENTITY rename.label "Preimenuj                    F2">
+<!ENTITY properties.label "Lastnosti                 Ctrl+P">
+<!ENTITY rproperties.label "Rekurzivne lastnosti">
+<!ENTITY searchButton.label "Najdi">
+<!ENTITY searchLocal.label "Krajevno">
+<!ENTITY searchRemote.label "Oddaljeno">
+<!ENTITY searchOptions.label "Možnosti">
+<!ENTITY searchFrom.label "Od:">
+<!ENTITY searchTo.label "Za:">
+<!ENTITY searchSubdir.label "Poišči v podmapah">
+<!ENTITY searchMatch.label "Razlikuj male/velike črke">
+<!ENTITY searchRegexp.label "Logični izraz">
+<!ENTITY searchDates.label "Določite datume">
+<!ENTITY searchSubdir.access "p">
+<!ENTITY searchMatch.access "R">
+<!ENTITY searchRegexp.access "L">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "U">
+<!ENTITY abort.access "P">
+<!ENTITY advanced.access "o">
+<!ENTITY helpbutton.access "P">
+<!ENTITY browsebutton.access "P">
+<!ENTITY changebutton.access "S">
+<!ENTITY searchButton.access "N">
+<!ENTITY searchLocal.access "K">
+<!ENTITY searchRemote.access "O">
+<!ENTITY searchOptions.access "m">
+<!ENTITY mozilla.quote "In, <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>vendar</html:em>, iz <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>teme</html:em> so prišli: peščica zvestih, da bi <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>pomagali</html:em> ponovno rojeni zveri v njenem pohodu <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>ponovnega zavzetja</html:em> dežele.  Skupaj so <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>krepili</html:em> moč zveri in <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>širili</html:em> dobre novice o njeni vrnitvi.  Nekateri častilci <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>Mamona</html:em> so bili spreobrnjeni in njih srca so bila <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>v ognju</html:em>.">
+<!ENTITY mozilla.from "iz <html:strong>Knjige Mozille</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Samodejno">
+<!ENTITY binary.label         "Dvojiško (bin.)">
+<!ENTITY ascii.label          "ASCII">
+

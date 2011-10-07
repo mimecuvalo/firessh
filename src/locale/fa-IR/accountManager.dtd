@@ -1,0 +1,65 @@
+<!ENTITY title "مدیریت حساب ها">
+<!ENTITY main "اصلی">
+<!ENTITY connections "Connection">
+<!ENTITY advanced "پیشرفته">
+<!ENTITY maindetails "جزییات اصلی">
+<!ENTITY id "ID">
+<!ENTITY account.label "نام حساب:">
+<!ENTITY account.tip "مثال:My FTP Site">
+<!ENTITY folder.label "Category:">
+<!ENTITY host.label "Host:">
+<!ENTITY host.tip "مثال: ftp.debian.org">
+<!ENTITY login.label "نام کاربری:">
+<!ENTITY password.label "کلمه عبور:">
+<!ENTITY anonymous.label "ناشناس">
+<!ENTITY connection "نوع ارتباط">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Passive Mode">
+<!ENTITY security.label "امنیت">
+<!ENTITY none.label "هیچ">
+<!ENTITY authtls.label "Auth TLS (Best)">
+<!ENTITY authssl.label "Auth SSL (Better)">
+<!ENTITY implicit.label "Implicit SSL (Good)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Private Key:">
+<!ENTITY pkbrowse.label "Browse...">
+<!ENTITY pkconvert.label "Convert...">
+<!ENTITY initialdir "دایرکتوری اولیه">
+<!ENTITY download "تنظیمات دانلود">
+<!ENTITY upload "تنظیمات آپلود">
+<!ENTITY localdir.label "کامپیوتر:">
+<!ENTITY remotedir.label "سرور:">
+<!ENTITY current.label "استفاده از فعلی">
+<!ENTITY treesync.label "Keep directories in sync">
+<!ENTITY webhost "هاست">
+<!ENTITY webhost.tip "مثال: http://www.example.com">
+<!ENTITY prefix.label "پیشوند:">
+<!ENTITY prefix.tip "/public_html:حذف شود.مانند FTP پیشوندی که باید از آدرس">
+<!ENTITY caseleave.label "Leave case alone">
+<!ENTITY caselower.label "Convert to lower case">
+<!ENTITY caseupper.label "Convert to upper case">
+<!ENTITY timezone.label "Timezone Offset">
+<!ENTITY hours.label "Hours:">
+<!ENTITY minutes.label "Minutes:">
+<!ENTITY notes.label "Notes">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

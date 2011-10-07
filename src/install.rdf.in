@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:creator>Mime &#268;uvalo</em:creator>
+    <em:description>SSH Client for Mozilla Firefox.</em:description>
+    <em:homepageURL>http://firessh.mozdev.org</em:homepageURL>
+    <em:name>FireSSH</em:name>
+    <em:version>__VERSION__</em:version>
+    <em:id>firessh@nightlight.ws</em:id>
+    <em:file>
+      <Description about="urn:mozilla:extension:file:firessh.jar">
+        <em:package>content/</em:package>
+        <em:locale>locale/__l10n__/</em:locale>
+        <em:skin>skin/</em:skin>
+      </Description>
+    </em:file>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>__MINVERSION__</em:minVersion>
+        <em:maxVersion>__MAXVERSION__</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:optionsURL>chrome://firessh/content/preferences.xul</em:optionsURL>
+    <em:iconURL>chrome://firessh/skin/icons/logo32.png</em:iconURL>
+  </Description>
+</RDF>

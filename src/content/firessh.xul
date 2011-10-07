@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://firessh/skin/firessh.css" type="text/css"?>
+<?xml-stylesheet href="chrome://firessh/skin/platform.css" type="text/css"?>
+
+<window id            = "firessh-main-window"
+        title         = "FireSSH"
+        width         = "800"
+        height        = "600"
+        orient        = "vertical"
+        xmlns         = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html    = "http://www.w3.org/1999/xhtml"
+        persist       = "width height screenX screenY sizemode"
+        onfocus       = "gFocused = true;startup()"
+        onload        = "startup()"
+        onunload      = "unload()"
+        onresize      = "if (gCli) gCli.onResize()">
+
+  <html:link rel="icon" href="chrome://firessh/skin/icons/logo.png" style="display:none"/>
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/globals.js"/>
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/baseProtocol.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/sshController.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/baseObserver.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/ssh2.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/ssh2Observer.js"/>
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/crypto.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/AES.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/Blowfish.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/DES3.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/ARC4.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/baseHash.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/SHA.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/SHA256.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/MD5.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/HMAC.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/PublicKey/RSA.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/PublicKey/DSA.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/_UserFriendlyRNG.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/SHAd256.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaAccumulator.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaGenerator.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/OSRNG/nt.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/OSRNG/posix.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Util/randpool.js"/>
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/common.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/python_shim.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/BigInteger.js"/>
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/agent.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/auth_handler.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/ber.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/channel.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/client.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/compress.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/dsskey.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/file.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/hostkeys.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kex_gex.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kex_group1.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/message.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/packet.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/pkey.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/primes.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/rsakey.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp_attr.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp_client.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp_file.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/ssh_exception.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/transport.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/util.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/win_pageant.js"/>
+
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/cli.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/loadUnload.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/localFile.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/log.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/misc.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/preferences.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/sessionsPasswords.js"/>
+
+  <stringbundle id="strings" src="chrome://firessh/locale/strings.properties"/>
+
+  <!-- :::::::::::::::::::::::::::::: where the magic happens :::::::::::::::::::::::::::::: -->
+  <browser type="content-primary" id="cmdlog" src="chrome://firessh/content/blank.html" flex="1" persist="height" />
+
+</window>

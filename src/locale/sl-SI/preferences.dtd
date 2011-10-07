@@ -1,0 +1,72 @@
+<!ENTITY title "Nastavitve">
+<!ENTITY asciiTitle "Vrste datotek ASCII">
+<!ENTITY general.label "Splošno">
+<!ENTITY messages.label "Sporočila">
+<!ENTITY welcome.label "Prikaži pozdravno sporočilo">
+<!ENTITY error.label "Prikaži sporočila o napakah">
+<!ENTITY sessions.label "Seje">
+<!ENTITY rememberp.label "Zapomni si gesla">
+<!ENTITY rememberd.label "Zapomni si vsebino imenikov">
+<!ENTITY fileview.label "Pogled datotek">
+<!ENTITY autorefresh.label "Samodejno osveži">
+<!ENTITY refresh.tip "Ko je oddaljeni pogled spremenjen (zaradi prenosa, preimenovanja itn.), osveži seznam mape">
+<!ENTITY hidden.label "Prikaži skrite datoteke">
+<!ENTITY bytesmode.label "Za velikost datotek prikaži število bajtov">
+<!ENTITY interface.label "Vmesnik">
+<!ENTITY startup.label "Zaženi FireFTP:">
+<!ENTITY windowopen.label "Odpri v novem oknu">
+<!ENTITY tabopen.label "Odpri v novem zavihku">
+<!ENTITY integrateftplnk.label "Nastavi povezave FTP v Firefoxu, da bo samodejno uporabil FireFTP">
+<!ENTITY temppasvmode.label "Za te povezave uporabi pasivni način">
+<!ENTITY open.label "Dvoklik/tipka Enter:">
+<!ENTITY download.label "prenese datoteko">
+<!ENTITY exec.label "odpre datoteko">
+<!ENTITY both.tip "prikaži krajevne in oddaljene datoteke">
+<!ENTITY local.tip "prikaži samo krajevne datoteke">
+<!ENTITY remote.tip "prikaži samo oddaljene datoteke">
+<!ENTITY logwindow.label "Dnevnik">
+<!ENTITY logmode.label "Prikaži dnevnik v glavnem oknu">
+<!ENTITY logerrormode.label "Prikaži le napake v dnevniku">
+<!ENTITY debug.label "Prikaži informacije razhroščevanja v dnevniku">
+<!ENTITY connect.label "Povezave">
+<!ENTITY proxy.label "Nastavitve proxy">
+<!ENTITY none.label "brez">
+<!ENTITY direct.label "neposredno">
+<!ENTITY host.label "Gostitelj:">
+<!ENTITY port.label "Vrata:">
+<!ENTITY active.label "Aktivni način">
+<!ENTITY limitPorts.label "Omeji vrata">
+<!ENTITY from.label "Od:">
+<!ENTITY to.label "Do:">
+<!ENTITY concurrent.label "Hkratni prenosi">
+<!ENTITY simtransfers.label "Najv. hkratnih prenosov (1-10)">
+<!ENTITY recovery.label "Obnovitev povezave">
+<!ENTITY network.label "Časovna omejitev omrežja (v sekundah, med 1 in 600)">
+<!ENTITY network.tip "Določite dobo čakanja na odziv strežnika">
+<!ENTITY keepalivemode.label "Ohrani povezavo tudi ob nedejavnosti">
+<!ENTITY timeout.label "Ob prekinjeni povezavi se ponovno poveži">
+<!ENTITY retryd.label "Zamik poskusov ponovne povezave (v sekundah, med 1 in 600)">
+<!ENTITY retryd.tip "Število sekund med poskusi ponovne vzpostavitve povezave">
+<!ENTITY retrya.label "Število poskusov ponovne povezave">
+<!ENTITY retrya.tip "Največje število poskusov">
+<!ENTITY downup.label "Prenosi">
+<!ENTITY transfercaption.label "Pri prenosu datotek uporabi:">
+<!ENTITY automatic.label "samodejni način">
+<!ENTITY automatic.tip "samodejno izberi med &apos;binarnim&apos; in &apos;ASCII&apos; načinom">
+<!ENTITY binary.label "binarni način">
+<!ENTITY ascii.label "način ASCII">
+<!ENTITY asciifiles.label "Datoteke ASCII:">
+<!ENTITY asciifiles.tip "Z vejico ločen seznam končnic datotek, ki bi jih moral razpoznati kot datoteke ASCII">
+<!ENTITY add.label "Dodaj">
+<!ENTITY remove.label "Odstrani">
+<!ENTITY extras.label "Dodatki (če so omogočeni na strežniku)">
+<!ENTITY usecompression.label "Uporabi stiskanje">
+<!ENTITY synctimestamps.label "Ohrani časovne žige sinhrone">
+<!ENTITY integritymode.label "Preveri integriteto prenosov (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Dvojniki datotek">
+<!ENTITY timer.label "Onemogoči časovno omejitev v pogovornem oknu prepisovanja">
+<!ENTITY nopromptmode.label "Ne prikaži pogovornega okna za prepis, preprosto prepiši">
+<!ENTITY credits.label "Zasluge">
+<!ENTITY thanks.label "Zahvala:">
+<!ENTITY allothers.label "Preostali, ki so opozorili na hrošče in pomagali">
+<!ENTITY special.label "Posebna zahvala vsem, ki donirate!">

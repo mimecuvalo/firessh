@@ -1,0 +1,59 @@
+/*----------------[ common ]-----------------*/
+
+.textLink {
+  color               : blue;
+  cursor              : pointer;
+}
+
+.required[missing="true"] {
+  -moz-appearance     : none;
+  border              : 1px inset ThreeDShadow;
+  background-color    : #f5f6be;
+}
+
+.optional input {
+  color: #aaa;
+}
+
+textbox[type="number"][hidespinbuttons="true"] {
+  padding             : 2px 2px 3px 4px !important;
+}
+
+/*----------------[ firessh.xul ]-----------------*/
+
+toolbar {
+	-moz-appearance     : none;
+}
+
+toolbarbutton {
+  -moz-user-focus     : normal;
+}
+
+
+/*----------------[ welcome.xul ]-----------------*/
+
+#thegoodbook {
+  background          : maroon;
+  color               : white;
+  font-style          : italic;
+}
+
+.mozillaquote {
+  padding             : 25px;
+  font-size           : 1.1em;
+  font-family         : serif;
+  line-height         : 1.5;
+  text-align          : center;
+}
+
+.mozillafrom {
+  padding             : 25px;
+  font-size           : 1.95em;
+  font-family         : serif;
+  text-align          : right;
+}
+
+em {
+  font-size           : 1.3em;
+  line-height         : 0;
+}

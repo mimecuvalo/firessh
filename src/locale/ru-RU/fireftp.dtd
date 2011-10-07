@@ -1,0 +1,94 @@
+<!ENTITY openFireFTP "Открыть ссылку в FireFTP">
+<!ENTITY viewFireFTP "Смотреть страницу в FireFTP">
+<!ENTITY accounts.label "Учётная запись">
+<!ENTITY accountlist.label "(Выбрать учетн.запись)">
+<!ENTITY new.label "Новая...">
+<!ENTITY edit.label "Изменить...">
+<!ENTITY save.label "Сохранять временную учетную запись">
+<!ENTITY quick.label "Быстрое соединение">
+<!ENTITY import.label "Импорт...">
+<!ENTITY export.label "Экспорт">
+<!ENTITY new.access "Н">
+<!ENTITY edit.access "И">
+<!ENTITY delete.access "л">
+<!ENTITY save.access "х">
+<!ENTITY quick.access "Б">
+<!ENTITY import.access "м">
+<!ENTITY export.access "Э">
+<!ENTITY abort.label "Стоп">
+<!ENTITY search.label "Поиск">
+<!ENTITY logtab.label "Журнал">
+<!ENTITY search.access "П">
+<!ENTITY logbutton.access "Ж">
+<!ENTITY advanced.label "Дополнительно">
+<!ENTITY diff.label "Сравнить каталоги">
+<!ENTITY recdiff.label "Рекурсивно сравнить каталоги">
+<!ENTITY custom.label "Пользовательская команда">
+<!ENTITY preferencestab.label "Настройки">
+<!ENTITY diff.access "к">
+<!ENTITY recdiff.access "р">
+<!ENTITY custom.access "я">
+<!ENTITY prefbutton.access "Н">
+<!ENTITY help.label "Помощь">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "На уровень выше">
+<!ENTITY refresh.tip "Обновить">
+<!ENTITY localpath.tip "Локальный адрес">
+<!ENTITY remotepath.tip "Удаленный адрес">
+<!ENTITY browse.label "Обзор">
+<!ENTITY change.label "Перейти">
+<!ENTITY name.label "Имя">
+<!ENTITY size.label "Размер">
+<!ENTITY date.label "Дата">
+<!ENTITY type.label "Тип">
+<!ENTITY attr.label "Атрибуты">
+<!ENTITY type.tip "Изменить метод передачи (рекомендуется &apos;&apos;auto&apos;&apos;)">
+<!ENTITY bytes.tip "Байт Загружено / Всего Байт">
+<!ENTITY timeela.tip "Прошло">
+<!ENTITY timerem.tip "Осталось">
+<!ENTITY download.tip "Скорость загрузки">
+<!ENTITY percent.tip "Процентов выполнено">
+<!ENTITY openContaining.label "Открыть папку содержащую файл">
+<!ENTITY upload.label "Передать">
+<!ENTITY download.label "Загрузить">
+<!ENTITY open.label "Открыть">
+<!ENTITY openwith.label "Открыть с помощью">
+<!ENTITY extractHere.label "Извлечь">
+<!ENTITY extractTo.label "Извлечь в папку">
+<!ENTITY viewweb.label "Смотреть в Web">
+<!ENTITY copyUrl.label "Копировать ссылку">
+<!ENTITY copyUrlLogin.label "FTP с авторизацией">
+<!ENTITY cut.label "Вырезать">
+<!ENTITY copy.label "Копировать">
+<!ENTITY paste.label "Вставить">
+<!ENTITY makedir.label "Создать папку">
+<!ENTITY makefile.label "Создать файл">
+<!ENTITY delete.label "Удалить">
+<!ENTITY rename.label "Переименовать">
+<!ENTITY properties.label "Свойства">
+<!ENTITY rproperties.label "Рекурсивные Свойства">
+<!ENTITY searchButton.label "Поиск">
+<!ENTITY searchLocal.label "Локальный">
+<!ENTITY searchRemote.label "Удаленный">
+<!ENTITY searchSubdir.label "Искать в подкаталогах">
+<!ENTITY searchMatch.label "Случайные совпадения">
+<!ENTITY searchRegexp.label "Регулярные выражения">
+<!ENTITY accounts.access "З">
+<!ENTITY abort.access "т">
+<!ENTITY advanced.access "п">
+<!ENTITY helpbutton.access "щ">
+<!ENTITY browsebutton.access "О">
+<!ENTITY changebutton.access "й">
+<!ENTITY searchButton.access "П">
+<!ENTITY searchLocal.access "Л">
+<!ENTITY searchRemote.access "У">
+<!ENTITY searchSubdir.access "д">
+<!ENTITY searchMatch.access "ч">
+<!ENTITY searchRegexp.access "ы">
+<!ENTITY mozilla.quote "And, <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>lo</html:em>, from the <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>aide</html:em> the reborn beast in its quest to <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>reclaim</html:em> the land. Together they <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>extended</html:em> the power of the beast and <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>spread</html:em> the good news of its return. One by one the followers of <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>Mammon</html:em> were converted and their hearts were set <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Авто">
+<!ENTITY binary.label         "Бинарный">
+<!ENTITY ascii.label          "ASCII">
+

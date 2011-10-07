@@ -1,0 +1,69 @@
+<!ENTITY title "Налаштування">
+<!ENTITY asciiTitle "ASCII файли">
+<!ENTITY general.label "Загальні">
+<!ENTITY messages.label "Повідомлення">
+<!ENTITY welcome.label "Показувати привітання">
+<!ENTITY error.label "Показувати помилки">
+<!ENTITY sessions.label "Сесії">
+<!ENTITY rememberp.label "Запам&apos;ятовувати паролі">
+<!ENTITY rememberd.label "Запам&apos;ятовувати список тек">
+<!ENTITY fileview.label "Перегляд файлів">
+<!ENTITY autorefresh.label "Автоматичне оновлення">
+<!ENTITY refresh.tip "Якщо щось змінилося (при передачі, перейменування і т.д.) оновити список тек">
+<!ENTITY hidden.label "Показувати приховані файли">
+<!ENTITY bytesmode.label "Показувати розмір файла в байтах">
+<!ENTITY interface.label "Зовнішній вигляд">
+<!ENTITY startup.label "Запускати FireFTP:">
+<!ENTITY windowopen.label "у новому вікні">
+<!ENTITY tabopen.label "у новій вкладці">
+<!ENTITY integrateftplnk.label "Нехай FTP-посилання у Firefox використовують FireFTP">
+<!ENTITY temppasvmode.label "Використовувати пасивний режим для цих з&apos;єднань">
+<!ENTITY ui.label "Вигляд">
+<!ENTITY normal.label "Нормальний">
+<!ENTITY local.label "Локальний">
+<!ENTITY remote.label "Мережевий">
+<!ENTITY both.tip "Показувати і локальні і мережеві файли">
+<!ENTITY local.tip "Показувати лише локальні файли">
+<!ENTITY remote.tip "Показувати лише мережеві файли">
+<!ENTITY logwindow.label "Звіт">
+<!ENTITY logmode.label "Показувати звіт у головному вікні">
+<!ENTITY logerrormode.label "У звіті показувати лише помилки">
+<!ENTITY debug.label "Показувати інформацію обробника">
+<!ENTITY connect.label "З&apos;днання">
+<!ENTITY proxy.label "Проксі">
+<!ENTITY none.label "Без">
+<!ENTITY direct.label "Пряме">
+<!ENTITY host.label "Хост:">
+<!ENTITY port.label "Порт:">
+<!ENTITY active.label "Активний режим">
+<!ENTITY limitPorts.label "Діапазон портів">
+<!ENTITY from.label "З:">
+<!ENTITY to.label "По:">
+<!ENTITY recovery.label "Відновлення з&apos;єдання">
+<!ENTITY network.label "Очікування мережі (1-600 сек.)">
+<!ENTITY network.tip "Як довго очікувати відповіді сервера">
+<!ENTITY keepalivemode.label "Утримувати з&apos;єднання навіть якщо ви неативні">
+<!ENTITY timeout.label "Якщо від&apos;єднано - спробувати під&apos;єднатись">
+<!ENTITY retryd.label "Перерва при з&apos;єднанні (1-600 сек.)">
+<!ENTITY retryd.tip "Час між сусідніми спробами з&apos;єднання">
+<!ENTITY retrya.label "Кількість спроб з&apos;єднання">
+<!ENTITY retrya.tip "Кількість спроб, після яких FireFTP припинить намагання з&apos;єднатись">
+<!ENTITY downup.label "Завантаження/Передача">
+<!ENTITY transfercaption.label "Під час обміну файлами використовувати">
+<!ENTITY automatic.label "Автоматичний режим">
+<!ENTITY automatic.tip "Автоматично вибрати між &apos;Двійковим&apos; і &apos;ASCII&apos;">
+<!ENTITY binary.label "Двійковий режим">
+<!ENTITY ascii.label "ASCII режим">
+<!ENTITY asciifiles.label "ASCII-файли">
+<!ENTITY asciifiles.tip "Файли таких розширень вважатимуться ASCII-файлами">
+<!ENTITY add.label "Додати">
+<!ENTITY remove.label "Видалити">
+<!ENTITY timestamps.label "Дата">
+<!ENTITY synctimestamps.label "Синхронізувати дату файлів (якщо дозволено сервером)">
+<!ENTITY duplicates.label "Копії файлів">
+<!ENTITY timer.label "Вимкнути таймер у підтвердженні перезапису">
+<!ENTITY nopromptmode.label "Перезаписати не запитуючи">
+<!ENTITY credits.label "Про нас">
+<!ENTITY thanks.label "Дякуємо:">
+<!ENTITY allothers.label "Всім, хто повідомляв про баги і допомагав">
+<!ENTITY special.label "Особлива подяка всім спонсорам!">
