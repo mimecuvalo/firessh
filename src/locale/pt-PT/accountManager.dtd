@@ -18,7 +18,7 @@
 <!ENTITY account.label "Nome da Conta:">
 <!ENTITY account.tip "Exemplo: Meu Sítio FTP">
 <!ENTITY folder.label "Categoria:">
-<!ENTITY optional.label "(opcional)">
+<!ENTITY optional.label "(Opcional)">
 <!ENTITY host.label "Servidor:">
 <!ENTITY host.tip "Exemplo: ftp.debian.org">
 <!ENTITY login.label "Inicio de sessão:">

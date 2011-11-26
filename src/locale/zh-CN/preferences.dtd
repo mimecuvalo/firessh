@@ -1,9 +1,9 @@
 <!ENTITY title "选项">
 <!ENTITY general.label "常规">
 <!ENTITY startup.label "开始 FireFTP：">
-<!ENTITY windowopen.label "在新窗口">
-<!ENTITY tabopen.label "在新标签页">
-<!ENTITY groupopen.label "在一个窗口分组中">
+<!ENTITY windowopen.label "在新窗口中">
+<!ENTITY tabopen.label "在新标签页中">
+<!ENTITY groupopen.label "在窗口分组中">
 <!ENTITY sessions.label "会话">
 <!ENTITY rememberp.label "记住密码">
 <!ENTITY logwindow.label "日志">
