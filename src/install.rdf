@@ -8,23 +8,77 @@
     <em:description>SSH Client for Mozilla Firefox.</em:description>
     <em:homepageURL>http://firessh.mozdev.org</em:homepageURL>
     <em:name>FireSSH</em:name>
-    <em:version>0.00001</em:version>
+    <em:version>0.88.2</em:version>
     <em:id>firessh@nightlight.ws</em:id>
     <em:file>
       <Description about="urn:mozilla:extension:file:firessh.jar">
         <em:package>content/</em:package>
-        <em:locale>locale/en-US/</em:locale>
+          <!--<em:locale>locale/af-ZA/</em:locale>
+          <em:locale>locale/ar/</em:locale>
+          <em:locale>locale/ar-SA/</em:locale>
+          <em:locale>locale/ast-ES/</em:locale>
+          <em:locale>locale/az-AZ/</em:locale>
+          <em:locale>locale/be/</em:locale>
+          <em:locale>locale/bg/</em:locale>
+          <em:locale>locale/ca/</em:locale>
+          <em:locale>locale/ca-AD/</em:locale>
+          <em:locale>locale/cs/</em:locale>-->
+          <em:locale>locale/da/</em:locale>
+          <!--<em:locale>locale/de/</em:locale>
+          <em:locale>locale/el/</em:locale>-->
+          <em:locale>locale/en-US/</em:locale>
+          <!--<em:locale>locale/es-AR/</em:locale>
+          <em:locale>locale/es-CL/</em:locale>
+          <em:locale>locale/es-ES/</em:locale>
+          <em:locale>locale/et/</em:locale>
+          <em:locale>locale/eu-ES/</em:locale>
+          <em:locale>locale/fa/</em:locale>
+          <em:locale>locale/fi/</em:locale>-->
+          <em:locale>locale/fr/</em:locale>
+          <!--<em:locale>locale/fy-NL/</em:locale>
+          <em:locale>locale/ga-IE/</em:locale>
+          <em:locale>locale/gl-ES/</em:locale>
+          <em:locale>locale/he/</em:locale>
+          <em:locale>locale/hr-HR/</em:locale>
+          <em:locale>locale/hu/</em:locale>
+          <em:locale>locale/hu-HU/</em:locale>
+          <em:locale>locale/id/</em:locale>-->
+          <em:locale>locale/it-IT/</em:locale>
+          <em:locale>locale/ja-JP/</em:locale>
+          <!--<em:locale>locale/ka-GE/</em:locale>
+          <em:locale>locale/ko-KR/</em:locale>
+          <em:locale>locale/km-KH/</em:locale>
+          <em:locale>locale/lt-LT/</em:locale>
+          <em:locale>locale/mn-MN/</em:locale>
+          <em:locale>locale/nb-NO/</em:locale>
+          <em:locale>locale/nl/</em:locale>
+          <em:locale>locale/pl/</em:locale>
+          <em:locale>locale/pl-PL/</em:locale>
+          <em:locale>locale/pt-BR/</em:locale>-->
+          <em:locale>locale/pt-PT/</em:locale>
+          <!--<em:locale>locale/ro/</em:locale>
+          <em:locale>locale/sk/</em:locale>
+          <em:locale>locale/sl/</em:locale>
+          <em:locale>locale/sr-RS/</em:locale>-->
+          <em:locale>locale/sv-SE/</em:locale>
+          <!--<em:locale>locale/tr/</em:locale>
+          <em:locale>locale/uk-UA/</em:locale>
+          <em:locale>locale/vi-VN/</em:locale>-->
+          <em:locale>locale/zh-CN/</em:locale>
+          <!--<em:locale>locale/zh-TW/</em:locale>-->
         <em:skin>skin/</em:skin>
       </Description>
     </em:file>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>100.0.*</em:maxVersion>
+        <em:minVersion>4.0b1</em:minVersion>
+        <em:maxVersion>9.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     <em:optionsURL>chrome://firessh/content/preferences.xul</em:optionsURL>
     <em:iconURL>chrome://firessh/skin/icons/logo32.png</em:iconURL>
+    <em:updateURL>http://firessh.mozdev.org/update_all.rdf</em:updateURL>
+    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtKvkP6FE2PP+PWfd47itofGcn91sd1WvVleyTILL9LRE09y/MpzjLX75bkievEqbmEmI8T5TJ50jmNN8nRGltBkSIviPI03l/ufXoCqhdDE/1sdzmaCrh77fZ21BxYIY2H/MINdRvSMTh/7LFyg4m1ICKbj1IvgNsLvly4EHzewIDAQAB</em:updateKey>
   </Description>
 </RDF>

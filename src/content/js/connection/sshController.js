@@ -2,7 +2,7 @@ function connect(noAccountChange, showPassDialog) {
   gConnection.width = gCli.cols;
   gConnection.height = gCli.rows;
 
-  gConnection.host = gConnection.host.replace(/^ssh:\/*/, '');    // error checking - get rid of 'ssh://'
+  gConnection.host = gConnection.host.replace(/^ssh:\/*/i, '');    // error checking - get rid of 'ssh://'
 
   if (gConnection.host && gConnection.host.charAt(gConnection.host.length - 1) == '/') {
     gConnection.host = gConnection.host.substring(0, gConnection.host.length - 1);

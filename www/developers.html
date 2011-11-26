@@ -42,26 +42,13 @@
           <h2>Client Source Code</h2>
           <ul id="get-the-src">
             <li><a href="http://www.mozdev.org/source/browse/firessh/">Browse on the web</a></li>
-            <li>Check out the source using anonymous CVS with the following commands (password is guest):
+            <li>Check out the source using git:
               <pre style="font-size: 7pt">
-cvs -d :pserver:guest@mozdev.org:/cvs login
-cvs -z3 -d :pserver:guest@mozdev.org:/cvs co firessh</pre>
-            </li>
-          </ul>
-        </div>
-
-        <div class="info">
-          <h2>SSH Source Code</h2>
-          <ul id="get-the-src">
-            <li>paramikojs is a javascript port of <a href="http://www.lag.net/paramiko/">paramiko</a></li>
-            <li>Not all code paths have been tested - coder beware!</li>
-            <li>The underlying SSH code lives in the FireFTP repository currently.</li>
-            <li><a href="http://www.mozdev.org/source/browse/fireftp/src/content/js/connection/paramikojs/">Browse on the web</a></li>
-            <li>Check out the source using anonymous CVS with the following commands (password is guest):
-              <br/><span style="font: 7pt Courier New">
-cvs -d :pserver:guest@mozdev.org:/cvs login<br/>
-cvs -z3 -d :pserver:guest@mozdev.org:/cvs co fireftp/src/content/js/connection/paramikojs
-              </span>
+git clone https://github.com/mimecuvalo/firessh.git
+git submodule init
+git submodule update</pre>
+<!--cvs -d :pserver:guest@mozdev.org:/cvs login
+cvs -z3 -d :pserver:guest@mozdev.org:/cvs co firessh-->
             </li>
           </ul>
         </div>
@@ -620,6 +607,8 @@ bugs</a></li>
           }
         </script>
 
+        <b>add as a tab in firebug?? (any open-source developer up for this, eh?? email me! mimecuvalo@gmail.com)</b><br>
+        <b>x-forwarding, maybe</b><br>
         <b>Make it faster</b><br/>
         - native typed arrays don't work with writeByteArray and readByteArray.  laaaamesauce. some way to cast?<br/>
         - however, even if typed arrays did work, manipulating arrays is many times slower than manipulating strings (see benchmark)<br/>
@@ -643,6 +632,7 @@ bugs</a></li>
         added support for inputting CJK characters<br/>
         fixed other minor bugs<br/>
         more locales (0.88.1 fix)<br/>
+        fix bug when exporting not all passwords saved (0.88.2 fix)<br/>
         <br/>
       </div>
 

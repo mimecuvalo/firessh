@@ -506,7 +506,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
 
             key = key ? key : "";
             var cipher = cipherType == "arc4" ? new crypto.cipher.ARC4(key) : new crypto.cipher.Blowfish(key, 2, "");
-            if (cipher.decrypt(tempSiteManager[x].password) != "check123") {
+            if (cipher.decrypt(tempSiteManager[x].password).replace(/\0/g, '') != "check123") {
               alert(gStrbundle.getString("badPassword"));
               sstream.close();
               fstream.close();
@@ -561,7 +561,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
 
           if (passCheck) {
             var cipher = cipherType == "arc4" ? new crypto.cipher.ARC4(key) : new crypto.cipher.Blowfish(key, 2, "");
-            tempSiteManager[x].password = cipher.decrypt(tempSiteManager[x].password);
+            tempSiteManager[x].password = cipher.decrypt(tempSiteManager[x].password).replace(/\0/g, '');
 
             try {
               tempSiteManager[x].password = toUTF8.convertStringToUTF8(tempSiteManager[x].password, "UTF-8", 1);

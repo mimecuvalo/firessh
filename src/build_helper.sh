@@ -50,13 +50,13 @@ then
 		locale/sv-SE \
 		locale/zh-CN \
 		skin \
-		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp"
+		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp" "*/.git/*" "*.gitignore"
 else
 	zip -q -r9 chrome/firessh.jar \
 		content \
 		locale/$FIRESSH_LANG \
 		skin \
-		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp"
+		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp" "*/.git/*" "*.gitignore"
 fi
 
 if [ $FIRESSH_LANG = "en-US" ]

@@ -1,5 +1,12 @@
 content firessh                                  jar:chrome/firessh.jar!/content/
-locale  firessh en-US                         jar:chrome/firessh.jar!/locale/en-US/
+locale  firessh da                               jar:chrome/firessh.jar!/locale/da/
+locale  firessh en-US                            jar:chrome/firessh.jar!/locale/en-US/
+locale  firessh fr                               jar:chrome/firessh.jar!/locale/fr/
+locale  firessh it-IT                            jar:chrome/firessh.jar!/locale/it-IT/
+locale  firessh ja-JP                            jar:chrome/firessh.jar!/locale/ja-JP/
+locale  firessh pt-PT                            jar:chrome/firessh.jar!/locale/pt-PT/
+locale  firessh sv-SE                            jar:chrome/firessh.jar!/locale/sv-SE/
+locale  firessh zh-CN                            jar:chrome/firessh.jar!/locale/zh-CN/
 skin    firessh classic/1.0                      jar:chrome/firessh.jar!/skin/
 overlay chrome://browser/content/browser.xul         chrome://firessh/content/firesshOverlay.xul
 style   chrome://global/content/customizeToolbar.xul chrome://firessh/skin/overlay.css
