@@ -53,12 +53,15 @@ function startup() {
   //tipJar();
 
   if (gLoadUrl) {
-    setTimeout("externalLink()", 1000);
+    setTimeout(externalLink, 1000);
   } else {
     var connectCallback = function(site) {
       accountChangeHelper(site);
       connect();
-      setTimeout("$('cmdlog').focus()", 0);
+      var func = function() {
+        $('cmdlog').focus();
+      };
+      setTimeout(func, 0);
     };
 
     var connectCancelCallback = function() {

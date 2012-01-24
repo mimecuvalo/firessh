@@ -41,12 +41,25 @@
         <div class="info">
           <h2>Client Source Code</h2>
           <ul id="get-the-src">
-            <li><a href="http://www.mozdev.org/source/browse/firessh/">Browse on the web</a></li>
+            <li><a href="https://github.com/mimecuvalo/firessh">Browse on the web</a></li>
             <li>Check out the source using git:
               <pre style="font-size: 7pt">
 git clone https://github.com/mimecuvalo/firessh.git
 git submodule init
 git submodule update</pre>
+<!--cvs -d :pserver:guest@mozdev.org:/cvs login
+cvs -z3 -d :pserver:guest@mozdev.org:/cvs co firessh-->
+            </li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <h2>SSH Source Code</h2>
+          <ul id="get-the-src">
+            <li><a href="https://github.com/mimecuvalo/paramikojs">Browse on the web</a></li>
+            <li>Check out the source using git:
+              <pre style="font-size: 7pt">
+git clone https://github.com/mimecuvalo/paramikojs.git</pre>
 <!--cvs -d :pserver:guest@mozdev.org:/cvs login
 cvs -z3 -d :pserver:guest@mozdev.org:/cvs co firessh-->
             </li>
@@ -624,6 +637,19 @@ bugs</a></li>
       <div class="padded hr"><hr /></div>
 
       <div class="smaller">
+        <h2>release notes 0.89</h2>
+
+        version 0.89beta '<a href="http://en.wikipedia.org/wiki/Solitaire_(cipher)">solitaire</a>' (August 14th, 2011) - firefox 4.0+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        fixed DNS leaking when using proxies<br/>
+        fixed yet another issue with character encoding (ISO-8859-1 characters and such making the client hang)<br/>
+        <br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
         <h2>release notes 0.88</h2>
 
         version 0.88beta '<a href="http://en.wikipedia.org/wiki/Solitaire_(cipher)">solitaire</a>' (August 14th, 2011) - firefox 4.0+ only<br/><br/>
@@ -632,7 +658,7 @@ bugs</a></li>
         added support for inputting CJK characters<br/>
         fixed other minor bugs<br/>
         more locales (0.88.1 fix)<br/>
-        fix bug when exporting not all passwords saved (0.88.2 fix)<br/>
+        fixed bug when exporting not all passwords saved (0.88.2 fix)<br/>
         <br/>
       </div>
 

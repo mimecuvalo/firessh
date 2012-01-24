@@ -25,7 +25,11 @@
           $('message').collapsed     = true;
           $('thegoodbook').collapsed = false;
           $('welcome').setAttribute("title", "The Book of Mozilla, 8:2");
-          setTimeout("window.moveTo(window.screen.availWidth / 2 - 525, window.screen.availHeight / 2 - 300);window.resizeTo(1050, 600);",0);
+          var func = function() {
+            window.moveTo(window.screen.availWidth / 2 - 525, window.screen.availHeight / 2 - 300);
+            window.resizeTo(1050, 600);
+          };
+          setTimeout(func, 0);
         }
       }
     ]]>

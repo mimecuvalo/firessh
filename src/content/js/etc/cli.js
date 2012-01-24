@@ -980,19 +980,36 @@ cli.prototype = {
           this.__PushChar(ch);
         } else if (ascii > 127) {  // process UTF-8
           var utfSequence = ch;
+
           while (true) {
             ++index;
+
             if (index == text.length) {
               this.unparsedInput = utfSequence;
               break;  // we don't have enough characters to process the UTF-8 sequence properly yet
             }
+
             utfSequence += text[index];
+
             try {
               ch = decodeURIComponent(escape(utfSequence));
             } catch (ex) {
+              var originalUtfSequence = utfSequence;
               // will throw URIError until the UTF-8 sequence is complete
-              continue;
+
+              // first though, test for invalid sequences and replace with '?'
+              // taken from http://stackoverflow.com/questions/2670037/how-to-remove-invalid-utf-8-characters-from-a-javascript-string
+              // and modified to check for a lot of end of strings ($) since we might not get the whole sequence at once
+              utfSequence = utfSequence.replace(/([\x09\x0A\x0D\x20-\x7E]|[\xC2-\xDF]([\x80-\xBF]|$)|\xE0([\xA0-\xBF]|$)([\x80-\xBF]|$)|[\xE1-\xEC\xEE\xEF]([\x80-\xBF]|$)([\x80-\xBF]|$)|\xED([\x80-\x9F]|$)([\x80-\xBF]|$)|\xF0([\x90-\xBF]|$)([\x80-\xBF]|$)([\x80-\xBF]|$)|[\xF1-\xF3]([\x80-\xBF]|$)([\x80-\xBF]|$)([\x80-\xBF]|$)|\xF4([\x80-\x8F]|$)([\x80-\xBF]|$)([\x80-\xBF]|$))|./g, "$1"); 
+
+              if (utfSequence[0] != originalUtfSequence[0]) {
+                ch = '?';
+                --index; // we had to lookahead to see the next character. the regexp doesn't convert bad sequences that are at the end of the line
+              } else {
+                continue;
+              }
             }
+
             this.testChar.innerHTML = ch;
             this.__PushChar(ch, this.testChar.getBoundingClientRect().width > this.letterWidth, true);
             break;

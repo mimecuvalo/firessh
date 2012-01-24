@@ -16,10 +16,10 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>4.0b1</em:minVersion>
-        <em:maxVersion>9.*</em:maxVersion>
+        <em:maxVersion>10.*</em:maxVersion>
         <em:updateLink>http://downloads.mozdev.org/fireftp/fireftp___l10n__.xpi</em:updateLink>
         <em:updateHash>
-          md5:2637cb7a4839cce48b1c9dfb5f583b86
+          md5:2d0f5a4ea8dc644c62cec6ad297c731d
         </em:updateHash>
       </Description>
     </em:targetApplication>
