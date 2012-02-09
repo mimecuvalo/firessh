@@ -5,13 +5,13 @@
   <RDF:Description about="urn:mozilla:extension:firessh@nightlight.ws">
     <em:updates>
       <RDF:Seq>
-        <RDF:li resource="urn:mozilla:extension:firessh@nightlight.ws:0.89"/>
+        <RDF:li resource="urn:mozilla:extension:firessh@nightlight.ws:0.89.1"/>
       </RDF:Seq>
     </em:updates>
   </RDF:Description>
 
-  <RDF:Description about="urn:mozilla:extension:firessh@nightlight.ws:0.89">
-    <em:version>0.89</em:version>
+  <RDF:Description about="urn:mozilla:extension:firessh@nightlight.ws:0.89.1">
+    <em:version>0.89.1</em:version>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -19,7 +19,7 @@
         <em:maxVersion>10.*</em:maxVersion>
         <em:updateLink>http://downloads.mozdev.org/fireftp/fireftp___l10n__.xpi</em:updateLink>
         <em:updateHash>
-          md5:ffb5af6f1962989941d5ec1ec16b9f6b
+          md5:15801ebb4b57508a0f56a004cf2f48e4
         </em:updateHash>
       </Description>
     </em:targetApplication>

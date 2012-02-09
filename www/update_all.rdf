@@ -2,22 +2,22 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <Description RDF:about="rdf:#$VXvko2"
+  <RDF:Seq RDF:about="rdf:#$esFJM1">
+    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.89.1"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.89.1"
+                   em:version="0.89.1"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAA4AtM8L9mrkcbaCcTBbqUSSedJhWjp2puKOwwno5mCy10v28xJm8fTvwgyDJTElEPzQmzza5Lv44Spn8hcCQsiYT0Wy/V7CuxkuX9WxnASxBQLJyWQDMU1mAeLyGb7Oh+AMPnKQlwsIpNyO5hq2pNnOFYHk7OsNu3pmtuAkx/2w">
+    <em:targetApplication RDF:resource="rdf:#$hsFJM1"/>
+  </RDF:Description>
+  <Description RDF:about="rdf:#$hsFJM1"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0b1"
                    em:maxVersion="10.*"
                    em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
-                   em:updateHash="md5:09ecdd81011d05e81275d37df3ce4a4e" />
+                   em:updateHash="md5:7d6c8b6947df7337dc4e3137cf7ec6c4" />
   <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAKAJNfEJhc9A2NGMFvJV/7LGfq/rZZboJ8DhY7moW2dLAlKA5a5BRijpu5DqVvmuPvW1CqyOb2j2EAI9LcZb0F8po9lAa0BAFQgRcgRjBYON4DLmqX2Z4qLvzxggn5sjpi7CiSK0wzEFCb+FhykxjdjgaJsgW+iuSpZ6kBnV5obT">
-    <em:updates RDF:resource="rdf:#$SXvko2"/>
-  </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$SXvko2">
-    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.89"/>
-  </RDF:Seq>
-  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.89"
-                   em:version="0.89"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAHjnlvKMQ/rqmyftRsZW1fFJR1AX+J3Fialv3bXgBFpi57BxbpI++Poiz8AqNlvJOoLx0rtG1EDX9wuuWUGvvkWR7NHjh5WmB/as3llbcGCpVGefmLOCQ2q1wrAsB4iIYrRoac5u8h4MH2tMY/DGuizR5S8hoxVHxKblopn/aMeh">
-    <em:targetApplication RDF:resource="rdf:#$VXvko2"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAEu107dlhi/11y4N3mZSLRUhLkQL/CXIoEmLNEQBfyyHSZpGrNel/wvHL/lb26NRwk870dJAMBcVQJmL6cxJ7rCHG4ZVrYQiLgWCsdYC7blU+XXpc6YvnsXl9sklDuAFVQeeT2G575g6YuFENd7PWncQaSv+NdFk4g5Elf8EzpWT">
+    <em:updates RDF:resource="rdf:#$esFJM1"/>
   </RDF:Description>
 </RDF:RDF>
