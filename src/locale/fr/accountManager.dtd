@@ -2,23 +2,23 @@
 <!ENTITY accountlist.label "(Choisir un compte)">
 <!ENTITY advanced.label "Outils">
 <!ENTITY import.label "Importer...">
-<!ENTITY export.label "Exporter...">
-<!ENTITY preferencestab.label "Options...">
+<!ENTITY export.label "Exporter…">
+<!ENTITY preferencestab.label "Options…">
 <!ENTITY import.access "I">
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "O">
 <!ENTITY help.label "Aide">
 <!ENTITY help.url "http://fireftp.mozdev.org/help.html">
 <!ENTITY advanced.access "T">
-<!ENTITY helpbutton.access "H">
-<!ENTITY main "Main">
-<!ENTITY advanced "Advanced">
-<!ENTITY maindetails "Main Details">
+<!ENTITY helpbutton.access "A">
+<!ENTITY main "Principales">
+<!ENTITY advanced "Avancées">
+<!ENTITY maindetails "Détails principaux">
 <!ENTITY id "ID">
 <!ENTITY account.label "Nom du compte :">
 <!ENTITY account.tip "Exemple : Mon site SSH">
 <!ENTITY folder.label "Catégorie :">
-<!ENTITY optional.label "(optional)">
+<!ENTITY optional.label "(facultatif)">
 <!ENTITY host.label "Hôte :">
 <!ENTITY host.tip "Exemple : monsite.com">
 <!ENTITY login.label "Login:">
@@ -28,23 +28,23 @@
 <!ENTITY privatekey.label "Clé privée :">
 <!ENTITY pkbrowse.label "Parcourir...">
 <!ENTITY tunnels.label "Tunnels">
-<!ENTITY add.label "Add">
-<!ENTITY remove.label "Remove">
-<!ENTITY source.label "Source port">
+<!ENTITY add.label "Ajouter">
+<!ENTITY remove.label "Supprimer">
+<!ENTITY source.label "Port de la source">
 <!ENTITY dest.label "Destination">
 <!ENTITY notes.label "Remarques">
-<!ENTITY account.access "A">
+<!ENTITY account.access "N">
 <!ENTITY folder.access "e">
 <!ENTITY host.access "H">
 <!ENTITY login.access "G">
-<!ENTITY password.access "P">
-<!ENTITY anonymous.access "n">
+<!ENTITY password.access "M">
+<!ENTITY anonymous.access "A">
 <!ENTITY port.access "o">
 <!ENTITY privatekey.access "i">
-<!ENTITY pkbrowse.access "B">
+<!ENTITY pkbrowse.access "P">
 <!ENTITY source.access "S">
 <!ENTITY dest.access "t">
-<!ENTITY add.access "d">
+<!ENTITY add.access "A">
 <!ENTITY remove.access "r">
-<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
-<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+<!ENTITY mozilla.quote "Mammon s'était endormi. Et la <em>bête réincarnée</em> se répandit sur la terre et son nombre se fit légion. Et ils parlèrent au Temps et ils <em>firent l'offrande</em> de leur moisson au feu, avec la <em>ruse des renards</em>. Et ils bâtirent un nouveau monde à leur image comme le promettaient les <em>&lt;a href=&quot;http://www.mozilla.org/about/mozilla-manifesto.html">
+<!ENTITY mozilla.from "d'après <strong>Le Livre de Mozilla,</strong> 11:9<br/><small>(10e Édition)</small>">
