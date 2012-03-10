@@ -1953,15 +1953,22 @@ cli.prototype = {
   finalResizeTimeout : null,
 
   onResize : function(initOnly) {
+    var windowManager          = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService();
+    var windowManagerInterface = windowManager.QueryInterface(Components.interfaces.nsIWindowMediator);
+    var win                    = windowManagerInterface.getMostRecentWindow(null);
+
+    // this is to avoid a loop where if we're maximized it keeps resizing over and over
+    if (win.windowState == Components.interfaces.nsIDOMChromeWindow.STATE_MAXIMIZED) {
+      window.resizeBy(-1 * 100, -1 * 100);
+      this.onResize(initOnly);
+      return;
+    }
+
     var cols = parseInt((this.body.clientWidth - 50) / this.letterWidth);
     var rows = parseInt((this.body.clientHeight - 7) / this.letterHeight);
 
     var widthDiff  = (this.body.clientWidth - 50) % this.letterWidth;
     var heightDiff = (this.body.clientHeight - 7) % this.letterHeight;
-
-    var windowManager          = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService();
-    var windowManagerInterface = windowManager.QueryInterface(Components.interfaces.nsIWindowMediator);
-    var win                    = windowManagerInterface.getMostRecentWindow(null);
 
     // XXX, i could enable this but it creates a crap experience for things like Vim. blah. sorry, guys.
     //if (win.windowState != Components.interfaces.nsIDOMChromeWindow.STATE_MAXIMIZED) {
