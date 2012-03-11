@@ -47,9 +47,14 @@ var cli = function(contentWindow) {
   this.input.addEventListener('keydown', this.keyDown.bind(this), false);
   this.input.addEventListener('keypress', this.keyPress.bind(this), false);
   this.input.addEventListener('keyup', this.keyUp.bind(this), false);
+  this.body.addEventListener('mousedown', this.mousedown.bind(this), false);
   this.body.addEventListener('click', this.inputFocus.bind(this), false);
+  this.body.addEventListener('keypress', this.bodyKeyPress.bind(this), false);
   this.doc.addEventListener('focus', this.onFocus.bind(this), false);
   this.doc.addEventListener('blur', this.onBlur.bind(this), false);
+
+  this.body.addEventListener('copy', this.copy.bind(this), false);
+  this.body.addEventListener('paste', this.paste.bind(this), false);
 
   this.onResize(true);
 
@@ -256,7 +261,10 @@ cli.prototype = {
   defaultBGColor : 'black',
   font : "Andale Mono",
   fontSize : "12",
-  
+
+  selectionStart : null,
+  selectionStartLine : null,
+  selectionStartOffset : null,
   scrollingRegion : null,
   insertMode : false,
 
@@ -381,16 +389,19 @@ cli.prototype = {
     this.input.value = '';
 
     if (testAccelKey(event) && event.shiftKey) {
-      //if (event.which == 65) {         // cmd-a : select all
-      //  return;
-      //}
+      if (event.which == 65) {         // cmd-a : select all
+        var range = this.doc.createRange();
+        range.selectNode(this.body);
+        this.contentWindow.getSelection().addRange(range);
+        return;
+      }
 
       if (event.which == 88 || event.which == 67) {  // cmd-x, cmd-c [cut, copy]
         this.copy();
         return;
       }
 
-       if (event.which == 86) {  // cmd-v, paste
+      if (event.which == 86) {  // cmd-v, paste
         this.paste();
         return;
       }
@@ -441,14 +452,211 @@ cli.prototype = {
     }
   },
 
+  bodyKeyPress : function(event) {
+    event.preventDefault();
+
+    if (testAccelKey(event) && event.shiftKey) {
+      if (event.which == 65) {         // cmd-a : select all
+        return;
+      }
+
+      if (event.which == 88 || event.which == 67) {  // cmd-x, cmd-c [cut, copy]
+        this.copy();
+        return;
+      }
+
+      //if (event.which == 86) {  // cmd-v, paste
+      //  this.paste();
+      //  return;
+      //}
+    }
+  },
+
   inputFocus : function(event) {
+    if (this.contentWindow.getSelection().toString()) { // if highlighting and trying to copy/paste
+      return;
+    }
+
     var self = this;
     var fn = function() { self.input.focus(); };
     setTimeout(fn, 0);
   },
 
-  copy : function() {
-    var copytext = this.contentWindow.getSelection().toString();
+  mousedown : function(event) {
+    var self = this;
+    setTimeout(function() {
+      self.selectionStart = self.contentWindow.getSelection();
+      var startSelectionNode = self.selectionStart.anchorNode;
+      var startSection = self.hasAncestor(startSelectionNode, self.terminal) ? 'terminal' : 'history';
+
+      if (startSection == 'history') {
+        self.selectionStartLine = self.getSelectionLine(startSelectionNode, self.history);
+      } else {
+        self.selectionStartLine = self.getSelectionLine(startSelectionNode, self.terminal);
+      }
+      self.selectionStartOffset = self.getTrueOffset(startSelectionNode, self.selectionStart.anchorOffset);
+    }, 0);
+  },
+
+  getSelectionLine : function(node, ancestor) {
+    var startSelectionStartLine = node;
+    while (startSelectionStartLine) {
+      if (startSelectionStartLine.nodeName == 'DIV') {
+        break;
+      }
+
+      startSelectionStartLine = startSelectionStartLine.parentNode;
+    }
+
+    var index = 0;
+    for (var x = 0; x < ancestor.childNodes.length; ++x) {
+      if (ancestor.childNodes[x] == startSelectionStartLine) {
+        index = x;
+        break;
+      }
+    }
+
+    return (ancestor == this.history ? this.historyStart : 0) + index;
+  },
+
+  hasAncestor : function(el, ancestor) {
+    el = el.parentNode;
+    while (el) {
+      if (el == ancestor) {
+        return true;
+      }
+
+      el = el.parentNode;
+    }
+
+    return false;
+  },
+
+  getTrueOffset : function(el, offset) {
+    if (el.parentNode.nodeName == 'SPAN' || el.parentNode.nodeName == 'DIV') {
+      if (el.parentNode.nodeName == 'SPAN') {
+        el = el.parentNode.previousSibling;
+      } else {
+        el = el.previousSibling;
+      }
+
+      while (el) {
+        offset += el.textContent.length;
+        el = el.previousSibling;
+      }
+    }
+
+    return offset;
+  },
+
+  copy : function(event) {
+    if (event) {
+      event.preventDefault();
+    }
+
+    var copytext = "";
+
+    var currentSelection = this.contentWindow.getSelection();
+    if (!currentSelection.rangeCount) {
+      return;
+    }
+    var startSelectionNode = this.selectionStart ? this.selectionStart.anchorNode : null;
+    var startSelectionOffset = this.selectionStartOffset;
+    var endSelectionNode = currentSelection.focusNode;
+    var endSelectionOffset = this.getTrueOffset(endSelectionNode, currentSelection.focusOffset);
+
+    var startSection = startSelectionNode ? (this.hasAncestor(startSelectionNode, this.terminal) ? 'terminal' : 'history') : null;
+    var endSection = this.hasAncestor(endSelectionNode, this.terminal) ? 'terminal' : 'history';
+
+    var selectAll = false;
+
+    if (endSelectionNode.nodeName == 'HTML' || (startSelectionNode.nodeName == 'BODY' && endSelectionNode.nodeName == 'BODY')) { // select all
+      selectAll = true;
+      startSection = 'history';
+      endSection = 'terminal';
+      startSelectionOffset = 0;
+      endSelectionOffset = this.cols;
+      this.selectionStartLine = 0;
+    }
+
+    if (startSection != 'terminal' || endSection != 'terminal') {
+      var startHistoryLine = null;
+      var endHistoryLine = null;
+      var startTerminalLine = 0;
+      var endTerminalLine = null;
+
+      if (startSection == 'history') {
+        startHistoryLine = this.selectionStartLine;
+      } else {
+        endTerminalLine = this.selectionStartLine;
+        var tmp = startSelectionOffset;
+        startSelectionOffset = endSelectionOffset;
+        endSelectionOffset = tmp;
+        startHistoryLine = this.getSelectionLine(endSelectionNode, this.history);
+      }
+
+      if (endSection == 'history') {
+        if (startSection == 'history') {
+          endHistoryLine = this.getSelectionLine(endSelectionNode, this.history);
+        } else {
+          endHistoryLine = this.historyCache.length - 1;
+        }
+      } else {
+        endTerminalLine = selectAll ? this.rows - 1 : this.getSelectionLine(endSelectionNode, this.terminal);
+        endHistoryLine = this.historyCache.length - 1;
+      }
+
+      if (startSection == 'history' && endSection == 'history' && startHistoryLine > endHistoryLine) {
+        var tmp = startHistoryLine;
+        startHistoryLine = endHistoryLine;
+        endHistoryLine = tmp;
+
+        tmp = startSelectionOffset;
+        startSelectionOffset = endSelectionOffset;
+        endSelectionOffset = tmp;
+      }
+
+      // first, copy history text
+      var dummyElement = this.doc.createElement('DIV');
+      for (var x = startHistoryLine; x <= endHistoryLine; ++x) {
+        dummyElement.innerHTML = this.historyCache[x];
+        if (x == startHistoryLine) {
+          if (x == endHistoryLine && startSection == 'history' && endSection == 'history') {
+            copytext += dummyElement.textContent.substring(startSelectionOffset, endSelectionOffset);
+          } else {
+            copytext += dummyElement.textContent.substring(startSelectionOffset);
+          }
+        } else if (x == endHistoryLine && startSection == 'history' && endSection == 'history') {
+          if (x != startHistoryLine) {
+            copytext += "\n";
+          }
+          copytext += dummyElement.textContent.substring(0, endSelectionOffset);
+        } else {
+          copytext += "\n";
+          copytext += dummyElement.textContent;
+        }
+      }
+
+      var currentScreenRendition = this.origScrRendition ? this.origScrRendition : this.scrRendition;
+      // then, copy anything that's in the terminal as well
+      if (startSection == 'terminal' || endSection == 'terminal') {
+        for (var x = startTerminalLine; x <= endTerminalLine; ++x) {
+          dummyElement.innerHTML = currentScreenRendition[x];
+          if (x == endTerminalLine) {
+            if (x != startTerminalLine) {
+              copytext += "\n";
+            }
+            copytext += dummyElement.textContent.substring(0, endSelectionOffset);
+          } else {
+            copytext += "\n";
+            copytext += dummyElement.textContent;
+          }
+        }
+      }
+    } else {
+      // starts and ends in terminal, easy peasy
+      copytext = this.contentWindow.getSelection().toString();
+    }
 
     var str = Components.classes["@mozilla.org/supports-string;1"].
     createInstance(Components.interfaces.nsISupportsString);
@@ -470,7 +678,11 @@ cli.prototype = {
     clip.setData(trans, null, clipid.kGlobalClipboard);    
   },
 
-  paste : function() {
+  paste : function(event) {
+    if (event) {
+      event.preventDefault();
+    }
+
     var clip = Components.classes["@mozilla.org/widget/clipboard;1"].getService(Components.interfaces.nsIClipboard);
     if (!clip) return false;
 
