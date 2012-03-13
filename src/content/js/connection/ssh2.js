@@ -60,7 +60,7 @@ ssh2Mozilla.prototype = {
           try {
             self.transport.fullBuffer += self.controlInstream.readBytes(count);  // read data
 
-            if (!this.gotWelcomeMessage && self.transport.fullBuffer.indexOf('\n') == self.transport.fullBuffer.length - 1) {
+            if (!self.gotWelcomeMessage && self.transport.fullBuffer.indexOf('\n') == self.transport.fullBuffer.length - 1) {
               self.onConnected();
             }
 
@@ -124,7 +124,11 @@ ssh2Mozilla.prototype = {
         self.client.invoke_shell('xterm', self.width, self.height, shell_success);
       };
 
-      this.transport = this.client.connect(this.observer, this.controlOutstream, auth_success,
+      var write = function(out) {
+        self.controlOutstream.write(out, out.length);
+      };
+
+      this.transport = this.client.connect(this.observer, write, auth_success,
                                       this.host, parseInt(this.port), this.login, this.password, null, this.privatekey);
 
     } catch(ex) {

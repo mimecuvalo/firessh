@@ -45,7 +45,6 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaGenerator.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/OSRNG/nt.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/OSRNG/posix.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Util/randpool.js"/>
 
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/common.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/python_shim.js"/>
@@ -65,7 +64,6 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/message.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/packet.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/pkey.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/primes.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/rsakey.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp_attr.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp_client.js"/>
