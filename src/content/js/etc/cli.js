@@ -20,6 +20,8 @@
   Siva Chandran P <siva.chandran.p@gmail.com>    (original author)
 
   Mime Cuvalo     <mimecuvalo@gmail.com>  (translated into JS, extended and refined)
+
+  Reference: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html
   
 */
 
@@ -1472,6 +1474,8 @@ cli.prototype = {
       }
     } else if (text[index] == ']') {
       var textlen = text.length;
+      debug('title sequence: ' + text.toSource());
+
       if (index + 2 < textlen) {
         if (text[index + 1] == '0' && text[index + 2] == ';') {
           // parse title, terminated by bell char(\007)
@@ -1486,8 +1490,15 @@ cli.prototype = {
           }
 
           this.__OnEscSeqTitle(text.substring(start, index));
+          index += 1;
         }
       }
+    } else if (text[index] == 'D') {  // index IND, scroll up, same as SU
+      index += 1;
+      this.escSeqHandlers['S']();
+    } else if (text[index] == 'M') {  // revindex RI, scroll down, same as SD
+      index += 1;
+      this.escSeqHandlers['T']();
     } else if (['>', '=', '7', '8'].indexOf(text[index]) != -1) {  // ignore, DECPNM, DECPAM, DECSC, DECRC
       index += 1;
     } else if (text[index] == '(') {  // setusg0, setspecg0
@@ -1511,7 +1522,7 @@ cli.prototype = {
   enableBell : true,
   __OnCharBel : function(text, index) {
     if (!this.enableBell) {
-      return;
+      return index + 1;
     }
 
     var output = new Audio();
