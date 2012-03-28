@@ -21,8 +21,8 @@
           <em:locale>locale/be/</em:locale>
           <em:locale>locale/bg/</em:locale>
           <em:locale>locale/ca/</em:locale>
-          <em:locale>locale/ca-AD/</em:locale>
-          <em:locale>locale/cs/</em:locale>-->
+          <em:locale>locale/ca-AD/</em:locale>-->
+          <em:locale>locale/cs/</em:locale>
           <em:locale>locale/da/</em:locale>
           <!--<em:locale>locale/de/</em:locale>
           <em:locale>locale/el/</em:locale>-->

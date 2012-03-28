@@ -1,0 +1,37 @@
+<!ENTITY title "Možnosti">
+<!ENTITY general.label "Obecné">
+<!ENTITY startup.label "Spouštět FireSSH:">
+<!ENTITY windowopen.label "v novém okně">
+<!ENTITY tabopen.label "v novém panelu">
+<!ENTITY groupopen.label "ve skupině oken">
+<!ENTITY sessions.label "Relace">
+<!ENTITY rememberp.label "Pamatovat hesla">
+<!ENTITY logwindow.label "Log">
+<!ENTITY debug.label "Zobrazit informace pro debugování">
+<!ENTITY interface.label "Rozhraní">
+<!ENTITY appearance.label "Vzhled">
+<!ENTITY font.label "Font">
+<!ENTITY size.label "Velikost">
+<!ENTITY fg.label "Text">
+<!ENTITY bg.label "Pozadí">
+<!ENTITY bell.label "Bell">
+<!ENTITY audible.label "Audible Bell">
+<!ENTITY connect.label "Připojení">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Žádné">
+<!ENTITY direct.label "Přímé">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Port:">
+<!ENTITY recovery.label "Obnovení připojení">
+<!ENTITY network.label "Časový limit sítě (v sekundách mezi 1 a 600)">
+<!ENTITY network.tip "Určuje, jak dlouho čekat na odpověď od serveru">
+<!ENTITY keepalivemode.label "Udržovat spojení při nečinnosti">
+<!ENTITY timeout.label "Opětovné připojení při odpojení">
+<!ENTITY retryd.label "Opakovat (v sekundách mezi 1 a 600)">
+<!ENTITY retryd.tip "Sekund mezi pokusy o opětovné připojení">
+<!ENTITY retrya.label "Opakovat pokusy">
+<!ENTITY retrya.tip "Počet opakovaných pokusů">
+<!ENTITY credits.label "Autoři">
+<!ENTITY thanks.label "Děkujeme:">
+<!ENTITY allothers.label "Všem ostatním, kdo nahlásili bug nebo pomohli">
+<!ENTITY special.label "Speciální poděkovaní všem, kdo přispěli!">

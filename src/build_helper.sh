@@ -41,6 +41,7 @@ if [ $FIRESSH_MASTER -eq 1 ]
 then
 	zip -q -r9 chrome/firessh.jar \
 		content \
+		locale/cs \
 		locale/da \
 		locale/en-US \
 		locale/fr \

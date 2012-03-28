@@ -1,4 +1,5 @@
 content firessh                                  jar:chrome/firessh.jar!/content/
+locale  firessh cs                               jar:chrome/firessh.jar!/locale/cs/
 locale  firessh da                               jar:chrome/firessh.jar!/locale/da/
 locale  firessh en-US                            jar:chrome/firessh.jar!/locale/en-US/
 locale  firessh fr                               jar:chrome/firessh.jar!/locale/fr/

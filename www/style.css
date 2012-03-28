@@ -10,11 +10,11 @@ html, body {
 }
 
 a, a:visited {
-  color: #03c;
+  color: #C884F5;
 }
 
 a:hover {
-  color: #00f;
+  color: #fe57a1;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 #nav > a, #nav > a:hover, #nav > a:visited {
-  color: #03c;
+  color: #C884F5;
   text-decoration     : none;
   display: block;
   float: left;
@@ -37,11 +37,11 @@ body {
 }
 
 #nav > a:hover {
-  color: #03f;
+  color: #fe57a1;
 }
 
 #nav > a.selected {
-  color: #03f;
+  color: #fe57a1;
 }
 
 #nav > #logo {
@@ -75,7 +75,7 @@ body {
 #donate-pic,
 #thumbnail,
 #donate {
-  background : rgb(70,124,194);
+  background : #664180;
   text-align : left;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;

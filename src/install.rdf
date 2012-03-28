@@ -8,7 +8,7 @@
     <em:description>SSH Client for Mozilla Firefox.</em:description>
     <em:homepageURL>http://firessh.mozdev.org</em:homepageURL>
     <em:name>FireSSH</em:name>
-    <em:version>0.89.1</em:version>
+    <em:version>0.90</em:version>
     <em:id>firessh@nightlight.ws</em:id>
     <em:file>
       <Description about="urn:mozilla:extension:file:firessh.jar">
@@ -21,8 +21,8 @@
           <em:locale>locale/be/</em:locale>
           <em:locale>locale/bg/</em:locale>
           <em:locale>locale/ca/</em:locale>
-          <em:locale>locale/ca-AD/</em:locale>
-          <em:locale>locale/cs/</em:locale>-->
+          <em:locale>locale/ca-AD/</em:locale>-->
+          <em:locale>locale/cs/</em:locale>
           <em:locale>locale/da/</em:locale>
           <!--<em:locale>locale/de/</em:locale>
           <em:locale>locale/el/</em:locale>-->
