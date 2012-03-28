@@ -16,31 +16,22 @@ function externalLink() {                                            // opened u
     site.password  = unescape(uri.password);
   }
 
-  if (uri.username && !uri.password) {
-    try {
-      var logins = gLoginManager.findLogins({}, 'ssh://' + site.login + '@' + uri.host, "FireSSH", null);
-      for (var x = 0; x < logins.length; ++x) {
-        if (logins[x].username == site.login) {
-          site.password = logins[x].password;
-          break;
-        }
-      }
-    } catch (ex) { }
-  }
-
-  if (!uri.username && !uri.password) {
-    try {
-      var logins = gLoginManager.findLogins({}, 'ssh://' + uri.host, "FireSSH", null);
-      for (var x = 0; x < logins.length; ++x) {
-        site.login    = logins[x].username;
-        site.password = logins[x].password;
-        break;
-      }
-    } catch (ex) { }
-  }
-
   site.host = uri.host;
   site.port = uri.port == -1 ? 22 : uri.port;
+
+  try {
+    var recordedHost = (site.host.indexOf("ssh.") == 0 ? '' : "ssh.") + site.host + ':' + site.port;
+    var logins = gLoginManager.findLogins({}, recordedHost, "FireSSH", null);
+    for (var x = 0; x < logins.length; ++x) {
+      if (uri.username && logins[x].username != site.login) {
+        continue;
+      }
+
+      site.login = logins[x].username;
+      site.password = logins[x].password;
+      break;
+    }
+  } catch (ex) { }
 
   site.protocol = "ssh2";
 
