@@ -282,7 +282,7 @@ function doOk() {
     }
 
     try {                                                            // delete old password from list
-      var recordedHost = (gOrigSite.host.indexOf("ssh.") == 0 ? '' : "ssh.") + gOrigSite.host;
+      var recordedHost = (gOrigSite.host.indexOf("ssh.") == 0 ? '' : "ssh.") + gOrigSite.host + ':' + gOrigSite.port;
       var logins       = gLoginManager.findLogins({}, recordedHost, "FireSSH", null);
       for (var x = 0; x < logins.length; ++x) {
         if (logins[x].username == gOrigSite.login) {
@@ -328,7 +328,7 @@ function deleteSite(site) {
   for (var x = 0; x < gSiteManager.length; ++x) {                    // delete the account
     if (gSiteManager[x].account == site.account) {
       try {                                                          // delete password from list
-        var recordedHost = (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host;
+        var recordedHost = (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
         var logins       = gLoginManager.findLogins({}, recordedHost, "FireSSH", null);
         for (var y = 0; y < logins.length; ++y) {
           if (logins[y].username == gSiteManager[x].login) {
@@ -352,7 +352,7 @@ function deleteSite(site) {
 function accountHelper(site) {
   if (gPasswordMode && site.password) {
     try {                                                            // save username & password
-      var recordedHost = (site.host.indexOf("ssh.") == 0 ? '' : "ssh.") + site.host;
+      var recordedHost = (site.host.indexOf("ssh.") == 0 ? '' : "ssh.") + site.host + ':' + site.port;
       var loginInfo    = new gLoginInfo(recordedHost, "FireSSH", null, site.login, site.password, "", "");
       gLoginManager.addLogin(loginInfo);
     } catch (ex) { }
@@ -572,7 +572,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
 
           if (gPasswordMode && tempSiteManager[x].password) {
             try {                                                    // save username & password
-              var recordedHost = (tempSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + tempSiteManager[x].host;
+              var recordedHost = (tempSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + tempSiteManager[x].host + ':' + tempSiteManager[x].port;
               var loginInfo    = new gLoginInfo(recordedHost, "FireSSH", null, tempSiteManager[x].login, tempSiteManager[x].password, "", "");
               gLoginManager.addLogin(loginInfo);
             } catch (ex) { }
@@ -588,7 +588,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       if (gPasswordMode) {
         for (var x = 0; x < gSiteManager.length; ++x) {              // retrieve passwords from passwordmanager
           try {
-            var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host, "FireSSH", null);
+            var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port, "FireSSH", null);
             var found  = false;
             for (var y = 0; y < logins.length; ++y) {
               if (logins[y].username == gSiteManager[x].login) {
@@ -597,22 +597,19 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
                 break;
               }
             }
-            if (!found) {                                            // firefox 2 -> 3 growing pains, yay...
-              var logins = gLoginManager.findLogins({}, 'http://' + (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host, "FireSSH", null);
+            if (!found) {                                            // firessh growing pains: older versions didn't include port #
+              var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host, "FireSSH", null);
               for (var y = 0; y < logins.length; ++y) {
                 if (logins[y].username == gSiteManager[x].login) {
                   gSiteManager[x].password = logins[y].password;
+                  
+                  // migrate
+                  gLoginManager.removeLogin(logins[y]);                  
+                  var recordedHost = (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
+                  var loginInfo    = new gLoginInfo(recordedHost, "FireSSH", null, gSiteManager[x].login, gSiteManager[x].password, "", "");
+                  gLoginManager.addLogin(loginInfo);
+
                   found = true;
-                  break;
-                }
-              }
-            }
-            if (!found) {                                            // firefox 2 -> 3 growing pains, yay...
-              var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host, null,
-                                                        (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host);
-              for (var y = 0; y < logins.length; ++y) {
-                if (logins[y].username == gSiteManager[x].login) {
-                  gSiteManager[x].password = logins[y].password;
                   break;
                 }
               }
@@ -627,16 +624,6 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       if (pruneTemp) {
         for (var x = gSiteManager.length - 1; x >= 0; --x) {
           if (gSiteManager[x].temporary) {
-            try {                                                    // delete password from list
-              var recordedHost = (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host;
-              var logins       = gLoginManager.findLogins({}, recordedHost, "FireSSH", null);
-              for (var y = 0; y < logins.length; ++y) {
-                if (logins[y].username == gSiteManager[x].login) {
-                  gLoginManager.removeLogin(logins[y]);
-                }
-              }
-            } catch (ex) { }
-
             gSiteManager.splice(x, 1);
           }
         }
