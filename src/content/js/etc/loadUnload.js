@@ -52,18 +52,66 @@ function startup() {
 
   //tipJar();
 
+  var hashUsed = false;
+  var hashAccount;
+  if (!gLoadUrl && window.location.protocol == 'chrome:' && window.location.hash) {
+    gDefaultAccount = getArgument('?' + window.location.hash.substring(1), 'account');
+    gSiteManager = new Array();
+    gProfileDir            = Components.classes["@mozilla.org/file/directory_service;1"].createInstance(Components.interfaces.nsIProperties)
+                                     .get("ProfD", Components.interfaces.nsILocalFile);
+    gLoginManager          = Components.classes["@mozilla.org/login-manager;1"].getService           (Components.interfaces.nsILoginManager);
+    gLoginInfo             = new Components.Constructor("@mozilla.org/login-manager/loginInfo;1",     Components.interfaces.nsILoginInfo, "init");
+    var file = gProfileDir.clone();
+    file.append("fireSSHsites.dat");
+
+    if (file.exists()) {
+      try {
+        var fstream  = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
+        var sstream  = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
+        fstream.init(file, 1, 0, false);
+        sstream.init(fstream);
+
+        var siteData = "";
+        var str      = sstream.read(-1);
+
+        while (str.length > 0) {
+          siteData += str;
+          str       = sstream.read(-1);
+        }
+
+        gSiteManager = eval(siteData);
+        getPasswords();
+
+        sstream.close();
+        fstream.close();
+      } catch(ex) {
+        alert(ex);
+      }
+    }
+
+    for (var x = 0; x < gSiteManager.length; ++x) {
+      if (gSiteManager[x].account == gDefaultAccount) {
+        hashUsed = true;
+        hashAccount = gSiteManager[x];
+        break;
+      }
+    }
+  }
+
+  var connectCallback = function(site) {
+    accountChangeHelper(site);
+    connect();
+    var func = function() {
+      $('cmdlog').focus();
+    };
+    setTimeout(func, 0);
+  };
+
   if (gLoadUrl) {
     setTimeout(externalLink, 1000);
+  } else if (hashUsed) {
+    connectCallback(hashAccount);
   } else {
-    var connectCallback = function(site) {
-      accountChangeHelper(site);
-      connect();
-      var func = function() {
-        $('cmdlog').focus();
-      };
-      setTimeout(func, 0);
-    };
-
     var connectCancelCallback = function() {
       window.close();
     };

@@ -86,3 +86,37 @@ function testAccelKey(event) {
 
   return event.ctrlKey;
 }
+
+function parseArguments(args) {
+  args = args.split('?');
+  if (args.length < 2) {
+    return {};
+  }
+  args = args[1].split('&');
+  
+  var parsedArgs = {};
+  for (var x = 0; x < args.length; ++x) {
+    var split = args[x].split('=');
+    parsedArgs[split[0]] = decodeURIComponent(split[1]);
+  }
+
+  return parsedArgs;
+}
+
+function getArgument(args, field) {
+  var parsedArgs = parseArguments(args);
+  return parsedArgs[field];
+}
+
+function generateArgs(args) {
+  if (!args) {
+    return '';
+  }
+
+  var queryString = '';
+  for (var key in args) {
+    queryString += (!queryString.length ? '?' : '&') + key + '=' + encodeURIComponent(args[key]);
+  }
+
+  return queryString;
+}

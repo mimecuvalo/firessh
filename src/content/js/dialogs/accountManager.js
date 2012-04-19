@@ -585,38 +585,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
         gSiteManager = eval(siteData);
       }
 
-      if (gPasswordMode) {
-        for (var x = 0; x < gSiteManager.length; ++x) {              // retrieve passwords from passwordmanager
-          try {
-            var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port, "FireSSH", null);
-            var found  = false;
-            for (var y = 0; y < logins.length; ++y) {
-              if (logins[y].username == gSiteManager[x].login) {
-                gSiteManager[x].password = logins[y].password;
-                found = true;
-                break;
-              }
-            }
-            if (!found) {                                            // firessh growing pains: older versions didn't include port #
-              var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host, "FireSSH", null);
-              for (var y = 0; y < logins.length; ++y) {
-                if (logins[y].username == gSiteManager[x].login) {
-                  gSiteManager[x].password = logins[y].password;
-                  
-                  // migrate
-                  gLoginManager.removeLogin(logins[y]);                  
-                  var recordedHost = (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
-                  var loginInfo    = new gLoginInfo(recordedHost, "FireSSH", null, gSiteManager[x].login, gSiteManager[x].password, "", "");
-                  gLoginManager.addLogin(loginInfo);
-
-                  found = true;
-                  break;
-                }
-              }
-            }
-          } catch (ex) { }
-        }
-      }
+      getPasswords();
 
       sstream.close();
       fstream.close();

@@ -74,9 +74,48 @@ function accountChangeHelper(site) {
   gAccount       = site.account;
   document.title = (gAccount ? gAccount : gConnection.host) + " - FireSSH";
 
+  if (window.location.protocol == 'chrome:') {
+    window.location.hash = generateArgs({ 'account': gAccount }).substring(1);
+  }
+
   if (site.account) {
     var sString  = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
     sString.data = site.account;
     gPrefs.setComplexValue("defaultaccount", Components.interfaces.nsISupportsString, sString);
+  }
+}
+
+function getPasswords() {
+  if (gPasswordMode) {
+    for (var x = 0; x < gSiteManager.length; ++x) {              // retrieve passwords from passwordmanager
+      try {
+        var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port, "FireSSH", null);
+        var found  = false;
+        for (var y = 0; y < logins.length; ++y) {
+          if (logins[y].username == gSiteManager[x].login) {
+            gSiteManager[x].password = logins[y].password;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {                                            // firessh growing pains: older versions didn't include port #
+          var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host, "FireSSH", null);
+          for (var y = 0; y < logins.length; ++y) {
+            if (logins[y].username == gSiteManager[x].login) {
+              gSiteManager[x].password = logins[y].password;
+              
+              // migrate
+              gLoginManager.removeLogin(logins[y]);                  
+              var recordedHost = (gSiteManager[x].host.indexOf("ssh.") == 0 ? '' : "ssh.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
+              var loginInfo    = new gLoginInfo(recordedHost, "FireSSH", null, gSiteManager[x].login, gSiteManager[x].password, "", "");
+              gLoginManager.addLogin(loginInfo);
+
+              found = true;
+              break;
+            }
+          }
+        }
+      } catch (ex) { }
+    }
   }
 }
