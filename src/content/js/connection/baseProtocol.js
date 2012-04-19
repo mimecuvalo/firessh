@@ -118,7 +118,12 @@ baseProtocol.prototype = {
 
         var self = this;
         var func = function() { self.reconnect(); };
-        setTimeout(func, this.reconnectInterval * 1000);
+        try {
+          setTimeout(func, this.reconnectInterval * 1000);
+        } catch(ex) {
+          // do nothing
+          // we get here on window beforeunload and settimeout is invalid
+        }
       }
     } else {
       this.legitClose = true;
