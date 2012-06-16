@@ -14,12 +14,12 @@ function connect(noAccountChange, showPassDialog) {
   }
 
   if (!gConnection.host) {                                                  // need to fill in the host
-    doAlert(gStrbundle.getString("alertFillHost"));
+    alert(gStrbundle.getString("alertFillHost"));
     return;
   }
 
   if (!gConnection.port || !parseInt(gConnection.port)) {                   // need a valid port
-    doAlert(gStrbundle.getString("alertFillPort"));
+    alert(gStrbundle.getString("alertFillPort"));
     return;
   }
 
@@ -46,7 +46,7 @@ function connect(noAccountChange, showPassDialog) {
     var pk = localFile.init(gConnection.privatekey);
 
     if (!pk || !pk.exists()) {
-      doAlert(gStrbundle.getString("pkNotFound"));
+      alert(gStrbundle.getString("pkNotFound"));
       return;
     }
   }
