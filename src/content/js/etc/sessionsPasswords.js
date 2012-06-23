@@ -33,6 +33,8 @@ function externalLink() {                                            // opened u
     }
   } catch (ex) { }
 
+  site.privatekey = getArgument('?' + window.location.hash.substring(1), 'pkey');
+
   site.protocol = "ssh2";
 
   var prefBranch   = gPrefsService.getBranch("browser.");
