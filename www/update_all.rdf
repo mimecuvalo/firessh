@@ -2,22 +2,22 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <Description RDF:about="rdf:#$zojRX3"
+  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.91"
+                   em:version="0.91"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGRds1tMZ5LlfoM9GEigjQvrVfd72g/46pesjDV0fR1R0uIBQX7GKNMXPUfAIbWQMl4Idez7CyNTbQCvCEgTKABnSWS5cVP/8Xptgj8ivwqGoaTQuK1ifBWfuWUqMXZN3hAjW4QgUNrmcWnAMwfw0/ZrXnskExdo/VUGSfVe4Ozz">
+    <em:targetApplication RDF:resource="rdf:#$r124N3"/>
+  </RDF:Description>
+  <Description RDF:about="rdf:#$r124N3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0b1"
-                   em:maxVersion="13.*"
+                   em:maxVersion="15.*"
                    em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
-                   em:updateHash="md5:f41097c1be715db23c7dae9c2a288b45" />
+                   em:updateHash="md5:04aee015c467c471b91565919cc65367" />
   <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAChjSf1P4yutOrDVRZWAe9tvvswZOmrjZBDbudrb2FF//V3dNSTU/bbscea8yVRPTXnmryx77QamErTUXYMDijsPSo70dFkHhkAMlco1IdFIYh8Py9iKtKxWZGyLay+xifePugY6eHysaLwQtWpIAHhY8hXiaayEH7ZEO9uH3Ej7">
-    <em:updates RDF:resource="rdf:#$wojRX3"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADisV+6n4RF+9jZy81OKEk7CSH8aH6bnQgn6Dk2eN+1IKzlqKzpnlBMZqglT9eHBRoTImFimqrMHeTTbw7MPTzcUX4BrHfz1IdLsZQuRTztBLgwIMN1I1hyZbt3xLBVlUcw0m9BCUWxEewBJoeGi4PiyYQc7YOIYnOM2ud8NcYMx">
+    <em:updates RDF:resource="rdf:#$o124N3"/>
   </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$wojRX3">
-    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.90"/>
+  <RDF:Seq RDF:about="rdf:#$o124N3">
+    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.91"/>
   </RDF:Seq>
-  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.90"
-                   em:version="0.90"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAo/07lA0GcWBNth6FIMSmFeqoKcbFmwOIWjkXUEyjuxKWa+g6yQdWcBrMRm4jeF6Xd5mAjfJSddAT0Kf7c8fKmuvQgqzm45NRA/JX2/Q9ArrJY7oPKgz0Ua/Bkmzo1lrPmIogRPsLihiZ9AZPLh+B10FjmM77CMQtfEwcWVg7wv">
-    <em:targetApplication RDF:resource="rdf:#$zojRX3"/>
-  </RDF:Description>
 </RDF:RDF>

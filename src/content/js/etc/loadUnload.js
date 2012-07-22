@@ -34,11 +34,11 @@ function startup() {
 
   gLoadUrl               = gPrefs.getComplexValue("loadurl", Components.interfaces.nsISupportsString).data;
 
-  var wikipedia = 'http://en.wikipedia.org/wiki/Enigma_machine';
+  var wikipedia = 'http://en.wikipedia.org/wiki/Autokey_cipher';
   appendLog("<span id='opening'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://firessh.mozdev.org','FireSSH');\">"
       + "FireSSH</span> <span>" + gVersion
       + "  '</span><span style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('" + wikipedia + "','wikipedia');\">"
-      + "Enigma</span>'"
+      + "Autokey</span>'"
       + " " + gStrbundle.getString("opening")
       + "</span><br style='font-size:5pt'/>", 'blue', "info", true);
   //gCmdlogBody.scrollTop = 0;

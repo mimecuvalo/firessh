@@ -240,7 +240,17 @@
       <h4 class="display">What is a Private Key?</h4>
       <div class="stretcher">
         Some servers require a <a href="http://en.wikipedia.org/wiki/Private_key">private key</a> to access them.  So in this field point to where the private key is stored on your computer.  These files are usually stored ~/.ssh/id_dsa or ~/.ssh/id_rsa.  Here are some tips on <a href="http://help.github.com/key-setup-redirect">generating SSH keys</a>.  FireSSH also understands PuTTY files (usually having a .ppk extension).
+
+        For l33t users: you can add the private key to the url by doing ssh://username:password@hostname:port/#pkey=<urlencoded-file-path-to-private-key><br>
+        For example: ssh://blah@yomama.com/#pkey=%2FUsers%2Fmama%2F.ssh%2Fid_rsa<br>
+        %2F == '/'<br>
+        %5C == '\'
         <br/><br/>
+      </div>
+
+      <h4 class="display">What are Tunnels?</h4>
+      <div class="stretcher">
+        Tunnels are connections you can make that bind a port on your local machine to a port on the ssh server (on the command line you would be using the -L command - this is not 'remote forwarding').  An example would be Source Port: 8080 and in the Destination field: localhost:80  This would take traffic from port 8080 on your machine and send it to port 80 on your SSH server.  Read more <a href="http://www.engadget.com/2006/03/21/how-to-ssh-tunnels-for-secure-network-access/">here</a> to get a better picture.<br/><br/>
       </div>
 
       <h4 class="display">What is Notes?</h4>
