@@ -79,7 +79,7 @@ function startup() {
           str       = sstream.read(-1);
         }
 
-        gSiteManager = eval(siteData);
+        gSiteManager = jsonParseWithToSourceConversion(siteData);
         getPasswords();
 
         sstream.close();

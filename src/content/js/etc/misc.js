@@ -124,3 +124,16 @@ function generateArgs(args) {
 
   return queryString;
 }
+
+// Converts objects stored in toSource format to JSON format.
+// Not for general purpose usage - this works in FireFTP's case.
+// Does not check for example if
+// , <string>:
+// exists between quotes, i.e. a property value.
+function jsonParseWithToSourceConversion(toSource) {
+  try {
+    return JSON.parse(toSource);
+  } catch(ex) {
+    return JSON.parse(toSource.replace(/({|, )(\w+?):/g, '$1"$2":'));
+  }
+}
