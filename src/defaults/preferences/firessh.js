@@ -4,7 +4,7 @@ pref("extensions.firessh.network",           30);
 pref("extensions.firessh.timeoutmode",       true);
 pref("extensions.firessh.retry",             10);
 pref("extensions.firessh.attempts",          40);
-pref("extensions.firessh.loadmode",          0);
+pref("extensions.firessh.loadmode",          1);
 pref("extensions.firessh.debugmode",         false);
 pref("extensions.firessh.keepalivemode",     true);
 pref("extensions.firessh.proxytype",         "");
