@@ -390,30 +390,35 @@ cli.prototype = {
     event.preventDefault();
     this.input.value = '';
 
-    if (testAccelKey(event) && event.shiftKey) {
-      if (event.which == 65) {         // cmd-a : select all
+    var currentSelection = this.contentWindow.getSelection();
+    var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
+    var pasteEvent = event.which == 118;
+
+    if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
+        (currentSelection.rangeCount && cutCopyEvent) || pasteEvent)) {
+      if (event.which == 65 || event.which == 97) {     // cmd-a : select all
         var range = this.doc.createRange();
         range.selectNode(this.body);
         this.contentWindow.getSelection().addRange(range);
         return;
       }
 
-      if (event.which == 88 || event.which == 67) {  // cmd-x, cmd-c [cut, copy]
+      if (cutCopyEvent) {  // cmd-x, cmd-c [cut, copy]
         this.copy();
         return;
       }
 
-      if (event.which == 86) {  // cmd-v, paste
+      if (pasteEvent) {  // cmd-v, paste
         this.paste();
         return;
       }
 
-      if (event.which == 84) {  // cmd-t, new tab
+      if (event.which == 84 || event.which == 116) {  // cmd-t, new tab
         runInFirefox("about:blank");
         return;
       }
 
-      if (event.which == 87) {  // cmd-w, close tab
+      if (event.which == 87 || event.which == 119) {  // cmd-w, close tab
         window.close();
         return;
       }
@@ -422,6 +427,8 @@ cli.prototype = {
     if (event.ctrlKey) {
       if (event.which == 64) {   // ctrl-@
         gConnection.output('\0');
+      } else if (event.shiftKey && event.which == 86) { // ctrl-shift-V, we remap this to ctrl-v (lowercase)
+        gConnection.output(String.fromCharCode(118 - 96));
       } else if (event.which >= 97 && event.which <= 122) { // ctrl-[a-z]
         gConnection.output(String.fromCharCode(event.which - 96));
       } else if (event.which == 27) { // ctrl-?
@@ -457,17 +464,22 @@ cli.prototype = {
   bodyKeyPress : function(event) {
     event.preventDefault();
 
-    if (testAccelKey(event) && event.shiftKey) {
-      if (event.which == 65) {         // cmd-a : select all
+    var currentSelection = this.contentWindow.getSelection();
+    var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
+
+    if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
+        (currentSelection.rangeCount && cutCopyEvent))) {
+      if (event.which == 65 || event.which == 97) {      // cmd-a : select all
         return;
       }
 
-      if (event.which == 88 || event.which == 67) {  // cmd-x, cmd-c [cut, copy]
+      if (cutCopyEvent) {  // cmd-x, cmd-c [cut, copy]
         this.copy();
         return;
       }
 
-      //if (event.which == 86) {  // cmd-v, paste
+      // This causes double-pasting.
+      //if (event.which == 86 || event.which == 118) {  // cmd-v, paste
       //  this.paste();
       //  return;
       //}
@@ -2126,7 +2138,7 @@ cli.prototype = {
     if (params != null) {
       params = params.split(';');
       if (params[0] == '8') {
-        var width  = parseInt(params[2]) * this.letterWidth  + 50;
+        var width  = parseInt(params[2]) * this.letterWidth  + 21;
         var height = parseInt(params[1]) * this.letterHeight + 7;
 
         window.resizeTo(width, height);
@@ -2173,10 +2185,10 @@ cli.prototype = {
   },
 
   onResize : function(initOnly) {
-    var cols = parseInt((this.body.clientWidth - 50) / this.letterWidth);
+    var cols = parseInt((this.body.clientWidth - 21) / this.letterWidth);
     var rows = parseInt((this.body.clientHeight - 7) / this.letterHeight);
 
-    var widthDiff  = (this.body.clientWidth - 50) % this.letterWidth;
+    var widthDiff  = (this.body.clientWidth - 21) % this.letterWidth;
     var heightDiff = (this.body.clientHeight - 7) % this.letterHeight;
 
     this.terminal.style.paddingBottom = heightDiff + 'px';
