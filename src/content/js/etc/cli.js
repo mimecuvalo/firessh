@@ -424,6 +424,7 @@ cli.prototype = {
       }
     }
 
+    this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
     if (event.ctrlKey) {
       if (event.which == 64) {   // ctrl-@
         gConnection.output('\0');
@@ -456,6 +457,7 @@ cli.prototype = {
     event.preventDefault();
 
     if (this.input.value) {
+      this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
       gConnection.output(unescape(encodeURIComponent(this.input.value)));
       this.input.value = '';
     }
@@ -494,6 +496,7 @@ cli.prototype = {
     var self = this;
     var fn = function() { self.input.focus(); };
     setTimeout(fn, 0);
+    this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
   },
 
   mousedown : function(event) {
@@ -713,6 +716,7 @@ cli.prototype = {
     if (str) {
       str = str.value.QueryInterface(Components.interfaces.nsISupportsString);
       pastetext = str.data.substring(0, strLength.value / 2);
+      this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
       gConnection.output(unescape(encodeURIComponent(pastetext)));
     }
   },
