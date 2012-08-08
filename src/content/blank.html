@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="chrome://global/skin/global.css" type="text/css" media="screen" >
     <style type="text/css">
       body {
-        margin : 8px;
+        margin: 6px;
       }
       body,
       #input {
@@ -44,10 +44,33 @@
         border: 0;
         background: transparent;
         padding: 0;
-        width: 21px;
+        width: 12px;
       }
       #test {
         visibility: hidden;
+      }
+      .context-menu {
+        position: absolute;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        list-style: none;
+        padding: 0;
+        background-color: #fff;
+        color: black;
+      }
+      .context-menu li {
+        padding: 5px 20px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        -moz-user-select: none;
+      }
+      .context-menu li:hover,
+      .context-menu li.active {
+        background-color: #999;
+        color: #fff;
+      }
+      .context-menu li:last-child {
+        border-bottom: 0;
       }
     </style>
   </head>

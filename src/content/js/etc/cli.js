@@ -57,6 +57,7 @@ var cli = function(contentWindow) {
 
   this.body.addEventListener('copy', this.copy.bind(this), false);
   this.body.addEventListener('paste', this.paste.bind(this), false);
+  this.body.oncontextmenu = function() { return false; }; // addEventListener doesn't work for some reason...
 
   this.onResize(true);
 
@@ -325,6 +326,7 @@ cli.prototype = {
     display : '',
     fontStyle : '',
     fontWeight : '',
+    letterSpacing: '',
     opacity : '',
     textDecoration : '',
     visibility : '',
@@ -354,6 +356,7 @@ cli.prototype = {
     display : 'display',
     fontStyle : 'font-style',
     fontWeight : 'font-weight',
+    letterSpacing : 'letter-spacing',
     opacity : 'opacity',
     textDecoration : 'text-decoration',
     visibility : 'visibility',
@@ -513,6 +516,88 @@ cli.prototype = {
       }
       self.selectionStartOffset = self.getTrueOffset(startSelectionNode, self.selectionStart.anchorOffset);
     }, 0);
+
+    // context menu
+    if (event.button == 2) {
+      var ul = this.doc.createElement('UL');
+      ul.className = 'context-menu';
+      ul.style.top = event.pageY + 'px';
+      ul.style.left = event.pageX + 'px';
+
+      var closeMenu = function() {
+        self.body.removeChild(ul);
+        self.body.removeEventListener('mousedown', bodyMouseDown);
+        self.body.removeEventListener('keydown', bodyKeyDown);
+      };
+
+      var bodyKeyDown = function(event) {
+        var selectedItem = ul.querySelector('li.active');
+        switch (event.which) {
+          case 38: // up
+            event.preventDefault();
+            var prevItem = selectedItem && selectedItem.previousSibling ?
+                selectedItem.previousSibling : ul.lastChild;
+            if (selectedItem) {
+              selectedItem.className = '';
+            }
+            prevItem.className = 'active';
+            break;
+          case 40: // down
+            event.preventDefault();
+            var nextItem = selectedItem && selectedItem.nextSibling ?
+                selectedItem.nextSibling : ul.firstChild;
+            if (selectedItem) {
+              selectedItem.className = '';
+            }
+            nextItem.className = 'active';
+            break;
+          case 13:  // enter
+            event.preventDefault();
+            if (selectedItem) {
+              selectedItem.onclick();
+            }
+            break;
+          default:
+            break;
+        }
+      };
+
+      var bodyMouseDown = function(event) {
+        var el = event.target;
+        while (el) {
+          if (el == ul) {
+            return;
+          }
+          el = el.parentNode;
+        }
+
+        closeMenu();
+      };
+
+      var li = this.doc.createElement('LI');
+      li.textContent = 'Copy';
+      li.onclick = function(event) {
+        if (event) {
+          event.preventDefault();
+        }
+        self.copy();
+        closeMenu();
+      };
+      ul.appendChild(li);
+
+      li = this.doc.createElement('LI');
+      li.textContent = 'Paste';
+      li.onclick = function(event) {
+        event.preventDefault();
+        self.paste();
+        closeMenu();
+      };
+      ul.appendChild(li);
+
+      this.body.appendChild(ul);
+      this.body.addEventListener('mousedown', bodyMouseDown, false);
+      this.body.addEventListener('keydown', bodyKeyDown, false);
+    }
   },
 
   getSelectionLine : function(node, ancestor) {
@@ -674,6 +759,8 @@ cli.prototype = {
       // starts and ends in terminal, easy peasy
       copytext = this.contentWindow.getSelection().toString();
     }
+
+    copytext = copytext.replace(/\xA0/g, ' '); // replace &nbsp; with a regular space
 
     var str = Components.classes["@mozilla.org/supports-string;1"].
     createInstance(Components.interfaces.nsISupportsString);
@@ -1240,7 +1327,7 @@ cli.prototype = {
               }
             }
 
-            this.testChar.innerHTML = ch;
+            this.testChar.innerHTML = ch.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
             this.__PushChar(ch, this.testChar.getBoundingClientRect().width > this.letterWidth, true);
             break;
           }
@@ -2018,6 +2105,7 @@ cli.prototype = {
             break;
           case 1:
             this.curRendition.fontWeight = 'bold';
+            this.curRendition.letterSpacing = '-0.7px';
             break;
           case 2:
             this.curRendition.opacity = '.5';
@@ -2142,7 +2230,7 @@ cli.prototype = {
     if (params != null) {
       params = params.split(';');
       if (params[0] == '8') {
-        var width  = parseInt(params[2]) * this.letterWidth  + 21;
+        var width  = parseInt(params[2]) * this.letterWidth  + 12;
         var height = parseInt(params[1]) * this.letterHeight + 7;
 
         window.resizeTo(width, height);
@@ -2189,10 +2277,10 @@ cli.prototype = {
   },
 
   onResize : function(initOnly) {
-    var cols = parseInt((this.body.clientWidth - 21) / this.letterWidth);
+    var cols = parseInt((this.body.clientWidth - 12) / this.letterWidth);
     var rows = parseInt((this.body.clientHeight - 7) / this.letterHeight);
 
-    var widthDiff  = (this.body.clientWidth - 21) % this.letterWidth;
+    var widthDiff  = (this.body.clientWidth - 12) % this.letterWidth;
     var heightDiff = (this.body.clientHeight - 7) % this.letterHeight;
 
     this.terminal.style.paddingBottom = heightDiff + 'px';
