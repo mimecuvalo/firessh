@@ -134,6 +134,8 @@ function jsonParseWithToSourceConversion(toSource) {
   try {
     return JSON.parse(toSource);
   } catch(ex) {
+    // As Borat would say: This is totally awesome. NOT.
+    toSource = unescape(toSource.replace(/\\x/g, '%'));
     return JSON.parse(toSource.replace(/({|, )(\w+?):/g, '$1"$2":'));
   }
 }
