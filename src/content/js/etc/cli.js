@@ -398,7 +398,7 @@ cli.prototype = {
     var pasteEvent = event.which == 118;
 
     if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
-        (currentSelection.rangeCount && cutCopyEvent) || pasteEvent)) {
+        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent) || pasteEvent)) {
       if (event.which == 65 || event.which == 97) {     // cmd-a : select all
         var range = this.doc.createRange();
         range.selectNode(this.body);
@@ -473,7 +473,7 @@ cli.prototype = {
     var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
 
     if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
-        (currentSelection.rangeCount && cutCopyEvent))) {
+        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent))) {
       if (event.which == 65 || event.which == 97) {      // cmd-a : select all
         return;
       }
@@ -1327,7 +1327,7 @@ cli.prototype = {
               }
             }
 
-            this.testChar.innerHTML = ch.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+            this.testChar.textContent = ch;
             this.__PushChar(ch, this.testChar.getBoundingClientRect().width > this.letterWidth, true);
             break;
           }
