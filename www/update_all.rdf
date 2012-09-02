@@ -2,22 +2,22 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.91"
-                   em:version="0.91"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGRds1tMZ5LlfoM9GEigjQvrVfd72g/46pesjDV0fR1R0uIBQX7GKNMXPUfAIbWQMl4Idez7CyNTbQCvCEgTKABnSWS5cVP/8Xptgj8ivwqGoaTQuK1ifBWfuWUqMXZN3hAjW4QgUNrmcWnAMwfw0/ZrXnskExdo/VUGSfVe4Ozz">
-    <em:targetApplication RDF:resource="rdf:#$r124N3"/>
+  <RDF:Seq RDF:about="rdf:#$tNou.3">
+    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.92.2"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws:0.92.2"
+                   em:version="0.92.2"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFAuv3y81V7F9Br0lJLHzNNRvanrW2+fY6DuUaqPklpSgI4ZBOg1XLSxTST6qCBIRbKXFY7n0W3phoWMqTwDDKSsA43aZQkOFPe/nYdu+Hfj0aYEMUe4/Yb+qZsfHgsNmNALBk27mqm2oYddG0YH2RrLULBttDOynLP39pciT9eF">
+    <em:targetApplication RDF:resource="rdf:#$wNou.3"/>
   </RDF:Description>
-  <Description RDF:about="rdf:#$r124N3"
+  <Description RDF:about="rdf:#$wNou.3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0b1"
                    em:maxVersion="15.*"
                    em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
-                   em:updateHash="md5:04aee015c467c471b91565919cc65367" />
+                   em:updateHash="md5:3f7c50cf784744b4fdf061b5ea125daf" />
   <RDF:Description RDF:about="urn:mozilla:extension:firessh@nightlight.ws"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBADisV+6n4RF+9jZy81OKEk7CSH8aH6bnQgn6Dk2eN+1IKzlqKzpnlBMZqglT9eHBRoTImFimqrMHeTTbw7MPTzcUX4BrHfz1IdLsZQuRTztBLgwIMN1I1hyZbt3xLBVlUcw0m9BCUWxEewBJoeGi4PiyYQc7YOIYnOM2ud8NcYMx">
-    <em:updates RDF:resource="rdf:#$o124N3"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAqlk1Aj4w9ecr8YftTObNQUsOemWqjIbrckEHq0ThkqEZWrnuuwhctXoF6oj7knoUTF3CXlm7pSv0WfEwyt64LrIF2FtW1NmMhuMhrz2TFBYnGIG4wbfB0VDkhY1SAdfOIlkO0pKBjKL0CS2wUnyaJxxedYc3P36huwfx5ceD/W">
+    <em:updates RDF:resource="rdf:#$tNou.3"/>
   </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$o124N3">
-    <RDF:li RDF:resource="urn:mozilla:extension:firessh@nightlight.ws:0.91"/>
-  </RDF:Seq>
 </RDF:RDF>

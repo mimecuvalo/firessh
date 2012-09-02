@@ -34,11 +34,11 @@ function startup() {
 
   gLoadUrl               = gPrefs.getComplexValue("loadurl", Components.interfaces.nsISupportsString).data;
 
-  var wikipedia = 'http://en.wikipedia.org/wiki/Autokey_cipher';
+  var wikipedia = 'http://en.wikipedia.org/wiki/Rail_Fence_Cipher';
   appendLog("<span id='opening'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://firessh.mozdev.org','FireSSH');\">"
       + "FireSSH</span> <span>" + gVersion
       + "  '</span><span style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('" + wikipedia + "','wikipedia');\">"
-      + "Autokey</span>'"
+      + "Rail Fence</span>'"
       + " " + gStrbundle.getString("opening")
       + "</span><br style='font-size:5pt'/>", 'blue', "info", true);
   //gCmdlogBody.scrollTop = 0;
