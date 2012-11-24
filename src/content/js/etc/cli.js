@@ -768,6 +768,7 @@ cli.prototype = {
     }
 
     copytext = copytext.replace(/\xA0/g, ' '); // replace &nbsp; with a regular space
+    copytext = copytext.replace(/\s+$/mg, '')); // remove trailing whitespace
 
     var str = Components.classes["@mozilla.org/supports-string;1"].
     createInstance(Components.interfaces.nsISupportsString);
