@@ -50,7 +50,7 @@ var cli = function(contentWindow) {
   this.input.addEventListener('keypress', this.keyPress.bind(this), false);
   this.input.addEventListener('keyup', this.keyUp.bind(this), false);
   this.body.addEventListener('mousedown', this.mousedown.bind(this), false);
-  this.body.addEventListener('click', this.inputFocus.bind(this), false);
+  //this.body.addEventListener('click', this.inputFocus.bind(this), false);
   this.body.addEventListener('keypress', this.bodyKeyPress.bind(this), false);
   this.doc.addEventListener('focus', this.onFocus.bind(this), false);
   this.doc.addEventListener('blur', this.onBlur.bind(this), false);
@@ -391,6 +391,7 @@ cli.prototype = {
     }
 
     event.preventDefault();
+    event.stopPropagation();
     this.input.value = '';
 
     var currentSelection = this.contentWindow.getSelection();
@@ -427,7 +428,11 @@ cli.prototype = {
       }
     }
 
+    var self = this;
+    var fn = function() { self.input.focus(); };
+    setTimeout(fn, 0);
     this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
+
     if (event.ctrlKey) {
       if (event.which == 64) {   // ctrl-@
         gConnection.output('\0');
@@ -488,6 +493,8 @@ cli.prototype = {
       //  this.paste();
       //  return;
       //}
+    } else {
+      this.keyPress(event);
     }
   },
 
