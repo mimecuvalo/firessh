@@ -1,0 +1,50 @@
+<!ENTITY title "Hesap Yöneticisi">
+<!ENTITY accountlist.label "(Bir hesap seçin)">
+<!ENTITY advanced.label "Araçlar">
+<!ENTITY import.label "İçe Aktar..">
+<!ENTITY export.label "Dışa Ver..">
+<!ENTITY preferencestab.label "Seçenekler...">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Yardım">
+<!ENTITY help.url "http://firessh.mozdev.org/help.html">
+<!ENTITY advanced.access "T">
+<!ENTITY helpbutton.access "H">
+<!ENTITY main "Ana">
+<!ENTITY advanced "Gelişmiş">
+<!ENTITY maindetails "Ana Detaylar">
+<!ENTITY id "ıd">
+<!ENTITY account.label "Hesap Adı:">
+<!ENTITY account.tip "Örnek: Benim SSH Sitem">
+<!ENTITY folder.label "Kategori:">
+<!ENTITY optional.label "(seçmeli)">
+<!ENTITY host.label "Sunucu:">
+<!ENTITY host.tip "Örnek:benimsitem.com">
+<!ENTITY login.label "Kullanıcı:">
+<!ENTITY password.label "Şifre:">
+<!ENTITY anonymous.label "Ziyaretçi">
+<!ENTITY port.label "Port:">
+<!ENTITY privatekey.label "Özel Anahtar:">
+<!ENTITY pkbrowse.label "Gözat...">
+<!ENTITY tunnels.label "Tuneller">
+<!ENTITY add.label "Ekle">
+<!ENTITY remove.label "Kaldır">
+<!ENTITY source.label "Kaynak Port">
+<!ENTITY dest.label "Hedef">
+<!ENTITY notes.label "Notlar">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY port.access "o">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY source.access "S">
+<!ENTITY dest.access "t">
+<!ENTITY add.access "d">
+<!ENTITY remove.access "r">
+<!ENTITY mozilla.quote "Mammon uyudu. <em>Yeniden doğan dev hayvan</em> tüm Dünya'ya yayıldı ve onu destekleyenlerin sayısı arttı. Varlıklarını duyurdular ve <em>tilki kurnazlığıyla</em> ekinleri ateşe <em>kurban ettiler</em>. <em>Kutsal sözlerin rehberliğinde</a></em> kendilerine yeni bir dünya kurdular ve çocuklarına dev hayvandan <em><a href="http://wiki.mozilla.org/About:mozilla">bahsettiler</a></em>. Mammon uyandı, ama o artık takipçiden başka <em>hiçbir şey</em> değildi.">
+<!ENTITY mozilla.from "Mozilla<html:strong>Kitabından</html:strong>, 8:2">

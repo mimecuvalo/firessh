@@ -1,0 +1,37 @@
+<!ENTITY title "Seçenekler">
+<!ENTITY general.label "Genel">
+<!ENTITY startup.label "FireSSH Başlat:">
+<!ENTITY windowopen.label "yeni pencerede">
+<!ENTITY tabopen.label "yeni sekmede">
+<!ENTITY groupopen.label "bir pencere gurubunda">
+<!ENTITY sessions.label "Oturumlar">
+<!ENTITY rememberp.label "Şifreleri hatırla">
+<!ENTITY logwindow.label "Kayıt">
+<!ENTITY debug.label "Hata bilgisini göster">
+<!ENTITY interface.label "Arabirim">
+<!ENTITY appearance.label "Görünüm">
+<!ENTITY font.label "Font">
+<!ENTITY size.label "Boyut">
+<!ENTITY fg.label "Yazı">
+<!ENTITY bg.label "Arkaplan">
+<!ENTITY bell.label "Zil">
+<!ENTITY audible.label "Sesli Zil">
+<!ENTITY connect.label "Bağlantılar">
+<!ENTITY proxy.label "Vekil">
+<!ENTITY none.label "Yok">
+<!ENTITY direct.label "Doğrudan">
+<!ENTITY host.label "Sunucu:">
+<!ENTITY port.label "Port:">
+<!ENTITY recovery.label "Bağlantı Kurtarma">
+<!ENTITY network.label "Ağ Gecikmesi (Saniye olarak, 1 ve 600)">
+<!ENTITY network.tip "Sunucudan yanıt bekleme süresini kontrol eder">
+<!ENTITY keepalivemode.label "Bekleme ile bağlantıyı canlı tut">
+<!ENTITY timeout.label "Eğer koparsa, yeniden bağlanmayı dene">
+<!ENTITY retryd.label "Deneme gecikmesi(saniye olarak, 1 ile 600 arası)">
+<!ENTITY retryd.tip "Yeniden bağlanma denemesi arasındaki saniye">
+<!ENTITY retrya.label "Bağlantı denemeleri">
+<!ENTITY retrya.tip "Yapılacak deneme sayısı">
+<!ENTITY credits.label "Krediler">
+<!ENTITY thanks.label "Teşekkürler:">
+<!ENTITY allothers.label "Hata bilgisi gönderenler, yardım edenler ve diğerleri">
+<!ENTITY special.label "Bağışçılara Çok Teşekkürler!">
