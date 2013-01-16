@@ -30,7 +30,7 @@ function appendLog(message, css, type, trusted) {
     message = message.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
-  gCli.addHistory(message);
+  gCli.addHistory({ html: message, wrap: false });
   gCli.updateHistoryView(true);
 }
 

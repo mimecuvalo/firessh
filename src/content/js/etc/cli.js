@@ -128,7 +128,8 @@ var cli = function(contentWindow) {
   // list of dirty lines since last call to GetDirtyLines
   this.isLineDirty = [];
 
-  this.blank = { c: '&nbsp;', style: this.resetStyle };
+  this.blank = { c: '&nbsp;', style: this.resetStyle, wrap: false };
+  this.blankHTML = { html: '', wrap: false };
 
   for (var i = 0; i < this.rows; ++i) {
     var line = [];
@@ -138,7 +139,7 @@ var cli = function(contentWindow) {
     }
 
     this.screen.push(line);
-    this.scrRendition.push("");
+    this.scrRendition.push(new cloneObject(this.blankHTML));
     this.isLineDirty.push(false);
   }
 
@@ -488,11 +489,10 @@ cli.prototype = {
         return;
       }
 
-      // This causes double-pasting.
-      //if (event.which == 86 || event.which == 118) {  // cmd-v, paste
-      //  this.paste();
-      //  return;
-      //}
+      if (event.which == 86 || event.which == 118) {  // cmd-v, paste
+        this.paste();
+        return;
+      }
     } else {
       this.keyPress(event);
     }
@@ -688,83 +688,98 @@ cli.prototype = {
       this.selectionStartLine = 0;
     }
 
-    if (startSection != 'terminal' || endSection != 'terminal') {
-      var startHistoryLine = null;
-      var endHistoryLine = null;
-      var startTerminalLine = 0;
-      var endTerminalLine = null;
+    var startHistoryLine = null;
+    var endHistoryLine = null;
+    var startTerminalLine = null;
+    var endTerminalLine = null;
 
-      if (startSection == 'history') {
-        startHistoryLine = this.selectionStartLine;
+    if (startSection == 'history') {
+      startHistoryLine = this.selectionStartLine;
+      if (endSection == 'terminal') {
+        endHistoryLine = this.historyCache.length - 1;
+        startTerminalLine = 0;
+        endTerminalLine = selectAll ? this.rows - 1 : this.getSelectionLine(endSelectionNode, this.terminal);
       } else {
+        endHistoryLine = this.getSelectionLine(endSelectionNode, this.history);
+      }
+    } else {
+      if (endSection == 'terminal') {
+        startTerminalLine = this.selectionStartLine;
+        endTerminalLine = selectAll ? this.rows - 1 : this.getSelectionLine(endSelectionNode, this.terminal);
+      } else {
+        startTerminalLine = 0;
         endTerminalLine = this.selectionStartLine;
         var tmp = startSelectionOffset;
         startSelectionOffset = endSelectionOffset;
         endSelectionOffset = tmp;
         startHistoryLine = this.getSelectionLine(endSelectionNode, this.history);
-      }
-
-      if (endSection == 'history') {
-        if (startSection == 'history') {
-          endHistoryLine = this.getSelectionLine(endSelectionNode, this.history);
-        } else {
-          endHistoryLine = this.historyCache.length - 1;
-        }
-      } else {
-        endTerminalLine = selectAll ? this.rows - 1 : this.getSelectionLine(endSelectionNode, this.terminal);
         endHistoryLine = this.historyCache.length - 1;
       }
+    }
 
-      if (startSection == 'history' && endSection == 'history' && startHistoryLine > endHistoryLine) {
-        var tmp = startHistoryLine;
-        startHistoryLine = endHistoryLine;
-        endHistoryLine = tmp;
+    var shouldSwitchHistory = startSection == 'history' && endSection == 'history' && startHistoryLine > endHistoryLine;
+    var shouldSwitchTerminal = startSection == 'terminal' && endSection == 'terminal' && startTerminalLine > endTerminalLine;
 
-        tmp = startSelectionOffset;
-        startSelectionOffset = endSelectionOffset;
-        endSelectionOffset = tmp;
+    if (shouldSwitchHistory) {
+      var tmp = startHistoryLine;
+      startHistoryLine = endHistoryLine;
+      endHistoryLine = tmp;
+    }
+
+    if (shouldSwitchTerminal) {
+      var tmp = startTerminalLine;
+      startTerminalLine = endTerminalLine;
+      endTerminalLine = tmp;
+    }
+
+    if (shouldSwitchHistory || shouldSwitchTerminal) {
+      var tmp = startSelectionOffset;
+      startSelectionOffset = endSelectionOffset;
+      endSelectionOffset = tmp;
+    }
+
+    if (startSection == 'terminal' && endSection == 'history') {
+      startSection = 'history';
+      endSection = 'terminal';
+    }
+
+    var sections = [
+      { name: 'history', start: startHistoryLine, end: endHistoryLine, rendition: this.historyCache },
+      { name: 'terminal', start: startTerminalLine, end: endTerminalLine, rendition: this.scrRendition }
+    ];
+    var dummyElement = this.doc.createElement('DIV');
+
+    var skippedSection = false;
+    for (var s = 0; s < sections.length; ++s) {
+      var section = sections[s];
+      var skipSection = section.name != startSection && section.name != endSection;
+      if (skipSection) {
+        skippedSection = true;
+        continue;
+      } else if (s == 1 && !skippedSection) {
+        copytext += "\n";
       }
 
-      // first, copy history text
-      var dummyElement = this.doc.createElement('DIV');
-      for (var x = startHistoryLine; x <= endHistoryLine; ++x) {
-        dummyElement.innerHTML = this.historyCache[x];
-        if (x == startHistoryLine) {
-          if (x == endHistoryLine && startSection == 'history' && endSection == 'history') {
+      for (var x = section.start; x <= section.end; ++x) {
+        dummyElement.innerHTML = section.rendition[x].html;
+        if (x == section.start) {
+          if (x == section.end && section.name == startSection && section.name == endSection) {
             copytext += dummyElement.textContent.substring(startSelectionOffset, endSelectionOffset);
           } else {
-            copytext += dummyElement.textContent.substring(startSelectionOffset);
+            copytext += dummyElement.textContent.substring(section.name == startSection ? startSelectionOffset : 0);
           }
-        } else if (x == endHistoryLine && startSection == 'history' && endSection == 'history') {
-          if (x != startHistoryLine) {
+        } else if (x == section.end && section.name == startSection && section.name == endSection) {
+          if (x != section.start && !section.rendition[Math.max(0, x - 1)].wrap) {
             copytext += "\n";
           }
-          copytext += dummyElement.textContent.substring(0, endSelectionOffset);
+          copytext += dummyElement.textContent.substring(0, section.name == endSection ? endSelectionOffset : null);
         } else {
-          copytext += "\n";
+          if (!section.rendition[Math.max(0, x - 1)].wrap) {
+            copytext += "\n";
+          }
           copytext += dummyElement.textContent;
         }
       }
-
-      var currentScreenRendition = this.origScrRendition ? this.origScrRendition : this.scrRendition;
-      // then, copy anything that's in the terminal as well
-      if (startSection == 'terminal' || endSection == 'terminal') {
-        for (var x = startTerminalLine; x <= endTerminalLine; ++x) {
-          dummyElement.innerHTML = currentScreenRendition[x];
-          if (x == endTerminalLine) {
-            if (x != startTerminalLine) {
-              copytext += "\n";
-            }
-            copytext += dummyElement.textContent.substring(0, endSelectionOffset);
-          } else {
-            copytext += "\n";
-            copytext += dummyElement.textContent;
-          }
-        }
-      }
-    } else {
-      // starts and ends in terminal, easy peasy
-      copytext = this.contentWindow.getSelection().toString();
     }
 
     copytext = copytext.replace(/\xA0/g, ' '); // replace &nbsp; with a regular space
@@ -844,7 +859,7 @@ cli.prototype = {
       if (this.isLineDirty[i] || this.refresh) {
         this.isLineDirty[i] = false;
         this.scrRendition[i] = this.createScreenRendition(i);
-        this.terminal.childNodes[i].innerHTML = this.scrRendition[i];
+        this.terminal.childNodes[i].innerHTML = this.scrRendition[i].html;
       }
     }
     this.refresh = false;
@@ -915,7 +930,7 @@ cli.prototype = {
     }
 
     rendition += '';
-    return rendition;
+    return { html: rendition, wrap: screen[row][0].wrap };
   },
 
   onTerminalReset : function(init) {
@@ -937,7 +952,7 @@ cli.prototype = {
       return;
     }
 
-    this.historyCache.push(message);
+    this.historyCache.push(new cloneObject(message));
     ++this.newHistoryLines;
   },
 
@@ -962,7 +977,9 @@ cli.prototype = {
 
     if (firstLine != this.historyStart || force) {
       for (var i = 0; i < this.rows + 1 && i + firstLine < this.historyCache.length; ++i) {
-        this.history.childNodes[i].innerHTML = this.historyCache[i + firstLine];
+        if (this.historyCache[i + firstLine]) {
+          this.history.childNodes[i].innerHTML = this.historyCache[i + firstLine].html;
+        }
       }
     }
     this.historyStart = firstLine;
@@ -1059,7 +1076,7 @@ cli.prototype = {
         }
 
         this.screen.push(line);
-        this.scrRendition.push("");
+        this.scrRendition.push(new cloneObject(this.blankHTML));
         this.isLineDirty.push(false);
 
         if (this.origScreen) {
@@ -1070,7 +1087,7 @@ cli.prototype = {
           }
 
           this.origScreen.push(line);
-          this.origScrRendition.push("");
+          this.origScrRendition.push(new cloneObject(this.blankHTML));
         }
       }
     }
@@ -1178,6 +1195,7 @@ cli.prototype = {
 
       for (var j = start; j < end + 1; ++j) {
         this.screen[i][j].c = '&nbsp;';
+        this.screen[i][j].wrap = false;
         this.screen[i][j].style = this.curRendition.noStyle ? this.resetStyle : this.curRendition;
       }
 
@@ -1372,10 +1390,10 @@ cli.prototype = {
     var rendition;
     if (this.scrollingRegion && this.scrollingRegion[1] < this.rows) {
       rendition = this.scrRendition.splice(this.scrollingRegion[0] - 1, 1);
-      this.scrRendition.splice(this.scrollingRegion[1] - 1, 0, "");
+      this.scrRendition.splice(this.scrollingRegion[1] - 1, 0, new cloneObject(this.blankHTML));
     } else {
       rendition = this.scrRendition.shift();
-      this.scrRendition.push("");
+      this.scrRendition.push(new cloneObject(this.blankHTML));
     }
     var lineNo = this.scrollingRegion ? this.scrollingRegion[0] - 1 : 0;
     if (!rendition || this.isLineDirty[lineNo]) {
@@ -1420,10 +1438,10 @@ cli.prototype = {
     var rendition;
     if (this.scrollingRegion && this.scrollingRegion[1] < this.rows) {
       rendition = this.scrRendition.splice(this.scrollingRegion[1] - 1, 1);
-      this.scrRendition.splice(this.scrollingRegion[0] - 1, 0, "");
+      this.scrRendition.splice(this.scrollingRegion[0] - 1, 0, new cloneObject(this.blankHTML));
     } else {
       rendition = this.scrRendition.pop();
-      this.scrRendition.unshift("");
+      this.scrRendition.unshift(new cloneObject(this.blankHTML));
     }
 
     var line;
@@ -1478,6 +1496,7 @@ cli.prototype = {
   */
   __PushChar : function(ch, wideChar, nonAscii) {
     if (this.curX >= this.cols || (wideChar && this.curX + 1 >= this.cols)) {
+      this.screen[this.curY][0].wrap = true;
       this.__NewLine();
     }
 
@@ -2037,7 +2056,7 @@ cli.prototype = {
           }
 
           this.screen.push(line);
-          this.scrRendition.push("");
+          this.scrRendition.push(new cloneObject(this.blankHTML));
           this.isLineDirty[i] = false;
         }
 
