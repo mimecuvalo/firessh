@@ -61,8 +61,8 @@
           <em:locale>locale/sl/</em:locale>
           <em:locale>locale/sr-RS/</em:locale>-->
           <em:locale>locale/sv-SE/</em:locale>
-          <!--<em:locale>locale/tr/</em:locale>
-          <em:locale>locale/uk-UA/</em:locale>
+          <em:locale>locale/tr/</em:locale>
+          <!--<em:locale>locale/uk-UA/</em:locale>
           <em:locale>locale/vi-VN/</em:locale>-->
           <em:locale>locale/zh-CN/</em:locale>
           <!--<em:locale>locale/zh-TW/</em:locale>-->

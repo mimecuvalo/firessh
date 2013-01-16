@@ -49,6 +49,7 @@ then
 		locale/ja-JP \
 		locale/pt-PT \
 		locale/sv-SE \
+		locale/tr \
 		locale/zh-CN \
 		skin \
 		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp" "*/.git/*" "*.gitignore"

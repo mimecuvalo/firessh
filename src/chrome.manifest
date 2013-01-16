@@ -7,6 +7,7 @@ locale  firessh it-IT                            jar:chrome/firessh.jar!/locale/
 locale  firessh ja-JP                            jar:chrome/firessh.jar!/locale/ja-JP/
 locale  firessh pt-PT                            jar:chrome/firessh.jar!/locale/pt-PT/
 locale  firessh sv-SE                            jar:chrome/firessh.jar!/locale/sv-SE/
+locale  firessh tr                               jar:chrome/firessh.jar!/locale/tr/
 locale  firessh zh-CN                            jar:chrome/firessh.jar!/locale/zh-CN/
 skin    firessh classic/1.0                      jar:chrome/firessh.jar!/skin/
 overlay chrome://browser/content/browser.xul         chrome://firessh/content/firesshOverlay.xul
