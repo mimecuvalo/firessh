@@ -34,7 +34,7 @@ function startup() {
 
   gLoadUrl               = gPrefs.getComplexValue("loadurl", Components.interfaces.nsISupportsString).data;
 
-  var wikipedia = 'http://en.wikipedia.org/wiki/Rail_Fence_Cipher';
+  var wikipedia = 'http://en.wikipedia.org/wiki/Tap_code';
   appendLog("<span id='opening'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://firessh.mozdev.org','FireSSH');\">"
       + "FireSSH</span> <span>" + gVersion
       + "  '</span><span style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('" + wikipedia + "','wikipedia');\">"
@@ -67,23 +67,23 @@ function startup() {
     if (file.exists()) {
       try {
         var fstream  = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-        var sstream  = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
+        var cstream = Components.classes["@mozilla.org/intl/converter-input-stream;1"].createInstance(Components.interfaces.nsIConverterInputStream);
         fstream.init(file, 1, 0, false);
-        sstream.init(fstream);
+        cstream.init(fstream, "UTF-8", 0, 0);
 
         var siteData = "";
-        var str      = sstream.read(-1);
-
-        while (str.length > 0) {
-          siteData += str;
-          str       = sstream.read(-1);
+        let (str = {}) {
+          let read = 0;
+          do { 
+            read = cstream.readString(0xffffffff, str); // read as much as we can and put it in str.value
+            siteData += str.value;
+          } while (read != 0);
         }
+        cstream.close();
 
         gSiteManager = jsonParseWithToSourceConversion(siteData);
         getPasswords();
 
-        sstream.close();
-        fstream.close();
       } catch(ex) {
         alert(ex);
       }

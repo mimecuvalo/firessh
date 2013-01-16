@@ -461,25 +461,25 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       gSiteManager = new Array();
     } else if (file.exists()) {
       var fstream  = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-      var sstream  = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
+      var cstream = Components.classes["@mozilla.org/intl/converter-input-stream;1"].createInstance(Components.interfaces.nsIConverterInputStream);
       fstream.init(file, 1, 0, false);
-      sstream.init(fstream);
+      cstream.init(fstream, "UTF-8", 0, 0);
 
       var siteData = "";
-      var str      = sstream.read(-1);
-
-      while (str.length > 0) {
-        siteData += str;
-        str       = sstream.read(-1);
+      let (str = {}) {
+        let read = 0;
+        do { 
+          read = cstream.readString(0xffffffff, str); // read as much as we can and put it in str.value
+          siteData += str.value;
+        } while (read != 0);
       }
+      cstream.close();
 
       if (importFile) {
         try {
           var tempSiteManager = jsonParseWithToSourceConversion(siteData);
         } catch (ex) {
           alert(gStrbundle.getString("badImport"));
-          sstream.close();
-          fstream.close();
           return;
         }
 
@@ -499,8 +499,6 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
             if (passwordObject.returnVal) {
               key = passwordObject.password;
             } else {
-              sstream.close();
-              fstream.close();
               return;
             }
 
@@ -508,8 +506,6 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
             var cipher = cipherType == "arc4" ? new crypto.cipher.ARC4(key) : new crypto.cipher.Blowfish(key, 2, "");
             if (cipher.decrypt(tempSiteManager[x].password).replace(/\0/g, '') != "check123") {
               alert(gStrbundle.getString("badPassword"));
-              sstream.close();
-              fstream.close();
               return;
             }
             break;
@@ -586,9 +582,6 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       }
 
       getPasswords();
-
-      sstream.close();
-      fstream.close();
 
       if (pruneTemp) {
         for (var x = gSiteManager.length - 1; x >= 0; --x) {
@@ -692,8 +685,11 @@ function saveSiteManager(exportFile) {
     foutstream.init(file, 0x04 | 0x08 | 0x20, 0644, 0);
     tempSiteManagerArray.sort(compareAccount);
     var data = JSON.stringify(tempSiteManagerArray);
-    foutstream.write(data, data.length);
-    foutstream.close();
+    var converter = Components.classes["@mozilla.org/intl/converter-output-stream;1"].
+                createInstance(Components.interfaces.nsIConverterOutputStream);
+    converter.init(foutstream, "UTF-8", 0, 0);
+    converter.writeString(data);
+    converter.close();
   } catch (ex) {
     alert(ex);
   }
