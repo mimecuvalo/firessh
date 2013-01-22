@@ -24,12 +24,8 @@ ssh2Observer.prototype = {
       key = key[index];
     }
 
-    var flags    = gPromptService.BUTTON_TITLE_YES    * gPromptService.BUTTON_POS_0 +
-                   gPromptService.BUTTON_TITLE_NO     * gPromptService.BUTTON_POS_2 +
-                   gPromptService.BUTTON_TITLE_CANCEL * gPromptService.BUTTON_POS_1;
-    var response = gPromptService.confirmEx(window, gStrbundle.getString("sftpCacheTitle"),
-                                                    gStrbundle.getFormattedString("sftpCache", [key]), flags,
-                                                    null, null, null, null, {});
-    return response == 0 ? 'y' : (response == 2 ? 'n' : '');
+    // TODO(mime): goddammit chrome apps, what the hell.
+    //var response = window.confirm(_('sftpCacheTitle') + '\n\n' + _('sftpCache').replace('%S', key));
+    return 'y';//response ? 'y' : '';
   }
 }

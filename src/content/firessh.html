@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../skin/firessh.css">
+    <link rel="icon" href="../skin/logo.png">
+
+    <script src="js/etc/globals.js"></script>
+    <script src="js/etc/common.js"></script>
+
+    <script src="js/connection/baseProtocol.js"></script>
+    <script src="js/connection/sshController.js"></script>
+    <script src="js/connection/baseObserver.js"></script>
+    <script src="js/connection/ssh2.js"></script>
+    <script src="js/connection/ssh2Observer.js"></script>
+
+    <script src="js/connection/paramikojs/crypto/crypto.js"></script>
+    <script src="js/connection/paramikojs/crypto/Cipher/AES.js"></script>
+    <script src="js/connection/paramikojs/crypto/Cipher/Blowfish.js"></script>
+    <script src="js/connection/paramikojs/crypto/Cipher/DES3.js"></script>
+    <script src="js/connection/paramikojs/crypto/Cipher/ARC4.js"></script>
+    <script src="js/connection/paramikojs/crypto/Hash/baseHash.js"></script>
+    <script src="js/connection/paramikojs/crypto/Hash/SHA.js"></script>
+    <script src="js/connection/paramikojs/crypto/Hash/SHA256.js"></script>
+    <script src="js/connection/paramikojs/crypto/Hash/MD5.js"></script>
+    <script src="js/connection/paramikojs/crypto/Hash/HMAC.js"></script>
+    <script src="js/connection/paramikojs/crypto/PublicKey/RSA.js"></script>
+    <script src="js/connection/paramikojs/crypto/PublicKey/DSA.js"></script>
+    <script src="js/connection/paramikojs/crypto/Random/_UserFriendlyRNG.js"></script>
+    <script src="js/connection/paramikojs/crypto/Random/Fortuna/SHAd256.js"></script>
+    <script src="js/connection/paramikojs/crypto/Random/Fortuna/FortunaAccumulator.js"></script>
+    <script src="js/connection/paramikojs/crypto/Random/Fortuna/FortunaGenerator.js"></script>
+    <script src="js/connection/paramikojs/crypto/Random/OSRNG/browser.js"></script>
+
+    <script src="js/connection/paramikojs/common.js"></script>
+    <script src="js/connection/paramikojs/python_shim.js"></script>
+    <script src="js/connection/paramikojs/BigInteger.js"></script>
+
+    <script src="js/connection/paramikojs/agent.js"></script>
+    <script src="js/connection/paramikojs/auth_handler.js"></script>
+    <script src="js/connection/paramikojs/ber.js"></script>
+    <script src="js/connection/paramikojs/channel.js"></script>
+    <script src="js/connection/paramikojs/client.js"></script>
+    <script src="js/connection/paramikojs/compress.js"></script>
+    <script src="js/connection/paramikojs/dsskey.js"></script>
+    <script src="js/connection/paramikojs/file.js"></script>
+    <script src="js/connection/paramikojs/hostkeys.js"></script>
+    <script src="js/connection/paramikojs/kex_gex.js"></script>
+    <script src="js/connection/paramikojs/kex_group1.js"></script>
+    <script src="js/connection/paramikojs/message.js"></script>
+    <script src="js/connection/paramikojs/packet.js"></script>
+    <script src="js/connection/paramikojs/pkey.js"></script>
+    <script src="js/connection/paramikojs/rsakey.js"></script>
+    <script src="js/connection/paramikojs/sftp_attr.js"></script>
+    <script src="js/connection/paramikojs/sftp_client.js"></script>
+    <script src="js/connection/paramikojs/sftp_file.js"></script>
+    <script src="js/connection/paramikojs/sftp.js"></script>
+    <script src="js/connection/paramikojs/ssh_exception.js"></script>
+    <script src="js/connection/paramikojs/transport.js"></script>
+    <script src="js/connection/paramikojs/util.js"></script>
+    <script src="js/connection/paramikojs/win_pageant.js"></script>
+
+    <script src="js/etc/cli.js"></script>
+    <script src="js/etc/localFile.js"></script>
+    <script src="js/etc/log.js"></script>
+    <script src="js/etc/misc.js"></script>
+    <script src="js/etc/preferences.js"></script>
+    <script src="js/etc/sessionsPasswords.js"></script>
+  </head>
+  <body>
+    <!-- :::::::::::::::::::::::::::::: where the magic happens :::::::::::::::::::::::::::::: -->
+    <iframe id="cmdlog" src="blank.html" frameborder="0" width="100%" height="100%"></iframe>
+    <script src="js/etc/loadUnload.js"></script>
+  </body>
+</html>

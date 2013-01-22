@@ -1,4 +1,4 @@
-Components.utils.import("resource://gre/modules/ctypes.jsm");
+Components = null;  // we're on Chrome, not Mozilla
 
 function $(el) {
   return document.getElementById(el);
@@ -11,3 +11,5 @@ function inherit(derived, base) {
     }
   }
 }
+
+_ = chrome.i18n.getMessage;

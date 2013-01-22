@@ -1,5 +1,5 @@
 With un-compiled languages, comments affect the size of the shipped product, so
-to save space, this comment block applies to any file in the FireSSH XPI without
+to save space, this comment block applies to any file in the FireSSH CRX without
 its own licensing information.
 
 --------------------------------------------------------------------------------

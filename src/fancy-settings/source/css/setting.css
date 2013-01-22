@@ -1,0 +1,104 @@
+/*
+// Fancy Settings by Frank Kohlhepp
+// Copyright (c) 2011 - 2012 Frank Kohlhepp
+// https://github.com/frankkohlhepp/fancy-settings
+// License: LGPL v2.1
+*/
+.tab-name {
+    position: fixed;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    width: 720px;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    color: #303942;
+    z-index: 1;
+}
+
+.tab-settings {
+    margin-top: 64px;
+}
+
+.setting.group {
+    margin-top: 15px;
+}
+
+.setting.group-name {
+    font-size: 1.2em;
+    vertical-align: top;
+}
+
+.setting.group-content {
+    margin-top: 1px;
+    margin-left: 18px;
+}
+
+.setting.bundle {
+    max-width: 600px;
+    margin-bottom: 5px;
+}
+
+.setting.bundle.list-box {
+    margin-bottom: 10px;
+}
+
+.setting.label.radio-buttons + .setting.container.radio-buttons {
+    margin-top: 3px;
+}
+
+.setting.label, .setting.element-label {
+    margin-right: 15px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.setting.label.checkbox, .setting.element-label {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.setting.label.checkbox {
+    position: relative;
+    top: 1px;
+}
+
+.setting.label.color {
+    position: relative;
+    top: -7px;
+}
+
+.setting.element.color {
+    margin: 0;
+    width: 44px;
+    padding: 1px;
+    background-color: white;
+    border: 2px inset;
+    border-image: initial;
+}
+
+.setting.element.slider {
+    position: relative;
+    width: 150px;
+    top: 4px;
+}
+
+.setting.element.list-box {
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+
+.setting.display.slider {
+    margin-left: 5px;
+    color: #666666;
+}
+
+#nothing-found {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #999999;
+}

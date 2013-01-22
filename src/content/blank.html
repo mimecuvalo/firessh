@@ -4,16 +4,20 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <title></title>
-    <link rel="stylesheet" href="chrome://global/skin/global.css" type="text/css" media="screen" >
     <style type="text/css">
+      html {
+        overflow: scroll;
+      }
       body {
         margin: 6px;
+        -webkit-user-select: text;
       }
       body,
       #input {
         background-color: black;
         font: 12px Andale Mono, Courier New;
         color: #33ff33;
+        -webkit-font-smoothing: none;
       }
       #history-outer {
         position: relative;
@@ -46,6 +50,9 @@
         padding: 0;
         width: 12px;
       }
+      #input:focus {
+        outline: none;
+      }
       #test {
         visibility: hidden;
       }
@@ -62,7 +69,7 @@
         padding: 5px 20px;
         border-bottom: 1px solid #ccc;
         cursor: pointer;
-        -moz-user-select: none;
+        -webkit-user-select: none;
       }
       .context-menu li:hover,
       .context-menu li.active {

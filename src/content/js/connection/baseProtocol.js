@@ -8,6 +8,7 @@ baseProtocol.prototype = {
   protocol             : "",
   observer             : null,
   host                 : "",
+  addr                 : "",
   port                 : -1,
   login                : "",
   password             : "",
@@ -23,11 +24,13 @@ baseProtocol.prototype = {
   errorConnectStr      : "Unable to make a connection.  Please try again.", // set to error msg that you'd like to show for a connection error
 
   // read-only variables
-  transportService     : Components.classes["@mozilla.org/network/socket-transport-service;1"].getService(Components.interfaces.nsISocketTransportService),
-  proxyService         : Components.classes["@mozilla.org/network/protocol-proxy-service;1"].getService  (Components.interfaces.nsIProtocolProxyService),
-  cacheService         : Components.classes["@mozilla.org/network/cache-service;1"].getService           (Components.interfaces.nsICacheService),
-  toUTF8               : Components.classes["@mozilla.org/intl/utf8converterservice;1"].getService       (Components.interfaces.nsIUTF8ConverterService),
-  fromUTF8             : Components.classes["@mozilla.org/intl/scriptableunicodeconverter"].getService   (Components.interfaces.nsIScriptableUnicodeConverter),
+  dns                  : chrome.experimental.dns,
+  socket               : chrome.socket,
+  socketId             : null,
+  //proxyService         : Components.classes["@mozilla.org/network/protocol-proxy-service;1"].getService  (Components.interfaces.nsIProtocolProxyService),
+  //cacheService         : Components.classes["@mozilla.org/network/cache-service;1"].getService           (Components.interfaces.nsICacheService),
+  toUTF8               : { convertStringToUTF8: function(str) { return str; } },
+  fromUTF8             : { ConvertFromUnicode: function(str) { return str; }, Finish: function() { /* do nothing */ } },
   isAttemptingConnect  : false,
   isConnected          : false,          // are we connected?
   isReady              : false,          // are we busy writing/reading the control socket?
@@ -225,7 +228,7 @@ function setProtocol(protocol) {
   var protocolMap = { 'ssh2' : { 'transport': ssh2Mozilla, 'observer': ssh2Observer } };
 
   gConnection = new protocolMap[protocol].transport(new protocolMap[protocol].observer());
-  gConnection.errorConnectStr = gStrbundle.getString("errorConn");
+  gConnection.errorConnectStr = chrome.i18n.getMessage("errorConn");
   gConnection.version         = gVersion;
 
   readPreferences();

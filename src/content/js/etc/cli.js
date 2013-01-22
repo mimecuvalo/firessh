@@ -51,12 +51,11 @@ var cli = function(contentWindow) {
   this.input.addEventListener('keyup', this.keyUp.bind(this), false);
   this.body.addEventListener('mousedown', this.mousedown.bind(this), false);
   //this.body.addEventListener('click', this.inputFocus.bind(this), false);
+  this.body.addEventListener('keydown', this.bodyKeyDown.bind(this), false);
   this.body.addEventListener('keypress', this.bodyKeyPress.bind(this), false);
   this.doc.addEventListener('focus', this.onFocus.bind(this), false);
   this.doc.addEventListener('blur', this.onBlur.bind(this), false);
 
-  this.body.addEventListener('copy', this.copy.bind(this), false);
-  this.body.addEventListener('paste', this.paste.bind(this), false);
   this.body.oncontextmenu = function() { return false; }; // addEventListener doesn't work for some reason...
 
   this.onResize(true);
@@ -229,6 +228,7 @@ cli.prototype = {
   __ESCPARENSEQ_specg0  : '0',  // Set G0 special chars. & line set
 
   specialKeyMap : {
+    8 :  '\x08',   // backspace
     9 :  '\x09',   // tab
     27:  '\x1b',   // escape
     35:  '\x05',   // end
@@ -378,18 +378,22 @@ cli.prototype = {
   },
 
   keyDown : function(event) {
-    event.preventDefault();
+    //console.log(event.which + ' '+event.keyCode);
+    if (event.keyCode in this.specialKeyMap) {
+      event.preventDefault();
+      this.keyPress(event, true);
+    }
   },
 
-  keyPress : function(event) {
-    //console.log(event.which + ' '+event.keyCode);
-    if (event.keyCode == 33) { // page up
+  keyPress : function(event, opt_keyDownEventHack) {
+    //console.log('kp'+event.which + ' '+event.keyCode);
+    /*if (event.keyCode == 33) { // page up
       gCli.body.scrollTop -= gCli.body.clientHeight;
       return;
     } else if (event.keyCode == 34) { // page down
       gCli.body.scrollTop += gCli.body.clientHeight;
       return;
-    }
+    }*/
 
     event.preventDefault();
     event.stopPropagation();
@@ -397,10 +401,9 @@ cli.prototype = {
 
     var currentSelection = this.contentWindow.getSelection();
     var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
-    var pasteEvent = event.which == 118;
 
     if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
-        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent) || pasteEvent)) {
+        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent))) {
       if (event.which == 65 || event.which == 97) {     // cmd-a : select all
         var range = this.doc.createRange();
         range.selectNode(this.body);
@@ -410,21 +413,6 @@ cli.prototype = {
 
       if (cutCopyEvent) {  // cmd-x, cmd-c [cut, copy]
         this.copy();
-        return;
-      }
-
-      if (pasteEvent) {  // cmd-v, paste
-        this.paste();
-        return;
-      }
-
-      if (event.which == 84 || event.which == 116) {  // cmd-t, new tab
-        runInFirefox("about:blank");
-        return;
-      }
-
-      if (event.which == 87 || event.which == 119) {  // cmd-w, close tab
-        window.close();
         return;
       }
     }
@@ -450,18 +438,16 @@ cli.prototype = {
     }
 
     var character;
-    if (event.which) {
-      character = unescape(encodeURIComponent(String.fromCharCode(event.which)));
-    } else {
+    if (opt_keyDownEventHack) {
       character = this.specialKeyMap[event.keyCode];
-      if (!character) {
-        return;
-      }
+    } else {
+      character = unescape(encodeURIComponent(String.fromCharCode(event.which)));
     }
     gConnection.output(character);
   },
 
   // this is for CJK characters, the keyPress event isn't fired so we listen for the keyup instead
+  // XXX currently busted in chrome
   keyUp : function(event) {
     event.preventDefault();
 
@@ -472,7 +458,19 @@ cli.prototype = {
     }
   },
 
+  bodyKeyDown : function(event) {
+    //console.log('kpbd' + event.which + ' '+event.keyCode);
+    var currentSelection = this.contentWindow.getSelection();
+    var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
+    if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
+        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent))) {
+      event.preventDefault();
+      this.bodyKeyPress(event);
+    }
+  },
+
   bodyKeyPress : function(event) {
+    //console.log('kpb'+event.which + ' '+event.keyCode);
     event.preventDefault();
 
     var currentSelection = this.contentWindow.getSelection();
@@ -489,10 +487,11 @@ cli.prototype = {
         return;
       }
 
-      if (event.which == 86 || event.which == 118) {  // cmd-v, paste
-        this.paste();
-        return;
-      }
+      // This causes double-pasting.
+      //if (event.which == 86 || event.which == 118) {  // cmd-v, paste
+      //  this.paste();
+      //  return;
+      //}
     } else {
       this.keyPress(event);
     }
@@ -592,14 +591,14 @@ cli.prototype = {
       };
       ul.appendChild(li);
 
-      li = this.doc.createElement('LI');
+      /*li = this.doc.createElement('LI');
       li.textContent = 'Paste';
       li.onclick = function(event) {
         event.preventDefault();
         self.paste();
         closeMenu();
       };
-      ul.appendChild(li);
+      ul.appendChild(li);*/
 
       this.body.appendChild(ul);
       this.body.addEventListener('mousedown', bodyMouseDown, false);
@@ -785,50 +784,17 @@ cli.prototype = {
     copytext = copytext.replace(/\xA0/g, ' '); // replace &nbsp; with a regular space
     copytext = copytext.replace(/\s+$/mg, ''); // remove trailing whitespace
 
-    var str = Components.classes["@mozilla.org/supports-string;1"].
-    createInstance(Components.interfaces.nsISupportsString);
-    if (!str) return false;
-
-    str.data = copytext;
-
-    var trans = Components.classes["@mozilla.org/widget/transferable;1"].
-    createInstance(Components.interfaces.nsITransferable);
-    if (!trans) return false;
-
-    trans.addDataFlavor("text/unicode");
-    trans.setTransferData("text/unicode", str, copytext.length * 2);
-
-    var clipid = Components.interfaces.nsIClipboard;
-    var clip = Components.classes["@mozilla.org/widget/clipboard;1"].getService(clipid);
-    if (!clip) return false;
-
-    clip.setData(trans, null, clipid.kGlobalClipboard);    
-  },
-
-  paste : function(event) {
-    if (event) {
-      event.preventDefault();
-    }
-
-    var clip = Components.classes["@mozilla.org/widget/clipboard;1"].getService(Components.interfaces.nsIClipboard);
-    if (!clip) return false;
-
-    var trans = Components.classes["@mozilla.org/widget/transferable;1"].createInstance(Components.interfaces.nsITransferable);
-    if (!trans) return false;
-    trans.addDataFlavor("text/unicode");
-
-    clip.getData(trans, clip.kGlobalClipboard);
-
-    var str       = new Object();
-    var strLength = new Object();
-
-    trans.getTransferData("text/unicode", str, strLength);
-    if (str) {
-      str = str.value.QueryInterface(Components.interfaces.nsISupportsString);
-      pastetext = str.data.substring(0, strLength.value / 2);
-      this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
-      gConnection.output(unescape(encodeURIComponent(pastetext)));
-    }
+    var copySource = this.doc.createElement('pre');
+    copySource.textContent = copytext;
+    copySource.style.cssText = (
+        '-webkit-user-select: text;' +
+        'position: absolute;' +
+        'top: -9999px');
+    this.body.appendChild(copySource);
+    var selection = this.doc.getSelection();
+    selection.selectAllChildren(copySource);
+    this.doc.execCommand('copy');
+    copySource.parentNode.removeChild(copySource);
   },
 
   cursorUpdate : function() {
@@ -840,7 +806,7 @@ cli.prototype = {
   },
 
   update : function(message) {
-    //console.log(message.toSource());
+    //console.log(JSON.stringify(message));
     var scrollLog = this.body.scrollTop + 50 >= this.body.scrollHeight - this.body.clientHeight;
 
     try {
@@ -1358,7 +1324,7 @@ cli.prototype = {
             break;
           }
         } else {
-          debug('Unhandled character: ' + text[index].toSource());
+          debug('Unhandled character: ' + JSON.stringify(text[index]));
         }
         index += 1;
       }
@@ -1556,7 +1522,7 @@ cli.prototype = {
         // final char
         return [index + 1, String.fromCharCode(ascii), interChars];
       } else {
-        debug("Unexpected characters in escape sequence " + ch.toSource());
+        debug("Unexpected characters in escape sequence " + JSON.stringify(ch));
       }
 
       index += 1;
@@ -1574,7 +1540,7 @@ cli.prototype = {
   */
   __HandleEscSeq : function(text, index) {
   
-    //console.log('esc '+text.substring(index,index+7).toSource());
+    //console.log('esc '+JSON.stringify(text.substring(index,index+7)));
     if (text[index] == '[') {
       index += 1;
       var result = this.__ParseEscSeq(text, index);
@@ -1600,11 +1566,11 @@ cli.prototype = {
         //if (this.callbacks[this.CALLBACK_UNHANDLED_ESC_SEQ]) {
         //  this.callbacks[this.CALLBACK_UNHANDLED_ESC_SEQ](escSeq);
         //}
-        debug('Unhandled [ escape: ' + escSeq.toSource());
+        debug('Unhandled [ escape: ' + JSON.stringify(escSeq));
       }
     } else if (text[index] == ']') {
       var textlen = text.length;
-      debug('title sequence: ' + text.toSource());
+      debug('title sequence: ' + JSON.stringify(text));
 
       if (index + 2 < textlen) {
         if (text[index + 1] == '0' && text[index + 2] == ';') {
@@ -1638,7 +1604,7 @@ cli.prototype = {
       index += 2;
     } else {
       if (text[index]) {
-        debug('Unhandled reg. escape: ' + text[index].toSource());
+        debug('Unhandled reg. escape: ' + JSON.stringify(text[index]));
       }
     }
 
@@ -1649,26 +1615,28 @@ cli.prototype = {
     Handler for bell character
   */
   belAudio : null,
+  audioCtx : new webkitAudioContext(),
   enableBell : true,
   __OnCharBel : function(text, index) {
     if (!this.enableBell) {
       return index + 1;
     }
 
-    var output = new Audio();
-    output.mozSetup(1, 44100);  // channels, rate
-    if (this.belAudio) {
-      output.mozWriteAudio(this.belAudio);
-    } else {
-      var samples = new Float32Array(sys.platform == 'win32' ? 8192 : 512); // data
-      var len = samples.length;
+    if (!this.belAudio) {
+      var buffer = new ArrayBuffer(4096);
+      var samples = new Float32Array(buffer); // data
 
       for (var i = 0; i < samples.length ; i++) {
         samples[i] = Math.sin( 2 * Math.PI * 4000 * i / 44100 ) * 0.025;   // 4000 = frequency, 44100 = sampling rate, 0.025 = amplitude
       }
-      output.mozWriteAudio(samples);
-      this.belAudio = samples;
+      this.belAudio = samples
     }
+
+    var src = this.audioCtx.createBufferSource();
+    src.buffer = this.audioCtx.createBuffer(1 /*channels*/, 4096, 44100);
+    src.buffer.getChannelData(0).set(this.belAudio)
+    src.connect(this.audioCtx.destination);
+    src.noteOn(0);
 
     return index + 1;
   },
@@ -2132,7 +2100,7 @@ cli.prototype = {
             break;
           case 1:
             this.curRendition.fontWeight = 'bold';
-            this.curRendition.letterSpacing = '-0.7px';
+            this.curRendition.letterSpacing = '-1.7px';
             break;
           case 2:
             this.curRendition.opacity = '.5';

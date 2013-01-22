@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../skin/firessh.css">
+    <script src="js/etc/common.js"></script>
+    <script src="js/etc/log.js"></script>
+    <script src="js/etc/misc.js"></script>
+    <script src="js/etc/preferences.js"></script>
+    <script src="js/etc/localFile.js"></script>
+    <script src="js/etc/sessionsPasswords.js"></script>
+    <script src="js/connection/paramikojs/crypto/crypto.js"></script>
+    <script src="js/connection/paramikojs/crypto/Cipher/Blowfish.js"></script>
+    <script src="js/connection/paramikojs/crypto/Cipher/ARC4.js"></script>
+  </head>
+  <body id="account-manager">
+    <nav id="toolbar">
+      <div id="advanced-menu" class="menu">
+        <span i18n="tools"></span>
+        <ul id="advmenu">
+          <li i18n="preferencestab" id="prefbutton"></li>
+          <li i18n="help" id="helpbutton"></li>
+        </ul>
+      </div>
+      <!--<select id="toolbar-folder" width="175"></select>-->
+      <select id="toolbar-account" width="175">
+        <option id="default-account" value=""></option>
+      </select>
+    </nav>
+
+    <div id="tabbox">
+      <ul id="tabs">
+        <li id="maintab-lbl" i18n="main" selected></li><li id="advancedtab-lbl" i18n="advanced"></li>
+      </ul>
+      <div id="tabpanels">
+        <div id="maintab" selected class="tab">
+          <form>
+            <fieldset>
+              <legend i18n="maindetails"></legend>
+              <table>
+                <tr>
+                  <td><label i18n="accountLabel" control="account"></label></td>
+                  <td><input id="account" type="text" class="required"/></td>
+                  <!--<td><label i18n="folder" control="folder"></label><select id="folder" i18n="optional"></select></td>-->
+                </tr>
+                <tr>
+                  <td><label i18n="hostLabel" control="host"></label></td>
+                  <td><input id="host" type="text" class="required" tabindex="1"/></td>
+                  <td><label id="portlbl" i18n="port" control="port"></label>
+                  <input id="port" size="5" type="number" min="0" max="65535" step="1"/></td>
+                </tr>
+              </table>
+            </fieldset>
+
+            <fieldset class="paddingTop">
+              <legend i18n="id"></legend>
+              <table>
+                <tr>
+                  <td><label i18n="login" control="login"></label></td>
+                  <td><input id="login" type="text" tabindex="2"/></td>
+                </tr>
+                <tr>
+                  <td><label i18n="password" control="password"></label></td>
+                  <td><input id="password" type="password" tabindex="3"/></td>
+                </tr>
+              </table>
+            </fieldset>
+          </form>
+        </div>
+
+        <div id="advancedtab" class="tab">
+          <form>
+            <fieldset>
+              <legend i18n="notes"></legend>
+              <textarea id="notes" rows="6"></textarea>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <button id="delete" i18n="delete"></button>
+    <button id="connect" i18n="connectButton" tabindex="4"></button>
+    <!--<button id="cancel" i18n="cancelButton"></button>-->
+
+    <script src="js/etc/i18n.js"></script>
+    <script src="js/dialogs/accountManager.js"></script>
+  </body>
+</html>

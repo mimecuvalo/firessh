@@ -15,20 +15,14 @@ baseObserver.prototype = {
   },
 
   onLoginDenied : function() {
-    connect(false, true);
+    //connect(false, true);
   },
 
   onDisconnected : function(attemptingReconnect) {
     try {
       document.title = "FireSSH";
       if (!attemptingReconnect) {
-        var windowManager          = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService();
-        var windowManagerInterface = windowManager.QueryInterface(Components.interfaces.nsIWindowMediator);
-        var win                    = windowManagerInterface.getMostRecentWindow(null);
-
-        if (win.gBrowser.currentURI.spec == "chrome://firessh/content/firessh.xul") {
-          window.close();
-        }
+        window.close();
       }
     } catch (ex) { }
   },
