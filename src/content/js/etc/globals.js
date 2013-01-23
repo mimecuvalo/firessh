@@ -9,9 +9,6 @@ var gCli;                       // the cli
 // XXX this is some crap but it'll work for now. see rsakey.js for more details
 var gRsaKeyWorkerJs = 'js/connection/paramikojs/sign_ssh_data_worker.js';
 
-// Override Firefox's default Crypto class
-function crypto() {}
-
 var gDefaultAccount;            // from prefs: select the opened account
 var gDebugMode;                 // from prefs: show debug msgs in log or not
 var gDonated;                   // from prefs: donated or not
