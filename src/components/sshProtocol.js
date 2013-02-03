@@ -39,7 +39,7 @@ ChromeExtensionHandler.prototype = {
   classID: kPROTOCOL_CID,
   scheme: kSCHEME,
   defaultPort : -1,
-  protocolFlags : nsIProtocolHandler.URI_STD,
+  protocolFlags : nsIProtocolHandler.URI_STD | nsIProtocolHandler.URI_LOADABLE_BY_ANYONE,
   registerExtension : function(ext) { },
   allowPort : function(port, scheme) { return false; },
 

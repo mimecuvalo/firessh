@@ -285,6 +285,10 @@ ssh2Mozilla.prototype = {
 
   output : function(out, key) {
     key = key || "main";
+    if (!this.channels[key]) {
+      return;
+    }
+
     this.channels[key]['bufferOut'] += out;
     this.send_output(key);
   },
