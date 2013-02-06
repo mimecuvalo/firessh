@@ -1,6 +1,8 @@
 #!/bin/bash
 
+sed -e s/__VERSION__/$FIRESSH_VER/g manifest.js.in > manifest.js
 sed -e s/__VERSION__/$FIRESSH_VER/g content/js/etc/globals.js.in > content/js/etc/globals.js
+sed -e s/__VERSION__/$FIRESSH_VER/g fancy-settings/source/manifest.js.in > fancy-settings/source/manifest.js
 
 rm ../downloads/firessh_chrome.zip
 
