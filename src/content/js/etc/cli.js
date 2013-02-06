@@ -379,7 +379,8 @@ cli.prototype = {
 
   keyDown : function(event) {
     //console.log(event.which + ' '+event.keyCode);
-    if (event.keyCode in this.specialKeyMap) {
+    if (event.keyCode in this.specialKeyMap ||
+        (event.ctrlKey && event.which >= 65 && event.which <= 90)) {
       event.preventDefault();
       this.keyPress(event, true);
     }
@@ -439,8 +440,8 @@ cli.prototype = {
         gConnection.output('\0');
       } else if (event.shiftKey && event.which == 86) { // ctrl-shift-V, we remap this to ctrl-v (lowercase)
         gConnection.output(String.fromCharCode(118 - 96));
-      } else if (event.which >= 97 && event.which <= 122) { // ctrl-[a-z]
-        gConnection.output(String.fromCharCode(event.which - 96));
+      } else if (event.which >= 65 && event.which <= 90) { // ctrl-[A-Z]
+        gConnection.output(String.fromCharCode(event.which - 64));
       } else if (event.which == 27) { // ctrl-?
         gConnection.output('\x7f');
       } else {
