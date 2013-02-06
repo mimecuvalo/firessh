@@ -71,20 +71,12 @@ ssh2Mozilla.prototype = {
       var onCreate = function(socketInfo) {
         self.socketId = socketInfo.socketId;
         self.observer.onDebug("Connected! SocketId: " + self.socketId);
-        self.socket.connect(self.socketId, self.addr, parseInt(self.port), function() {
+        self.socket.connect(self.socketId, self.host, parseInt(self.port), function() {
           self.socket.read(self.socketId, onDataRead);
         });
       };
 
-      this.dns.resolve(this.host, function(result) {
-        if (!result.address) {
-          self.onDisconnect();
-          return;
-        }
-
-        self.addr = result.address;
-        self.socket.create("tcp", null, onCreate);
-      });
+      self.socket.create("tcp", null, onCreate);
 
       var shell_success = function(shell) {
         self.shell = shell;

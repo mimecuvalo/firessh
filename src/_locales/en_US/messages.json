@@ -1,8 +1,7 @@
 {
   "extDescription":   { "message": "SSH Client for Google Chrome" },
-  "opening":          { "message": "<span style=\"color:orange\">designed by </span><span style=\"cursor:pointer;text-decoration:underline;color:orange\" onclick=\"window.open('http://www.nightlight.ws','nightlight');\">Mime &#268;uvalo</span><span style=\"color:orange\"> in </span><span style=\"cursor:pointer;text-decoration:underline;color:orange\" onclick=\"window.open('http://en.wikipedia.org/wiki/Croatia','croatia');\">Croatia</a>" },
+  "opening":          { "message": "<span style=\"color:orange\">designed by </span><a style=\"cursor:pointer;text-decoration:underline;color:orange\" href=\"http://www.nightlight.ws\" target=\"_blank\">Mime &#268;uvalo</a><span style=\"color:orange\"> in </span><a style=\"cursor:pointer;text-decoration:underline;color:orange\" href=\"http://en.wikipedia.org/wiki/Croatia\" target=\"_blank\">Croatia</a>" },
 
-  // Account Manager
   "connectButton":    { "message": "Connect" },
   "cancelButton":     { "message": "Cancel" },
   "dupAccount":       { "message": "Please choose another account name.  This one is already taken." },
@@ -12,22 +11,19 @@
   "delete":           { "message": "Delete" },
   "optional":         { "message": "(optional)" },
 
-  // Error Messages
   "alertFillHost":    { "message": "Please fill in the hostname." },
   "alertFillPort":    { "message": "Please fill in a valid port number." },
   "errorConn":        { "message": "Unable to make a connection.  Please try again." },
   "badImport":        { "message": "Could not import file." },
   "badPassword":      { "message": "Incorrect Password." },
 
-  // SFTP
   "sftpCacheTitle":   { "message": "Add key to cache?" },
   "sftpCache":        { "message": "The server's host key is not cached in the registry.\nYou have no guarantee that the server is the computer you think it is.\n\nThe server's rsa2 key fingerprint is:\n%S\n\nIf you trust this host, press \"Yes\" to add the key to the cache and carry on connecting.\nIf you do not trust this host, press \"Cancel\" to abandon the connection." },
   "extDescription":         { "message": "SSH Client for Google Chrome" },
-  "paramiko":   { "message": "SSH component is ported from <span style=\"cursor:pointer;text-decoration:underline;color:blue\" onclick=\"window.open('http://www.lag.net/paramiko/','Paramiko');\">Paramiko</span> %S, <span style=\"color:orange\">created by </span><span style=\"cursor:pointer;text-decoration:underline;color:orange\" onclick=\"window.open('http://robey.lag.net/','rp');\">Robey Pointer</span>" },
+  "paramiko":   { "message": "SSH component is ported from <a style=\"cursor:pointer;text-decoration:underline;color:blue\" href=\"http://www.lag.net/paramiko/\" target=\"_blank\">Paramiko</a> %S, <span style=\"color:orange\">created by </span><a style=\"cursor:pointer;text-decoration:underline;color:orange\" href=\"http://robey.lag.net/\" target=\"_blank\">Robey Pointer</a>" },
   "privateKey":       { "message": "PuTTY Private Key" },
   "pkNotFound":       { "message": "Private key file not found." },
 
-  // Account Manager
   "accountlist":      { "message": "(Choose an account)" },
   "tools":            { "message": "Tools" },
   "import":           { "message": "Import..." },
@@ -47,6 +43,8 @@
   "hostTip":          { "message": "Example: mysite.com" },
   "login":            { "message": "Login:" },
   "password":         { "message": "Password:" },
+  "identity":         { "message": "Identity:" },
+  "import":           { "message": "Import..." },
   "anonymous":        { "message": "Anonymous" },
   "port":             { "message": "Port:" },
   "privatekey":       { "message": "Private Key:" },
@@ -58,13 +56,10 @@
   "dest":             { "message": "Destination" },
   "notes":            { "message": "Notes" },
 
-  // Password Dialog
   "passwordTitle":    { "message": "Enter Login Information" },
 
-  // Encrypt/Decrypt Dialog
   "encryptTitle":     { "message": "Encrypt/Decrypt File" },
 
-  // Options
   "general":          { "message": "General" },
   "logwindow":        { "message": "Log" },
   "debug":            { "message": "Show debug information" },

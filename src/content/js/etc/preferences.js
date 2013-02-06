@@ -1,6 +1,7 @@
 function readPreferences(init, opt_callback) {
   try {
     chrome.storage.local.get(null, function(storage) {
+      gKeys                    = JSON.parse(storage["keys"] || '{}');
       gLoadUrl                 = storage["loadurl"] || "";
       gDefaultAccount          = storage["defaultaccount"] || "";
       gDebugMode               = parseInt(storage["debugmode"]);

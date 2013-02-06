@@ -48,7 +48,7 @@ function accountChangeHelper(site) {
     gConnection.login      = site.login;
     gConnection.password   = site.password;
     gConnection.security   = site.security;
-    //gConnection.privatekey = site.privatekey;
+    gConnection.privatekey = site.privatekey;
     //gConnection.tunnels    = site.tunnels;
   }
 

@@ -3,11 +3,13 @@ var gSiteManager;
 var gAutoAccount = false;
 var gOrigSite;
 var gAccountField;
+var gKeyField;
 var gCli = null;
 var gConnection = null;
 
 function init() {
   gAccountField = $('toolbar-account');
+  gKeyField = $('identity');
 
   var callback = function() {
     gOrigSite = null;
@@ -26,6 +28,7 @@ function loadSite(site) {
   $('login').value            = gSite.login;
   $('password').value         = gSite.password;
   $('notes').value            = gSite.notes      || "";
+  gKeyField.value             = gSite.privatekey;
 
   gOrigSite = gSite.account ? new cloneObject(site) : null;
 
@@ -83,6 +86,7 @@ function doOk() {
   gSite.password         = $('password').value;
 	gSite.protocol         = 'ssh2';
   gSite.notes            = $('notes').value;
+  gSite.privatekey       = $('identity').value;
 
   if (!gOrigSite) {                             // new site
     gSiteManager.push(gSite);
@@ -186,6 +190,8 @@ function onAccountChangeClick(event) {
 }
 
 function onAccountChange(account) {
+  updateKeyMenu();
+
   if (account != null) {
     if (account == "") {                // new site
       newSite();
@@ -294,6 +300,66 @@ function tab() {
   $(this.id.split('-')[0]).setAttribute('selected');
 }
 
+function showPreferences() {
+  window.setTimeout(function() {
+    var advMenu = $('advanced-menu');
+    advMenu.removeAttribute('open');
+  }, 0);
+
+  var iframe = document.createElement('iframe');
+  iframe.src = '../fancy-settings/source/index.html';
+  iframe.id = 'options-iframe';
+
+  var iframePopup = document.createElement('div');
+  iframePopup.id = 'options-popup';
+  iframePopup.appendChild(iframe);
+  document.body.appendChild(iframePopup);
+
+  var closeButton = document.createElement('a');
+  closeButton.href = '#';
+  closeButton.id = 'options-close-button';
+  closeButton.innerHTML = '×';
+  closeButton.onclick = function() {
+    document.body.removeChild(iframePopup);
+    document.body.removeChild(closeButton);
+    return false;
+  };
+  document.body.appendChild(closeButton);
+}
+
+function importKey() {
+  var reader = new FileReader();
+  var file = $('import').files[0];
+  reader.onload = function(event) {
+    var contents = event.target.result;
+    gKeys[file.name] = contents;
+    chrome.storage.local.set({"keys": JSON.stringify(gKeys)});
+    updateKeyMenu();
+    gKeyField.value = file.name;
+  };
+  reader.readAsText(file);
+}
+
+function updateKeyMenu() {
+  while (gKeyField.firstChild) {
+    gKeyField.removeChild(gKeyField.firstChild);
+  }
+
+  var option = document.createElement('option');
+  option.id = 'default-identity';
+  option.value = '';
+  gKeyField.appendChild(option);
+
+  option.style.borderBottom = '1px solid #ccc';
+
+  for (var keyName in gKeys) {
+    var option = document.createElement('option');
+    option.textContent = keyName;
+    option.value = keyName;
+    gKeyField.appendChild(option);
+  }
+}
+
 document.body.onload = init;
 $('connect').onclick = doOk;
 $('delete').onclick = doDelete;
@@ -304,6 +370,7 @@ $('maintab-lbl').onclick = tab;
 $('advancedtab-lbl').onclick = tab;
 $('host').onkeyup = autoAccount;
 $('password').onkeyup = function() { if (event.keyCode == 13) doOk(); };
+$('import').onchange = importKey;
 $('account').onfocus = autoAccountDisable;
 $('toolbar-account').onfocus = createAccount;
 $('toolbar-account').onchange = onAccountChangeClick;

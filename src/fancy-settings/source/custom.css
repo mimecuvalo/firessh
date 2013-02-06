@@ -2,3 +2,13 @@
 // Add your own style rules here, not in css/main.css
 // or css/setting.css for easy updating reasons.
 */
+
+#content {
+  width: 70%;
+}
+
+#search {
+  width: 150px;
+  right: 30px;
+  left: auto;
+}

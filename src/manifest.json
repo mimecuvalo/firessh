@@ -1,6 +1,6 @@
 {
   "name": "FireSSH",
-  "version": "0.93",
+  "version": "0.93.2",
   "manifest_version": 2,
 
   "description": "SSH Client for Google Chrome",
@@ -15,9 +15,8 @@
     }
   },
 
-  "key": "lokokihjnfadkefphelaocpeljdmpkhc",
   "permissions": [
-    "experimental", { "socket": [ "tcp-connect" ] }, "storage"
+    { "socket": [ "tcp-connect" ] }, "storage"
   ],
   "options_page": "fancy-settings/source/index.html"
 }

@@ -24,7 +24,6 @@ baseProtocol.prototype = {
   errorConnectStr      : "Unable to make a connection.  Please try again.", // set to error msg that you'd like to show for a connection error
 
   // read-only variables
-  dns                  : chrome.experimental.dns,
   socket               : chrome.socket,
   socketId             : null,
   //proxyService         : Components.classes["@mozilla.org/network/protocol-proxy-service;1"].getService  (Components.interfaces.nsIProtocolProxyService),

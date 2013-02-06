@@ -41,7 +41,8 @@ toolbarbutton {
 
 /*----------------[ accountManager.xul ]-----------------*/
 
-#account-manager-popup {
+#account-manager-popup,
+#options-popup {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -50,18 +51,39 @@ toolbarbutton {
   background-color: rgba(0,0,0,0.5);
 }
 
-#account-manager-iframe {
+#account-manager-iframe,
+#options-iframe {
   width: 60%;
-  height: 60%;
+  height: 70%;
   position: absolute;
-  top: 20%;
-  bottom: 20%;
+  top: 15%;
+  bottom: 15%;
   left: 20%;
   right: 20%;
   border: 0;
   box-shadow: 0 0 10px rgba(255,255,255,0.75);
   border-radius: 10px;
   min-height: 390px;
+}
+
+#options-iframe {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+}
+
+#options-close-button {
+  top: 0%;
+  right: 4px;
+  z-index: 2;
+  position: absolute;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 
 #account-manager {

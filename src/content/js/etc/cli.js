@@ -395,15 +395,22 @@ cli.prototype = {
       return;
     }*/
 
+    // cmd-`, switch window
+    if (testAccelKey(event) && event.which == 192 &&
+        (event.shiftKey || getPlatform() == 'mac')) {
+      return;
+    }
+
     event.preventDefault();
     event.stopPropagation();
     this.input.value = '';
 
     var currentSelection = this.contentWindow.getSelection();
     var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
+    var pasteEvent = event.which == 86;
 
     if (testAccelKey(event) && (event.shiftKey || getPlatform() == 'mac' ||
-        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent))) {
+        (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent) || pasteEvent)) {
       if (event.which == 65 || event.which == 97) {     // cmd-a : select all
         var range = this.doc.createRange();
         range.selectNode(this.body);
@@ -415,6 +422,11 @@ cli.prototype = {
         this.copy();
         return;
       }
+
+      if (pasteEvent) {  // cmd-v, paste
+        this.paste();
+        return;
+      }      
     }
 
     var self = this;
@@ -459,6 +471,17 @@ cli.prototype = {
   },
 
   bodyKeyDown : function(event) {
+    var pasteEvent = event.which == 86;
+    // cmd-`, switch window
+    if (testAccelKey(event) && (event.which == 192 || pasteEvent) &&
+        (event.shiftKey || getPlatform() == 'mac')) {
+      if (pasteEvent) {  // cmd-v, paste
+        this.paste();
+        return;
+      }
+      return;
+    }
+
     //console.log('kpbd' + event.which + ' '+event.keyCode);
     var currentSelection = this.contentWindow.getSelection();
     var cutCopyEvent = event.which in { 88: 1, 67: 1, 120: 1, 99: 1 };
@@ -486,12 +509,6 @@ cli.prototype = {
         this.copy();
         return;
       }
-
-      // This causes double-pasting.
-      //if (event.which == 86 || event.which == 118) {  // cmd-v, paste
-      //  this.paste();
-      //  return;
-      //}
     } else {
       this.keyPress(event);
     }
@@ -513,6 +530,9 @@ cli.prototype = {
     setTimeout(function() {
       self.selectionStart = self.contentWindow.getSelection();
       var startSelectionNode = self.selectionStart.anchorNode;
+      if (!startSelectionNode) {
+        return;
+      }
       var startSection = self.hasAncestor(startSelectionNode, self.terminal) ? 'terminal' : 'history';
 
       if (startSection == 'history') {
@@ -797,6 +817,16 @@ cli.prototype = {
     copySource.parentNode.removeChild(copySource);
   },
 
+  paste : function() {
+    var str = '';//this.input.value;
+
+    if (str) {
+      this.input.value = '';
+      this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
+      gConnection.output(unescape(encodeURIComponent(str)));
+    }
+  },
+
   cursorUpdate : function() {
     if (!this.cursor || !this.isFocused || !this.initialScroll) {
       return;
@@ -846,13 +876,13 @@ cli.prototype = {
     /*this.cursor.innerHTML = this.screen[this.curY][x].c;
     this.cursor.style.color = this.screen[this.curY][x].style.color;
     this.cursor.style.backgroundColor = this.defaultColor;*/
-    this.cursor.style.top = (this.curY * this.letterHeight + this.terminal.offsetTop) + 'px';
+    this.cursor.style.top = (this.curY * this.letterHeight + this.terminal.offsetTop - 2) + 'px';
     this.cursor.style.left = (x * this.letterWidth + this.terminal.offsetLeft) + 'px';
 
     this.input.style.color = this.screen[this.curY][x].style.color;
     this.input.style.backgroundColor = this.cursor.style.color;
     this.input.style.top = this.cursor.style.top;
-    this.input.style.left = (x * this.letterWidth + this.terminal.offsetLeft - 2) + 'px';
+    this.input.style.left = (x * this.letterWidth + this.terminal.offsetLeft - 1) + 'px';
   },
 
   transformStyle : function(style) {

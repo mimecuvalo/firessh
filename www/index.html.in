@@ -59,21 +59,26 @@
         <img id="thumbnail" title="FireSSH" alt="seahorse" src="images/header.jpg"/></a>
       </div>
 
-      FireSSH is a <b>free, cross-platform SSH terminal client</b> for Mozilla Firefox.  Written entirely in Javascript!<br/><br/>
+      FireSSH is a <b>free, cross-platform SSH terminal client</b> for Mozilla Firefox and Google Chrome.  Written entirely in Javascript!<br/><br/>
       <div class="info" style="margin-top:25px; width: 270px;">
         <noscript id="download-link">
           <div>
-            <h1><a href="https://addons.mozilla.org/firefox/downloads/latest/firessh"><b>Download FireSSH</b></a></h1>
+            <h1><a id="main-link" href="https://addons.mozilla.org/firefox/downloads/latest/firessh"><b>Download FireSSH</b></a></h1>
             <span class="smaller">__VERSION__, English (200kb)</span><br/>
-            <a class="smaller" href="all.html">Other Languages and Versions</a>
+            <a id="i18n" class="smaller" href="all.html">Other Languages and Versions</a>
           </div>
         </noscript>
         <script type="text/javascript">
           if (navigator.userAgent.indexOf("Firefox") != -1) {
             document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
+          } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+            document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
+            document.getElementById('main-link').href = 'https://chrome.google.com/webstore/detail/firessh/mcognlamjmofcihollilalojnckfiajm';
+            document.getElementById('i18n').style.display = 'none';
           } else {
-            document.writeln("<span class=\"smaller\">You need Firefox to use FireSSH.<\/span><br\/>");
+            document.writeln("<span class=\"smaller\">You need Firefox or Chrome to use FireSSH.<\/span><br\/>");
             document.writeln("<a href=\"http:\/\/www.firefox.com\"><b>Download Firefox<\/b><\/a><br\/>");
+            document.writeln("<a href=\"http:\/\/www.chrome.com\"><b>Download Chrome<\/b><\/a><br\/>");
           }
         </script>
         <div style="clear: left"></div>

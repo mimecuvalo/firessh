@@ -1,7 +1,8 @@
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "0.00001";  // version of FireSSH we're using
+var gVersion  = "0.93.2";  // version of FireSSH we're using
 var gPlatform;                  // holds what platform we're on
 var gSiteManager;               // hold site manager data
+var gKeys;                      // the private keys
 var gAccount;                   // name of the account we're connecting to
 var gFolder;                    // current folder
 var gCli;                       // the cli

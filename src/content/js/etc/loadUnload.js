@@ -15,13 +15,14 @@ function startup() {
     //externalLink();
   });
 
-  var wikipedia = 'http://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher';
-  appendLog("<span id='opening'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://firessh.mozdev.org','FireSSH');\">"
-      + "FireSSH</span> <span>" + gVersion
-      + "  '</span><span style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('" + wikipedia + "','wikipedia');\">"
-      + "Vigenère</span>'"
+  var wikipedia = 'http://en.wikipedia.org/wiki/Tap_code';
+  appendLog("<span id='opening'><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"http://firessh.mozdev.org\" target=\"_blank\">"
+      + "FireSSH</a> <span>" + gVersion
+      + "  '</span><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"" + wikipedia + "\" target=\"_blank\">"
+      + "Tap</a>'"
       + " " + _("opening")
       + "</span><br style='font-size:5pt'/>", 'blue', "info", true);
+
   setTimeout(function() { gCli.body.scrollTop = 0; }, 0);
   
   try {
