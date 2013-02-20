@@ -5,7 +5,7 @@ function ssh2Observer() {
 ssh2Observer.prototype = {
   onDirNotFound : function(buffer) { alert('NOT_IMPLEMENTED'); },
 
-  onSftpCache : function(buffer, new_key) {
+  onSftpCache : function(buffer, new_key, cacheCallback) {
     var key;
 
     if (new_key) {
@@ -24,8 +24,23 @@ ssh2Observer.prototype = {
       key = key[index];
     }
 
-    // TODO(mime): goddammit chrome apps, what the hell.
-    //var response = window.confirm(_('sftpCacheTitle') + '\n\n' + _('sftpCache').replace('%S', key));
-    return 'y';//response ? 'y' : '';
+    var iframe;
+    var iframePopup;
+
+    gCacheKey = key;
+    gCacheCallback = function(answer) {
+      document.body.removeChild(iframePopup);
+      cacheCallback(answer);
+      gCli.input.focus();
+    };
+
+    iframe = document.createElement('iframe');
+    iframe.src = 'cachePrompt.html';
+    iframe.id = 'cache-prompt-iframe';
+
+    iframePopup = document.createElement('div');
+    iframePopup.id = 'cache-prompt-popup';
+    iframePopup.appendChild(iframe);
+    document.body.appendChild(iframePopup);
   }
 }

@@ -6,6 +6,8 @@ var gKeys;                      // the private keys
 var gAccount;                   // name of the account we're connecting to
 var gFolder;                    // current folder
 var gCli;                       // the cli
+var gCacheKey;                  // the cache key we're looking at
+var gCacheCallback;             // the callback to return to after the user decides if the key is good or not
 
 // XXX this is some crap but it'll work for now. see rsakey.js for more details
 var gRsaKeyWorkerJs = 'js/connection/paramikojs/sign_ssh_data_worker.js';

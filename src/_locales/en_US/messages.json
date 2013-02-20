@@ -19,8 +19,11 @@
 
   "sftpCacheTitle":   { "message": "Add key to cache?" },
   "sftpCache":        { "message": "The server's host key is not cached in the registry.\nYou have no guarantee that the server is the computer you think it is.\n\nThe server's rsa2 key fingerprint is:\n%S\n\nIf you trust this host, press \"Yes\" to add the key to the cache and carry on connecting.\nIf you do not trust this host, press \"Cancel\" to abandon the connection." },
-  "extDescription":         { "message": "SSH Client for Google Chrome" },
-  "paramiko":   { "message": "SSH component is ported from <a style=\"cursor:pointer;text-decoration:underline;color:blue\" href=\"http://www.lag.net/paramiko/\" target=\"_blank\">Paramiko</a> %S, <span style=\"color:orange\">created by </span><a style=\"cursor:pointer;text-decoration:underline;color:orange\" href=\"http://robey.lag.net/\" target=\"_blank\">Robey Pointer</a>" },
+  "cancelCache":      { "message": "Cancel" },
+  "dontCache":        { "message": "No" },
+  "yesCache":         { "message": "Yes" },
+  "extDescription":   { "message": "SSH Client for Google Chrome" },
+  "paramiko":         { "message": "SSH component is ported from <a style=\"cursor:pointer;text-decoration:underline;color:blue\" href=\"http://www.lag.net/paramiko/\" target=\"_blank\">Paramiko</a> %S, <span style=\"color:orange\">created by </span><a style=\"cursor:pointer;text-decoration:underline;color:orange\" href=\"http://robey.lag.net/\" target=\"_blank\">Robey Pointer</a>" },
   "privateKey":       { "message": "PuTTY Private Key" },
   "pkNotFound":       { "message": "Private key file not found." },
 
@@ -55,6 +58,8 @@
   "source":           { "message": "Source port" },
   "dest":             { "message": "Destination" },
   "notes":            { "message": "Notes" },
+  "copy":             { "message": "Copy" },
+  "paste":            { "message": "Paste" },
 
   "passwordTitle":    { "message": "Enter Login Information" },
 

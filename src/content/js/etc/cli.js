@@ -604,7 +604,7 @@ cli.prototype = {
       };
 
       var li = this.doc.createElement('LI');
-      li.textContent = 'Copy';
+      li.textContent = _("Copy");
       li.onclick = function(event) {
         if (event) {
           event.preventDefault();
@@ -615,7 +615,7 @@ cli.prototype = {
       ul.appendChild(li);
 
       /*li = this.doc.createElement('LI');
-      li.textContent = 'Paste';
+      li.textContent = _("Paste");
       li.onclick = function(event) {
         event.preventDefault();
         self.paste();

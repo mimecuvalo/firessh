@@ -88,7 +88,7 @@ ssh2Mozilla.prototype = {
       };
 
       this.client = new paramikojs.SSHClient();
-      this.client.set_missing_host_key_policy(new paramikojs.AutoAddPolicy());
+      this.client.set_missing_host_key_policy(new paramikojs.AskPolicy());
       this.client.load_host_keys('known_hosts');
 
       var auth_success = function() {

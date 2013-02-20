@@ -42,7 +42,8 @@ toolbarbutton {
 /*----------------[ accountManager.xul ]-----------------*/
 
 #account-manager-popup,
-#options-popup {
+#options-popup,
+#cache-prompt-popup {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -52,7 +53,8 @@ toolbarbutton {
 }
 
 #account-manager-iframe,
-#options-iframe {
+#options-iframe,
+#cache-prompt-iframe {
   width: 60%;
   height: 70%;
   position: absolute;
@@ -64,6 +66,15 @@ toolbarbutton {
   box-shadow: 0 0 10px rgba(255,255,255,0.75);
   border-radius: 10px;
   min-height: 390px;
+}
+
+#cache-prompt-iframe {
+  width: 80%;
+  height: 50%;
+  bottom: 35%;
+  left: 10%;
+  right: 10%;
+  min-height: 200px;
 }
 
 #options-iframe {
@@ -86,9 +97,28 @@ toolbarbutton {
   color: black;
 }
 
-#account-manager {
+#account-manager,
+#cache-prompt {
   background-color: #ededed;
   font: -webkit-small-control;
+}
+
+#cache-prompt > * {
+  margin: 20px;
+}
+
+#cacheCancel {
+  float: left;
+}
+
+#cacheNo,
+#cacheYes {
+  float: right;
+}
+
+#cacheText {
+  font-family: 'Lucida Grande';
+  font-size: 11px;
 }
 
 #toolbar,
@@ -197,7 +227,8 @@ legend {
 }
 
 table,
-#account-manager input {
+#account-manager input,
+#cache-prompt input {
   width: 100%;
 }
 
