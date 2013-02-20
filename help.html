@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FireSSH - The Free SSH Client for Mozilla Firefox</title>
+    <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png"/>
+
+    <style type="text/css" media="screen">
+      h4 {
+        margin              : 5px 0px;
+        color               : #0066cc;
+        cursor              : pointer;
+      }
+
+      div.stretcher {
+        margin              : 0px 0px 0px 20px;
+        display             : none;
+      }
+
+      ul {
+        margin              : 0px;
+      }
+
+      input {
+        border              : 1px solid #999;
+        font                : 10px verdana, arial, helvetica, sans-serif !important;
+      }
+
+      #search {
+        background-color    : #00ccff;
+      }
+    </style>
+    <script type="text/javascript" src="js/prototype.lite.js"></script>
+    <script type="text/javascript" src="js/moo.fx.js">        </script>
+    <script type="text/javascript" src="js/moo.fx.pack.js">   </script>
+    <script type="text/javascript">
+      var gAccordion;
+      var gFilterTimeout;
+
+      function init() {
+        var stretchers  = document.getElementsByClassName('stretcher');
+        var toggles     = document.getElementsByClassName('display');
+        gAccordion      = new fx.Accordion(toggles, stretchers, {opacity: true, duration: 400});
+      }
+
+      function filter() {
+        var stretchers  = document.getElementsByClassName('stretcher');
+        var toggles     = document.getElementsByClassName('display');
+        var headers     = document.getElementsByClassName('header');
+
+        var query       = document.getElementById('query').value;
+        query           = query.split(/\s+/);
+
+        gAccordion.hideAll();
+
+        for (var x = 0; x < toggles.length; ++x) {
+          var hide = false;
+
+          for (var y = 0; y < query.length; ++y) {
+            if (toggles[x].innerHTML.toLowerCase().indexOf(query[y].toLowerCase()) == -1
+                && stretchers[x].innerHTML.toLowerCase().indexOf(query[y].toLowerCase()) == -1) {
+              hide = true;
+              break;
+            }
+          }
+
+          if (hide && query.length) {
+            toggles[x].style.display = 'none';
+            stretchers[x].style.display = 'none';
+          } else {
+            toggles[x].style.display = 'block';
+            stretchers[x].style.display = 'block';
+          }
+        }
+
+        for (var x = 0; x < headers.length; ++x) {
+          var display        = 'none';
+          var currentSibling = headers[x].nextSibling;
+
+          while (currentSibling) {
+            if (currentSibling.className && currentSibling.className == 'header') {
+              break;
+            }
+
+            if (currentSibling.className && currentSibling.className == 'display' && currentSibling.style.display == 'block') {
+              display = 'block';
+              break;
+            }
+
+            currentSibling = currentSibling.nextSibling;
+          }
+
+          headers[x].style.display = display;
+        }
+
+        var noAnswers = 'block';
+        for (var x = 0; x < headers.length; ++x) {
+          if (headers[x].style.display == 'block') {
+            noAnswers = 'none';
+            break;
+          }
+        }
+
+        document.getElementById('noAnswers').style.display = noAnswers;
+      }
+
+      function filterTimer() {
+        if (gFilterTimeout) {
+          clearTimeout(gFilterTimeout);
+          gFilterTimeout = null;
+        }
+
+        gFilterTimeout = setTimeout(filter, 500);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="nav">
+      <a id="logo" href="http://firessh.mozdev.org"><img alt="logo" title="FireSSH Home" src="images/logo64.png"/></a>
+      <a href="http://firessh.mozdev.org">home</a>
+      <!--<a href="features.html">features</a>
+      <a href="donate.html">donate</a>-->
+      <a href="help.html" class="selected">support</a>
+      <a href="developers.html">developers</a>
+
+      <div id="ad">
+        <div id="ad-inner">
+          <a href="http://www.site5.com/in.php?id=9264">
+            <strong>Unlimited Storage</strong> and <strong>Unlimited Bandwidth</strong>, $4.95/mo!
+          </a>
+        </div>
+        <span>Ads by Meeeeee</span>
+      </div>
+    </div>
+
+    <div id="content">
+
+      <h1>Support</h1>
+
+      <div class="info">
+        <div style="padding-left: 10px;">
+          <b>Search this page:</b>
+        </div>
+        <div style="padding: 10px; text-align: center">
+          <input id="query"  size="25" type="text" value="" oninput="filterTimer()">
+          <input id="search" type="submit" value="Filter" onclick="filter()">
+        </div>
+      </div>
+
+      <div style="padding-left: 25px;">
+        <a href="#installation">Installation</a><br/>
+        <a href="#general">General Usage</a><br/>
+        <a href="#acct">Account Manager</a><br/>
+        <a href="#prefs">Options</a><br/>
+        <a href="#trouble">Troubleshooting</a><br/>
+        <a href="#misc">Miscellaneous Questions</a><br/><br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <h3 id="noAnswers" style="display:none">No answers matched your search.</h3>
+
+      <h3 class="header"><a name="installation">Installation</a></h3>
+
+      <h4 class="display">How do I install FireSSH?</h4>
+      <div class="stretcher">
+        <ul>
+          <li>First of all, you need Firefox to run FireSSH.  It was not created as a standalone program, but as an extension to the Firefox browser.
+          </li>
+          <li>To install FireSSH, go to <a href="http://firessh.mozdev.org">http://firessh.mozdev.org</a> and click on the 'Download FireSSH' link on the main page.</li>
+          <li>You need to let the page finish loading in order to click the Install link (do not click on the Stop button).  Firefox might display a thin yellow bar at the top saying that it has blocked installation&nbsp;&ndash; you will need to click on the button on the far right to add FireSSH to your "white list" of sites that you approve of.</li>
+          <li>Another problem you might experience could be with the download mirrors that the file is being received from.  Sometimes the servers go down, so you might have to click on the Install link a couple times to get a mirror that is working.</li>
+        </ul><br/>
+      </div>
+
+      <h4 class="display">Where do I get translated versions of FireSSH?</h4>
+      <div class="stretcher">
+        Go to <a href="http://firessh.mozdev.org/all.html">http://firessh.mozdev.org/all.html</a>.<br/><br/>
+      </div>
+
+      <h4 class="display">I've downloaded the XPI file.  Can I install it manually?</h4>
+      <div class="stretcher">
+        One of the following should work:
+        <ul>
+          <li>Open the file in Firefox using File-&gt;Open.</li>
+          <li>Drag the file into a Firefox window or tab.</li>
+          <li>Drag the file into the Extension Manager.</li>
+        </ul><br/>
+      </div>
+
+      <h4 class="display">How do I make a link from the desktop to FireSSH?</h4>
+      <div class="stretcher">
+        You can run FireSSH by typing firefox -chrome chrome://firessh/content/<br/>
+        In Windows you can create a new shortcut to Firefox, edit its properties by right-clicking on it and tacking on "-chrome chrome://firessh/content/" (without quotes) to the end of the "Target" field.  So, for a typical Firefox installation the target field would be: "C:\Program Files\Mozilla Firefox\firefox.exe" -chrome chrome://firessh/content/<br/><br/>
+      </div>
+
+      <h4 class="display">How do I uninstall FireSSH?</h4>
+      <div class="stretcher">
+        To uninstall go to Tools-&gt;Addons, select FireSSH and then click Uninstall.<br/><br/>
+      </div>
+
+      <h3 class="header"><a name="general">General Usage</a></h3>
+
+      <h4 class="display">What is SSH?</h4>
+      <div class="stretcher">
+        SSH stands for Secure SHell.  It is a way of accessing a remote computer in a secure fashion.  Read more <a href="http://en.wikipedia.org/wiki/Secure_Shell">here</a>.<br/><br/>
+      </div>
+
+      <h4 class="display">How do I start FireSSH?</h4>
+      <div class="stretcher">
+        Go to your menu bar and click Tools-&gt;Web Developer-&gt;FireSSH. Alternatively, you can use the toolbar button.  To add the toolbar button, right click on the Firefox toolbar and select "Customize...".  Then find the FireSSH button and drag it to the toolbar somewhere.<br/><br/>
+        Make sure you have successfully restarted Firefox after installation; otherwise FireSSH will not be fully installed.<br/><br/>
+      </div>
+
+      <h4 class="display">How do I connect to an SSH server?</h4>
+      <div class="stretcher">
+        Perform the following:
+        <ul>
+          <li>Go to the "Host" field and enter in the name of the server you wish to connect to.</li>
+          <li>After that's done, if you wish to logon anonymously, check the Anonymous box. However, most times you will need to enter your login and password as well so enter those in the appropriate fields.</li>
+          <li>Browser your computer and enter in a Private Key if one is needed for your server.  The password you put in above this field should be the password to decrypt your private key.</li>
+          <li>Finally, click the "Connect" button to make the connection to your site.</li>
+        </ul><br/>
+      </div>
+
+      <h4 class="display">How do I Copy &amp; Paste?</h4>
+      <div class="stretcher">
+        To copy, do Ctrl-<strong>Shift</strong>-C (Command-<strong>Shift</strong>-C on a Mac).<br>To paste, do Ctrl-<strong>Shift</strong>-V (Command-<strong>Shift</strong>-V on a Mac).<br/><br/>
+      </div>
+
+      <h3 class="header"><a name="acct">Account Manager</a></h3>
+
+      <h4 class="display">What is Category?</h4>
+      <div class="stretcher">
+        Some users have many, many servers and this helps them organize the servers into categories.  So, for example, you can create categories like "Work", "Home", etc. to divide and conquer your list of accounts.<br/><br/>
+      </div>
+
+      <h4 class="display">What is a Private Key?</h4>
+      <div class="stretcher">
+        Some servers require a <a href="http://en.wikipedia.org/wiki/Private_key">private key</a> to access them.  So in this field point to where the private key is stored on your computer.  These files are usually stored ~/.ssh/id_dsa or ~/.ssh/id_rsa.  Here are some tips on <a href="http://help.github.com/key-setup-redirect">generating SSH keys</a>.  FireSSH also understands PuTTY files (usually having a .ppk extension).
+
+        For l33t users: you can add the private key to the url by doing ssh://username:password@hostname:port/#pkey=<urlencoded-file-path-to-private-key><br>
+        For example: ssh://blah@yomama.com/#pkey=%2FUsers%2Fmama%2F.ssh%2Fid_rsa<br>
+        %2F == '/'<br>
+        %5C == '\'
+        <br/><br/>
+      </div>
+
+      <h4 class="display">What are Tunnels?</h4>
+      <div class="stretcher">
+        Tunnels are connections you can make that bind a port on your local machine to a port on the ssh server (on the command line you would be using the -L command - this is not 'remote forwarding').  An example would be Source Port: 8080 and in the Destination field: localhost:80  This would take traffic from port 8080 on your machine and send it to port 80 on your SSH server.  Read more <a href="http://www.engadget.com/2006/03/21/how-to-ssh-tunnels-for-secure-network-access/">here</a> to get a better picture.<br/><br/>
+      </div>
+
+      <h4 class="display">What is Notes?</h4>
+      <div class="stretcher">
+        Here you can jog down some mental notes on the particular server for your future reference.<br/><br/>
+      </div>
+
+      <h3 class="header"><a name="prefs">Options</a></h3>
+
+      <h4 class="display">What is "Remember passwords"?</h4>
+      <div class="stretcher">
+        It's just what it says, really - if you uncheck this box, passwords won't be saved.  You can also leave the password field blank in the account manager and FireSSH will ask you for the password when connecting (if any).<br/><br/>
+      </div>
+
+      <h4 class="display">What is "Start FireFTP in a new window/tab"?</h4>
+      <div class="stretcher">
+        It's just what it says, really - you can have FireFTP open in a tab or a new window.  The choice is yours and is a matter of, uh, preference.<br/><br/>
+      </div>
+
+      <h4 class="display">What is "Show debug information"?</h4>
+      <div class="stretcher">
+        You can have the log show some extra information that would be useful to me, as a programmer in debugging FireSSH.  If you think you've found a bug in FireSSH, be sure to check this box so that I can assess the problem more easily.<br/><br/>
+      </div>
+
+      <h4 class="display">What is "Proxy"?</h4>
+      <div class="stretcher">
+        Most people will not have to deal with setting this but if you are using a proxy you can configure it here.  FireSSH does not use the Firefox proxy settings because of the multiple ways one can connect to an SSH server through Proxy (HTTP, SOCKS, etc.)  You can read more about proxies here: <a href="http://en.wikipedia.org/wiki/Proxy_server">http://en.wikipedia.org/wiki/Proxy_server</a><br/><br/>
+      </div>
+
+      <h4 class="display">What is "Network timeout"?</h4>
+      <div class="stretcher">
+        When FireSSH sends a command for a server to do something and the server doesn't respond, FireSSH will wait this many seconds before try reconnecting to the server and trying again.<br/><br/>
+      </div>
+
+      <h4 class="display">What is "Keep connection alive while idle"?</h4>
+      <div class="stretcher">
+        When this is enabled, FireSSH will send 'noop' commands to the server to keep the connection alive (in case the server boots clients after awhile).<br/><br/>
+      </div>
+
+      <h4 class="display">What is "If disconnect, try to reconnect/Retry Delay/Retry Attempts"?</h4>
+      <div class="stretcher">
+        If something happens to your SSH connection, FireSSH will try to get it back for you.  It will wait the amount of seconds in "Retry Delay" before trying again and it will try the number of times that is in "Retry Attempts" before giving up.<br/><br/>
+      </div>
+
+      <h3 class="header"><a name="adv">Tools</a></h3>
+
+      <h4 class="display">What does Import/Export do?</h4>
+      <div class="stretcher">
+        You can use Export to export your current list of SSH sites, let's say, from your work computer and then Import them to a different computer, e.g. your home computer.  Passwords are stored using encryption (although encrypted, it is best to dispose of the exported file once you're done with it).  Importing is smart about not copying duplicate accounts into your current list of SSH sites.  It will merge your current list with the list you are importing.<br/><br/>
+      </div>
+
+      <h3 class="header"><a name="trouble">Troubleshooting</a></h3>
+
+      <h4 class="display">I'm having a hard time connecting!</h4>
+      <div class="stretcher">
+        <ul>
+          <li>Do you have the latest versions of FireSSH and Firefox? The latest version can be found here: <a href="http://firessh.mozdev.org">http://firessh.mozdev.org</a></li>
+          <li>Make sure your username and password are typed in correctly.  Passwords are usually cAsE-sEnSiTiVe!</a></li>
+          <li>
+            Are you behind a firewall?  Try turning it off temporarily to see if it is the source of your problem.  If so, you might have to configure your software to allow FireSSH to access the Internet.<br/>
+          </li>
+          <li>Do you use a proxy? Try setting the proxy under Tools-&gt;Options-&gt;Connections.</li>
+          <li>Have you been able to connect with other SSH clients?  Please check to see if the problem is reproducible with other SSH clients.</li>
+          <li>Have you tried connecting to other servers?  Please check to see if the problem is only specific to a certain server.</li>
+          <li>Have you tried using another computer?  If possible, try another computer to see if the problem is the same.</li>
+        </ul><br/>
+      </div>
+
+      <h4 class="display">I'm using a proxy and it's not working!</h4>
+      <div class="stretcher">
+        Support for proxies is limited still.  Hopefully, support for proxies will improve in future versions.<br/><br/>
+      </div>
+
+      <h4 class="display">I'm at my rope's end!  FireSSH just doesn't seem to work for me because of a bug or another issue.</h4>
+      <div class="stretcher">
+        While I am continually trying to improve the program, I realize that there are limits to what my program can do.  Hopefully, I'll be able to resolve your particular issue in future versions.<br/><br/>
+      </div>
+
+      <h3 class="header"><a name="misc">Miscellaneous Questions</a></h3>
+
+      <h4 class="display">How do I view my saved passwords?</h4>
+      <div class="stretcher">
+        Passwords are saved along with your other Firefox passwords.  Go to Tools-&gt;Options... or (Edit-&gt;Preferences... under Linux/OS X) and from there go to Security-&gt;Show Passwords-&gt;Show Passwords.  For Firefox 1.0-1.5 users it is Privacy-&gt;Passwords-&gt;View Saved Passwords-&gt;Show Passwords.<br/><br/>
+      </div>
+
+      <h4 class="display">How do I make FireSSH more accessible?</h4>
+      <div class="stretcher">
+        To make FireSSH more accessible (enable easy keyboard shortcuts and better tabbing), you will need to setup FireSSH to open in a new window instead of a new tab.  To do this go to Firefox-&gt;Tools-&gt;Add-ons-&gt;,  find the FireSSH entry and select Options.  Under Options, go to the Interface tab and select Start FireSSH 'in a new window'.  If you find that FireSSH is lacking in accessibility, please let me know and I will try to address the issue.<br/><br/>
+      </div>
+
+      <h4 class="display">Do you have older versions of FireSSH available?  I need it for Firefox 1.0+</h4>
+      <div class="stretcher">
+        You can get those <a href="http://mozdev.oregonstate.edu/firessh/">here</a>.  However, I strongly recommend you upgrade Firefox and FireSSH to their latest versions.  There are many bug fixes and security fixes that come along with newer versions that help protect you during your internet experience.  If you are using a public terminal, you should suggest to the owner that s/he upgrade.<br/><br/>
+      </div>
+
+      <h4 class="display">How do I view and manually edit the config files?</h4>
+      <div class="stretcher">
+        The config files are found in your Firefox profile folder.  More info on finding that folder here: <a href="http://www.mozilla.org/support/firefox/profile">http://www.mozilla.org/support/firefox/profile</a>.  fireSSHsites.dat contains your account settings (but not your passwords - those are saved in a different place along with your other Firefox passwords - see the above question for where to find that).<br/><br/>
+      </div>
+
+      <h4 class="display">I would like to translate FireSSH into my language.</h4>
+      <div class="stretcher">
+        Sweet.  Visit <a href="http://www.babelzilla.org/">http://www.babelzilla.org/</a> for more info.<br/><br/>
+      </div>
+
+      <h4 class="display">Can I have permission to include FireSSH in my magazine/software bundle/freeware CD?</h4>
+      <div class="stretcher">
+        Yes, go for it.  Licenses, credits, and source/binary code must remained unmodified and included with package.  (In FireSSH's case the 'binary' code is the source code).<br/><br/>
+      </div>
+
+      <h4 class="display">How does the SSH stuff work?</h4>
+      <div class="stretcher">
+        It uses a <a href="http://www.mozdev.org/source/browse/fireftp/src/content/js/connection/paramikojs/">javascript port</a> of the <a href="http://www.lag.net/paramiko/">paramiko library</a>.  I &lt;3 javascript :)
+      </div>
+
+      <h4 class="display">Can I use FireSSH on a webpage?</h4>
+      <div class="stretcher">
+        It's not possible at this time.  The web at large currently doesn't allow javascript the same amount of permissions like addons have.  The main issue is basically making socket connections.  No, websockets don't cut it :-/
+      </div>
+
+      <h4 class="display">What's the story behind FireSSH?</h4>
+      <div class="stretcher">
+        FireSSH is the sister project of the <a href="http://fireftp.mozdev.org/">FireFTP project</a> which also uses the basic underlying code.<br/><br/>
+      </div>
+
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+
+    <script type="text/javascript">
+      init();
+      filter();
+    </script>
+
+    <div id="footer">
+      a <a href="http://www.nightlight.ws/">nightlight</a> production<br/>
+      hosted by <a href="http://www.mozdev.org">mozdev.org</a>
+      <a href="http://www.mozdev.org/copyright.html">&copy;</a> 2010-2011 FireSSH :
+      <a href="http://www.mozdev.org/community/terms.html">Terms of Use</a><br/>
+      <em>If you're havin' IE problems, I feel bad for you, son - I got 99 problems but a browser ain't one.</em>  - DJ Danger Mime
+    </div>
+
+  </body>
+</html>
