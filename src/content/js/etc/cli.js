@@ -331,6 +331,7 @@ cli.prototype = {
     opacity : '',
     textDecoration : '',
     visibility : '',
+    webkitFontSmoothing: '',
     width : '',
   },
 
@@ -361,6 +362,7 @@ cli.prototype = {
     opacity : 'opacity',
     textDecoration : 'text-decoration',
     visibility : 'visibility',
+    webkitFontSmoothing: '-webkit-font-smoothing',
     width : 'width'
   },
 
@@ -2132,6 +2134,7 @@ cli.prototype = {
           case 1:
             this.curRendition.fontWeight = 'bold';
             this.curRendition.letterSpacing = '-1.7px';
+            this.curRendition.webkitFontSmoothing = 'antialiased';
             break;
           case 2:
             this.curRendition.opacity = '.5';
