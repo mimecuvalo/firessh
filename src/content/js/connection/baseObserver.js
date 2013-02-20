@@ -15,7 +15,7 @@ baseObserver.prototype = {
   },
 
   onLoginDenied : function() {
-    //connect(false, true);
+    makePopup();
   },
 
   onDisconnected : function(attemptingReconnect) {
