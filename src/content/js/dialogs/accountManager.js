@@ -35,8 +35,6 @@ function loadSite(site) {
   if (!$('account').value) {
     gAutoAccount = true;
   }
-
-  $('password').focus();
 }
 
 function autoAccount() {
