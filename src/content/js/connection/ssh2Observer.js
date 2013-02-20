@@ -5,7 +5,7 @@ function ssh2Observer() {
 ssh2Observer.prototype = {
   onDirNotFound : function(buffer) { alert('NOT_IMPLEMENTED'); },
 
-  onSftpCache : function(buffer, new_key) {
+  onSftpCache : function(buffer, new_key, cacheCallback) {
     var key;
 
     if (new_key) {
@@ -30,6 +30,6 @@ ssh2Observer.prototype = {
     var response = gPromptService.confirmEx(window, gStrbundle.getString("sftpCacheTitle"),
                                                     gStrbundle.getFormattedString("sftpCache", [key]), flags,
                                                     null, null, null, null, {});
-    return response == 0 ? 'y' : (response == 2 ? 'n' : '');
+    cacheCallback(response == 0 ? 'y' : (response == 2 ? 'n' : ''));
   }
 }
