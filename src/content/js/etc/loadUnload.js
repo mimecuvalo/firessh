@@ -16,7 +16,7 @@ function startup() {
   });
 
   var wikipedia = 'http://en.wikipedia.org/wiki/Tap_code';
-  appendLog("<span id='opening'><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"http://firessh.mozdev.org\" target=\"_blank\">"
+  appendLog("<span id='opening'><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"http://firessh.net\" target=\"_blank\">"
       + "FireSSH</a> <span>" + gVersion
       + "  '</span><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"" + wikipedia + "\" target=\"_blank\">"
       + "Tap</a>'"
