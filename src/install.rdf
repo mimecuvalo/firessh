@@ -6,7 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:creator>Mime &#268;uvalo</em:creator>
     <em:description>SSH Client for Mozilla Firefox.</em:description>
-    <em:homepageURL>http://firessh.mozdev.org</em:homepageURL>
+    <em:homepageURL>http://firessh.net</em:homepageURL>
     <em:name>FireSSH</em:name>
     <em:version>0.93.1</em:version>
     <em:id>firessh@nightlight.ws</em:id>

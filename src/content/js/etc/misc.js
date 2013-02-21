@@ -39,7 +39,7 @@ function runInFirefox(path) {
 function tipJar() {
   if (!gDonated) {
     gPrefs.setBoolPref("donated", true);
-    runInFirefox("http://firessh.mozdev.org/donate.html");
+    runInFirefox("http://firessh.net/donate.html");
   }
 }
 

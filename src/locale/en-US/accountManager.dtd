@@ -11,7 +11,7 @@
 <!ENTITY prefbutton.access    "O">
 
 <!ENTITY help.label           "Help">
-<!ENTITY help.url             "http://firessh.mozdev.org/help.html">
+<!ENTITY help.url             "http://firessh.net/help.html">
 
 <!ENTITY advanced.access      "T">
 <!ENTITY helpbutton.access    "H">

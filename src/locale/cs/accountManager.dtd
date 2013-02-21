@@ -8,7 +8,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "M">
 <!ENTITY help.label "Nápověda">
-<!ENTITY help.url "http://firessh.mozdev.org/help.html">
+<!ENTITY help.url "http://firessh.net/help.html">
 <!ENTITY advanced.access "R">
 <!ENTITY helpbutton.access "v">
 <!ENTITY main "Hlavní">

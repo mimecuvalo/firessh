@@ -37,7 +37,7 @@
       <menuseparator/>
       <menuitem oncommand="showPreferences()"                   label="&preferencestab.label;"      accesskey="&prefbutton.access;" id="prefbutton"/>
       <menuseparator/>
-      <menuitem oncommand="runInFirefox('http://firessh.mozdev.org/help.html')"                   label="&help.label;"      accesskey="&helpbutton.access;" id="helpbutton"/>
+      <menuitem oncommand="runInFirefox('http://firessh.net/help.html')"                   label="&help.label;"      accesskey="&helpbutton.access;" id="helpbutton"/>
     </menupopup>
   </popupset>
 

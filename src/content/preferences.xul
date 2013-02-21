@@ -206,7 +206,7 @@
             <label value="Mime &#268;uvalo"          onclick="runInFirefox('http://www.nightlight.ws')"  class="textLink"/>
           </hbox>
           <box pack="center">
-            <label value="http://firessh.mozdev.org" onclick="runInFirefox('http://firessh.mozdev.org')" class="textLink"/>
+            <label value="http://firessh.net" onclick="runInFirefox('http://firessh.net')" class="textLink"/>
           </box>
           <label class="paddingTop boldText" value="&thanks.label;"/>
           <listbox rows="10">
