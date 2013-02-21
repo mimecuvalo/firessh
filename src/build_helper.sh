@@ -99,30 +99,4 @@ then
 	exit
 fi
 
-if [ $FIRESSH_LANG = "en-US" ]
-then
-	FIRESSH_MD5=`md5 -q ../downloads/firessh.xpi`
-
-	sed -e s#http:\/\/downloads.mozdev.org\/firessh\/firessh___l10n__.xpi#https:\/\/addons.mozilla.org\/firefox\/downloads\/latest\/684#g \
-			-e s/__VERSION__/$FIRESSH_VER/g \
-			-e s/__MINVERSION__/$FIRESSH_MIN/g \
-			-e s/__MAXVERSION__/$FIRESSH_MAX/g \
-			-e s/__MD5__/$FIRESSH_MD5/g \
-			../www/update.rdf.in > ../www/update.rdf
-
-	sed -e s/__VERSION__/$FIRESSH_VER/g \
-			../www/index.html.in > ../www/index.html
-else
-	FIRESSH_MD5=`md5 -q ../downloads/firessh_$FIRESSH_LANG.xpi`
-
-	sed -e s/__l10n__/$FIRESSH_LANG/g \
-			-e s/__VERSION__/$FIRESSH_VER/g \
-			-e s/__MINVERSION__/$FIRESSH_MIN/g \
-			-e s/__MAXVERSION__/$FIRESSH_MAX/g \
-			-e s/__MD5__/$FIRESSH_MD5/g \
-			../www/update.rdf.in > ../www/update_$FIRESSH_LANG.rdf
-
-	# See https://bugzilla.mozilla.org/show_bug.cgi?id=396525#c8
-	# See mccoy_cmdline_xuluwarrior.patch in http://www.mozdev.org/source/browse/firessh/src/ written by Adrian Williams
-	/Applications/McCoy.app/Contents/MacOS/mccoy -command update -updateRDF /Users/Mime/Sites/firessh/firessh/www/update_$FIRESSH_LANG.rdf -key firessh
-fi
+sed -e s/__VERSION__/$FIRESSH_VER/g ../../../website-firessh/index.html.in > ../../../website-firessh/index.html
