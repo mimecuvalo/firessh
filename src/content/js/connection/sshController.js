@@ -54,6 +54,10 @@ function connect(noAccountChange, showPassDialog) {
   }
 
   var debugSite = new cloneObject(gConnection);
+  debugSite.account = "";
+  debugSite.host = "";
+  debugSite.login = "";
+  debugSite.port = "";
   debugSite.password = "";
   debugSite.observer = "";
   for (var property in gConnection) {
