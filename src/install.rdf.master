@@ -78,7 +78,5 @@
     </em:targetApplication>
     <em:optionsURL>chrome://firessh/content/preferences.xul</em:optionsURL>
     <em:iconURL>chrome://firessh/skin/icons/logo32.png</em:iconURL>
-    <em:updateURL>http://firessh.mozdev.org/update___l10n__.rdf</em:updateURL>
-    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtKvkP6FE2PP+PWfd47itofGcn91sd1WvVleyTILL9LRE09y/MpzjLX75bkievEqbmEmI8T5TJ50jmNN8nRGltBkSIviPI03l/ufXoCqhdDE/1sdzmaCrh77fZ21BxYIY2H/MINdRvSMTh/7LFyg4m1ICKbj1IvgNsLvly4EHzewIDAQAB</em:updateKey>
   </Description>
 </RDF>
