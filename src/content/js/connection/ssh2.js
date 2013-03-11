@@ -34,6 +34,10 @@ ssh2Mozilla.prototype = {
 
       var onDataRead = function(readInfo) {
         try {
+          if (readInfo.resultCode < 0) {
+            throw "Disconnected!";
+          }
+
           var data = readInfo.data;
           if (!data) {
             return;
