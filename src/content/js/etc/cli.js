@@ -492,7 +492,10 @@ cli.prototype = {
         (currentSelection.rangeCount && !currentSelection.isCollapsed && cutCopyEvent))) {
       event.preventDefault();
       this.bodyKeyPress(event);
+      return;
     }
+
+    this.keyDown(event);
   },
 
   bodyKeyPress : function(event) {
