@@ -78,4 +78,4 @@ function unload() {
 
 document.body.onload = startup;
 document.body.onunload = unload;
-document.body.onresize = function() { if (gCli) gCli.onResize() };
+window.onresize = function() { if (gCli) gCli.onResize() };
