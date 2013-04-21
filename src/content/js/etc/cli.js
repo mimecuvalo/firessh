@@ -2251,7 +2251,12 @@ cli.prototype = {
   __OnEscSeqDECSTBM : function(params) {
     if (params != null) {
       var region = params.split(';');
-      this.scrollingRegion = [parseInt(region[0]), parseInt(region[1])];
+      var scrollingRegion = [parseInt(region[0]), parseInt(region[1])];
+      if (region[0] != 1 || region[1] != this.rows) {
+        this.scrollingRegion = scrollingRegion;
+      } else {
+        this.scrollingRegion = null;
+      }
     }
   },
 
