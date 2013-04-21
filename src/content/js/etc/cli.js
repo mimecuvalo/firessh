@@ -338,13 +338,15 @@ cli.prototype = {
   nonAsciiStyle : {
     noStyle : false,
     display : 'inline-block',
-    width : ''
+    width : '',
+    lineHeight: ''
   },
 
   nonAsciiWideStyle : {
     noStyle : false,
     display : 'inline-block',
-    width : ''
+    width : '',
+    lineHeight: ''
   },
 
   hideStyle : {
@@ -359,6 +361,7 @@ cli.prototype = {
     fontStyle : 'font-style',
     fontWeight : 'font-weight',
     letterSpacing : 'letter-spacing',
+    lineHeight: 'line-height',
     opacity : 'opacity',
     textDecoration : 'text-decoration',
     visibility : 'visibility',
@@ -371,7 +374,9 @@ cli.prototype = {
     this.letterHeight    = this.cursor.getBoundingClientRect().height - borderOffset;
     this.letterWidth     = this.cursor.getBoundingClientRect().width - borderOffset;
     this.nonAsciiStyle.width = this.letterWidth + 'px';
+    this.nonAsciiStyle.lineHeight = this.letterHeight + 'px';
     this.nonAsciiWideStyle.width = (this.letterWidth * 2) + 'px';
+    this.nonAsciiWideStyle.lineHeight = this.letterHeight + 'px';
 
     var styleElement = this.doc.createElement('style');
     styleElement.setAttribute('type', 'text/css');
@@ -1515,6 +1520,7 @@ cli.prototype = {
     if (nonAscii) {
       var curRenditionNonAscii = new cloneObject(this.curRendition);
       curRenditionNonAscii.display = 'inline-block';
+      curRenditionNonAscii.lineHeight = this.letterHeight + 'px';
       curRenditionNonAscii.width = (this.letterWidth * (wideChar ? 2 : 1)) + 'px';
       this.screen[this.curY][this.curX].style =
           this.curRendition.noStyle ? (wideChar ? this.nonAsciiWideStyle : this.nonAsciiStyle) : curRenditionNonAscii;
@@ -1570,6 +1576,58 @@ cli.prototype = {
   },
 
   /*
+    Parses operating system command from the input and returns the index after escape
+    sequence, the escape sequence character and parameter for the escape
+    sequence
+  */
+  __ParseOSCSeq : function(text, index) {
+    var textlen = text.length;
+    var interChars = null;
+
+    while (index < textlen) {
+      var ch = text[index];
+      var ascii = ch.charCodeAt(0);
+
+      if (ascii == this.__ASCII_BEL || (index + 1 < textlen &&
+          ascii == this.__ASCII_ESC && text[index + 1] == '\\')) {
+        index += 1;
+        if (ascii != this.__ASCII_BEL) {
+          index += 1;
+        }
+        return [index, '-', interChars];
+      } else {
+        if (!interChars) {
+          interChars = ch;
+        } else {
+          interChars += ch;
+        }
+      }
+
+      index += 1;
+    }
+
+    // the escape sequence is not complete, inform this to caller by giving
+    // '?' as final char
+    return [index, '?', interChars];
+  },
+
+  /*
+    Handles an operating system command, either changing the title or changing
+    the color palette.
+  */
+  __HandleOSC : function(text) {
+    var type = text[0];
+    var str = text.substring(2);
+    if (type == '0' || type == '1' || type == '2') {
+      this.__OnEscSeqTitle(str);
+    } else if (type == '4') {
+      this.__OnEscSeqColorSet(str);
+    } else {
+      debug('Unhandled type for ] escape: ' + type);
+    }
+  },
+
+  /*
     Tries to parse escape sequence from input and if its not complete then
     puts it in unparsedInput and process it when the ProcessInput called
     next time.
@@ -1577,9 +1635,11 @@ cli.prototype = {
   __HandleEscSeq : function(text, index) {
   
     //console.log('esc '+JSON.stringify(text.substring(index,index+7)));
-    if (text[index] == '[') {
+    if (text[index] == '[' || text[index] == ']') {
+      var initialChar = text[index];
       index += 1;
-      var result = this.__ParseEscSeq(text, index);
+      var result = initialChar == '[' ? this.__ParseEscSeq(text, index) :
+          this.__ParseOSCSeq(text, index);
       index = result[0];
       var finalChar = result[1];
       var interChars = result[2];
@@ -1589,8 +1649,10 @@ cli.prototype = {
         if (interChars) {
           this.unparsedInput += interChars;
         }
-      } else if (this.escSeqHandlers[finalChar]) {
+      } else if (initialChar == '[' && this.escSeqHandlers[finalChar]) {
         this.escSeqHandlers[finalChar](interChars);
+      } else if (initialChar == ']') {
+        this.__HandleOSC(interChars);
       } else {
         var escSeq = "";
         if (interChars) {
@@ -1602,28 +1664,7 @@ cli.prototype = {
         //if (this.callbacks[this.CALLBACK_UNHANDLED_ESC_SEQ]) {
         //  this.callbacks[this.CALLBACK_UNHANDLED_ESC_SEQ](escSeq);
         //}
-        debug('Unhandled [ escape: ' + JSON.stringify(escSeq));
-      }
-    } else if (text[index] == ']') {
-      var textlen = text.length;
-      debug('title sequence: ' + JSON.stringify(text));
-
-      if (index + 2 < textlen) {
-        if (text[index + 1] == '0' && text[index + 2] == ';') {
-          // parse title, terminated by bell char(\007)
-          index += 3; // ignore '0' and ';'
-          var start = index;
-          while (index < textlen) {
-            if (text[index].charCodeAt(0) == this.__ASCII_BEL) {
-              break;
-            }
-
-            index += 1;
-          }
-
-          this.__OnEscSeqTitle(text.substring(start, index));
-          index += 1;
-        }
+        debug('Unhandled ' + initialChar + ' escape: ' + JSON.stringify(escSeq));
       }
     } else if (text[index] == 'D') {  // index IND, scroll up, same as SU
       index += 1;
@@ -2109,7 +2150,59 @@ cli.prototype = {
     //this.updateScreen(true);
   },
 
-  colors : ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'],
+  xtermColors : [
+    '#000000', '#800000', '#008000', '#808000', '#000080',
+    '#800080', '#008080', '#c0c0c0', '#808080', '#ff0000',
+    '#00ff00', '#ffff00', '#0000ff', '#ff00ff', '#00ffff',
+    '#ffffff', '#000000', '#00005f', '#000087', '#0000af',
+    '#0000df', '#0000ff', '#005f00', '#005f5f', '#005f87',
+    '#005faf', '#005fdf', '#005fff', '#008700', '#00875f',
+    '#008787', '#0087af', '#0087df', '#0087ff', '#00af00',
+    '#00af5f', '#00af87', '#00afaf', '#00afdf', '#00afff',
+    '#00df00', '#00df5f', '#00df87', '#00dfaf', '#00dfdf',
+    '#00dfff', '#00ff00', '#00ff5f', '#00ff87', '#00ffaf',
+    '#00ffdf', '#00ffff', '#5f0000', '#5f005f', '#5f0087',
+    '#5f00af', '#5f00df', '#5f00ff', '#5f5f00', '#5f5f5f',
+    '#5f5f87', '#5f5faf', '#5f5fdf', '#5f5fff', '#5f8700',
+    '#5f875f', '#5f8787', '#5f87af', '#5f87df', '#5f87ff',
+    '#5faf00', '#5faf5f', '#5faf87', '#5fafaf', '#5fafdf',
+    '#5fafff', '#5fdf00', '#5fdf5f', '#5fdf87', '#5fdfaf',
+    '#5fdfdf', '#5fdfff', '#5fff00', '#5fff5f', '#5fff87',
+    '#5fffaf', '#5fffdf', '#5fffff', '#870000', '#87005f',
+    '#870087', '#8700af', '#8700df', '#8700ff', '#875f00',
+    '#875f5f', '#875f87', '#875faf', '#875fdf', '#875fff',
+    '#878700', '#87875f', '#878787', '#8787af', '#8787df',
+    '#8787ff', '#87af00', '#87af5f', '#87af87', '#87afaf',
+    '#87afdf', '#87afff', '#87df00', '#87df5f', '#87df87',
+    '#87dfaf', '#87dfdf', '#87dfff', '#87ff00', '#87ff5f',
+    '#87ff87', '#87ffaf', '#87ffdf', '#87ffff', '#af0000',
+    '#af005f', '#af0087', '#af00af', '#af00df', '#af00ff',
+    '#af5f00', '#af5f5f', '#af5f87', '#af5faf', '#af5fdf',
+    '#af5fff', '#af8700', '#af875f', '#af8787', '#af87af',
+    '#af87df', '#af87ff', '#afaf00', '#afaf5f', '#afaf87',
+    '#afafaf', '#afafdf', '#afafff', '#afdf00', '#afdf5f',
+    '#afdf87', '#afdfaf', '#afdfdf', '#afdfff', '#afff00',
+    '#afff5f', '#afff87', '#afffaf', '#afffdf', '#afffff',
+    '#df0000', '#df005f', '#df0087', '#df00af', '#df00df',
+    '#df00ff', '#df5f00', '#df5f5f', '#df5f87', '#df5faf',
+    '#df5fdf', '#df5fff', '#df8700', '#df875f', '#df8787',
+    '#df87af', '#df87df', '#df87ff', '#dfaf00', '#dfaf5f',
+    '#dfaf87', '#dfafaf', '#dfafdf', '#dfafff', '#dfdf00',
+    '#dfdf5f', '#dfdf87', '#dfdfaf', '#dfdfdf', '#dfdfff',
+    '#dfff00', '#dfff5f', '#dfff87', '#dfffaf', '#dfffdf',
+    '#dfffff', '#ff0000', '#ff005f', '#ff0087', '#ff00af',
+    '#ff00df', '#ff00ff', '#ff5f00', '#ff5f5f', '#ff5f87',
+    '#ff5faf', '#ff5fdf', '#ff5fff', '#ff8700', '#ff875f',
+    '#ff8787', '#ff87af', '#ff87df', '#ff87ff', '#ffaf00',
+    '#ffaf5f', '#ffaf87', '#ffafaf', '#ffafdf', '#ffafff',
+    '#ffdf00', '#ffdf5f', '#ffdf87', '#ffdfaf', '#ffdfdf',
+    '#ffdfff', '#ffff00', '#ffff5f', '#ffff87', '#ffffaf',
+    '#ffffdf', '#ffffff', '#080808', '#121212', '#1c1c1c',
+    '#262626', '#303030', '#3a3a3a', '#444444', '#4e4e4e',
+    '#585858', '#606060', '#666666', '#767676', '#808080',
+    '#8a8a8a', '#949494', '#9e9e9e', '#a8a8a8', '#b2b2b2',
+    '#bcbcbc', '#c6c6c6', '#d0d0d0', '#dadada', '#e4e4e4',
+    '#eeeeee' ],
 
   /*
     Handler for escape sequence SGR
@@ -2199,11 +2292,32 @@ cli.prototype = {
           case 36:
           case 37:
             if (this.negativeColors) {
-              this.curRendition.backgroundColor = this.colors[irendition - 30];
+              this.curRendition.backgroundColor = this.xtermColors[irendition - 22];
             } else {
-              this.curRendition.color = this.colors[irendition - 30];
+              this.curRendition.color = this.xtermColors[irendition - 22];
             }
             break;
+          case 38:
+          case 48:
+            if (renditions.length < 3) {
+              return;
+            }
+            var color;
+            var isRgb = parseInt(renditions[1]) == 2;
+            if (isRgb) {
+              color = 'rgb(' +
+                  parseInt(renditions[2]) + ',' +
+                  parseInt(renditions[3]) + ',' +
+                  parseInt(renditions[4]) + ')';
+            } else {
+              color = this.xtermColors[parseInt(renditions[2])];
+            }
+            if (irendition == 38) {
+              this.curRendition.color = color;
+            } else {
+              this.curRendition.backgroundColor = color;
+            }
+            return;
           case 39:
             if (this.negativeColors) {
               this.curRendition.backgroundColor = '';
@@ -2220,9 +2334,9 @@ cli.prototype = {
           case 46:
           case 47:
             if (this.negativeColors) {
-              this.curRendition.color = this.colors[irendition - 40];
+              this.curRendition.color = this.xtermColors[irendition - 32];
             } else {
-              this.curRendition.backgroundColor = this.colors[irendition - 40];
+              this.curRendition.backgroundColor = this.xtermColors[irendition - 32];
             }
             break;
           case 49:
@@ -2243,6 +2357,22 @@ cli.prototype = {
     }
 
     //print "Current attribute", self.curAttrib
+  },
+
+  /*
+    Handler for OSC setting color
+  */
+  __OnEscSeqColorSet : function(str) {
+    str = str.split(';');
+    var colorToSet = parseInt(str[0]);
+    var parsedColor = str[1];
+    // String can be of the form: rgb:00/00/00
+    parsedColor = parsedColor.replace('rgb:', '');
+    parsedColor = parsedColor.replace(/\//g, '');
+    if (parsedColor.indexOf('#') != 0) {
+      parsedColor = '#' + parsedColor;
+    }
+    this.xtermColors[colorToSet] = parsedColor;
   },
 
   /*
