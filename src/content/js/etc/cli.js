@@ -2270,9 +2270,10 @@ cli.prototype = {
             this.curRendition.textDecoration = 'none';
             break;
           case 27:
+            var wasNegative = this.negativeColors == true;
             this.negativeColors = false;
-            var tempColor = this.curRendition.color ? this.curRendition.color : this.defaultBGColor;
-            this.curRendition.color = this.curRendition.backgroundColor ? this.curRendition.backgroundColor : this.defaultColor;
+            var tempColor = this.curRendition.color && wasNegative ? this.curRendition.color : this.defaultBGColor;
+            this.curRendition.color = this.curRendition.backgroundColor && wasNegative ? this.curRendition.backgroundColor : this.defaultColor;
             this.curRendition.backgroundColor = tempColor;
             break;
           case 28:

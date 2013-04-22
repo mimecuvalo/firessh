@@ -49,7 +49,7 @@ function detailedError(msg, url, linenumber) {
 }
 
 function debug(ex, level, trusted) {
-  if (gDebugMode) {
-    appendLog("\n" + (level ? level : "Debug") + ": " + (ex.stack ? (ex.message + '\n' + ex.stack) : (ex.message ? ex.message : ex)) + "\n", 'debug', "debug", trusted);
+  if (gDebugMode && window['console'] && window.console.log) {
+    console.log("\n" + (level ? level : "Debug") + ": " + (ex.stack ? (ex.message + '\n' + ex.stack) : (ex.message ? ex.message : ex)) + "\n");
   }
 }
