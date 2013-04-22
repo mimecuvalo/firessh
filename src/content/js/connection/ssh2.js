@@ -121,7 +121,7 @@ ssh2Mozilla.prototype = {
       this.client.load_host_keys(host_keys);
 
       var auth_success = function() {
-        self.client.invoke_shell('xterm', self.width, self.height, shell_success);
+        self.client.invoke_shell('xterm-256color', self.width, self.height, shell_success);
       };
 
       var write = function(out) {
