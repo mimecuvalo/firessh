@@ -40,7 +40,6 @@ var cli = function(contentWindow) {
   this.historyOuter  = doc.getElementById('history-outer');
   this.terminal      = doc.getElementById('terminal');
   this.cursor        = doc.getElementById('cursor');
-  this.testChar      = doc.getElementById('test');
   this.input         = doc.getElementById('input');
 
   this.captureFontSize();
@@ -1358,8 +1357,7 @@ cli.prototype = {
               }
             }
 
-            this.testChar.textContent = ch;
-            this.__PushChar(ch, this.testChar.getBoundingClientRect().width > this.letterWidth, true);
+            this.__PushChar(ch, wcwidth(ch) > 1, true);
             break;
           }
         } else {

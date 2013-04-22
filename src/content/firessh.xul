@@ -75,6 +75,7 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/win_pageant.js"/>
 
   <script type="application/x-javascript" src="chrome://firessh/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/etc/wcwidth.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/etc/cli.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/etc/loadUnload.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/etc/localFile.js"/>
