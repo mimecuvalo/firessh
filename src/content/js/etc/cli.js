@@ -2171,8 +2171,8 @@ cli.prototype = {
   },
 
   xtermColors : [
-    '#000000', '#800000', '#008000', '#808000', '#000080',
-    '#800080', '#008080', '#c0c0c0', '#808080', '#ff0000',
+    '#000000', '#c23621', '#25bc24', '#cc7920', '#492ee1',
+    '#d338d3', '#33bbc8', '#c0c0c0', '#808080', '#ff0000',
     '#00ff00', '#ffff00', '#0000ff', '#ff00ff', '#00ffff',
     '#ffffff', '#000000', '#00005f', '#000087', '#0000af',
     '#0000df', '#0000ff', '#005f00', '#005f5f', '#005f87',
@@ -2312,9 +2312,9 @@ cli.prototype = {
           case 36:
           case 37:
             if (this.negativeColors) {
-              this.curRendition.backgroundColor = this.xtermColors[irendition - 22];
+              this.curRendition.backgroundColor = this.xtermColors[irendition - 30];
             } else {
-              this.curRendition.color = this.xtermColors[irendition - 22];
+              this.curRendition.color = this.xtermColors[irendition - 30];
             }
             break;
           case 38:
@@ -2354,9 +2354,9 @@ cli.prototype = {
           case 46:
           case 47:
             if (this.negativeColors) {
-              this.curRendition.color = this.xtermColors[irendition - 32];
+              this.curRendition.color = this.xtermColors[irendition - 40];
             } else {
-              this.curRendition.backgroundColor = this.xtermColors[irendition - 32];
+              this.curRendition.backgroundColor = this.xtermColors[irendition - 40];
             }
             break;
           case 49:
@@ -2364,6 +2364,34 @@ cli.prototype = {
               this.curRendition.color = '';
             } else {
               this.curRendition.backgroundColor = '';
+            }
+            break;
+          case 90:
+          case 91:
+          case 92:
+          case 93:
+          case 94:
+          case 95:
+          case 96:
+          case 97:
+            if (this.negativeColors) {
+              this.curRendition.backgroundColor = this.xtermColors[irendition - 82];
+            } else {
+              this.curRendition.color = this.xtermColors[irendition - 82];
+            }
+            break;
+          case 100:
+          case 101:
+          case 102:
+          case 103:
+          case 104:
+          case 105:
+          case 106:
+          case 107:
+            if (this.negativeColors) {
+              this.curRendition.color = this.xtermColors[irendition - 92];
+            } else {
+              this.curRendition.backgroundColor = this.xtermColors[irendition - 92];
             }
             break;
           default:
