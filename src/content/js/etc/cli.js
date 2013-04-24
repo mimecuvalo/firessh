@@ -50,6 +50,7 @@ var cli = function(contentWindow) {
   this.input.addEventListener('keyup', this.keyUp.bind(this), false);
   this.body.addEventListener('mousedown', this.mousedown.bind(this), false);
   //this.body.addEventListener('click', this.inputFocus.bind(this), false);
+  this.body.addEventListener('mouseup', this.maybeCopy.bind(this), false);
   this.body.addEventListener('keypress', this.bodyKeyPress.bind(this), false);
   this.doc.addEventListener('focus', this.onFocus.bind(this), false);
   this.doc.addEventListener('blur', this.onBlur.bind(this), false);
@@ -660,6 +661,31 @@ cli.prototype = {
     }
 
     return offset;
+  },
+
+  maybeCopy : function(event) {
+    var currentSelection = this.contentWindow.getSelection();
+    if (!currentSelection.rangeCount || event.button != 0) {
+      return;
+    }
+
+    this.copy();
+
+    var existingPopup = document.querySelector('#selection-copied');
+    if (existingPopup) {
+      existingPopup.parentNode.removeChild(existingPopup);
+    }
+
+    var self = this;
+    window.setTimeout(function() {
+      var msgPopup = document.createElement('div');
+      msgPopup.id = 'selection-copied';
+      msgPopup.textContent = gStrbundle.getString("copied");
+      self.body.appendChild(msgPopup);
+      window.setTimeout(function() {
+        msgPopup.parentNode.removeChild(msgPopup);
+      }, 750);
+    }, 250);
   },
 
   copy : function(event) {
