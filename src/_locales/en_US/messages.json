@@ -59,6 +59,7 @@
   "dest":             { "message": "Destination" },
   "notes":            { "message": "Notes" },
   "copy":             { "message": "Copy" },
+  "copied":           { "message": "Selection copied" },
   "paste":            { "message": "Paste" },
 
   "passwordTitle":    { "message": "Enter Login Information" },
