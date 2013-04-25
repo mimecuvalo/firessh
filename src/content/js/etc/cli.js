@@ -483,6 +483,7 @@ cli.prototype = {
     if (testAccelKey(event) && (event.which == 192 || pasteEvent) &&
         (event.shiftKey || getPlatform() == 'mac')) {
       if (pasteEvent) {  // cmd-v, paste
+        this.input.focus();
         this.paste();
         return;
       }
@@ -689,7 +690,8 @@ cli.prototype = {
 
   maybeCopy : function(event) {
     var currentSelection = this.contentWindow.getSelection();
-    if (!currentSelection.rangeCount || event.button != 0) {
+    if (!currentSelection.rangeCount || currentSelection.isCollapsed ||
+        event.button != 0) {
       return;
     }
 
