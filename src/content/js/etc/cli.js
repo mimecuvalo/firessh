@@ -665,7 +665,8 @@ cli.prototype = {
 
   maybeCopy : function(event) {
     var currentSelection = this.contentWindow.getSelection();
-    if (!currentSelection.rangeCount || event.button != 0) {
+    if (!currentSelection.rangeCount || currentSelection.isCollapsed ||
+        event.button != 0) {
       return;
     }
 
