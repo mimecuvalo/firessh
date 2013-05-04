@@ -15,11 +15,11 @@ function startup() {
     //externalLink();
   });
 
-  var wikipedia = 'http://en.wikipedia.org/wiki/Tap_code';
+  var wikipedia = 'http://en.wikipedia.org/wiki/Playfair_cipher';
   appendLog("<span id='opening'><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"http://firessh.net\" target=\"_blank\">"
       + "FireSSH</a> <span>" + gVersion
       + "  '</span><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"" + wikipedia + "\" target=\"_blank\">"
-      + "Tap</a>'"
+      + "Playfair</a>'"
       + " " + _("opening")
       + "</span><br style='font-size:5pt'/>", 'blue', "info", true);
 
