@@ -697,7 +697,7 @@ cli.prototype = {
     var copytext = "";
 
     var currentSelection = this.contentWindow.getSelection();
-    if (!currentSelection.rangeCount) {
+    if (!currentSelection.rangeCount || currentSelection.isCollapsed) {
       return;
     }
     var startSelectionNode = this.selectionStart ? this.selectionStart.anchorNode : null;
