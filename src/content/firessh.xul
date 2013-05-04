@@ -27,24 +27,23 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/ssh2.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/ssh2Observer.js"/>
 
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/crypto.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/AES.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/Blowfish.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/DES3.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/ARC4.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/baseHash.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/SHA.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/SHA256.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/MD5.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Hash/HMAC.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/PublicKey/RSA.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/PublicKey/DSA.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/_UserFriendlyRNG.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/SHAd256.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaAccumulator.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaGenerator.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/OSRNG/nt.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Random/OSRNG/posix.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/kryptos.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Cipher/AES.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Cipher/Blowfish.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Cipher/DES3.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Cipher/ARC4.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/baseHash.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/SHA.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/SHA256.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/MD5.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/HMAC.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/PublicKey/RSA.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/PublicKey/DSA.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Random/_UserFriendlyRNG.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Random/Fortuna/SHAd256.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Random/Fortuna/FortunaAccumulator.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Random/Fortuna/FortunaGenerator.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Random/OSRNG/browser.js"/>
 
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/common.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/python_shim.js"/>

@@ -503,7 +503,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
             }
 
             key = key ? key : "";
-            var cipher = cipherType == "arc4" ? new crypto.cipher.ARC4(key) : new crypto.cipher.Blowfish(key, 2, "");
+            var cipher = cipherType == "arc4" ? new kryptos.cipher.ARC4(key) : new kryptos.cipher.Blowfish(key, 2, "");
             if (cipher.decrypt(tempSiteManager[x].password).replace(/\0/g, '') != "check123") {
               alert(gStrbundle.getString("badPassword"));
               return;
@@ -556,7 +556,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
           }
 
           if (passCheck) {
-            var cipher = cipherType == "arc4" ? new crypto.cipher.ARC4(key) : new crypto.cipher.Blowfish(key, 2, "");
+            var cipher = cipherType == "arc4" ? new kryptos.cipher.ARC4(key) : new kryptos.cipher.Blowfish(key, 2, "");
             tempSiteManager[x].password = cipher.decrypt(tempSiteManager[x].password).replace(/\0/g, '');
 
             try {
@@ -666,7 +666,7 @@ function saveSiteManager(exportFile) {
           alert(ex);
         }
 
-        var cipher = new crypto.cipher.Blowfish(key, 2, "");
+        var cipher = new kryptos.cipher.Blowfish(key, 2, "");
         tempSiteManagerArray[x].password = cipher.encrypt(tempSiteManagerArray[x].password);
       } else {
         tempSiteManagerArray[x].password = "";

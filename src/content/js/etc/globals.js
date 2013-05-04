@@ -1,5 +1,5 @@
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "0.93.4";  // version of FireSSH we're using
+var gVersion  = "0.94";  // version of FireSSH we're using
 var gPlatform;                  // holds what platform we're on
 var gSiteManager;               // hold site manager data
 var gAccount;                   // name of the account we're connecting to
@@ -8,9 +8,6 @@ var gCli;                       // the cli
 
 // XXX this is some crap but it'll work for now. see rsakey.js for more details
 var gRsaKeyWorkerJs = 'chrome://firessh/content/js/connection/paramikojs/sign_ssh_data_worker.js';
-
-// Override Firefox's default Crypto class
-function crypto() {}
 
 var gDefaultAccount;            // from prefs: select the opened account
 var gDebugMode;                 // from prefs: show debug msgs in log or not

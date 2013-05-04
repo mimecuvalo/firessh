@@ -26,9 +26,9 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/etc/localFile.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/dialogs/accountManager.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/etc/sessionsPasswords.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/crypto.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/Blowfish.js"/>
-  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/crypto/Cipher/ARC4.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/kryptos.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Cipher/Blowfish.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Cipher/ARC4.js"/>
 
   <popupset>
     <menupopup id="advancedpopup"       position="start_before">

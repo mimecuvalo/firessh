@@ -833,7 +833,9 @@ cli.prototype = {
     var clip = Components.classes["@mozilla.org/widget/clipboard;1"].getService(clipid);
     if (!clip) return false;
 
-    clip.setData(trans, null, clipid.kGlobalClipboard);    
+    clip.setData(trans, null, clipid.kGlobalClipboard);
+
+    currentSelection.collapseToEnd();
   },
 
   paste : function(event) {
