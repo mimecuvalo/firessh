@@ -1,13 +1,13 @@
 {
   "name": "FireSSH",
-  "version": "0.94",
+  "version": "0.94.1",
   "manifest_version": 2,
 
   "description": "SSH Client for Google Chrome",
   "icons": { "16": "skin/logo.png",
              "48": "skin/logo48.png",
              "128": "skin/logo128.png" },
-  "default_locale": "en_US",
+  "default_locale": "en",
 
   "app": {
     "background": {
