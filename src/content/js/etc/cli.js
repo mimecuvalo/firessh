@@ -1670,7 +1670,7 @@ cli.prototype = {
       var interChars = result[2];
 
       if (finalChar == '?') {
-        this.unparsedInput = "\033[";
+        this.unparsedInput = "\033" + initialChar;
         if (interChars) {
           this.unparsedInput += interChars;
         }
