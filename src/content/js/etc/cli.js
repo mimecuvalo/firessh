@@ -383,7 +383,7 @@ cli.prototype = {
   },
 
   keyDown : function(event) {
-    event.preventDefault();
+  //  event.preventDefault();
   },
 
   keyPress : function(event) {

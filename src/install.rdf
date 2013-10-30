@@ -8,7 +8,7 @@
     <em:description>SSH Client for Mozilla Firefox.</em:description>
     <em:homepageURL>http://firessh.net</em:homepageURL>
     <em:name>FireSSH</em:name>
-    <em:version>0.94.2</em:version>
+    <em:version>0.94.3</em:version>
     <em:id>firessh@nightlight.ws</em:id>
     <em:file>
       <Description about="urn:mozilla:extension:file:firessh.jar">
@@ -72,8 +72,8 @@
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>21.0</em:minVersion>
-        <em:maxVersion>22.*</em:maxVersion>
+        <em:minVersion>25.0</em:minVersion>
+        <em:maxVersion>26.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     <em:optionsURL>chrome://firessh/content/preferences.xul</em:optionsURL>
