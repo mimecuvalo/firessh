@@ -17,6 +17,5 @@
 
   "permissions": [
     { "socket": [ "tcp-connect" ] }, "storage"
-  ],
-  "options_page": "fancy-settings/source/index.html"
+  ]
 }
