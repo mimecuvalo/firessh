@@ -916,7 +916,7 @@ cli.prototype = {
     this.cursor.style.top = (this.curY * this.letterHeight + this.terminal.offsetTop - 2) + 'px';
     this.cursor.style.left = (x * this.letterWidth + this.terminal.offsetLeft) + 'px';
 
-    this.input.style.color = this.screen[this.curY][x].style.color;
+//    this.input.style.color = this.screen[this.curY][x].style.color;
     this.input.style.backgroundColor = this.cursor.style.color;
     this.input.style.top = this.cursor.style.top;
     this.input.style.left = (x * this.letterWidth + this.terminal.offsetLeft - 1) + 'px';
@@ -2529,6 +2529,7 @@ cli.prototype = {
     this.body.style.fontSize = this.fontSize + "px";
     this.body.style.backgroundColor = this.defaultBGColor;
     this.body.style.color = this.defaultColor;
+    this.input.style.color = this.defaultColor;
 
     this.captureFontSize();
 
