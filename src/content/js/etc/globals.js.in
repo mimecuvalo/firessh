@@ -22,7 +22,6 @@ var gProfileDir;                // services
 var gAtomService;
 var gLoginManager;
 var gLoginInfo;
-var gFormHistory;
 var gIos;
 var gPromptService;
 var gPrefsService;
