@@ -1,9 +1,9 @@
-<!ENTITY title "Gestor de Conta">
+ï»¿<!ENTITY title "Gestor de Conta">
 <!ENTITY accountlist.label "(Escolha uma conta)">
 <!ENTITY advanced.label "Ferramentas">
 <!ENTITY import.label "Importar...">
 <!ENTITY export.label "Exportar...">
-<!ENTITY preferencestab.label "Opções...">
+<!ENTITY preferencestab.label "OpÃ§Ãµes...">
 <!ENTITY import.access "I">
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "O">
@@ -16,18 +16,18 @@
 <!ENTITY maindetails "Detalhes Principais">
 <!ENTITY id "ID">
 <!ENTITY account.label "Nome da Conta:">
-<!ENTITY account.tip "Exemplo: Meu Sítio FTP">
+<!ENTITY account.tip "Exemplo: Meu SÃ­tio FTP">
 <!ENTITY folder.label "Categoria:">
 <!ENTITY optional.label "(Opcional)">
 <!ENTITY host.label "Servidor:">
 <!ENTITY host.tip "Exemplo: ftp.debian.org">
-<!ENTITY login.label "Inicio de sessão:">
+<!ENTITY login.label "Inicio de sessÃ£o:">
 <!ENTITY password.label "Senha:">
-<!ENTITY anonymous.label "Anónimo">
+<!ENTITY anonymous.label "AnÃ³nimo">
 <!ENTITY port.label "Porta:">
 <!ENTITY privatekey.label "Chave privada:">
 <!ENTITY pkbrowse.label "Navegar...">
-<!ENTITY tunnels.label "TÃºneis">
+<!ENTITY tunnels.label "TÃƒÂºneis">
 <!ENTITY add.label "Adicionar">
 <!ENTITY remove.label "Remover">
 <!ENTITY source.label "Porta de origem">
