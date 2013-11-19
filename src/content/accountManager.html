@@ -23,7 +23,7 @@
         </ul>
       </div>
       <!--<select id="toolbar-folder" width="175"></select>-->
-      <select id="toolbar-account" width="175">
+      <select id="toolbar-account" width="175" tabindex="1">
         <option id="default-account" value=""></option>
       </select>
     </nav>
@@ -40,14 +40,14 @@
               <table>
                 <tr>
                   <td><label i18n="accountLabel" control="account"></label></td>
-                  <td><input id="account" type="text" class="required"/></td>
+                  <td><input id="account" type="text" class="required" tabindex="2"/></td>
                   <!--<td><label i18n="folder" control="folder"></label><select id="folder" i18n="optional"></select></td>-->
                 </tr>
                 <tr>
                   <td><label i18n="hostLabel" control="host"></label></td>
-                  <td><input id="host" type="text" class="required" tabindex="1"/></td>
+                  <td><input id="host" type="text" class="required" tabindex="3"/></td>
                   <td><label id="portlbl" i18n="port" control="port"></label>
-                  <input id="port" size="5" type="number" min="0" max="65535" step="1"/></td>
+                  <input id="port" size="5" type="number" min="0" max="65535" step="1" tabindex="4"/></td>
                 </tr>
               </table>
             </fieldset>
@@ -57,19 +57,19 @@
               <table>
                 <tr>
                   <td><label i18n="login" control="login"></label></td>
-                  <td><input id="login" type="text" tabindex="2"/></td>
+                  <td><input id="login" type="text" tabindex="5"/></td>
                 </tr>
                 <tr>
                   <td><label i18n="password" control="password"></label></td>
-                  <td><input id="password" type="password" tabindex="3"/></td>
+                  <td><input id="password" type="password" tabindex="6"/></td>
                 </tr>
                 <tr>
                   <td><label i18n="identity" control="identity"></label></td>
                   <td>
-                    <select id="identity" width="175">
+                    <select id="identity" width="175" tabindex="7">
                       <option id="default-identity" value=""></option>
                     </select>
-                    <input id="import" i18n="import" type="file">
+                    <input id="import" i18n="import" type="file" tabindex="8">
                   </td>
                 </tr>
               </table>
@@ -89,7 +89,7 @@
     </div>
 
     <button id="delete" i18n="delete"></button>
-    <button id="connect" i18n="connectButton" tabindex="4"></button>
+    <button id="connect" i18n="connectButton" tabindex="9"></button>
     <!--<button id="cancel" i18n="cancelButton"></button>-->
 
     <script src="js/etc/i18n.js"></script>
