@@ -2252,7 +2252,7 @@ cli.prototype = {
             break;
           case 1:
             this.curRendition.fontWeight = 'bold';
-            this.curRendition.letterSpacing = '-0.7px';
+            this.curRendition.letterSpacing = '-0.5px';
             break;
           case 2:
             this.curRendition.opacity = '.5';
