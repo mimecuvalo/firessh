@@ -104,7 +104,7 @@ this.manifest = {
             "group": "FireSSH",
             "name": "none",
             "type": "description",
-            "text": '<label id="version">0.94.2    </label>' +
+            "text": '<label id="version">0.94.4    </label>' +
               '<a href="http://www.nightlight.ws" style="margin-right: 10px; color:#03c; text-decoration:underline">Mime &#268;uvalo</label>' +
               '<a href="http://firessh.net" style="margin-right: 10px; color:#03c; text-decoration:underline">http://firessh.net</label>'
         },
