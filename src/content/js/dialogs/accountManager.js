@@ -274,7 +274,7 @@ function compareAccount(a, b) {
 
 function openMenu() {
   var advMenu = $('advanced-menu');
-  advMenu.setAttribute('open');
+  advMenu.setAttribute('open', 'open');
   document.body.onclick = function(event) {
     var el = event.target;
     while (el) {
@@ -294,8 +294,8 @@ function tab() {
   $('maintab').removeAttribute('selected');
   $('advancedtab').removeAttribute('selected');
 
-  this.setAttribute('selected');
-  $(this.id.split('-')[0]).setAttribute('selected');
+  this.setAttribute('selected', 'selected');
+  $(this.id.split('-')[0]).setAttribute('selected', 'selected');
 }
 
 function showPreferences() {
