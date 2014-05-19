@@ -1724,10 +1724,10 @@ cli.prototype = {
     }
 
     if (this.belAudio) {
-      vca.gain.value = 0.25;
+      vca.gain.value = 0.1;
       setTimeout(function() { vca.gain.value = 0; }, 33);
     } else {
-      var context = new AudioContext();
+      var context = new webkitAudioContext();
 
       var vco = context.createOscillator();
       vco.type = vco.SINE;
@@ -1741,7 +1741,7 @@ cli.prototype = {
       vca.connect(context.destination);
 
       vca.gain.value = 0.1;
-      setTimeout(function() { vca.gain.value = 0; }, 33);
+      setTimeout(function() { vca.gain.value = 0; }, 1000);
 
       this.belAudio = vca;
     }
