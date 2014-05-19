@@ -1724,7 +1724,7 @@ cli.prototype = {
     }
 
     if (this.belAudio) {
-      vca.gain.value = 0.25;
+      vca.gain.value = 0.1;
       setTimeout(function() { vca.gain.value = 0; }, 33);
     } else {
       var context = new AudioContext();
