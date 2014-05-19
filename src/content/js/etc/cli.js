@@ -1717,28 +1717,34 @@ cli.prototype = {
     Handler for bell character
   */
   belAudio : null,
-  audioCtx : new webkitAudioContext(),
   enableBell : true,
   __OnCharBel : function(text, index) {
     if (!this.enableBell) {
       return index + 1;
     }
 
-    if (!this.belAudio) {
-      var buffer = new ArrayBuffer(4096);
-      var samples = new Float32Array(buffer); // data
+    if (this.belAudio) {
+      vca.gain.value = 0.25;
+      setTimeout(function() { vca.gain.value = 0; }, 33);
+    } else {
+      var context = new AudioContext();
 
-      for (var i = 0; i < samples.length ; i++) {
-        samples[i] = Math.sin( 2 * Math.PI * 4000 * i / 44100 ) * 0.025;   // 4000 = frequency, 44100 = sampling rate, 0.025 = amplitude
-      }
-      this.belAudio = samples
+      var vco = context.createOscillator();
+      vco.type = vco.SINE;
+      vco.frequency.value = 4000;
+      vco.start(0);
+
+      vca = context.createGain();
+      vca.gain.value = 0;
+
+      vco.connect(vca);
+      vca.connect(context.destination);
+
+      vca.gain.value = 0.1;
+      setTimeout(function() { vca.gain.value = 0; }, 33);
+
+      this.belAudio = vca;
     }
-
-    var src = this.audioCtx.createBufferSource();
-    src.buffer = this.audioCtx.createBuffer(1 /*channels*/, 4096, 44100);
-    src.buffer.getChannelData(0).set(this.belAudio)
-    src.connect(this.audioCtx.destination);
-    src.noteOn(0);
 
     return index + 1;
   },
@@ -2254,7 +2260,9 @@ cli.prototype = {
             break;
           case 1:
             this.curRendition.fontWeight = 'bold';
-            this.curRendition.letterSpacing = '-1.7px';
+            if (getPlatform() == 'mac') {
+              this.curRendition.letterSpacing = '-1px';
+            }
             this.curRendition.webkitFontSmoothing = 'antialiased';
             break;
           case 2:
