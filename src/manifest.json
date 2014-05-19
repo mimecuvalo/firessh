@@ -1,6 +1,6 @@
 {
   "name": "FireSSH",
-  "version": "0.94.4",
+  "version": "0.94.5",
   "manifest_version": 2,
 
   "description": "SSH Client for Google Chrome",
