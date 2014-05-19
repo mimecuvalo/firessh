@@ -1723,19 +1723,27 @@ cli.prototype = {
       return index + 1;
     }
 
-    var output = new Audio();
-    output.mozSetup(1, 44100);  // channels, rate
     if (this.belAudio) {
-      output.mozWriteAudio(this.belAudio);
+      vca.gain.value = 0.25;
+      setTimeout(function() { vca.gain.value = 0; }, 33);
     } else {
-      var samples = new Float32Array(sys.platform == 'win32' ? 8192 : 512); // data
-      var len = samples.length;
+      var context = new AudioContext();
 
-      for (var i = 0; i < samples.length ; i++) {
-        samples[i] = Math.sin( 2 * Math.PI * 4000 * i / 44100 ) * 0.025;   // 4000 = frequency, 44100 = sampling rate, 0.025 = amplitude
-      }
-      output.mozWriteAudio(samples);
-      this.belAudio = samples;
+      var vco = context.createOscillator();
+      vco.type = vco.SINE;
+      vco.frequency.value = 4000;
+      vco.start(0);
+
+      vca = context.createGain();
+      vca.gain.value = 0;
+
+      vco.connect(vca);
+      vca.connect(context.destination);
+
+      vca.gain.value = 0.1;
+      setTimeout(function() { vca.gain.value = 0; }, 33);
+
+      this.belAudio = vca;
     }
 
     return index + 1;
@@ -2252,7 +2260,9 @@ cli.prototype = {
             break;
           case 1:
             this.curRendition.fontWeight = 'bold';
-            this.curRendition.letterSpacing = '-0.5px';
+            if (getPlatform() == 'mac') {
+              this.curRendition.letterSpacing = '-0.5px';
+            }
             break;
           case 2:
             this.curRendition.opacity = '.5';
