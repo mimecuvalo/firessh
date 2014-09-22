@@ -25,7 +25,6 @@ baseProtocol.prototype = {
   // read-only variables
   transportService     : Components.classes["@mozilla.org/network/socket-transport-service;1"].getService(Components.interfaces.nsISocketTransportService),
   proxyService         : Components.classes["@mozilla.org/network/protocol-proxy-service;1"].getService  (Components.interfaces.nsIProtocolProxyService),
-  cacheService         : Components.classes["@mozilla.org/network/cache-service;1"].getService           (Components.interfaces.nsICacheService),
   toUTF8               : Components.classes["@mozilla.org/intl/utf8converterservice;1"].getService       (Components.interfaces.nsIUTF8ConverterService),
   fromUTF8             : Components.classes["@mozilla.org/intl/scriptableunicodeconverter"].getService   (Components.interfaces.nsIScriptableUnicodeConverter),
   isAttemptingConnect  : false,
