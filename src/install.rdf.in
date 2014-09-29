@@ -10,13 +10,8 @@
     <em:name>FireSSH</em:name>
     <em:version>__VERSION__</em:version>
     <em:id>firessh@nightlight.ws</em:id>
-    <em:file>
-      <Description about="urn:mozilla:extension:file:firessh.jar">
-        <em:package>content/</em:package>
-        <em:locale>locale/__l10n__/</em:locale>
-        <em:skin>skin/</em:skin>
-      </Description>
-    </em:file>
+    <em:unpack>true</em:unpack>
+    <em:type>2</em:type>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
