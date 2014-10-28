@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>FireSSH - The Free SSH Client for Mozilla Firefox</title>
-    <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script>
       function commas(num) {
         num = num.toString();
@@ -34,7 +34,7 @@
       var count   = 8020000 + (curDate - preDate) * rate;
     </script>
 
-    <script type="text/javascript">
+    <script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-360163-6']);
       _gaq.push(['_trackPageview']);
@@ -49,7 +49,7 @@
 
   <body>
     <div id="nav">
-      <a id="logo" href="http://firessh.net"><img alt="logo" title="FireSSH Home" src="images/logo64.png"/></a>
+      <a id="logo" href="http://firessh.net"><img alt="logo" title="FireSSH Home" src="images/logo64.png" width="64" height="64"></a>
       <a href="http://firessh.net">home</a>
       <!--<a href="features.html">features</a>
       <a href="donate.html">donate</a>-->
@@ -68,7 +68,7 @@
 
     <div id="content" class="index">
       <div id="sidebar">
-        <img id="thumbnail" title="FireSSH" alt="seahorse" src="images/header.jpg"/></a>
+        <img id="thumbnail" title="FireSSH" alt="seahorse" src="images/header.jpg" width="422" height="317"></a>
       </div>
 
       FireSSH is a <b>free, cross-platform SSH terminal client</b> for Mozilla Firefox and Google Chrome.  Written entirely in Javascript!<br/><br/>
@@ -78,7 +78,7 @@
             <h1><a id="main-link" href="https://addons.mozilla.org/firefox/downloads/latest/firessh"><b>Download FireSSH</b></a></h1>
           </div>
         </noscript>
-        <script type="text/javascript">
+        <script>
           if (navigator.userAgent.indexOf("Firefox") != -1) {
             document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
           } else if (navigator.userAgent.indexOf("Chrome") != -1) {
@@ -92,7 +92,7 @@
           }
         </script>
         <div style="clear: left"></div>
-        <!--<script type="text/javascript">
+        <!--<script>
           document.writeln("<div id=\"counter\">Downloaded <strong>" + commas(count.toFixed(0)) + "</strong> times!<\/div>");
           setTimeout(updateCounter, 1000);
         </script>-->
@@ -105,7 +105,7 @@
       <em>If you're havin' IE problems, I feel bad for you, son - I got 99 problems but a browser ain't one.</em>  - DJ Danger Mime
     </div>
 
-    <script type="text/javascript">
+    <script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-360163-6']);
       _gaq.push(['_trackPageview']);
