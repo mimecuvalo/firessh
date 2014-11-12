@@ -60,6 +60,7 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/hostkeys.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kex_gex.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kex_group1.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kex_group14.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/message.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/packet.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/pkey.js"/>
