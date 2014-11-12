@@ -124,12 +124,14 @@ this.manifest = {
                 '<li>Paolo Borla (Grazie!)</li>' +
                 '<li>Jed Brown</li>' +
                 '<li>Patrick Brunschwig (for help on IPC)</li>' +
+                '<li>canaaerus (Danke!)</li>' +
                 '<li>ccpp0 (i18n rock*)</li>' +
                 '<li>Siva Chandran P (for vt100 code)</li>' +
                 '<li>Abel Chaouqi (Merci!)</li>' +
                 '<li>Jason Clark</li>' +
                 '<li>Closure Library Authors (for arc4 code)</li>' +
                 '<li>DakSrbija (Hvala!)</li>' +
+                '<li>davispuh (Paldies!)</li>' +
                 '<li>damufo (Gracias!)</li>' +
                 '<li>Darehanl (고맙습니다!)</li>' +
                 '<li>Declan (謝謝!)</li>' +
