@@ -71,6 +71,7 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/sftp.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/ssh_exception.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/transport.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/unknown_key.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/util.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/win_pageant.js"/>
 
