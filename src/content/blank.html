@@ -27,7 +27,12 @@
       #history div,
       #terminal div {
         /*height: 14px;*/
+        display: block;
         white-space: nowrap;
+      }
+      #history span,
+      #terminal span {
+        display: inline;
       }
       #cursor {
         /*height: 14px;*/
@@ -87,5 +92,6 @@
     </style>
   </head>
 
-  <body><div id="history-outer"><div id="history"></div></div><div id="terminal"></div><div id="cursor">&nbsp;</div><input id="input" type="text"/></body>
+  <body><div id="history-outer"><div id="history">
+    <div><span id="opening"><span style="cursor:pointer;text-decoration:underline;color:blue;" onclick="window.open('http://firessh.net','FireSSH');">FireSSH</span> <span id="version"></span><span style="cursor:pointer;text-decoration:underline;" onclick="window.open('http://en.wikipedia.org/wiki/Playfair_cipher','wikipedia');">'Playfair'</span> <span style="color:orange">designed by </span><span style="cursor:pointer;text-decoration:underline;color:orange" onclick="window.open('http://www.nightlight.ws','nightlight');">Mime Čuvalo</span><span style="color:orange"> in </span><span style="cursor:pointer;text-decoration:underline;color:orange" onclick="window.open('http://en.wikipedia.org/wiki/Croatia','croatia');">Croatia</span></span><br style="font-size:5pt"></div><div>SSH component is ported from <span style="cursor:pointer;text-decoration:underline;color:blue" onclick="window.open('http://www.lag.net/paramiko/','Paramiko');">Paramiko</span> 1.7.7.1, <span style="color:orange">created by </span><span style="cursor:pointer;text-decoration:underline;color:orange" onclick="window.open('http://robey.lag.net/','rp');">Robey Pointer</span><br style="font-size:5pt"></div></div></div><div id="terminal"></div><div id="cursor">&nbsp;</div><input id="input" type="text"/></body>
 </html>

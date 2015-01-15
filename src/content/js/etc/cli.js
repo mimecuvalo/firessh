@@ -128,8 +128,8 @@ var cli = function(contentWindow) {
   // list of dirty lines since last call to GetDirtyLines
   this.isLineDirty = [];
 
-  this.blank = { c: '&nbsp;', style: this.resetStyle, wrap: false };
-  this.blankHTML = { html: '', wrap: false };
+  this.blank = { c: '\u00A0', style: this.resetStyle, wrap: false };
+  this.blankHTML = { html: doc.createDocumentFragment(), wrap: false };
 
   for (var i = 0; i < this.rows; ++i) {
     var line = [];
@@ -378,7 +378,7 @@ cli.prototype = {
 
     var styleElement = this.doc.createElement('style');
     styleElement.setAttribute('type', 'text/css');
-    styleElement.innerHTML = "#history div, #terminal div { height: " + this.letterHeight + "px; }";
+    styleElement.textContent = "#history div, #terminal div { height: " + this.letterHeight + "px; }";
     this.doc.getElementsByTagName('head')[0].appendChild(styleElement);
   },
 
@@ -792,7 +792,7 @@ cli.prototype = {
       }
 
       for (var x = section.start; x <= section.end; ++x) {
-        dummyElement.innerHTML = section.rendition[x].html;
+        this.replace(dummyElement, section.rendition[x].html.cloneNode(true));
         if (x == section.start) {
           if (x == section.end && section.name == startSection && section.name == endSection) {
             copytext += dummyElement.textContent.substring(startSelectionOffset, endSelectionOffset);
@@ -813,7 +813,7 @@ cli.prototype = {
       }
     }
 
-    copytext = copytext.replace(/\xA0/g, ' '); // replace &nbsp; with a regular space
+    copytext = copytext.replace(/\xA0/g, ' '); // replace \u00A0 with a regular space
     copytext = copytext.replace(/\s+$/mg, ''); // remove trailing whitespace
 
     var str = Components.classes["@mozilla.org/supports-string;1"].
@@ -892,7 +892,7 @@ cli.prototype = {
       if (this.isLineDirty[i] || this.refresh) {
         this.isLineDirty[i] = false;
         this.scrRendition[i] = this.createScreenRendition(i);
-        this.terminal.childNodes[i].innerHTML = this.scrRendition[i].html;
+        this.replace(this.terminal.childNodes[i], this.scrRendition[i].html.cloneNode(true));
       }
     }
     this.refresh = false;
@@ -910,13 +910,9 @@ cli.prototype = {
   updateCursor : function() {
     // update cursor position
     var x = this.curX < this.cols ? this.curX : this.cols - 1;
-    /*this.cursor.innerHTML = this.screen[this.curY][x].c;
-    this.cursor.style.color = this.screen[this.curY][x].style.color;
-    this.cursor.style.backgroundColor = this.defaultColor;*/
     this.cursor.style.top = (this.curY * this.letterHeight + this.terminal.offsetTop) + 'px';
     this.cursor.style.left = (x * this.letterWidth + this.terminal.offsetLeft) + 'px';
 
-//    this.input.style.color = this.screen[this.curY][x].style.color;
     this.input.style.backgroundColor = this.cursor.style.color;
     this.input.style.top = this.cursor.style.top;
     this.input.style.left = (x * this.letterWidth + this.terminal.offsetLeft - 2) + 'px';
@@ -933,43 +929,74 @@ cli.prototype = {
   },
 
   createScreenRendition : function(row, screen) {
-    var rendition = '';
+    var rendition = doc.createDocumentFragment();
     screen = screen || this.screen;
 
     var styling = false;
     var currentStyle = null;
+    var currentSpan = null;
+    var currentSpanText = '';
+    var currentNonSpanText = '';
     for (var x = 0; x < this.cols; ++x) {
       if (screen[row][x].style.noStyle) {
         if (styling) {
-          rendition += '</span>';
+          if (currentSpanText) {
+            currentSpan.lastChild.appendData(currentSpanText);
+          }
+          currentSpan = null;
+          currentSpanText = '';
           styling = false;
         }
-        rendition += screen[row][x].c;
+        if (!currentNonSpanText) {
+          rendition.appendChild(doc.createTextNode(''));
+        }
+        currentNonSpanText += screen[row][x].c;
       } else {
-        if (styling && (currentStyle != screen[row][x].style || screen[row][x].style.width)) {
-          rendition += '</span><span style="' + this.transformStyle(screen[row][x].style) + '">';
-          currentStyle = screen[row][x].style;
-        } else if (!styling) {
-          rendition += '<span style="' + this.transformStyle(screen[row][x].style) + '">';
+        if ((styling && (currentStyle != screen[row][x].style || screen[row][x].style.width)) || !styling) {
+          if (currentSpanText) {
+            currentSpan.lastChild.appendData(currentSpanText);
+            currentSpanText = '';
+          }
+          if (currentNonSpanText) {
+            rendition.lastChild.appendData(currentNonSpanText);
+            currentNonSpanText = '';
+          }
+          currentSpan = doc.createElement('span');
+          currentSpan.setAttribute('style', this.transformStyle(screen[row][x].style));
+          currentSpan.appendChild(doc.createTextNode(''));
+          rendition.appendChild(currentSpan);
           currentStyle = screen[row][x].style;
         }
         styling = true;
-        rendition += screen[row][x].c;
+        currentSpanText += screen[row][x].c;
       }
     }
 
-    if (styling) {
-      rendition += '</span>';
+    if (currentSpanText) {
+      currentSpan.lastChild.appendData(currentSpanText);
     }
 
-    rendition += '';
+    if (currentNonSpanText) {
+      rendition.lastChild.appendData(currentNonSpanText);
+    }
+
     return { html: rendition, wrap: screen[row][0].wrap };
   },
 
   onTerminalReset : function(init) {
-    var oneLine = '<div>' + new Array(this.cols + 1).join('&nbsp;') + '</div>';
-    this.history.innerHTML = new Array(this.rows + 2).join(oneLine);
-    this.terminal.innerHTML = new Array(this.rows + 1).join(oneLine);
+    var div = doc.createElement('div');
+    div.textContent = new Array(this.cols + 1).join('\u00A0');
+    var historyFrag = doc.createDocumentFragment();
+    var terminalFrag = doc.createDocumentFragment();
+    for (var x = 0; x < this.rows + 1; ++x) {
+      historyFrag.appendChild(div.cloneNode(true));
+    }
+    for (var x = 0; x < this.rows; ++x) {
+      terminalFrag.appendChild(div.cloneNode(true));
+    }
+
+    this.replace(this.history, historyFrag);
+    this.replace(this.terminal, terminalFrag);
 
     if (!init) {
       this.body.scrollTop = this.body.scrollHeight - this.body.clientHeight;  // scroll to bottom
@@ -980,12 +1007,20 @@ cli.prototype = {
     }
   },
 
+  replace: function(el, newContent) {
+    while (el.firstChild) {
+      el.removeChild(el.firstChild);
+    }
+    el.appendChild(newContent);
+  },
+
   addHistory : function(message) {
     if (!message) {
       return;
     }
-
-    this.historyCache.push(new cloneObject(message));
+    var clone = new cloneObject(message);
+    clone.html = clone.html.cloneNode(true);
+    this.historyCache.push(clone);
     ++this.newHistoryLines;
   },
 
@@ -1011,7 +1046,7 @@ cli.prototype = {
     if (firstLine != this.historyStart || force) {
       for (var i = 0; i < this.rows + 1 && i + firstLine < this.historyCache.length; ++i) {
         if (this.historyCache[i + firstLine]) {
-          this.history.childNodes[i].innerHTML = this.historyCache[i + firstLine].html;
+          this.replace(this.history.childNodes[i], this.historyCache[i + firstLine].html.cloneNode(true));
         }
       }
     }
@@ -1227,7 +1262,7 @@ cli.prototype = {
       }
 
       for (var j = start; j < end + 1; ++j) {
-        this.screen[i][j].c = '&nbsp;';
+        this.screen[i][j].c = '\u00A0';
         this.screen[i][j].wrap = false;
         this.screen[i][j].style = this.curRendition.noStyle ? this.resetStyle : this.curRendition;
       }
@@ -1532,7 +1567,7 @@ cli.prototype = {
       this.__NewLine();
     }
 
-    ch = ch.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\x20/g, "&nbsp;");
+    ch = ch.replace(/\x20/g, "\u00A0");
 
     if (this.insertMode) {
       for (var x = this.cols - 1; x >= this.curX + 1; --x) {

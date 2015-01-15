@@ -21,16 +21,22 @@ WARNING = logging.WARNING;
 ERROR = logging.ERROR;
 CRITICAL = logging.CRITICAL;
 
-function appendLog(message, css, type, trusted) {
+function appendLog(message, css, type, opt_frag) {
   if (!window["gCli"]) {
     return;
   }
 
-  if (!trusted) {
-    message = message.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  var frag;
+  if (opt_frag) {
+    frag = opt_frag;
+  } else {
+    frag = gCli.doc.createDocumentFragment();
+    var div = gCli.doc.createElement('div');
+    div.textContent = message;
+    frag.appendChild(div);
   }
 
-  gCli.addHistory({ html: message, wrap: false });
+  gCli.addHistory({ html: frag, wrap: false });
   gCli.updateHistoryView(true);
 }
 
@@ -40,7 +46,7 @@ function stdin(message) {
 
 function error(message, skipLog, trusted, skipAlert) {
   if (!skipLog) {
-    appendLog("\n" + message + "\n", 'error', "error", trusted);
+    appendLog("\n" + message + "\n", 'error', "error");
   }
 }
 
