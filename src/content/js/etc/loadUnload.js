@@ -15,20 +15,67 @@ function startup() {
     //externalLink();
   });
 
-  var wikipedia = 'http://en.wikipedia.org/wiki/Playfair_cipher';
-  appendLog("<span id='opening'><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"http://firessh.net\" target=\"_blank\">"
-      + "FireSSH</a> <span>" + gVersion
-      + "  '</span><a style='cursor:pointer;text-decoration:underline;color:blue;' href=\"" + wikipedia + "\" target=\"_blank\">"
-      + "Playfair</a>'"
-      + " " + _("opening")
-      + "</span><br style='font-size:5pt'/>", 'blue', "info", true);
+  // Sigh.  Fun times.
+  var frag = gCli.doc.createDocumentFragment();
+  var div = gCli.doc.createElement('div');
+  var span = gCli.doc.createElement('span');
+  span.style = 'cursor:pointer;text-decoration:underline;color:blue;';
+  span.setAttribute('onclick', "window.open('http://firessh.net','FireSSH');");
+  span.textContent = 'FireSSH';
+  div.appendChild(span);
+  div.appendChild(gCli.doc.createTextNode(" " + gVersion + " '"));
+  span = gCli.doc.createElement('span');
+  span.style = 'cursor:pointer;text-decoration:underline;';
+  span.setAttribute('onclick', "window.open('http://en.wikipedia.org/wiki/Playfair_cipher','wikipedia');");
+  span.textContent = "Playfair";
+  div.appendChild(span);
+  span = gCli.doc.createElement('span');
+  span.style = 'color:orange';
+  span.textContent = "' designed by ";
+  div.appendChild(span);
+  span = gCli.doc.createElement('span');
+  span.style = 'cursor:pointer;text-decoration:underline;color:orange';
+  span.setAttribute('onclick', "window.open('http://www.nightlight.ws','nightlight');");
+  span.textContent = 'Mime Čuvalo';
+  div.appendChild(span);
+  span = gCli.doc.createElement('span');
+  span.style = 'color:orange';
+  span.textContent = ' in ';
+  div.appendChild(span);
+  span = gCli.doc.createElement('span');
+  span.style = 'cursor:pointer;text-decoration:underline;color:orange';
+  span.setAttribute('onclick', "window.open('http://en.wikipedia.org/wiki/Croatia','croatia');");
+  span.textContent = 'Croatia';
+  div.appendChild(span);
+  var br = gCli.doc.createElement('br');
+  br.style = 'font-size:5pt';
+  div.appendChild(br);
+  frag.appendChild(div);
+  appendLog('', 'blue', 'info', frag);
 
-  setTimeout(function() { gCli.body.scrollTop = 0; }, 0);
-  
-  try {
-    appendLog(_("paramiko").replace('%S', "1.7.7.1")
-      + "<br style='font-size:5pt'/>", 'blue', "info", true);
-  } catch(ex) {}  // if we haven't had it translated yet
+  frag = gCli.doc.createDocumentFragment();
+  div = gCli.doc.createElement('div');
+  div.appendChild(gCli.doc.createTextNode('SSH component is ported from '));
+  span = gCli.doc.createElement('span');
+  span.style = 'cursor:pointer;text-decoration:underline;color:blue';
+  span.setAttribute('onclick', "window.open('http://www.lag.net/paramiko/','Paramiko')");
+  span.textContent = 'Paramiko';
+  div.appendChild(span);
+  div.appendChild(gCli.doc.createTextNode(' 1.7.7.1, '));
+  span = gCli.doc.createElement('span');
+  span.style = 'color:orange';
+  span.textContent = 'created by ';
+  div.appendChild(span);
+  span = gCli.doc.createElement('span');
+  span.style = 'cursor:pointer;text-decoration:underline;color:orange';
+  span.setAttribute('onclick', "window.open('http://robey.lag.net/','rp');");
+  span.textContent = 'Robey Pointer';
+  div.appendChild(span);
+  br = gCli.doc.createElement('br');
+  br.style = 'font-size:5pt';
+  div.appendChild(br);
+  frag.appendChild(div);
+  appendLog('', 'blue', 'info', frag);
 
   var callback = function() {
     var hashUsed = false;
