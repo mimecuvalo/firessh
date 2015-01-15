@@ -41,7 +41,7 @@ function startup() {
   div.appendChild(span);
   div.appendChild(gCli.doc.createTextNode(" " + gVersion + " '"));
   span = gCli.doc.createElement('span');
-  span.style = 'cursor:pointer;text-decoration:underline;';
+  span.style = 'cursor:pointer;color:blue;text-decoration:underline;';
   span.setAttribute('onclick', "window.open('http://en.wikipedia.org/wiki/Playfair_cipher','wikipedia');");
   span.textContent = "Playfair";
   div.appendChild(span);
