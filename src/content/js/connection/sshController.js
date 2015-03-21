@@ -25,7 +25,7 @@ function connect(noAccountChange, showPassDialog) {
 
   appendLog("Connecting to " + gConnection.host + "...\n", 'input', 'info', false);
 
-  if (!gConnection.login || (!gConnection.password && !gConnection.privatekey && gPasswordMode) || showPassDialog) {      // get a password if needed
+  if (!gConnection.login || (!gConnection.password && gPasswordMode) || showPassDialog) {      // get a password if needed
     var passwordObject        = new Object();
     passwordObject.login      = gConnection.login;
     passwordObject.password   = gConnection.password;
