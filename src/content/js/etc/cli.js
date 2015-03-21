@@ -1586,7 +1586,7 @@ cli.prototype = {
           this.curRendition.noStyle ? (wideChar ? this.nonAsciiWideStyle : this.nonAsciiStyle) : curRenditionNonAscii;
 
       if (wideChar) {
-        this.screen[this.curY][this.curX + 1].c = ch;
+        this.screen[this.curY][this.curX + 1].c = '';
         this.screen[this.curY][this.curX + 1].style = this.hideStyle;
         this.curX += 2;
       } else {
