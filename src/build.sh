@@ -6,10 +6,6 @@ FIRESSH_MAX=35.*
 FIRESSH_MASTER=0
 FIRESSH_DEBUG=0
 
-# build English-only
-FIRESSH_LANG=en-US
-source build_helper.sh
-
 # build all locales
 FIRESSH_LANG=all
 FIRESSH_MASTER=1
