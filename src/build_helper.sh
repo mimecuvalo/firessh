@@ -12,7 +12,7 @@ sed -e s/__l10n__/$FIRESSH_LANG/g \
     -e s/__MAXVERSION__/$FIRESSH_MAX/g \
     install.rdf.in > install.rdf
 
-sed -e s/__VERSION__/$FIRESSH_VER/g content/js/etc/globals.js.in > content/js/etc/globals.jsu
+sed -e s/__VERSION__/$FIRESSH_VER/g content/js/etc/globals.js.in > content/js/etc/globals.js
 
 rm ../downloads/firessh_$FIRESSH_LANG.xpi
 

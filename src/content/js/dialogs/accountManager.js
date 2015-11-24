@@ -466,7 +466,8 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       cstream.init(fstream, "UTF-8", 0, 0);
 
       var siteData = "";
-      let (str = {}) {
+      {
+        let str = {};
         let read = 0;
         do { 
           read = cstream.readString(0xffffffff, str); // read as much as we can and put it in str.value
