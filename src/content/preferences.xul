@@ -203,13 +203,14 @@
         <tabpanel id="creditstab" orient="vertical">
           <hbox pack="center">
             <label id="version" value="FireSSH 0.9999999999999   "/>
-            <label value="Mime &#268;uvalo"          onclick="runInFirefox('http://www.nightlight.ws')"  class="textLink"/>
+            <label value="Mime &#268;uvalo"          onclick="runInFirefox('http://www.nite-lite.net')"  class="textLink"/>
           </hbox>
           <box pack="center">
             <label value="http://firessh.net" onclick="runInFirefox('http://firessh.net')" class="textLink"/>
           </box>
           <label class="paddingTop boldText" value="&thanks.label;"/>
           <listbox rows="10">
+            <listitem label="AlePerez92 (Gracias!)" />
             <listitem label="3ARRANO (Eskerrik asko, Milesker!)"/>
             <listitem label="Erik Anderson"/>
             <listitem label="BatBat (Merci!)"/>

@@ -51,7 +51,7 @@ function startup() {
   div.appendChild(span);
   span = gCli.doc.createElement('span');
   span.style = 'cursor:pointer;text-decoration:underline;color:orange';
-  span.setAttribute('onclick', "window.open('http://www.nightlight.ws','nightlight');");
+  span.setAttribute('onclick', "window.open('http://www.nite-lite.net','nightlight');");
   span.textContent = 'Mime Čuvalo';
   div.appendChild(span);
   span = gCli.doc.createElement('span');

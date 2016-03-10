@@ -1,4 +1,4 @@
-pref("extensions.firessh@nightlight.ws.description", "chrome://firessh/locale/strings.properties");
+pref("extensions.firessh@nite-lite.net.description", "chrome://firessh/locale/strings.properties");
 pref("extensions.firessh.passwordmode",      true);
 pref("extensions.firessh.network",           30);
 pref("extensions.firessh.timeoutmode",       true);
