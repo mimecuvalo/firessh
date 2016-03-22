@@ -1,65 +1,50 @@
-<!ENTITY title "Administrador de cuentas">
+<!ENTITY title "Gestor de Cuentas">
+<!ENTITY accountlist.label "(Elige una cuenta)">
+<!ENTITY advanced.label "Herramientas">
+<!ENTITY import.label "Importar…">
+<!ENTITY export.label "Exportar…">
+<!ENTITY preferencestab.label "Opciones…">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Ayuda">
+<!ENTITY help.url "http://firessh.mozdev.org/help.html">
+<!ENTITY advanced.access "T">
+<!ENTITY helpbutton.access "A">
 <!ENTITY main "Principal">
-<!ENTITY connections "Conexión">
 <!ENTITY advanced "Avanzado">
 <!ENTITY maindetails "Detalles principales">
 <!ENTITY id "ID">
 <!ENTITY account.label "Nombre de cuenta:">
-<!ENTITY account.tip "Ejemplo: Mi sitio FTP">
+<!ENTITY account.tip "Ejemplo: Mi Sitio SSH">
 <!ENTITY folder.label "Categoría:">
-<!ENTITY host.label "Servidor:">
-<!ENTITY host.tip "Ejemplo: ftp.debian.org">
-<!ENTITY login.label "Usuario:">
+<!ENTITY optional.label "(opcional)">
+<!ENTITY host.label "Host:">
+<!ENTITY host.tip "Ejemplo: misitio.com">
+<!ENTITY login.label "Login:">
 <!ENTITY password.label "Contraseña:">
 <!ENTITY anonymous.label "Anónimo">
-<!ENTITY connection "Tipo de conexión">
 <!ENTITY port.label "Puerto:">
-<!ENTITY pasv.label "Modo pasivo">
-<!ENTITY security.label "Seguridad">
-<!ENTITY none.label "Ninguna">
-<!ENTITY authtls.label "Aut. TLS (la mejor)">
-<!ENTITY authssl.label "Aut. SSL (preferible)">
-<!ENTITY implicit.label "SSL Implícito (buena)">
-<!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Clave privada:">
-<!ENTITY pkbrowse.label "Examinar...">
-<!ENTITY pkconvert.label "Convertir...">
-<!ENTITY initialdir "Directorios iniciales">
-<!ENTITY download "Opciones de descarga">
-<!ENTITY upload "Opciones de subida">
-<!ENTITY localdir.label "Local:">
-<!ENTITY remotedir.label "Remoto:">
-<!ENTITY current.label "Usar actual">
-<!ENTITY treesync.label "Mantener sincronizados los directorios">
-<!ENTITY webhost "Servidor web (utilizado con la función &apos;Ver en la web&apos;)">
-<!ENTITY webhost.tip "Ejemplo: http://www.ejemplo.com">
-<!ENTITY prefix.label "Prefijo:">
-<!ENTITY prefix.tip "Prefijo a eliminar de la parte FTP del URL, por ejemplo /public_html">
-<!ENTITY caseleave.label "Dejar mayúsculas">
-<!ENTITY caselower.label "Convertir a minúsculas">
-<!ENTITY caseupper.label "Convertir a mayúsculas">
-<!ENTITY timezone.label "Compensación horaria">
-<!ENTITY hours.label "Horas:">
-<!ENTITY minutes.label "Minutos:">
+<!ENTITY privatekey.label "Clave Privada:">
+<!ENTITY pkbrowse.label "Buscar…">
+<!ENTITY tunnels.label "Túneles">
+<!ENTITY add.label "Añadir">
+<!ENTITY remove.label "Eliminar">
+<!ENTITY source.label "Puerto de origen">
+<!ENTITY dest.label "Destino">
 <!ENTITY notes.label "Notas">
-<!ENTITY encoding.label "Codificación del servidor">
-<!ENTITY charset.label "Juego de caracteres:">
-<!ENTITY account.access "o">
-<!ENTITY folder.access "g">
-<!ENTITY host.access "S">
-<!ENTITY login.access "U">
-<!ENTITY password.access "C">
+<!ENTITY account.access "C">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
 <!ENTITY anonymous.access "n">
-<!ENTITY pasv.access "v">
-<!ENTITY port.access "P">
-<!ENTITY security.access "S">
+<!ENTITY port.access "o">
 <!ENTITY privatekey.access "i">
-<!ENTITY pkbrowse.access "E">
-<!ENTITY pkconvert.access "v">
-<!ENTITY localdir.access "L">
-<!ENTITY remotedir.access "R">
-<!ENTITY currentl.access "c">
-<!ENTITY currentr.access "a">
-<!ENTITY treesync.access "z">
-<!ENTITY webhost.access "e">
-<!ENTITY prefix.access "j">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY source.access "S">
+<!ENTITY dest.access "t">
+<!ENTITY add.access "d">
+<!ENTITY remove.access "r">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "de <html:strong>El libro de Mozilla</html:strong>, 8:2">
