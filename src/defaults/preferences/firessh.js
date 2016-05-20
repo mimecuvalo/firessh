@@ -15,6 +15,7 @@ pref("extensions.firessh.loadurl",           "");
 pref("extensions.firessh.defaultaccount",    "");
 pref("extensions.firessh.compressmode",      true);
 pref("extensions.firessh.audible",           true);
+pref("extensions.firessh.creditsmode",       true);
 pref("extensions.firessh.fgColor",           "#33FF33");
 pref("extensions.firessh.bgColor",           "#000000");
 pref("extensions.firessh.size",              "12");

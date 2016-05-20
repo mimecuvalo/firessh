@@ -14,6 +14,7 @@ var gDebugMode;                 // from prefs: show debug msgs in log or not
 var gDonated;                   // from prefs: donated or not
 var gLoadUrl;                   // from prefs: ssh url to open onload
 var gPasswordMode;              // from prefs: save password or not
+var gCreditsMode;               // from prefs: show credit lines toggle
 
 var gStrbundle;                 // $() references
 var gAccountDialog;
