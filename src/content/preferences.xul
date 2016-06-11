@@ -33,6 +33,7 @@
       <preference id="fgpref"                 name="extensions.firessh.fgColor"           type="string"/>
       <preference id="bgpref"                 name="extensions.firessh.bgColor"           type="string"/>
       <preference id="audiblepref"            name="extensions.firessh.audible"           type="bool"/>
+      <preference id="creditspref"            name="extensions.firessh.creditsmode"       type="bool"/>
       <preference id="keepalivemodepref"      name="extensions.firessh.keepalivemode"     type="bool"/>
       <preference id="proxytypepref"          name="extensions.firessh.proxytype"         type="string"/>
       <preference id="proxyhostpref"          name="extensions.firessh.proxyhost"         type="unichar"/>
@@ -132,6 +133,9 @@
                 <row align="center">
                   <label     id="bglabel" value="&bg.label;" control="bgColor"/>
                   <colorpicker id="bgColor" preference="bgpref" type="button" />
+                </row>
+                <row align="center">
+                  <checkbox id="creditsmode"      preference="creditspref"      label="&credits.label;"/>
                 </row>
               </rows>
             </grid>
