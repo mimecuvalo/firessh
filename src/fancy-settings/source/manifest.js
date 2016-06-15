@@ -38,6 +38,14 @@ this.manifest = {
         },
         {
             "tab": chrome.i18n.getMessage("interface"),
+            "group": chrome.i18n.getMessage("appearance"),
+            "name": "credits",
+            "type": "checkbox",
+            "default": "1",
+            "label": chrome.i18n.getMessage("credits")
+        },
+        {
+            "tab": chrome.i18n.getMessage("interface"),
             "group": chrome.i18n.getMessage("bell"),
             "name": "audible",
             "type": "checkbox",
@@ -104,7 +112,7 @@ this.manifest = {
             "group": "FireSSH",
             "name": "none",
             "type": "description",
-            "text": '<label id="version">0.94.6    </label>' +
+            "text": '<label id="version">0.94.8    </label>' +
               '<a href="http://www.nightlight.ws" style="margin-right: 10px; color:#03c; text-decoration:underline">Mime &#268;uvalo</label>' +
               '<a href="http://firessh.net" style="margin-right: 10px; color:#03c; text-decoration:underline">http://firessh.net</label>'
         },

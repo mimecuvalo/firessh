@@ -38,6 +38,14 @@ this.manifest = {
         },
         {
             "tab": chrome.i18n.getMessage("interface"),
+            "group": chrome.i18n.getMessage("appearance"),
+            "name": "credits",
+            "type": "checkbox",
+            "default": "1",
+            "label": chrome.i18n.getMessage("credits")
+        },
+        {
+            "tab": chrome.i18n.getMessage("interface"),
             "group": chrome.i18n.getMessage("bell"),
             "name": "audible",
             "type": "checkbox",

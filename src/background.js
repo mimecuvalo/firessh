@@ -14,7 +14,8 @@ chrome.runtime.onInstalled.addListener(function() {
     "fgColor": "#33FF33",
     "bgColor": "#000000",
     "size": "12",
-    "font": "Andale Mono"
+    "font": "Andale Mono",
+    "credits": 1
   });
 });
 

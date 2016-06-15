@@ -7,6 +7,8 @@ function readPreferences(init, opt_callback) {
       gDebugMode               = parseInt(storage["debugmode"]);
       gDonated                 = parseInt(storage["donated"]);
       gPasswordMode            = parseInt(storage["passwordmode"]);
+      gCreditsMode             = parseInt(storage["credits"] === undefined ?
+          "1" : storage["credits"]);
 
       // TODO, need to check if system has andale mono
       if (gCli) {

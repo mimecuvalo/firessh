@@ -74,6 +74,7 @@
   "size":             { "message": "Size" },
   "text":             { "message": "Text" },
   "background":       { "message": "Background" },
+  "credits":          { "message": "Credits" },
   "bell":             { "message": "Bell" },
   "audible":          { "message": "Audible Bell" },
   "connect":          { "message": "Connections" },

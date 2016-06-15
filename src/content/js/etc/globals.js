@@ -1,5 +1,5 @@
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "0.94.6";  // version of FireSSH we're using
+var gVersion  = "0.94.8";  // version of FireSSH we're using
 var gPlatform;                  // holds what platform we're on
 var gSiteManager;               // hold site manager data
 var gKeys;                      // the private keys
@@ -17,3 +17,4 @@ var gDebugMode;                 // from prefs: show debug msgs in log or not
 var gDonated;                   // from prefs: donated or not
 var gLoadUrl;                   // from prefs: ssh url to open onload
 var gPasswordMode;              // from prefs: save password or not
+var gCreditsMode;               // from prefs: show credit lines toggle
