@@ -35,6 +35,7 @@
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/baseHash.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/SHA.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/SHA256.js"/>
+  <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/SHA512.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/MD5.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/Hash/HMAC.js"/>
   <script type="application/x-javascript" src="chrome://firessh/content/js/connection/paramikojs/kryptos/PublicKey/RSA.js"/>
