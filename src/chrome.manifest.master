@@ -13,6 +13,6 @@ skin    firessh classic/1.0                      skin/
 overlay chrome://browser/content/browser.xul         chrome://firessh/content/firesshOverlay.xul
 style   chrome://global/content/customizeToolbar.xul chrome://firessh/skin/overlay.css
 
-component {dbc42190-21eb-11e0-ac64-0800200c9a66} components/sshProtocol.js
-contract @mozilla.org/network/protocol;1?name=ssh {dbc42190-21eb-11e0-ac64-0800200c9a66}
-category profile-after-change FireSSHSSH @mozilla.org/network/protocol;1?name=ssh
+contract @firessh.net/startup;1 {b0243ea2-dab2-413f-8886-d7c7e701460e}
+component {b0243ea2-dab2-413f-8886-d7c7e701460e} components/firessh-service.js
+category profile-after-change firessh-startup @firessh.net/startup;1

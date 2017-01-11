@@ -32,7 +32,7 @@ zip -q -r9 ../downloads/firessh_$FIRESSH_LANG.xpi \
   skin \
   chrome/icons/default/firessh-main-window.ico \
   chrome/icons/default/firessh-main-window.xpm \
-  components/sshProtocol.js \
+  components/firessh-service.js \
   defaults/preferences/firessh.js \
   chrome.manifest \
   install.rdf \
