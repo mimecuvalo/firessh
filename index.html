@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FireSSH - The Free SSH Client for Mozilla Firefox</title>
+    <title>FireSSH - The Free SSH Client for Waterfox</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -62,7 +62,10 @@
         <img id="thumbnail" title="FireSSH" alt="seahorse" src="images/header.jpg" width="422" height="317"></a>
       </div>
 
-      FireSSH is a <b>free, cross-platform SSH terminal client</b> for Mozilla Firefox and Google Chrome.  Written entirely in Javascript!<br/><br/>
+      FireSSH is a <b>free, cross-platform SSH terminal client</b> for Waterfox.  Written entirely in Javascript!<br/><br/>
+      After 13 years, Firefox has officially removed FireFTP and FireSSH support from the browser.
+      Thus, I've ended support / development of the addons.
+      I recommend switching to <a href="https://www.waterfoxproject.org">Waterfox</a> to continue using the addons.<br/>
       <div class="info" style="margin-top:25px; width: 270px;">
         <noscript id="download-link">
           <div>
@@ -70,16 +73,11 @@
           </div>
         </noscript>
         <script>
-          if (navigator.userAgent.indexOf("Firefox") != -1) {
+          if (navigator.userAgent.indexOf("Waterfox") != -1) {
             document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
-          } else if (navigator.userAgent.indexOf("Chrome") != -1) {
-            document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
-            document.getElementById('main-link').href = 'https://chrome.google.com/webstore/detail/firessh/mcognlamjmofcihollilalojnckfiajm';
-            document.getElementById('i18n').style.display = 'none';
           } else {
-            document.writeln("<span class=\"smaller\">You need Firefox or Chrome to use FireSSH.<\/span><br\/>");
-            document.writeln("<a href=\"http:\/\/www.firefox.com\"><b>Download Firefox<\/b><\/a><br\/>");
-            document.writeln("<a href=\"http:\/\/www.chrome.com\"><b>Download Chrome<\/b><\/a><br\/>");
+            document.writeln("<span class=\"smaller\">You need Waterfox to use FireSSH.<\/span><br\/>");
+            document.writeln("<a href=\"http:\/\/www.waterfoxproject.com\"><b>Download Waterfox<\/b><\/a><br\/>");
           }
         </script>
         <div style="clear: left"></div>
