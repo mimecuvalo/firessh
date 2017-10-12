@@ -1,3 +1,12 @@
-#firessh-button, #firesshtoolsmenu, #appmenu_firessh, #menu_webDeveloper_firessh {
+toolbar[iconsize="small"] #firessh-button,
+#firesshtoolsmenu, #appmenu_firessh, #menu_webDeveloper_firessh {
+  list-style-image    : url("chrome://firessh/skin/icons/logo.png");
+}
+
+#firessh-button {
   list-style-image    : url("chrome://firessh/skin/icons/logo32.png");
+}
+
+toolbar[iconsize="large"] #firessh-button {
+  list-style-image    : url("chrome://firessh/skin/icons/logo24.png");
 }
