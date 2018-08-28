@@ -45,7 +45,7 @@
           </div>
         </noscript>
         <script>
-          if (navigator.userAgent.indexOf("Waterfox") != -1) {
+          if (1|navigator.userAgent.indexOf("Waterfox") != -1) {
             document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
           } else {
             document.writeln("<span class=\"smaller\">You need Waterfox to use FireSSH.<\/span><br\/>");
