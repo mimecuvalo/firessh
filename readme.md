@@ -10,3 +10,9 @@ After 13 years and 25 million downloads later, Firefox has officially removed Fi
     git clone git://github.com/mimecuvalo/firessh.git
     git submodule init
     git submodule update
+
+## Roadmap
+
+- explore webassembly for core logic. previously had tried workers but had trouble since transferring data arrays across
+  the boundary was expensive.
+- look at using https://github.com/Yomguithereal/react-blessed instead of the current CLI code.
